@@ -1,5 +1,5 @@
 # React-生命周期方法快速转 Hooks（1）
-Tag: React, Hooks,
+Tag: React, Hooks, Life cycle
 
 最近由于特殊需求，要把一个旧 React 项目转 Hooks，发现自己在 React 生命周期方法转 Hooks 时竟然还需要翻官方文档，真是惊掉下巴了。
 ![react-hooks](../assets/react-hooks.png)
@@ -51,7 +51,6 @@ class Component extends React.Component {
     console.log('componentDidUpdate');
   }
 }
-
 ```
 ```jsx harmony
 import React, {useEffect, useState} from 'react';
