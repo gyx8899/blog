@@ -1,16 +1,17 @@
 # blog
-Personal blog for growing up
+个人成长博客。
+Personal growth blog.
 
-## frontend
+## Frontend
 前端知识总结
 
-### docs
+### Docs
 学习过程中整理的知识文档
 
-### react
-react 相关知识总结
+### React
+React 相关知识总结
 
-## daily life
+## Daily life
 日常工作中的随感
 
 最后更新于2020年2月9日
