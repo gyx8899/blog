@@ -58,7 +58,7 @@ function generateReadme() {
 		content += `\n${Array(level).fill('#').join('')} ${key.substring(0, 1).toUpperCase() + key.substring(1)}\n${readMeConfig[key] || ''}\n\n`;
 	};
 	const leaf = function (key, value) {
-		content += `- [${key.split('.md')[0]}](./blob/master/${encodeURI(blogTreeObject[value].dir)}): <sub><sup>(${blogTreeObject[value].timestamp})</sup></sub>\n`;
+		content += `- [${key.split('.md')[0]}](/${encodeURI(blogTreeObject[value].dir)}): <sub><sup>(${blogTreeObject[value].timestamp})</sup></sub>\n`;
 	};
 	iterateObject(blogTree, 1, nonLeaf, leaf);
 
