@@ -164,6 +164,6 @@ counter1();//1
 This meta tag has no effect unless you first specify full-screen mode as described in apple-apple-mobile-web-app-capable.
 If content is set to default, the status bar appears normal. If set to black, the status bar has a black background. If set to black-translucent, the status bar is black and translucent. If set to default or black, the web content is displayed below the status bar. If set to black-translucent, the web content is displayed on the entire screen, partially obscured by the status bar. The default value is default.
  
-最后更新于2018年7月23日
+最后更新于2020年2月18日
 
-[^footnote]: timestamp-最后更新于2018年7月23日
+[^footnote]: timestamp-最后更新于2020年2月18日

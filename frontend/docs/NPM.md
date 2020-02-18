@@ -2,6 +2,17 @@
 
 ---
 
+## Init project
+```shell script
+# Commands tested on windows
+mkdir projectName
+cd projectName
+npm init -y
+mkdir src
+cd src
+echo off > index.js
+```
+
 ### Base
 ```cmd
 npm install <packageName>
@@ -113,7 +124,6 @@ npm install --save-dev gulp-less
 npm install -g gulp-if
 
 ```
-[Gulp guide in detail](http://www.ydcss.com/archives/18)
 
 ### Service worker: sw-precache
 ```cmd
@@ -185,6 +195,6 @@ npm i --save-dev babel-preset-stage-0 prop-types
 
 npm i --save-dev react-hot-loader
 ```
-最后更新于2019年6月4日
+最后更新于2020年2月18日
 
-[^footnote]: timestamp-最后更新于2019年6月4日
+[^footnote]: timestamp-最后更新于2020年2月18日

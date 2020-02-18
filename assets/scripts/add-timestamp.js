@@ -1,21 +1,76 @@
-const fs = require('fs');
-const path = require('path');
+const readMeConfig = require('./readme-config');
+const {readDataFromFile, writeDataToFile, getParam, readDirectory, iterateObject} = require('../../app/node/util');
+const readmeFilePath = './README.md';
 const defaultTimestamp = `最后更新于yyyy年MM月dd日`;
+const readMeTimestamp = `yyyy年MM月dd日`;
+let blogTree = {
+	blog: {}
+};
+let blogTreeObject = {};
+let blogTreeTimeout = null;
 
 main();
 
 function main() {
-	let fileDirName = getParam(process.argv, 'file');
-	readDirectory(fileDirName, function (fileDir) {
-		if (fileDir.split('.').pop() === 'md') {
-			console.log(fileDir);
-			addTimeStamp(fileDir);
-		}
-	});
+	const fileDirName = getParam(process.argv, 'file');
+	readDirectory(fileDirName, fileCallback, folderCallback);
 }
 
-function addTimeStamp(fileDirName) {
-	let fileStats = getFileStats(fileDirName);
+function fileCallback(fileDir, fileStats) {
+	if (fileDir.split('.').pop() === 'md') {
+		addTimeStamp(fileDir, fileStats);
+		updateBlogTree(fileDir, fileStats);
+	}
+}
+
+function updateBlogTree(fileDir, fileStats) {
+	let file = blogTree.blog;
+	fileDir.split(`\\`).forEach(dir => {
+		if (dir.indexOf('README.md') === -1) {
+			if (dir.indexOf('.md') !== -1) {
+				file[dir] = fileDir;
+				blogTreeObject[fileDir] = {
+					timestamp: getFormatDateValue(new Date(Date.parse(fileStats.mtime)), readMeTimestamp),
+					dir: file[dir].replace(/\\/g, '/'),
+					name: dir
+				};
+
+			} else {
+				if (!file[dir]) {
+					file[dir] = {};
+				}
+				file = file[dir];
+			}
+		}
+	});
+
+	if (blogTreeTimeout) {
+		clearTimeout(blogTreeTimeout);
+	}
+	blogTreeTimeout = setTimeout(generateReadme, 500);
+}
+
+function generateReadme() {
+	clearTimeout(blogTreeTimeout);
+
+	let content = '';
+	const nonLeaf = function (key, level) {
+		content += `\n${Array(level).fill('#').join('')} ${key.substring(0, 1).toUpperCase() + key.substring(1)}\n${readMeConfig[key] || ''}\n\n`;
+	};
+	const leaf = function (key, value) {
+		content += `- [${key.split('.md')[0]}](./blob/master/${encodeURI(blogTreeObject[value].dir)}): <sub><sup>(${blogTreeObject[value].timestamp})</sup></sub>\n`;
+	};
+	iterateObject(blogTree, 1, nonLeaf, leaf);
+
+	const currentTimestamp = getFormatDateValue(new Date(), defaultTimestamp);
+	writeDataToFile(readmeFilePath, content + `\n${currentTimestamp}\n\n[^footnote]: timestamp-${currentTimestamp}`);
+}
+
+function folderCallback(dir) {
+	// nothing
+}
+
+function addTimeStamp(fileDirName, fileStats) {
 	let content = readDataFromFile(fileDirName);
 	let timestampValue = getFormatDateValue(new Date(Date.parse(fileStats.mtime)), defaultTimestamp);
 
@@ -29,7 +84,6 @@ function addTimeStamp(fileDirName) {
 		writeDataToFile(fileDirName, content + `\n${timestampValue}\n\n[^footnote]: timestamp-${timestampValue}`);
 	}
 }
-
 
 function getTimeStamp(content) {
 	let lastLine = content.split('\n').pop();
@@ -46,82 +100,4 @@ function getFormatDateValue(date, pattern) {
 	return pattern.replace('yyyy', year)
 			.replace('MM', month + 1)
 			.replace('dd', day);
-}
-
-// Utils
-function readDataFromFile(fileDirname)
-{
-	return fs.readFileSync(fileDirname).toString();
-}
-
-function writeDataToFile(fileDirName, data)
-{
-	fs.writeFile(fileDirName, data, function (err) {
-		console.log(fileDirName + ': ' + (err ? 'Write File failed!' : 'Saved successfully!'));
-	});
-}
-
-function getFileStats(fileDirName, callback) {
-	return fs.statSync(fileDirName);
-// stats
-// {
-//  dev : 0 ,
-//  mode : 33206 ,
-//  nlink : 1 ,
-//  uid : 0 ,
-//  gid : 0 ,
-//  rdev : 0 ,
-//  ino : 0 ,
-//  size : 378(字节) ,
-//  atime : Tue Jun 10 2014 13:57:13 GMT +0800 <中国标准时间> ,
-//  mtime : Tue Jun 13 2014 09:48:31 GMT +0800 <中国标准时间> ,
-//  ctime : Tue Jun 10 2014 13:57:13 GMT +0800 <中国标准时间>
-// }
-// 	stat.isFile()
-// 	stat.isDirectory()
-}
-
-function getParam(array, param)
-{
-	let paramValue = '';
-	for (let i = 0, l = array.length; i < l; i++)
-	{
-		let paramArray = array[i].split('=');
-		if (paramArray.length === 2 && paramArray[0] === param)
-		{
-			paramValue = paramArray[1];
-		}
-	}
-	return paramValue;
-}
-
-function getFileFromDirectory(filePath, fileCallback) {
-	// 根据文件路径读取文件，返回文件列表
-	fs.readdir(filePath, function (err, files) {
-		if (err) {
-			console.warn(err);
-		} else {
-			// 遍历读取到的文件列表
-			files.forEach(function (filename) {
-				// 获取当前文件的绝对路径
-				let fileDir = path.join(filePath, filename);
-				// 根据文件路径获取文件信息，返回一个fs.Stats对象
-				readDirectory(fileDir, fileCallback);
-			});
-		}
-	});
-}
-
-function readDirectory(fileDir, fileCallback) {
-	fs.stat(fileDir, function (error, stats) {
-		if (error) {
-			console.warn('获取文件stats失败');
-		} else {
-			if (stats.isFile()) {
-				fileCallback(fileDir);
-			} else if (stats.isDirectory()) {
-				getFileFromDirectory(fileDir, fileCallback); //递归，如果是文件夹，就继续遍历该文件夹下面的文件
-			}
-		}
-	})
 }

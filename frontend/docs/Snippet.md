@@ -345,6 +345,6 @@ document.getElementById("myDiv").addEventListener("click",function(e) {
 ```
 
 ### PoW（Proof of Work）
-最后更新于2019年7月28日
+最后更新于2020年2月18日
 
-[^footnote]: timestamp-最后更新于2019年7月28日
+[^footnote]: timestamp-最后更新于2020年2月18日

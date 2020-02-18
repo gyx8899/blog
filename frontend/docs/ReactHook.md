@@ -375,6 +375,6 @@ function Example({ someProp }) {
   }, [someProp]); // ✅ 安全（我们的 effect 仅用到了 `someProp`）
 }
 ```
-最后更新于2020年1月7日
+最后更新于2020年2月18日
 
-[^footnote]: timestamp-最后更新于2020年1月7日
+[^footnote]: timestamp-最后更新于2020年2月18日

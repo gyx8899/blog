@@ -1,10 +1,10 @@
-#Webpack.config.js
+# Webpack.config.js
 
-##
+## scripts
 > 
 ```json
 {
-	"scripts": {
+  "scripts": {
     "build": "webpack --mode production"
   }
 }
@@ -140,6 +140,6 @@ module.exports = {
   ],
 }
 ```
-最后更新于2018年7月14日
+最后更新于2020年2月18日
 
-[^footnote]: timestamp-最后更新于2018年7月14日
+[^footnote]: timestamp-最后更新于2020年2月18日
