@@ -12,6 +12,9 @@ git init
 git clone https://github.com/gyx8899/YX-JS-ToolKit.git
 cd YX-JS-ToolKit
 
+# 克隆并更改“YX-JS-ToolKit”默认文件夹名为 newProjectName
+git clone https://github.com/gyx8899/YX-JS-ToolKit.git newProjectName
+
 # 查看本地仓库内容状态
 git status
 # s-short b-branch
@@ -286,18 +289,30 @@ git cherry-pick (--continue | --skip | --abort | --quit)
 
 - Questions
     - SSL_read: SSL_ERROR_SYSCALL, errno 10054
-```shell script
-YX-JS-ToolKit\docs>git push
-fatal: unable to access 'https://github.com/gyx8899/YX-JS-ToolKit.git/': Op
-enSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054
-```
-```shell script
-git config http.sslVerify "false"
-git config --global http.sslVerify "false"
-git push
-Username:
-Password:
-```
-最后更新于2020年2月18日
+    ```shell script
+    YX-JS-ToolKit\docs>git push
+    fatal: unable to access 'https://github.com/gyx8899/YX-JS-ToolKit.git/': Op
+    enSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054
+    ```
+    ```shell script
+    git config http.sslVerify "false"
+    git config --global http.sslVerify "false"
+    git push
+    Username:
+    Password:
+    ```
+  
+    - remote: HTTP Basic: Access denied
+      fatal: Authentication failed for 'Your remove url'
+    ```shell script
+    # 方案1（来自网络）
+    git config --system --unset credential.helper
+    # 方案2（来自网络）
+    git config –global http.emptyAuth true
+    ```
+    > 方案3：第一次输入账号密码错误后，#1 和 #2 都不行的情况下，到“控制面板\用户帐户\凭据管理器\Windows凭据”下删除对应 git 的凭据，然后继续尝试 git clone 命令，会重新提示输入用户名和密码。
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   >
 
-[^footnote]: timestamp-最后更新于2020年2月18日
+最后更新于2020年2月21日
+
+[^footnote]: timestamp-最后更新于2020年2月21日
