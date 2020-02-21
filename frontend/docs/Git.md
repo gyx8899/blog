@@ -285,6 +285,16 @@ git checkout -b version2 v2.0.0
 ```shell script
 git cherry-pick [--edit] [-n] [-m parent-number] [-s] [-x] [--ff] [-S[<keyid>]] <commit>…​
 git cherry-pick (--continue | --skip | --abort | --quit)
+
+# 取另一个分支的一个提交记录id，在本分支上重新提交
+git cherry-pick <commit id>
+# 取另一个分支的一个提交记录id，在本分支上重新提交并保留原分支的提交信息
+git cherry-pick -x <commit id>
+# 取另一个分支的一段区间(左开右闭（])提交记录，在本分支上重新提交
+git cherry-pick <start-commit-id>..<end-commit-id>
+# 取另一个分支的一段区间(左闭右闭[])提交记录，在本分支上重新提交
+git cherry-pick <start-commit-id>^..<end-commit-id>
+# 也可以用在同一个分支上，场景为某次提交删除了，需要重新提交，可以使用 cherry-pick
 ```
 
 - Questions
