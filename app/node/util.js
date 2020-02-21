@@ -147,7 +147,9 @@ function readDirectory(fileDir, fileCallback, folderCallback) {
 }
 
 function iterateObject(obj, level, callbackNonLeaf, callbackLeaf) {
-	for (let key in obj) {
+	const keys = Object.keys(obj).sort();
+	for (let i = 0, l = keys.length; i < l; i++) {
+		let key = keys[i];
 		if (obj.hasOwnProperty(key)) {
 			if (typeof obj[key] === 'object'
 					&& obj[key] !== null
