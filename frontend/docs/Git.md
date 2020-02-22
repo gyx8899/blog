@@ -34,13 +34,13 @@ git show
   # 查看指定 commit 中的指定文件
   git show 5e68b0d8 shopping\ list.txt
 
-# 添加改动文件到 Stage
+# 添加工作区改动文件到 Stage (暂存区)
 git add A.txt
 git stage A.txt
-# 添加所有改动文件到 Stage
+# 添加工作区所有改动文件到 Stage（暂存区）
 git add .
 
-# 提交改动到本地仓库
+# 提交工作区改动到本地仓库（代码库）
 git commit
 # 0. 进入 Comment 添加模式
 # 1. 点击键盘键 i 
@@ -53,7 +53,7 @@ git commit
 git commmit -m "Comment text"
 
 
-# 推送本地仓库改动到中央仓库
+# 推送本地仓库改动到远程仓库（代码库）
 git push
 # 只需要再输入一次密码， Git 就会把你的密码保存下来，之后不用输入了
 git config credential.helper store
@@ -64,11 +64,11 @@ git push origin feature1
 # 从中央仓库拉取最新文件到本地仓库
 git pull
 
-# 对比工作目录和暂存区
+# 对比工作区和暂存区
 git diff
-# 对比工作目录和上一条提交
+# 对比工作区和上一条版本库提交
 git diff HEAD
-# 对比暂存区和上一条提交
+# 对比暂存区和上一条版本库提交
 git diff --staged
 
 
@@ -197,14 +197,17 @@ git revert HEAD^
 ```shell script
 # 重置回退并保留工作目录的内容，并清空暂存区。
 git reset HEAD^
+git reset CommitHashValue
 # 重置回退并清空工作目录的所有改动
 git reset --hard HEAD^
+git reset --hard CommitHashValue
 # 重置回退并保留工作目录和暂存区的内容，并把重置 HEAD 的位置所导致的新的文件差异放进暂存区
 git reset --soft HEAD^
+git reset --soft CommitHashValue
 ```
 > --hard：重置位置的同时，清空工作目录的所有改动；
 >
-> --soft：重置位置的同时，保留工作目录和暂存区的内容，并把重置 HEAD 的位置所导致的新的文件差异放进暂存区。
+> --soft（常用）：重置位置的同时，保留工作目录和暂存区的内容，并把重置 HEAD 的位置所导致的新的文件差异放进暂存区。
 >
 > --mixed（默认）：重置位置的同时，保留工作目录的内容，并清空暂存区。
 
@@ -218,11 +221,18 @@ git checkout 78a4bc^
 git checkout --detach
 ```
 
-- Stash: 临时存放工作目录的改动
+- Stash(暂存区): 临时存放工作目录的改动
 ```shell script
+# 将工作区的改动保存到暂存区，工作区还原至上次commit
 git stash
 # 没有被 track 的文件（即从来没有被 add 过的文件不会被 stash 起来，因为 Git 会忽略它们。如果想把这些文件也一起 stash，可以加上 `-u` 参数，它是 `--include-untracked` 的简写。
 git stash -u
+# 显示之前 stash 的所有记录
+git stash list
+# 清空 git stash
+git stash clear
+# 读取并恢复上次暂存的代码改动
+git stash apply
 git stash pop
 ```
 
@@ -321,8 +331,11 @@ git cherry-pick <start-commit-id>^..<end-commit-id>
     git config –global http.emptyAuth true
     ```
     > 方案3：第一次输入账号密码错误后，#1 和 #2 都不行的情况下，到“控制面板\用户帐户\凭据管理器\Windows凭据”下删除对应 git 的凭据，然后继续尝试 git clone 命令，会重新提示输入用户名和密码。
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   >
+         
+#### 参考
+- https://git-scm.com/docs Git - Reference
+- https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A 【第1864期】手撕Git，告别盲目记忆
 
-最后更新于2020年2月21日
+最后更新于2020年2月22日
 
-[^footnote]: timestamp-最后更新于2020年2月21日
+[^footnote]: timestamp-最后更新于2020年2月22日
