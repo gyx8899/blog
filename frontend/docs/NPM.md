@@ -14,7 +14,7 @@ echo off > index.js
 ```
 
 ### Base
-```cmd
+```shell script
 npm install <packageName>
 npm install <packageName> -f
 npm install <packageName> --force
@@ -27,9 +27,9 @@ npm info react
 npm show react
 npm v react
 
-// Not work
+# Not work
 npm cache ls react
-// But return
+# But return
 npm cache add <tarball file>
 npm cache add <folder>
 npm cache add <tarball url>
@@ -37,14 +37,28 @@ npm cache add <git url>
 npm cache add <name>@<version>
 npm cache clean
 npm cache verify
-
-
 npm cache clean
+
+# Publish NPM package
+# 1. Create your custom package project with package.json;
+# 2. Export your package in index.js;
+module.exports = customPackage;
+# 3. Login, input your NPM account username, password, email
+npm login
+# 4. Publish
+npm publish
+# 5. Update
+npm version patch
+npm version minor
+npm version major
+npm publish
+# 6. 撤销
+npm --force unpublish npm-event@1.0.1
 ```
 
 ### IDEA auto babel setting ES6 to ES5 in project
 * Add package.json file;
-```cmd
+```shell script
 npm init
 ```
 ```json
@@ -68,7 +82,7 @@ stage-0: propTypes
 ```
 
 * NPM Install
-```cmd
+```shell script
 
 npm install --save-dev babel-cli
 
@@ -96,7 +110,7 @@ $FileNameWithoutExtension$.js:$FileNameWithoutExtension$.js.map
 ```
 
 ### IDEA auto setting uglify js
-```cmd
+```shell script
 npm install -g uglify-js
 
 npm install --save-dev uglify-js
@@ -106,12 +120,12 @@ C:\Users\Steper\AppData\Roaming\npm\uglifyjs.cmd
 ```
 
 ### Node JS deep iterator files
-```cmd
+```shell script
 npm install --save-dev rd
 ```
 
 ### Gulp using
-```cmd
+```shell script
 dir
 cls
 npm list
@@ -126,7 +140,7 @@ npm install -g gulp-if
 ```
 
 ### Service worker: sw-precache
-```cmd
+```shell script
 npm install --save-dev sw-precache
 npm install -g gulp
 ```
@@ -144,7 +158,7 @@ gulp.task('generate-service-worker', function(callback) {
 ```
 
 ### Lavas
-```cmd
+```shell script
 // Init lavas global
 npm install -g lavas
 
@@ -162,11 +176,11 @@ lavas dev
 ### Webpack
 --------
 > npm ERR! Unexpected end of JSON input while parsing near '....0.0","inherits":"^2.'
-```cmd
+```shell script
 > npm clean cache --force
 ```
 > Init package.json 
-```cmd
+```shell script
 // Step by step: info
 npm init
 
@@ -175,7 +189,7 @@ npm init -y
 ```
 
 > Install webpack webpack-cli
-```cmd
+```shell script
 npm i webpack webpack-cli --save-dev
 npm install webpack webpack-cli --save-dev
 npm install webpack webpack-cli -D
@@ -184,7 +198,7 @@ yarn add webpack -D
 ```
 
 > React
-```cmd
+```shell script
 npx create-react-app react-exercise
 
 npm i react react-dom
@@ -195,6 +209,6 @@ npm i --save-dev babel-preset-stage-0 prop-types
 
 npm i --save-dev react-hot-loader
 ```
-最后更新于2020年2月18日
+最后更新于2020年2月23日
 
-[^footnote]: timestamp-最后更新于2020年2月18日
+[^footnote]: timestamp-最后更新于2020年2月23日
