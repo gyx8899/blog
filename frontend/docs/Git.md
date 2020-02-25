@@ -89,8 +89,13 @@ git branch -a
 git branch -r
 git show-branch
 
-## 合并分支
-git merge feature1
+## 合并分支: 分支仓库 branchA 合并 master 的内容
+# 1. 拉取最新的 master；
+git checkout master
+git pull
+# 2. 切到本地仓库合并 feature1
+git checkout branchA
+git merge master
   # 1. 冲突时，解决冲突文件
   git add conflict_file.txt
   git commit
@@ -336,6 +341,6 @@ git cherry-pick <start-commit-id>^..<end-commit-id>
 - https://git-scm.com/docs Git - Reference
 - https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A 【第1864期】手撕Git，告别盲目记忆
 
-最后更新于2020年2月22日
+最后更新于2020年2月25日
 
-[^footnote]: timestamp-最后更新于2020年2月22日
+[^footnote]: timestamp-最后更新于2020年2月25日
