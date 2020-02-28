@@ -39,6 +39,12 @@ git add A.txt
 git stage A.txt
 # 添加工作区所有改动文件到 Stage（暂存区）
 git add .
+# 将所有修改过的文件加入 Stage
+git add -u
+# 将本地删除文件、新增文件都提交到 Stage
+git add -a
+# 可以对一个文件内的修改选择性的添加 Stage
+git add -p
 
 # 提交工作区改动到本地仓库（代码库）
 git commit
@@ -63,6 +69,11 @@ git push origin feature1
 
 # 从中央仓库拉取最新文件到本地仓库
 git pull
+# <===>
+git fetch
+git merge FETCH_HEAD
+# + rebase
+git pull --rebase
 
 # 对比工作区和暂存区
 git diff
@@ -70,8 +81,6 @@ git diff
 git diff HEAD
 # 对比暂存区和上一条版本库提交
 git diff --staged
-
-
 ```
 
 - 分支操作
@@ -174,11 +183,12 @@ git rebase --continue
 
 - 撤销commit
 ```shell script
-# 移除上一次提交
+# 撤销前某一次提交, 把编辑区域中想删掉的那一次 commit comment 删掉即可。
+git rebase -i HEAD^   #侧小最后一次
+git rebase -i HEAD^^  #撤销最后2次
+git rebase -i HEAD~5  #撤销最后5次
+# 丢弃上一次提交 --hard
 git reset --hard HEAD^
-# 移除前某一次提交, 把编辑区域中想删掉的那一次 commit comment 删掉即可。
-git rebase -i HEAD^^
-git rebase -i HEAD~5
 # 以倒数第二个 commit 为起点（起点不包含在 rebase 序列里哟），branch1 为终点，rebase 到倒数第三个 commit 上。
 git rebase --onto HEAD^^ HEAD^ branch1
 ```
@@ -341,6 +351,6 @@ git cherry-pick <start-commit-id>^..<end-commit-id>
 - https://git-scm.com/docs Git - Reference
 - https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A 【第1864期】手撕Git，告别盲目记忆
 
-最后更新于2020年2月25日
+最后更新于2020年2月28日
 
-[^footnote]: timestamp-最后更新于2020年2月25日
+[^footnote]: timestamp-最后更新于2020年2月28日
