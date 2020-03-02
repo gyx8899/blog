@@ -1,4 +1,5 @@
 # Git 命令集
+![Git flow](../../assets/images/git-tool.png)
 
 - 初始化一个空的 Git 仓库 demo
 ```shell script
@@ -9,93 +10,108 @@ git init
 
 - 克隆项目基本操作
 ```shell script
+# 克隆 HTTPS
 git clone https://github.com/gyx8899/YX-JS-ToolKit.git
+    # 克隆并更改“YX-JS-ToolKit”默认文件夹名为 newProjectName
+    git clone https://github.com/gyx8899/YX-JS-ToolKit.git newProjectName
 cd YX-JS-ToolKit
-
-# 克隆并更改“YX-JS-ToolKit”默认文件夹名为 newProjectName
-git clone https://github.com/gyx8899/YX-JS-ToolKit.git newProjectName
 
 # 查看本地仓库内容状态
 git status
-# s-short b-branch
-git status -sb
+    # s-short b-branch
+    git status -sb
 
 # 查看本地仓库提交记录
 git log
-  # 查看详细历史 -p  -patch
-  git log -p
-  # 查看简要统计
-  git log --stat
+    # 查看详细历史 -p  -patch
+    git log -p
+    # 查看简要统计
+    git log --stat
+    # 查看单行日志信息
+    git log --pretty=oneline
+    9fceb02d0ae598e95dc970b74767f19372d61af8 updated rakefile
+    # 查看单行日志信息（哈希值前7位）
+    git log --oneline
+    9fceb02 updated rakefile
+    # 在所有提交日志中搜索包含「homepage」的提交
+    git log --all --grep='homepage'
+    # 获取某人的提交日志
+    git log --author="Maxence"
+
+# 获取所有操作历史
+git reflog
 
 # 查看当前 commit
 git show
-  # 查看任意一个 commit: branch 或 HEAD 标记 或 SHA-1 码
-  git show 5e68b0d8
-  # 查看指定 commit 中的指定文件
-  git show 5e68b0d8 shopping\ list.txt
+    # 查看任意一个 commit: branch 或 HEAD 标记 或 SHA-1 码
+    git show 5e68b0d8
+    # 查看指定 commit 中的指定文件
+    git show 5e68b0d8 shopping\ list.txt
 
 # 添加工作区改动文件到 Stage (暂存区)
 git add A.txt
 git stage A.txt
-# 添加工作区所有改动文件到 Stage（暂存区）
-git add .
-# 将所有修改过的文件加入 Stage
-git add -u
-# 将本地删除文件、新增文件都提交到 Stage
-git add -a
-# 可以对一个文件内的修改选择性的添加 Stage
-git add -p
+    # 添加工作区所有改动文件到 Stage（暂存区）
+    git add .
+    # 将所有修改过的文件加入 Stage
+    git add -u
+    # 将本地删除文件、新增文件都提交到 Stage
+    git add -a
+    # 可以对一个文件内的修改选择性的添加 Stage
+    git add -p
 
 # 提交工作区改动到本地仓库（代码库）
 git commit
-# 0. 进入 Comment 添加模式
-# 1. 点击键盘键 i 
-# 2. 输入改动 Comment 注解
-# 3. 点击键盘键 Esc
-# 4. 鼠标点击 cmd 区域，将焦点重新聚焦 cmd
-# 5.1 dos 模式 - Shift + Z, Shift + Z, 两次退出 Comment 编辑模式
-# 5.2 vim 模式 - 1. ESC, 2. :set noreadonly 3. :wq  (root 权限 :wq!)
-# 简化 commit 的命令 -m
-git commmit -m "Comment text"
+    # 0. 进入 Comment 添加模式
+    # 1. 点击键盘键 i 
+    # 2. 输入改动 Comment 注解
+    # 3. 点击键盘键 Esc
+    # 4. 鼠标点击 cmd 区域，将焦点重新聚焦 cmd
+    # 5.1 dos 模式 - Shift + Z, Shift + Z, 两次退出 Comment 编辑模式
+    # 5.2 vim 模式 - 1. ESC, 2. :set noreadonly 3. :wq  (root 权限 :wq!)
+    # 简化 commit 的命令 -m
+    git commmit -m "Comment text"
 
 
 # 推送本地仓库改动到远程仓库（代码库）
 git push
+    # 推送本地仓库改动到远程 origin 仓库的 feature1 分支
+    git push origin feature1
+
 # 只需要再输入一次密码， Git 就会把你的密码保存下来，之后不用输入了
 git config credential.helper store
 
-# 推送本地仓库改动到远程 origin 仓库的 feature1 分支
-git push origin feature1
-
 # 从中央仓库拉取最新文件到本地仓库
 git pull
-# <===>
-git fetch
-git merge FETCH_HEAD
-# + rebase
-git pull --rebase
+        # git pull 等于 fetch 和 merge 两条命令
+        git fetch
+        git merge FETCH_HEAD
+    # + rebase
+    git pull --rebase
 
 # 对比工作区和暂存区
 git diff
-# 对比工作区和上一条版本库提交
-git diff HEAD
-# 对比暂存区和上一条版本库提交
-git diff --staged
+    # 对比工作区和上一条版本库提交
+    git diff HEAD
+    # 对比暂存区和上一条版本库提交
+    git diff --staged
 ```
 
 - 分支操作
 ```shell script
 ## 创建分支
 git branch_name
-# 切换分支
-git checkout branch_name
-# 创建并切到分支
-git checkout -b branch_name
-# 删除分支
-git branch -d branch_name
-# 查看分支 (a: all, r: remote, show-branch: and commits)
-git branch -a
-git branch -r
+    # 切换分支
+    git checkout branch_name
+    # 创建并切到分支
+    git checkout -b branch_name
+    # 跳到之前的分支
+    git checkout -
+    # 删除分支
+    git branch -d branch_name
+    # 查看分支 (a: all, r: remote, show-branch: and commits)
+    git branch -a
+    git branch -r
 git show-branch
 
 ## 合并分支: 分支仓库 branchA 合并 master 的内容
@@ -212,13 +228,17 @@ git revert HEAD^
 ```shell script
 # 重置回退并保留工作目录的内容，并清空暂存区。
 git reset HEAD^
-git reset CommitHashValue
-# 重置回退并清空工作目录的所有改动
-git reset --hard HEAD^
-git reset --hard CommitHashValue
-# 重置回退并保留工作目录和暂存区的内容，并把重置 HEAD 的位置所导致的新的文件差异放进暂存区
-git reset --soft HEAD^
-git reset --soft CommitHashValue
+    git reset CommitHashValue
+    # 重置回退并清空工作目录的所有改动
+    git reset --hard HEAD^
+    git reset --hard CommitHashValue
+    # 重置回退并保留工作目录和暂存区的内容，并把重置 HEAD 的位置所导致的新的文件差异放进暂存区
+    git reset --soft HEAD^
+    git reset --soft CommitHashValue
+    # 重置到相应提交
+    git reset HEAD@{4}
+    # ……或者……
+    git reset --hard <提交的哈希值>
 ```
 > --hard：重置位置的同时，清空工作目录的所有改动；
 >
@@ -288,8 +308,8 @@ git show v1.4.1
 
 # 某次提交忘记打标签，后期补打标签
 # 1. 查找提交记录
-git log --pretty=oneline
-9fceb02d0ae598e95dc970b74767f19372d61af8 updated rakefile
+git log --oneline
+9fceb02 updated rakefile
 # 2. 补打标签 + 校验和（或部分校验和）
 git tag -a v1.4.2 9fceb02
 
@@ -350,7 +370,8 @@ git cherry-pick <start-commit-id>^..<end-commit-id>
 #### 参考
 - https://git-scm.com/docs Git - Reference
 - https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A 【第1864期】手撕Git，告别盲目记忆
+- https://nextfe.com/git-cheatsheet-advanced/ git 高级用法小抄
 
-最后更新于2020年2月28日
+最后更新于2020年3月2日
 
-[^footnote]: timestamp-最后更新于2020年2月28日
+[^footnote]: timestamp-最后更新于2020年3月2日
