@@ -9,7 +9,7 @@
 
 ## 采坑系列
 
-### 1. await expect(fetchData()).rejects not work
+- await expect(fetchData()).rejects not work
 ```javascript
 function fetchData() {
   return new Promise(function(resolve, reject) {
@@ -31,7 +31,20 @@ test("the fetch fails with an error", async () => {
 });
 ```
 
+- Cannot spy the fetch property because it is not a function;
+```javascript
+beforeEach(() => {
+	global.fetch = jest.fn().mockImplementation(() => mockFetchPromise);
+});
 
-最后更新于2020年2月18日
+afterEach(() => {
+    // 退出时进行清理
+    global.fetch.mockClear();
+    delete global.fetch;
+});
+```
 
-[^footnote]: timestamp-最后更新于2020年2月18日
+
+最后更新于2020年3月8日
+
+[^footnote]: timestamp-最后更新于2020年3月8日
