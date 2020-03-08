@@ -44,6 +44,8 @@ afterEach(() => {
 });
 ```
 
+- No tests found, exiting with code 1
+> The test file need to be xxx.test.js, not xxx.js when the Jest config contains testRegex ".test.js"
 
 最后更新于2020年3月8日
 
