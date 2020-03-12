@@ -55,7 +55,20 @@ function generateReadme() {
 
 	let content = '';
 	const nonLeaf = function (key, level) {
-		content += `\n${Array(level).fill('#').join('')} ${key.substring(0, 1).toUpperCase() + key.substring(1)}\n${readMeConfig[key] || ''}\n\n`;
+		const config = readMeConfig[key],
+				isConfigStr = typeof config === 'string';
+		const title = isConfigStr ? config : config.title;
+		content += `\n${Array(level).fill('#').join('')} ${key.substring(0, 1).toUpperCase() + key.substring(1)}\n${title || ''}\n\n`;
+		if (!isConfigStr) {
+			if (config.desc) {
+				content += `*${config.desc}*\n`;
+			}
+			if (config.list && config.list.length) {
+				config.list.forEach((item) => {
+					content += `- ${item}\n`;
+				});
+			}
+		}
 	};
 	const leaf = function (key, value) {
 		content += `- [${key.split('.md')[0]}](/${encodeURI(blogTreeObject[value].dir)}): <sub><sup>(${blogTreeObject[value].timestamp})</sup></sub>\n`;
