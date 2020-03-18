@@ -367,11 +367,25 @@ git cherry-pick <start-commit-id>^..<end-commit-id>
     ```
     > 方案3：第一次输入账号密码错误后，#1 和 #2 都不行的情况下，到“控制面板\用户帐户\凭据管理器\Windows凭据”下删除对应 git 的凭据，然后继续尝试 git clone 命令，会重新提示输入用户名和密码。
          
+    - Github, Gitlab, Gitee, 多账号管理 - 提交时的用户选择
+    # 方案 1
+    ```shell script
+    # 设置全局账号
+    git config --global user.name "Steper Kuo @github"
+    git config --global user.email "gyx8899@126.com"
+    # 设置局部账号, 需要在每个 gitlab 项目下都设置一次
+    git config --local user.name "Steper Kuo @gitlab"
+    git config --local user.email "gyx8899@126.com"
+    # 设置局部账号, 需要在每个 gitee 项目下都设置一次
+    git config --local user.name "Steper Kuo @gitee"
+    git config --local user.email "gyx8899@126.com"
+    ```
+ 
 #### 参考
 - https://git-scm.com/docs Git - Reference
 - https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A 【第1864期】手撕Git，告别盲目记忆
 - https://nextfe.com/git-cheatsheet-advanced/ git 高级用法小抄
 
-最后更新于2020年3月13日
+最后更新于2020年3月18日
 
-[^footnote]: timestamp-最后更新于2020年3月13日
+[^footnote]: timestamp-最后更新于2020年3月18日
