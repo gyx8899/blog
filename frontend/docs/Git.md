@@ -381,6 +381,21 @@ git cherry-pick <start-commit-id>^..<end-commit-id>
     git config --local user.email "gyx8899@126.com"
     ```
  
+    - Could not merge orgin/master: You have not concluded your merge (MERGE_HEAD exists). Please, commit your changes before you merge.
+    ```shell script
+    # 方案：保留本地。终止合并 -》 重新合并 -》 重新拉取
+    git merge --abort
+    git reset --merge
+    git pull
+    ```
+    
+    - Your local changes to the following files would be overwritten by merge: Please commit your changes or stash them before you merge.
+    ```shell script
+    git stash
+    git pull origin master  #== git fetch + get merge
+    git stash pop
+    ```
+ 
 #### 参考
 - https://git-scm.com/docs Git - Reference
 - https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A 【第1864期】手撕Git，告别盲目记忆
