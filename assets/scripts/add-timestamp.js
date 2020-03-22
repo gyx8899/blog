@@ -85,23 +85,33 @@ function folderCallback(dir) {
 
 function addTimeStamp(fileDirName, fileStats) {
 	let content = readDataFromFile(fileDirName);
-	let timestampValue = getFormatDateValue(new Date(Date.parse(fileStats.mtime)), defaultTimestamp);
+	let timestampDate = getFormatDateValue(new Date(Date.parse(fileStats.mtime)), defaultTimestamp);
+	const addedLines = 3;
 
 	let timestamp = getTimeStamp(content);
 	if (timestamp) {
-		if (timestamp !== timestampValue) {
+		if (timestamp.date !== timestampDate) {
 			let sourceContent = content.split('\n');
-			writeDataToFile(fileDirName, sourceContent.slice(0, sourceContent.length - 3).join('\n') + `\n${timestampValue}\n\n[^footnote]: timestamp-${timestampValue}`);
+			writeDataToFile(fileDirName, sourceContent.slice(0, sourceContent.length - addedLines - timestamp.lineNo).join('\n') + `\n${timestampDate}\n\n[^footnote]: timestamp-${timestampDate}${Array(timestamp.lineNo).fill('\n').join('')}`);
 		}
 	} else {
-		writeDataToFile(fileDirName, content + `\n${timestampValue}\n\n[^footnote]: timestamp-${timestampValue}`);
+		writeDataToFile(fileDirName, content + `\n${timestampDate}\n\n[^footnote]: timestamp-${timestampDate}`);
 	}
 }
 
 function getTimeStamp(content) {
-	let lastLine = content.split('\n').pop();
+	let contentLines = content.split('\n');
+	let lastLine = contentLines.pop();
+	let popCount = 0;
+	while (lastLine.trim() === '') {
+		lastLine = contentLines.pop();
+		popCount++;
+	}
 	if (lastLine.indexOf('[^footnote]: timestamp-') === 0) {
-		return lastLine.split('timestamp-')[1];
+		return {
+			date: lastLine.split('timestamp-')[1],
+			lineNo: popCount
+		};
 	}
 	return null;
 }

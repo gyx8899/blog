@@ -134,6 +134,9 @@ git rebase master
 git checkout master
 git merge branch1
 
+# 上传本地创建的分支到远程仓库
+git push --set-upstream origin branch1
+
 ```
 
 - Feature branching 工作流 - 方式1-靠吼
@@ -401,6 +404,6 @@ git cherry-pick <start-commit-id>^..<end-commit-id>
 - https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A 【第1864期】手撕Git，告别盲目记忆
 - https://nextfe.com/git-cheatsheet-advanced/ git 高级用法小抄
 
-最后更新于2020年3月18日
+最后更新于2020年3月22日
 
-[^footnote]: timestamp-最后更新于2020年3月18日
+[^footnote]: timestamp-最后更新于2020年3月22日
