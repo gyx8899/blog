@@ -345,6 +345,20 @@ git cherry-pick <start-commit-id>^..<end-commit-id>
 # 也可以用在同一个分支上，场景为某次提交删除了，需要重新提交，可以使用 cherry-pick
 ```
 
+- Pull changes from a template repository
+```shell script
+# 1. Add this template repository as a remote
+# git remote add template [URL of the template repo]
+git remote add template https://github.com/gyx8899/npm-template.git
+
+# 2. Update the remote changes
+git fetch --all
+
+# 3. Merge another branch from the new remote to your current one
+# git merge template/[branch to merge] --allow-unrelated-histories
+git merge template/master --allow-unrelated-histories
+```
+
 - Questions
     - SSL_read: SSL_ERROR_SYSCALL, errno 10054
     ```shell script
@@ -398,12 +412,19 @@ git cherry-pick <start-commit-id>^..<end-commit-id>
     git pull origin master  #== git fetch + get merge
     git stash pop
     ```
+  
+    - `git merge master` fatal: refusing to merge unrelated histories
+    ```shell script
+    git merge master --allow-unrelated-histories
+    # 同理 git pull/push same fatal
+    git pull origin master --allow-unrelated-histories
+    ```
  
 #### 参考
 - https://git-scm.com/docs Git - Reference
 - https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A 【第1864期】手撕Git，告别盲目记忆
 - https://nextfe.com/git-cheatsheet-advanced/ git 高级用法小抄
 
-最后更新于2020年3月22日
+最后更新于2020年3月26日
 
-[^footnote]: timestamp-最后更新于2020年3月22日
+[^footnote]: timestamp-最后更新于2020年3月26日
