@@ -24,7 +24,7 @@
 个人知识文档
 
 - [Console](/frontend/docs/Console.md): <sub><sup>(2020年3月25日)</sup></sub>
-- [Dos](/frontend/docs/Dos.md): <sub><sup>(2020年3月25日)</sup></sub>
+- [Dos](/frontend/docs/Dos.md): <sub><sup>(2020年4月9日)</sup></sub>
 - [Git](/frontend/docs/Git.md): <sub><sup>(2020年4月2日)</sup></sub>
 - [IntelliJ-IDEA](/frontend/docs/IntelliJ-IDEA.md): <sub><sup>(2020年3月16日)</sup></sub>
 - [Jest](/frontend/docs/Jest.md): <sub><sup>(2020年3月22日)</sup></sub>
@@ -45,4 +45,4 @@ React 相关知识总结
 
 最后更新于2020年4月2日
 
-[^footnote]: timestamp-最后更新于2020年4月2日
+[^footnote]: timestamp-最后更新于2020年4月9日
