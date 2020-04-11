@@ -156,7 +156,7 @@ function iterateObject(obj, level, callbackNonLeaf, callbackLeaf) {
 					&& !Array.isArray(obj[key])
 					&& !(obj[key] instanceof Date)
 					&& !(obj[key] === 'function')) {
-				callbackNonLeaf(key, level);
+				callbackNonLeaf(key, level, obj[key]);
 				iterateObject(obj[key], level + 1, callbackNonLeaf, callbackLeaf);
 			} else
 				callbackLeaf(key, obj[key]);

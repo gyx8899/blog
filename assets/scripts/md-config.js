@@ -1,5 +1,5 @@
 module.exports = {
-    blog: {
+    "blog": {
         "daily-life": {
             "01.个人装换机之Windows系列.md": {
                 "date": "2020年2月9日",
@@ -33,7 +33,7 @@ module.exports = {
                     "path": "frontend/docs/Dos.md"
                 },
                 "Git.md": {
-                    "date": "2020年4月2日",
+                    "date": "2020年4月11日",
                     "path": "frontend/docs/Git.md"
                 },
                 "IntelliJ-IDEA.md": {

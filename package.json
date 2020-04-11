@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/gyx8899/blog/issues"
   },
-  "homepage": "https://github.com/gyx8899/blog#readme"
+  "homepage": "https://github.com/gyx8899/blog#readme",
+  "devDependencies": {
+    "changed-git-files": "0.0.1"
+  }
 }
