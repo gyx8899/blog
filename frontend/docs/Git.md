@@ -428,12 +428,15 @@ git merge template/master --allow-unrelated-histories
     # 同理 git pull/push same fatal
     git pull origin master --allow-unrelated-histories
     ```
+  
+    - Warning: LF will be replaced by CRLF
+    ```shell script
+    git config --global core.autocrlf false
+    ```
  
 #### 参考
 - https://git-scm.com/docs Git - Reference
 - https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A 【第1864期】手撕Git，告别盲目记忆
 - https://nextfe.com/git-cheatsheet-advanced/ git 高级用法小抄
 
-最后更新于2020年4月2日
-
-[^footnote]: timestamp-最后更新于2020年4月2日
+最后更新于2020年4月11日
