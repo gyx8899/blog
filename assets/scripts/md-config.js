@@ -33,7 +33,7 @@ module.exports = {
                     "path": "frontend/docs/Dos.md"
                 },
                 "Git.md": {
-                    "date": "2020年4月11日",
+                    "date": "2020年4月12日",
                     "path": "frontend/docs/Git.md"
                 },
                 "IntelliJ-IDEA.md": {
