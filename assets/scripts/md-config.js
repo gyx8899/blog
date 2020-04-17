@@ -75,6 +75,10 @@ module.exports = {
                 "Webpack.md": {
                     "date": "2020年2月18日",
                     "path": "frontend/docs/Webpack.md"
+                },
+                "SEO.md": {
+                    "date": "2020年4月17日",
+                    "path": "frontend/docs/SEO.md"
                 }
             },
             "react": {

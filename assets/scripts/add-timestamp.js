@@ -1,7 +1,9 @@
 const cgf = require("changed-git-files");
 const mdConfig = require('./md-config');
 const readMeConfig = require('./readme-config');
-const {readDataFromFile, writeDataToFile, iterateObject} = require('../../app/node/util');
+
+const {readDataFromFile, writeDataToFile, iterateObject} = require('@daybyday/yx-node');
+
 const readMeTimestamp = `yyyy年MM月dd日`;
 const readmeFilePath = './README.md';
 const defaultTimestamp = `最后更新于yyyy年MM月dd日`;
