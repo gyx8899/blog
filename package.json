@@ -4,6 +4,7 @@
   "description": "Personal blog for growing up.",
   "main": "index.js",
   "scripts": {
+    "auto-commit": "auto-commit.sh",
     "timestamp": "node ./assets/scripts/add-timestamp.js file=."
   },
   "repository": {
@@ -26,6 +27,7 @@
   },
   "homepage": "https://github.com/gyx8899/blog#readme",
   "devDependencies": {
+    "@daybyday/yx-node": "^0.1.4",
     "changed-git-files": "0.0.1"
   }
 }
