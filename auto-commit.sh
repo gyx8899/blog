@@ -15,7 +15,7 @@ while read status filename; do
   let changes=1
   echo "$status | $filename"
 
-  if [ ${filename: -3} == '.md' ] && [ ${filename: -3} != 'README.md' ]; then
+  if [ ${filename: -3} == '.md' ] && [ ${filename: -9} != 'README.md' ]; then
     if [ ! $docs ]; then
       docs="$filename"
     else
