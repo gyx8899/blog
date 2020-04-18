@@ -15,28 +15,21 @@ while read status filename; do
   let changes=1
   echo "$status | $filename"
 
-  if [ ${filename: -3} == '.md' ]; then
-    echo "111"
+  if [ ${filename: -3} == '.md' && $filename != 'README.md' ]; then
     if [ ! $docs ]; then
-      echo "222"
       docs="$filename"
     else
-      echo "333"
       docs="$docs/$filename"
     fi
   else
-    echo "444"
     config="chore($filename): updated/added"
   fi
-  echo "555"
+
   if [ $docs != '' ]; then
-    echo "666"
-    git commit -m "Docs($docs): Updated/added;\n${config}"
+    git commit -m "docs($docs): Updated/added; ${config}"
   else
-    echo "777"
     git commit -m "${config}"
   fi
-  echo "888"
   git push
 done < <(git diff HEAD --name-status)
 if ((!changes)); then

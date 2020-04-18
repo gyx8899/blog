@@ -4,8 +4,7 @@
   "description": "Personal blog for growing up.",
   "main": "index.js",
   "scripts": {
-    "auto-commit": "auto-commit.sh",
-    "timestamp": "node ./assets/scripts/add-timestamp.js file=."
+    "auto-commit": "auto-commit.sh"
   },
   "repository": {
     "type": "git",
