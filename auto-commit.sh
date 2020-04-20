@@ -22,7 +22,7 @@ while read status filepath; do
       if [ ! $docs ]; then
         docs="$filename"
       else
-        docs="$docs/$filename"
+        docs+="/$filename"
       fi
     fi
   else
@@ -30,7 +30,7 @@ while read status filepath; do
       if [ ! $configs ]; then
         configs="$filename"
       else
-        configs="$configs/$filename"
+        configs+="/$filename"
       fi
     fi
   fi
