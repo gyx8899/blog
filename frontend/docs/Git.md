@@ -368,6 +368,14 @@ git fetch --all
 git merge template/master --allow-unrelated-histories
 ```
 
+- 更改远程仓库 URL
+```shell script
+# 更改
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+# 查看
+git remote -v
+```
+
 - Questions
     - SSL_read: SSL_ERROR_SYSCALL, errno 10054
     ```shell script
@@ -444,4 +452,4 @@ git merge template/master --allow-unrelated-histories
 - https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A 【第1864期】手撕Git，告别盲目记忆
 - https://nextfe.com/git-cheatsheet-advanced/ git 高级用法小抄
 
-最后更新于2020年4月12日
+最后更新于2020年4月20日
