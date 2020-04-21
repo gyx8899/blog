@@ -97,6 +97,14 @@ module.exports = {
                 "React-生命周期方法快速转 Hooks（2）.md": {
                     "date": "2020年2月9日",
                     "path": "frontend/react/React-生命周期方法快速转 Hooks（2）.md"
+                },
+                "Router.md": {
+                    "date": "2020年4月22日",
+                    "path": "frontend/react/Router.md"
+                },
+                "Redux.md": {
+                    "date": "2020年4月22日",
+                    "path": "frontend/react/Redux.md"
                 }
             }
         },

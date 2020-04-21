@@ -45,5 +45,7 @@ React 相关知识总结
 
 - [React-生命周期方法快速转 Hooks（1）](/frontend/react/React-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%96%B9%E6%B3%95%E5%BF%AB%E9%80%9F%E8%BD%AC%20Hooks%EF%BC%881%EF%BC%89.md): <sub><sup>(2020年2月9日)</sup></sub>
 - [React-生命周期方法快速转 Hooks（2）](/frontend/react/React-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%96%B9%E6%B3%95%E5%BF%AB%E9%80%9F%E8%BD%AC%20Hooks%EF%BC%882%EF%BC%89.md): <sub><sup>(2020年2月9日)</sup></sub>
+- [Redux](/frontend/react/Redux.md): <sub><sup>(2020年4月22日)</sup></sub>
+- [Router](/frontend/react/Router.md): <sub><sup>(2020年4月22日)</sup></sub>
 
-最后更新于2020年4月20日
+最后更新于2020年4月22日
