@@ -15,6 +15,10 @@ exit
 ```shell script
 pwd
 ```
+- Stop exit with flash when exec to the end of bash
+```shell script
+exec bash
+```
 - Multi-Line string variable
 ```shell script
 newline=$'\n'
@@ -38,4 +42,4 @@ if [ "${filename}" != 'README.md' ]; then
 fi
 ```
 
-最后更新于2020年4月20日
+最后更新于2020年4月23日

@@ -85,7 +85,7 @@ module.exports = {
                     "path": "frontend/docs/React.md"
                 },
                 "Bash.md": {
-                    "date": "2020年4月20日",
+                    "date": "2020年4月23日",
                     "path": "frontend/docs/Bash.md"
                 },
                 "Regexp.md": {
