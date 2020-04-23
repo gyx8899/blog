@@ -41,5 +41,13 @@ if [ "${filename}" != 'README.md' ]; then
 # 表达式左边有可能为空，则表达式左侧就为空，报错
 fi
 ```
+```shell script
+if [[ "${filename}" != 'README.md' ]]; then
+# 判断不等，加上双中括号
+fi
+if [[ "${filename}" = '' ]]; then
+# 判断空，用双中括号和单等号
+fi
+```
 
 最后更新于2020年4月23日

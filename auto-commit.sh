@@ -37,11 +37,11 @@ while read status filepath; do
 
   newline=$'\n'
   commitmsg=""
-  if [ $docs != '' ]; then
-    commitmsg+="docs($docs): Updated;"
+  if [[ $docs != '' ]]; then
+    commitmsg+="docs($docs): updated;"
     commitmsg+=$newline
   fi
-  if [ $configs != '' ]; then
+  if [[ $configs != '' ]]; then
     commitmsg+="chore($configs): updated;"
   fi
 
