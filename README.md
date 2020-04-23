@@ -32,6 +32,7 @@
 - [NPM](/frontend/docs/NPM.md): <sub><sup>(2020年2月23日)</sup></sub>
 - [React](/frontend/docs/React.md): <sub><sup>(2020年4月19日)</sup></sub>
 - [ReactHook](/frontend/docs/ReactHook.md): <sub><sup>(2020年2月18日)</sup></sub>
+- [Regexp](/frontend/docs/Regexp.md): <sub><sup>(2020年4月23日)</sup></sub>
 - [SEO](/frontend/docs/SEO.md): <sub><sup>(2020年4月17日)</sup></sub>
 - [Snippet](/frontend/docs/Snippet.md): <sub><sup>(2020年2月18日)</sup></sub>
 - [Testing](/frontend/docs/Testing.md): <sub><sup>(2020年3月13日)</sup></sub>
@@ -48,4 +49,4 @@ React 相关知识总结
 - [Redux](/frontend/react/Redux.md): <sub><sup>(2020年4月22日)</sup></sub>
 - [Router](/frontend/react/Router.md): <sub><sup>(2020年4月22日)</sup></sub>
 
-最后更新于2020年4月22日
+最后更新于2020年4月23日
