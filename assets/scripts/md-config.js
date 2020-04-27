@@ -45,7 +45,7 @@ module.exports = {
                     "path": "frontend/docs/Jest.md"
                 },
                 "NPM.md": {
-                    "date": "2020年2月23日",
+                    "date": "2020年4月27日",
                     "path": "frontend/docs/NPM.md"
                 },
                 "ReactHook.md": {
