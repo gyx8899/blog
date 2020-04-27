@@ -34,7 +34,9 @@ while read status filepath; do
       fi
     fi
   fi
+done < <(git diff HEAD --name-status)
 
+if ((changes)); then
   newline=$'\n'
   commitmsg=""
   if [[ $docs != '' ]]; then
@@ -50,8 +52,6 @@ while read status filepath; do
   git commit -m "$commitmsg"
   git pull --rebase
   git push
-done < <(git diff HEAD --name-status)
-
-if ((!changes)); then
-  echo "No changes."
 fi
+
+#exec bash

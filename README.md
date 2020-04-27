@@ -39,7 +39,7 @@
 - [Tricks](/frontend/docs/Tricks.md): <sub><sup>(2020年2月18日)</sup></sub>
 - [Vue](/frontend/docs/Vue.md): <sub><sup>(2020年2月18日)</sup></sub>
 - [WebAPI](/frontend/docs/WebAPI.md): <sub><sup>(2020年2月18日)</sup></sub>
-- [Webpack](/frontend/docs/Webpack.md): <sub><sup>(2020年2月18日)</sup></sub>
+- [Webpack](/frontend/docs/Webpack.md): <sub><sup>(2020年4月28日)</sup></sub>
 
 ### React
 React 相关知识总结
@@ -49,4 +49,4 @@ React 相关知识总结
 - [Redux](/frontend/react/Redux.md): <sub><sup>(2020年4月22日)</sup></sub>
 - [Router](/frontend/react/Router.md): <sub><sup>(2020年4月22日)</sup></sub>
 
-最后更新于2020年4月27日
+最后更新于2020年4月28日

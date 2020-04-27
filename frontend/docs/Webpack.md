@@ -1,5 +1,25 @@
 # Webpack.config.js
 
+## Skills tree
+### 自动清理构建目录产物： 
+### PostCSS 插件 autoprefixer 自动补齐 CSS3 前缀
+### 移动端 px 自动转 rem
+### 静态资源内联
+### 多页面应用打包通用方案
+动态获取 entry 和设置 html-webpack-plugin 数量
+- 利用 glob.sync
+```javascript
+entry: blog.sync(path.join(__dirname, './src/*/index.js'));
+```
+- webpack config entry
+```javascript
+const {entry, htmlWebpackPlugins} = setMPA('./src/*/index.js', /src\/(.*)\/index\.js/);
+
+// 1. set entry with above entry
+// 2. concat htmlWebpackPlugins with above htmlWebpackPlugins
+// 3. note: related .html
+```
+
 ## scripts
 > 
 ```json
@@ -140,6 +160,4 @@ module.exports = {
   ],
 }
 ```
-最后更新于2020年2月18日
-
-[^footnote]: timestamp-最后更新于2020年2月18日
+最后更新于2020年4月28日
