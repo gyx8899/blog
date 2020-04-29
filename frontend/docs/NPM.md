@@ -117,7 +117,7 @@ npm init -y
 ```shell script
 # 安装多插件到开发环境依赖
 npm install webpack webpack-cli --save-dev
-# 简写 i = install, 简写 -D = --save-dev
+# 简写 i = install, 简写 -D = --save-dev, 简写 -S = --save
 npm i webpack webpack-cli --save-dev
 npm install webpack webpack-cli -D
 
@@ -138,4 +138,4 @@ npm clean cache --force
 > The problem is with the spaces in URL(C:\Program Files). Try to install the nvm directly in C:/ or in other folder without spaces in the PATH.
 
 
-最后更新于2020年4月27日
+最后更新于2020年4月30日
