@@ -13,7 +13,18 @@ exit
 ```
 - Current dir
 ```shell script
+# get current folder path
 pwd
+> /d/Workspace/github/blog
+
+# get parent path
+dirname PWD##*/
+> /d/Workspace/github
+
+# get parent folder name
+basename $PWD
+> blog
+
 ```
 - Stop exit with flash when exec to the end of bash
 ```shell script
@@ -50,4 +61,4 @@ if [[ "${filename}" = '' ]]; then
 fi
 ```
 
-最后更新于2020年4月23日
+最后更新于2020年5月8日

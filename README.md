@@ -23,7 +23,7 @@
 ### Docs
 个人知识文档
 
-- [Bash](/frontend/docs/Bash.md): <sub><sup>(2020年4月23日)</sup></sub>
+- [Bash](/frontend/docs/Bash.md): <sub><sup>(2020年5月8日)</sup></sub>
 - [Console](/frontend/docs/Console.md): <sub><sup>(2020年3月25日)</sup></sub>
 - [Dos](/frontend/docs/Dos.md): <sub><sup>(2020年4月9日)</sup></sub>
 - [Git](/frontend/docs/Git.md): <sub><sup>(2020年4月20日)</sup></sub>
@@ -49,4 +49,4 @@ React 相关知识总结
 - [Redux](/frontend/react/Redux.md): <sub><sup>(2020年4月22日)</sup></sub>
 - [Router](/frontend/react/Router.md): <sub><sup>(2020年4月22日)</sup></sub>
 
-最后更新于2020年4月30日
+最后更新于2020年5月8日
