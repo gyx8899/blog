@@ -31,5 +31,12 @@
 
 - 拆分复杂度：component, router, reducer
 
+- Render Props
+    1. 父组件的 props 中返回一个组件的函数
+    2. 组件解耦 + 功能复用
+    3. 缺陷：callback 嵌套地狱；React.PureComponent性能问题 （声明 this 函数解决）
 
-最后更新于2020年4月25日
+- Render Props VS HOC
+> 避免 JSX 嵌套地狱；避免 Props 命名冲突；不同组合时机 （HOC 静态组合，Render Porps 动态组合）
+
+最后更新于2020年5月9日
