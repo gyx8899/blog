@@ -18,12 +18,26 @@ pwd
 > /d/Workspace/github/blog
 
 # get parent path
-dirname PWD##*/
+dirname $PWD
 > /d/Workspace/github
 
 # get parent folder name
 basename $PWD
 > blog
+
+# get all files/folders in current folder
+dir
+> dos-netstat-80.bat  git-global-user.sh  git-registry-taobao.sh  package.json
+> git-commit.sh       git-local-user.sh   git-remote-template.sh  README.md
+> git-commit-push.sh  git-pull-rebase.sh  LICENSE                 yx-env.iml
+
+# get parent folder
+folder=$(basename $PWD)
+echo ${folder}
+
+# get parent's parent folder 
+parentFolder=$(basename $(dirname $PWD))
+echo ${parentFolder}
 
 ```
 - Stop exit with flash when exec to the end of bash
