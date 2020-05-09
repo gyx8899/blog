@@ -115,6 +115,12 @@ module.exports = {
         "README.md": {
             "date": "2020年4月11日",
             "path": "README.md"
+        },
+        "office": {
+            "Word.md": {
+                "date": "2020年5月9日",
+                "path": "office/Word.md"
+            }
         }
     }
 };
