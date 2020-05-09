@@ -11,5 +11,6 @@ module.exports = {
 	frontend: '前端知识总结',
 	docs: '个人知识文档',
 	react: 'React 相关知识总结',
-	"daily-life": '日常工作中的随感'
+	"daily-life": '日常工作中的随感',
+	office: 'Office 工具技巧'
 };
