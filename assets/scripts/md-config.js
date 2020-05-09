@@ -89,7 +89,7 @@ module.exports = {
                     "path": "frontend/docs/Bash.md"
                 },
                 "Regexp.md": {
-                    "date": "2020年4月23日",
+                    "date": "2020年5月9日",
                     "path": "frontend/docs/Regexp.md"
                 }
             },
