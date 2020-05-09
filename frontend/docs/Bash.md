@@ -30,6 +30,9 @@ dir
 > dos-netstat-80.bat  git-global-user.sh  git-registry-taobao.sh  package.json
 > git-commit.sh       git-local-user.sh   git-remote-template.sh  README.md
 > git-commit-push.sh  git-pull-rebase.sh  LICENSE                 yx-env.iml
+# get all files/folders, folder has last slash /
+ls
+> blog/      npm-template/  yx-app/  yx-js/          yx-node/
 
 # get parent folder
 folder=$(basename $PWD)
@@ -38,6 +41,15 @@ echo ${folder}
 # get parent's parent folder 
 parentFolder=$(basename $(dirname $PWD))
 echo ${parentFolder}
+
+# Iterate folder's files and sub-folder
+$ for f in *; do 
+  echo $f; 
+done
+$ for f in $(dir); do 
+  echo $f; 
+done
+
 
 ```
 - Stop exit with flash when exec to the end of bash
@@ -75,4 +87,4 @@ if [[ "${filename}" = '' ]]; then
 fi
 ```
 
-最后更新于2020年5月8日
+最后更新于2020年5月9日
