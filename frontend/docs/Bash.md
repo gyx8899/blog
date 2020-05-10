@@ -15,6 +15,7 @@ exit
 ```shell script
 # get current folder path
 pwd
+currentPath=$PWD
 > /d/Workspace/github/blog
 
 # get parent path
@@ -87,4 +88,4 @@ if [[ "${filename}" = '' ]]; then
 fi
 ```
 
-最后更新于2020年5月9日
+最后更新于2020年5月10日
