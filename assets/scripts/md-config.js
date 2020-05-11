@@ -91,6 +91,10 @@ module.exports = {
                 "Regexp.md": {
                     "date": "2020年5月9日",
                     "path": "frontend/docs/Regexp.md"
+                },
+                "Windows.md": {
+                    "date": "2020年5月12日",
+                    "path": "frontend/docs/Windows.md"
                 }
             },
             "react": {

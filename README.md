@@ -40,6 +40,7 @@
 - [Vue](/frontend/docs/Vue.md): <sub><sup>(2020年2月18日)</sup></sub>
 - [WebAPI](/frontend/docs/WebAPI.md): <sub><sup>(2020年2月18日)</sup></sub>
 - [Webpack](/frontend/docs/Webpack.md): <sub><sup>(2020年4月28日)</sup></sub>
+- [Windows](/frontend/docs/Windows.md): <sub><sup>(2020年5月12日)</sup></sub>
 
 ### React
 React 相关知识总结
@@ -54,4 +55,4 @@ Office 工具技巧
 
 - [Word](/office/Word.md): <sub><sup>(2020年5月9日)</sup></sub>
 
-最后更新于2020年5月10日
+最后更新于2020年5月12日
