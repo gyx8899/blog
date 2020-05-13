@@ -446,10 +446,13 @@ git remote -v
     # For windows: run below script with Administrator authority
     npm install --global --production windows-build-tools
     ```
+  
+### 练习
+- [Learn Git Branching](https://learngitbranching.js.org/)
  
-#### 参考
+### 参考
 - https://git-scm.com/docs Git - Reference
 - https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A 【第1864期】手撕Git，告别盲目记忆
 - https://nextfe.com/git-cheatsheet-advanced/ git 高级用法小抄
 
-最后更新于2020年4月20日
+最后更新于2020年5月13日
