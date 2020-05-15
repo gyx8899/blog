@@ -95,6 +95,10 @@ module.exports = {
                 "Windows.md": {
                     "date": "2020年5月12日",
                     "path": "frontend/docs/Windows.md"
+                },
+                "CSS.md": {
+                    "date": "2020年5月15日",
+                    "path": "frontend/docs/CSS.md"
                 }
             },
             "react": {
