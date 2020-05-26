@@ -126,8 +126,9 @@ module.exports = {
         },
         "office": {
             "Word.md": {
-                "date": "2020年5月9日",
-                "path": "office/Word.md"
+                "date": "2020年5月27日",
+                "path": "office/Word.md",
+                "title": "Word: 文档操作精选技巧"
             }
         }
     }

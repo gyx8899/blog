@@ -17,9 +17,11 @@ function getFormatDateValue(date, pattern) {
 			.replace('dd', day);
 }
 
-function updateTimeStamp(fileDir) {
-	const content = readDataFromFile(fileDir);
+function updateTimeStamp(fileName) {
+	const content = readDataFromFile(fileName);
 	const contentLines = content.split('\n');
+	updateMdConfigTitle(fileName, contentLines[0].split('#')[1].trim());
+
 	const timeStampPrefix = defaultTimestamp.split('yyyy')[0];
 	let notDateLineNo = contentLines.length - 1;
 	for (; notDateLineNo >= 0; notDateLineNo--) {
@@ -31,11 +33,11 @@ function updateTimeStamp(fileDir) {
 	if (notDateLineNo !== 0) {
 		_content = contentLines.slice(0, notDateLineNo).join('\n');
 	}
-	writeDataToFile(fileDir, _content + `\n${getFormatDateValue(new Date(), defaultTimestamp)}\n`);
+	writeDataToFile(fileName, _content + `\n${getFormatDateValue(new Date(), defaultTimestamp)}\n`);
 }
 
-function updateMdConfig(filename, status) {
-	const filePaths = filename.split('/');
+function getFileObjInMdConfig(fileName) {
+	const filePaths = fileName.split('/');
 	let currentFile = mdConfig.blog;
 	for (let i = 0; i < filePaths.length - 1; i++) {
 		if (!currentFile[filePaths[i]]) {
@@ -43,19 +45,24 @@ function updateMdConfig(filename, status) {
 		}
 		currentFile = currentFile[filePaths[i]];
 	}
+	return [currentFile, filePaths.pop()];
+}
+
+function updateMdConfig(fileName, status) {
+	let [currentFile, name] = getFileObjInMdConfig(fileName);
 	switch (status) {
 		case "Added":
 		case "Modified":
 		case "Copied":
 			const fileInfo = {
 				date: getFormatDateValue(new Date(), readMeTimestamp),
-				path: filename,
+				path: fileName,
 			};
-			currentFile[filePaths.pop()] = fileInfo;
+			currentFile[name] = fileInfo;
 
 			break;
 		case "Deleted":
-			delete currentFile[filePaths.pop()];
+			delete currentFile[name];
 			break;
 		case "Renamed":
 			// Not supported by changed-git-files
@@ -63,6 +70,12 @@ function updateMdConfig(filename, status) {
 		default:
 			// Nothing
 	}
+}
+
+function updateMdConfigTitle(filename, title) {
+	const [mdConfigFile, name] = getFileObjInMdConfig(filename);
+
+	mdConfigFile[name].title = title;
 }
 
 function generateReadme(_mdConfig, _readMeConfig) {
@@ -90,7 +103,7 @@ function generateReadme(_mdConfig, _readMeConfig) {
 	};
 	const leaf = function (key, value) {
 		if (key !== 'README.md' && value.date) {
-			content += `- [${key.split('.md')[0]}](/${encodeURI(value.path)}): <sub><sup>(${value.date})</sup></sub>\n`;
+			content += `- [${value.title || key.split('.md')[0]}](/${encodeURI(value.path)}): <sub><sup>(${value.date})</sup></sub>\n`;
 		}
 	};
 	iterateObject(_mdConfig, 1, nonLeaf, ()=>{});
