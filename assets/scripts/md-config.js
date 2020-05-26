@@ -1,26 +1,26 @@
 module.exports = {
     "blog": {
         "daily-life": {
-            "01.个人装换机之Windows系列.md": {
-                "date": "2020年2月9日",
-                "path": "daily-life/01.个人装换机之Windows系列.md"
-            },
-            "02.如何走出个人舒适圈.md": {
-                "date": "2020年2月9日",
-                "path": "daily-life/02.如何走出个人舒适圈.md"
-            },
-            "03.如何做好劳逸结合.md": {
-                "date": "2020年3月9日",
-                "path": "daily-life/03.如何做好劳逸结合.md"
-            },
-            "04.优秀的自我介绍很重要.md": {
-                "date": "2020年3月9日",
-                "path": "daily-life/04.优秀的自我介绍很重要.md"
-            },
-            "05.关于简历.md": {
+            "AboutResume.md": {
                 "date": "2020年3月13日",
-                "path": "daily-life/05.关于简历.md"
-            }
+                "path": "daily-life/AboutResume.md"
+            },
+            "CombineExertionAndRest.md": {
+                "date": "2020年3月9日",
+                "path": "daily-life/CombineExertionAndRest.md"
+            },
+            "GetOutOfYourComfortZone.md": {
+                "date": "2020年2月9日",
+                "path": "daily-life/GetOutOfYourComfortZone.md"
+            },
+            "InstallSystem-windows.md": {
+                "date": "2020年2月9日",
+                "path": "daily-life/InstallSystem-windows.md"
+            },
+            "TheImportantOfSelfIntroduction.md": {
+                "date": "2020年3月9日",
+                "path": "daily-life/TheImportantOfSelfIntroduction.md"
+            },
         },
         "frontend": {
             "docs": {
