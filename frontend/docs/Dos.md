@@ -59,9 +59,7 @@ pause
         4116
     ```
     - 在任务管理器 - 服务 - ID:4116 - 右键关闭该进程
-    - [netstat-80.bat](../../assets/batches/netstat-80.bat)
+    - [dos-netstat-80.bat](https://github.com/gyx8899/yx-env/blob/master/dos-netstat-80.bat)
 
 
-最后更新于2020年4月9日
-
-[^footnote]: timestamp-最后更新于2020年3月25日
+最后更新于2020年5月27日

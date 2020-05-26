@@ -10,11 +10,11 @@
 ## Daily-life
 日常工作中的随感
 
-- [01.个人装换机之Windows系列](/daily-life/01.%E4%B8%AA%E4%BA%BA%E8%A3%85%E6%8D%A2%E6%9C%BA%E4%B9%8BWindows%E7%B3%BB%E5%88%97.md): <sub><sup>(2020年2月9日)</sup></sub>
-- [02.如何走出个人舒适圈](/daily-life/02.%E5%A6%82%E4%BD%95%E8%B5%B0%E5%87%BA%E4%B8%AA%E4%BA%BA%E8%88%92%E9%80%82%E5%9C%88.md): <sub><sup>(2020年2月9日)</sup></sub>
-- [03.如何做好劳逸结合](/daily-life/03.%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E5%8A%B3%E9%80%B8%E7%BB%93%E5%90%88.md): <sub><sup>(2020年3月9日)</sup></sub>
-- [04.优秀的自我介绍很重要](/daily-life/04.%E4%BC%98%E7%A7%80%E7%9A%84%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D%E5%BE%88%E9%87%8D%E8%A6%81.md): <sub><sup>(2020年3月9日)</sup></sub>
-- [05.关于简历](/daily-life/05.%E5%85%B3%E4%BA%8E%E7%AE%80%E5%8E%86.md): <sub><sup>(2020年3月13日)</sup></sub>
+- [AboutResume](/daily-life/AboutResume.md): <sub><sup>(2020年3月13日)</sup></sub>
+- [CombineExertionAndRest](/daily-life/CombineExertionAndRest.md): <sub><sup>(2020年3月9日)</sup></sub>
+- [GetOutOfYourComfortZone](/daily-life/GetOutOfYourComfortZone.md): <sub><sup>(2020年2月9日)</sup></sub>
+- [InstallSystem-windows](/daily-life/InstallSystem-windows.md): <sub><sup>(2020年2月9日)</sup></sub>
+- [TheImportantOfSelfIntroduction](/daily-life/TheImportantOfSelfIntroduction.md): <sub><sup>(2020年3月9日)</sup></sub>
 
 ## Frontend
 前端知识总结
@@ -26,7 +26,7 @@
 - [Bash](/frontend/docs/Bash.md): <sub><sup>(2020年5月10日)</sup></sub>
 - [CSS](/frontend/docs/CSS.md): <sub><sup>(2020年5月15日)</sup></sub>
 - [Console](/frontend/docs/Console.md): <sub><sup>(2020年3月25日)</sup></sub>
-- [Dos](/frontend/docs/Dos.md): <sub><sup>(2020年4月9日)</sup></sub>
+- [DOS command](/frontend/docs/Dos.md): <sub><sup>(2020年5月27日)</sup></sub>
 - [Git](/frontend/docs/Git.md): <sub><sup>(2020年5月13日)</sup></sub>
 - [IntelliJ-IDEA](/frontend/docs/IntelliJ-IDEA.md): <sub><sup>(2020年3月16日)</sup></sub>
 - [Jest](/frontend/docs/Jest.md): <sub><sup>(2020年3月22日)</sup></sub>

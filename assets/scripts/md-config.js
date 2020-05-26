@@ -20,7 +20,7 @@ module.exports = {
             "TheImportantOfSelfIntroduction.md": {
                 "date": "2020年3月9日",
                 "path": "daily-life/TheImportantOfSelfIntroduction.md"
-            },
+            }
         },
         "frontend": {
             "docs": {
@@ -29,8 +29,9 @@ module.exports = {
                     "path": "frontend/docs/Console.md"
                 },
                 "Dos.md": {
-                    "date": "2020年4月9日",
-                    "path": "frontend/docs/Dos.md"
+                    "date": "2020年5月27日",
+                    "path": "frontend/docs/Dos.md",
+                    "title": "DOS command"
                 },
                 "Git.md": {
                     "date": "2020年5月13日",
