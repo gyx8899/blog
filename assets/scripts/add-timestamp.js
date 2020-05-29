@@ -33,7 +33,8 @@ function updateTimeStamp(fileName) {
 	if (notDateLineNo !== 0) {
 		_content = contentLines.slice(0, notDateLineNo).join('\n');
 	}
-	writeDataToFile(fileName, _content + `\n${getFormatDateValue(new Date(), defaultTimestamp)}\n`);
+	// writeDataToFile(fileName, _content + `\n${getFormatDateValue(new Date(), defaultTimestamp)}\n`);
+	writeDataToFile(fileName, _content);
 }
 
 function getFileObjInMdConfig(fileName) {
