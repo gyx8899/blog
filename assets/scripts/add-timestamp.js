@@ -63,7 +63,9 @@ function updateMdConfig(fileName, status) {
 
 			break;
 		case "Deleted":
-			delete currentFile[name];
+			if (currentFile && currentFile[name]) {
+				delete currentFile[name];
+			}
 			break;
 		case "Renamed":
 			// Not supported by changed-git-files
@@ -124,7 +126,9 @@ cgf(function (err, results) {
 			mdFilesChanged = true;
 			// console.log(JSON.stringify(mdConfig, null, 4));
 			updateMdConfig(filename, status);
-			updateTimeStamp(filename);
+			if (status !== 'Deleted') {
+				updateTimeStamp(filename);
+			}
 		}
 	});
 
