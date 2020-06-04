@@ -30,9 +30,9 @@ module.exports = {
         "frontend": {
             "docs": {
                 "Console.md": {
-                    "date": "2020年3月25日",
+                    "date": "2020年6月5日",
                     "path": "frontend/docs/Console.md",
-                    "title": "Console: 不用不知道"
+                    "title": "Console"
                 },
                 "Dos.md": {
                     "date": "2020年5月27日",
