@@ -126,14 +126,14 @@ module.exports = {
                 }
             },
             "react": {
-                "React-生命周期方法快速转 Hooks（1）.md": {
+                "ReactLifeCycleToHooks1.md": {
                     "date": "2020年2月9日",
-                    "path": "frontend/react/React-生命周期方法快速转 Hooks（1）.md",
+                    "path": "frontend/react/ReactLifeCycleToHooks1.md",
                     "title": "React: 生命周期方法快速转 Hooks（1）"
                 },
-                "React-生命周期方法快速转 Hooks（2）.md": {
+                "ReactLifeCycleToHooks2.md": {
                     "date": "2020年2月9日",
-                    "path": "frontend/react/React-生命周期方法快速转 Hooks（2）.md",
+                    "path": "frontend/react/ReactLifeCycleToHooks2.md",
                     "title": "React: 生命周期方法快速转 Hooks（2）"
                 },
                 "Router.md": {
