@@ -23,7 +23,7 @@
 ### Docs
 个人知识文档
 
-- [Bash: 入门重点](/frontend/docs/Bash.md): <sub><sup>(2020年5月10日)</sup></sub>
+- [Bash: 入门重点](/frontend/docs/Bash.md): <sub><sup>(2020年6月4日)</sup></sub>
 - [CSS: 日常拾遗](/frontend/docs/CSS.md): <sub><sup>(2020年5月15日)</sup></sub>
 - [Console: 不用不知道](/frontend/docs/Console.md): <sub><sup>(2020年3月25日)</sup></sub>
 - [DOS command](/frontend/docs/Dos.md): <sub><sup>(2020年5月27日)</sup></sub>

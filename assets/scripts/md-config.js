@@ -105,7 +105,7 @@ module.exports = {
                     "title": "React: 总结整理"
                 },
                 "Bash.md": {
-                    "date": "2020年5月10日",
+                    "date": "2020年6月4日",
                     "path": "frontend/docs/Bash.md",
                     "title": "Bash: 入门重点"
                 },

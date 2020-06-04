@@ -1,17 +1,17 @@
-# Bash
+# Bash: 入门重点
 [TOC]
 
-## Command
+## Command List
 (Not work in windows dos)
 - Enter
 ```shell script
 bash
 ```
-- Exit
+##### Exit
 ```shell script
 exit
 ```
-- Current dir
+##### Current dir
 ```shell script
 # get current folder path
 pwd
@@ -50,14 +50,13 @@ done
 $ for f in $(dir); do 
   echo $f; 
 done
-
-
 ```
-- Stop exit with flash when exec to the end of bash
+
+##### Stop exit with flash when exec to the end of bash
 ```shell script
 exec bash
 ```
-- Multi-Line string variable
+##### Multi-Line string variable
 ```shell script
 newline=$'\n'
 newline2=$'\x0a'
@@ -73,7 +72,7 @@ echo "$multiLineStr2"
 ```
 
 ## Questions
-- [: !=: unary operator expected
+##### [: !=: unary operator expected
 ```shell script
 if [ "${filename}" != 'README.md' ]; then
 # 表达式左边有可能为空，则表达式左侧就为空，报错
@@ -87,5 +86,4 @@ if [[ "${filename}" = '' ]]; then
 # 判断空，用双中括号和单等号
 fi
 ```
-
-最后更新于2020年5月10日
+
