@@ -60,9 +60,9 @@ module.exports = {
                     "title": "NPM: 点滴记录"
                 },
                 "ReactHook.md": {
-                    "date": "2020年2月18日",
+                    "date": "2020年6月5日",
                     "path": "frontend/docs/ReactHook.md",
-                    "title": "ReactHooks: 学以致用"
+                    "title": "React Hook - 速览"
                 },
                 "Snippet.md": {
                     "date": "2020年2月18日",

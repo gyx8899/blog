@@ -145,9 +145,10 @@ function Toolbar(props) {
 
 function ThemedButton() {
   const theme = useContext(ThemeContext);
+  const style = { background: theme.background, color: theme.foreground };
 
   return (
-    <button style={{ background: theme.background, color: theme.foreground }}>
+    <button style={style}>
       I am styled by theme context!
     </button>
   );
@@ -365,16 +366,4 @@ function useClientRect() {
  * 在依赖列表中省略函数是否安全？
  * 一般来说，不安全。
  */
-function Example({ someProp }) {
-  useEffect(() => {
-    function doSomething() {
-      console.log(someProp);
-    }
-
-    doSomething();
-  }, [someProp]); // ✅ 安全（我们的 effect 仅用到了 `someProp`）
-}
-```
-最后更新于2020年2月18日
-
-[^footnote]: timestamp-最后更新于2020年2月18日
+function Example({ someProp }) {

@@ -3,10 +3,13 @@
 个人成长博客
 
 *（写作）起点低不可怕，坚持下来才可怕！*
-- 输出（写作、教导）是最好的成长;
-- 独立并结构化的思考；
-- 积累，是为了更好的爆发；
 
+> 输出（写作、教导）是最好的成长;
+> 
+> 独立并结构化的思考；
+> 
+> 积累，是为了更好的爆发；
+> 
 ## Daily-life
 日常工作中的随感
 
@@ -32,7 +35,7 @@
 - [Jest: 测试是为了更好的开发](/frontend/docs/Jest.md): <sub><sup>(2020年3月22日)</sup></sub>
 - [NPM: 点滴记录](/frontend/docs/NPM.md): <sub><sup>(2020年4月30日)</sup></sub>
 - [React: 总结整理](/frontend/docs/React.md): <sub><sup>(2020年5月29日)</sup></sub>
-- [ReactHooks: 学以致用](/frontend/docs/ReactHook.md): <sub><sup>(2020年2月18日)</sup></sub>
+- [React Hook - 速览](/frontend/docs/ReactHook.md): <sub><sup>(2020年6月5日)</sup></sub>
 - [Regexp: 日常表达式](/frontend/docs/Regexp.md): <sub><sup>(2020年5月9日)</sup></sub>
 - [SEO: 搜索优化学习](/frontend/docs/SEO.md): <sub><sup>(2020年4月17日)</sup></sub>
 - [Snippet: 那些有趣的代码片段](/frontend/docs/Snippet.md): <sub><sup>(2020年2月18日)</sup></sub>
@@ -56,4 +59,4 @@ Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年5月27日)</sup></sub>
 
-最后更新于2020年6月4日
+最后更新于2020年6月5日

@@ -97,7 +97,7 @@ function generateReadme(_mdConfig, _readMeConfig) {
 				}
 				if (_config.list && _config.list.length) {
 					_config.list.forEach((item) => {
-						content += `- ${item}\n`;
+						content += `\n> ${item}\n> `;
 					});
 				}
 			}
