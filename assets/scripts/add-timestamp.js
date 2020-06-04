@@ -6,6 +6,7 @@ const {readDataFromFile, writeDataToFile, iterateObject} = require('@daybyday/yx
 
 const readMeTimestamp = `yyyy年MM月dd日`;
 const readmeFilePath = './README.md';
+const summaryFilePath = './SUMMARY.md';
 const defaultTimestamp = `最后更新于yyyy年MM月dd日`;
 
 function getFormatDateValue(date, pattern) {
@@ -113,6 +114,7 @@ function generateReadme(_mdConfig, _readMeConfig) {
 
 	const currentTimestamp = getFormatDateValue(new Date(), defaultTimestamp);
 	writeDataToFile(readmeFilePath, content + `\n${currentTimestamp}\n`);
+	writeDataToFile(summaryFilePath, content);
 }
 
 cgf(function (err, results) {
