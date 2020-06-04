@@ -1,14 +1,18 @@
 # Git 命令集
 ![Git flow](../../assets/images/git-tool.png)
 
-- 初始化一个空的 Git 仓库 demo
+## Git 指令使用手册
+
+### 常用指令
+
+#### 初始化一个空的 Git 仓库 demo
 ```shell script
 mkdir demo
 cd demo
 git init
 ```
 
-- 克隆项目基本操作
+#### 克隆项目基本操作
 ```shell script
 # 克隆 HTTPS
 git clone https://github.com/gyx8899/YX-JS-ToolKit.git
@@ -97,7 +101,7 @@ git diff
     git diff --staged
 ```
 
-- 分支操作
+#### 分支操作
 ```shell script
 ## 创建分支
 git branch_name
@@ -148,7 +152,7 @@ git merge template/master --allow-unrelated-histories
 ...
 ```
 
-- Feature branching 工作流 - 方式1-靠吼
+#### Feature branching 工作流 - 方式1-靠吼
 ```shell script
 ## User A
 git checkout -b feature2
@@ -209,7 +213,7 @@ git rebase --continue
 >
 > Note that empty commits are commented out
 
-- 撤销commit
+#### 撤销commit
 ```shell script
 # 撤销前某一次提交, 把编辑区域中想删掉的那一次 commit comment 删掉即可。
 git rebase -i HEAD^   #撤销最后1次
@@ -221,13 +225,13 @@ git reset --hard HEAD^
 git rebase --onto HEAD^^ HEAD^ branch1
 ```
 
-- 撤销已在中央仓库的 branch 的 commit
+#### 撤销已在中央仓库的 branch 的 commit
 ```shell script
 # 先在本地仓库 branch 使用上面的 撤销 commit, 再强制提交到 branch。--force, 忽略冲突强制 push
 git push origin branch1 -f
 ```
 
-- 撤销已在中央仓库的 master 的 commit, 只是新增一条 revert commit
+#### 撤销已在中央仓库的 master 的 commit, 只是新增一条 revert commit
 ```shell script
 # 撤销 commit
 git revert HEAD^
@@ -236,7 +240,7 @@ git revert HEAD^
 > 
 > 如果出错内容在 master：不要强制 push，而要用 revert 把写错的 commit 撤销。
 
-- 重置回退
+#### 重置回退
 ```shell script
 # 重置回退并保留工作目录的内容，并清空暂存区。
 git reset HEAD^
@@ -258,7 +262,7 @@ git reset HEAD^
 >
 > --mixed（默认）：重置位置的同时，保留工作目录的内容，并清空暂存区。
 
-- Checkout
+#### Checkout
 ```shell script
 git checkout HEAD^^
 git checkout master~5
@@ -268,7 +272,7 @@ git checkout 78a4bc^
 git checkout --detach
 ```
 
-- Stash(暂存区): 临时存放工作目录的改动
+#### Stash(暂存区): 临时存放工作目录的改动
 ```shell script
 # 将工作区的改动保存到暂存区，工作区还原至上次commit
 git stash
@@ -283,7 +287,7 @@ git stash apply
 git stash pop
 ```
 
-- 重建已删除的 branch1
+#### 重建已删除的 branch1
 ```shell script
 # 从 log 中查找已删除 branch1 的 SHA-1
 git reflog
@@ -294,7 +298,7 @@ git checkout -b branch1
 git reflog master
 ```
 
-- tag
+#### tag
 ```shell script
 # 查看 History 中已有的 tag
 git tag 
@@ -338,7 +342,7 @@ git push origin :refs/tags/v1.4.1
 git checkout -b version2 v2.0.0
 ```
 
-- cherry-pick
+#### cherry-pick
 ```shell script
 git cherry-pick [--edit] [-n] [-m parent-number] [-s] [-x] [--ff] [-S[<keyid>]] <commit>…​
 git cherry-pick (--continue | --skip | --abort | --quit)
@@ -354,7 +358,7 @@ git cherry-pick <start-commit-id>^..<end-commit-id>
 # 也可以用在同一个分支上，场景为某次提交删除了，需要重新提交，可以使用 cherry-pick
 ```
 
-- Pull changes from a template repository
+#### Pull changes from a template repository
 ```shell script
 # 1. Add this template repository as a remote
 # git remote add template [URL of the template repo]
@@ -368,7 +372,7 @@ git fetch --all
 git merge template/master --allow-unrelated-histories
 ```
 
-- HEAD (*)
+#### HEAD (*)
 ```shell script
 # 强制把 master 指向分支 bugFix / bugFix parent / bugFix grand parent commit
 git branch -f master bugFix
@@ -388,7 +392,7 @@ git checkout C1
 git checkout master
 ```
 
-- 更改远程仓库 URL
+#### 更改远程仓库 URL
 ```shell script
 # 更改
 git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
@@ -396,7 +400,7 @@ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 git remote -v
 ```
 
-- Questions
+### Questions: 常见问题
     - SSL_read: SSL_ERROR_SYSCALL, errno 10054
     ```shell script
     YX-JS-ToolKit\docs>git push
@@ -467,10 +471,11 @@ git remote -v
     npm install --global --production windows-build-tools
     ```
   
-### 练习
+
+## 练习
 - [Learn Git Branching](https://learngitbranching.js.org/)
  
-### 参考
+## 参考
 - https://git-scm.com/docs Git - Reference
 - https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A 【第1864期】手撕Git，告别盲目记忆
 - https://nextfe.com/git-cheatsheet-advanced/ git 高级用法小抄
