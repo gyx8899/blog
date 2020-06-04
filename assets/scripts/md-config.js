@@ -40,9 +40,9 @@ module.exports = {
                     "title": "DOS command"
                 },
                 "Git.md": {
-                    "date": "2020年5月13日",
+                    "date": "2020年6月4日",
                     "path": "frontend/docs/Git.md",
-                    "title": "Git: 个人搜集"
+                    "title": "Git 命令集"
                 },
                 "IntelliJ-IDEA.md": {
                     "date": "2020年3月16日",

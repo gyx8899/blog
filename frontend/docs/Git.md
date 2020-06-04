@@ -368,6 +368,26 @@ git fetch --all
 git merge template/master --allow-unrelated-histories
 ```
 
+- HEAD (*)
+```shell script
+# 强制把 master 指向分支 bugFix / bugFix parent / bugFix grand parent commit
+git branch -f master bugFix
+git branch -f master bugFix^
+git branch -f master bugFix~2
+# 强制把 bugFix 指向分支 bugFix parent / bugFix grand parent commit
+git branch -f bugFix bugFix^
+git branch -f bugFix bugFix~2
+
+# HEAD (*) 指向分支 bugFix
+git checkout bugFix
+git checkout bugFix^
+git checkout bugFix~2
+# HEAD (*) 指向 hash 值 C1 (C1 只是个指代，真实 hash 值很长)
+git checkout C1
+# HEAD (*) 重新指向 master
+git checkout master
+```
+
 - 更改远程仓库 URL
 ```shell script
 # 更改
@@ -454,5 +474,4 @@ git remote -v
 - https://git-scm.com/docs Git - Reference
 - https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A 【第1864期】手撕Git，告别盲目记忆
 - https://nextfe.com/git-cheatsheet-advanced/ git 高级用法小抄
-
-最后更新于2020年5月13日
+
