@@ -10,6 +10,8 @@
 > 
 > 积累，是为了更好的爆发；
 > 
+- [Summary](/SUMMARY.md): <sub><sup>(2020年6月6日)</sup></sub>
+
 ## Daily-life
 日常工作中的随感
 
@@ -59,4 +61,4 @@ Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年5月27日)</sup></sub>
 
-最后更新于2020年6月5日
+最后更新于2020年6月6日

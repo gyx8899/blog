@@ -107,7 +107,7 @@ function generateReadme(_mdConfig, _readMeConfig) {
 
 	};
 	const leaf = function (key, value) {
-		if (key !== 'README.md' && key !== 'SUMMARY.md' && value.date) {
+		if (key !== 'README.md' && value.date) {
 			content += `- [${value.title || key.split('.md')[0]}](/${encodeURI(value.path)}): <sub><sup>(${value.date})</sup></sub>\n`;
 		}
 	};

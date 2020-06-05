@@ -10,6 +10,8 @@
 > 
 > 积累，是为了更好的爆发；
 > 
+- [Summary](/SUMMARY.md): <sub><sup>(2020年6月6日)</sup></sub>
+
 ## Daily-life
 日常工作中的随感
 
