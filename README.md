@@ -11,6 +11,10 @@
 > 积累，是为了更好的爆发；
 > 
 
+### Daily-life
+日常工作中的随感
+
+
 ### Frontend
 前端知识总结
 
@@ -18,35 +22,14 @@
 #### Docs
 个人知识文档
 
-- [DOS command](/_book/frontend/docs/Dos.md): <sub><sup>(2020年6月6日)</sup></sub>
-- [Git 命令集](/_book/frontend/docs/Git.md): <sub><sup>(2020年6月6日)</sup></sub>
-- [IntelliJ IDEA](/_book/frontend/docs/IntelliJ-IDEA.md): <sub><sup>(2020年6月6日)</sup></sub>
-- [Jest learning manual](/_book/frontend/docs/Jest.md): <sub><sup>(2020年6月6日)</sup></sub>
-- [NPM and Plugin Guide](/_book/frontend/docs/NPM.md): <sub><sup>(2020年6月6日)</sup></sub>
-- [React: 总结整理](/_book/frontend/docs/React.md): <sub><sup>(2020年6月6日)</sup></sub>
-- [React Hook - 速览](/_book/frontend/docs/ReactHook.md): <sub><sup>(2020年6月6日)</sup></sub>
-- [Regexp](/_book/frontend/docs/Regexp.md): <sub><sup>(2020年6月6日)</sup></sub>
-- [SEO](/_book/frontend/docs/SEO.md): <sub><sup>(2020年6月6日)</sup></sub>
-- [Snippet](/_book/frontend/docs/Snippet.md): <sub><sup>(2020年6月6日)</sup></sub>
-- [Testing](/_book/frontend/docs/Testing.md): <sub><sup>(2020年6月6日)</sup></sub>
-- [Tricks](/_book/frontend/docs/Tricks.md): <sub><sup>(2020年6月6日)</sup></sub>
-- [Vue](/_book/frontend/docs/Vue.md): <sub><sup>(2020年6月6日)</sup></sub>
-- [Web API](/_book/frontend/docs/WebAPI.md): <sub><sup>(2020年6月6日)</sup></sub>
-- [Webpack.config.js](/_book/frontend/docs/Webpack.md): <sub><sup>(2020年6月6日)</sup></sub>
-- [Windows](/_book/frontend/docs/Windows.md): <sub><sup>(2020年6月6日)</sup></sub>
 
 #### React
 React 相关知识总结
 
-- [React-生命周期方法快速转 Hooks（1）](/_book/frontend/react/ReactLifeCycleToHooks1.md): <sub><sup>(2020年6月6日)</sup></sub>
-- [React-生命周期方法快速转 Hooks（2）](/_book/frontend/react/ReactLifeCycleToHooks2.md): <sub><sup>(2020年6月6日)</sup></sub>
-- [Redux](/_book/frontend/react/Redux.md): <sub><sup>(2020年6月6日)</sup></sub>
-- [React router](/_book/frontend/react/Router.md): <sub><sup>(2020年6月6日)</sup></sub>
 
 ### Office
 Office 工具技巧
 
-- [Word: 文档操作精选技巧](/_book/office/Word.md): <sub><sup>(2020年6月6日)</sup></sub>
 
 ## Daily-life
 日常工作中的随感
@@ -91,10 +74,11 @@ React 相关知识总结
 - [React: 生命周期方法快速转 Hooks（2）](/frontend/react/ReactLifeCycleToHooks2.md): <sub><sup>(2020年2月9日)</sup></sub>
 - [Redux: 精髓](/frontend/react/Redux.md): <sub><sup>(2020年4月22日)</sup></sub>
 - [Router: 特殊之处](/frontend/react/Router.md): <sub><sup>(2020年4月22日)</sup></sub>
+- [useEffect](/frontend/react/useEffect.md): <sub><sup>(2020年6月9日)</sup></sub>
 
 ## Office
 Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年5月27日)</sup></sub>
 
-最后更新于2020年6月6日
+最后更新于2020年6月9日

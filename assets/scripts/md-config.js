@@ -145,6 +145,11 @@ module.exports = {
                     "date": "2020年4月22日",
                     "path": "frontend/react/Redux.md",
                     "title": "Redux: 精髓"
+                },
+                "useEffect.md": {
+                    "date": "2020年6月9日",
+                    "path": "frontend/react/useEffect.md",
+                    "title": "useEffect"
                 }
             }
         },
@@ -165,119 +170,12 @@ module.exports = {
             "title": "Summary"
         },
         "_book": {
-            "office": {
-                "Word.md": {
-                    "date": "2020年6月6日",
-                    "path": "_book/office/Word.md",
-                    "title": "Word: 文档操作精选技巧"
-                }
-            },
+            "office": {},
             "frontend": {
-                "react": {
-                    "Router.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/react/Router.md",
-                        "title": "React router"
-                    },
-                    "Redux.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/react/Redux.md",
-                        "title": "Redux"
-                    },
-                    "ReactLifeCycleToHooks2.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/react/ReactLifeCycleToHooks2.md",
-                        "title": "React-生命周期方法快速转 Hooks（2）"
-                    },
-                    "ReactLifeCycleToHooks1.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/react/ReactLifeCycleToHooks1.md",
-                        "title": "React-生命周期方法快速转 Hooks（1）"
-                    }
-                },
-                "docs": {
-                    "Windows.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/docs/Windows.md",
-                        "title": "Windows"
-                    },
-                    "Webpack.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/docs/Webpack.md",
-                        "title": "Webpack.config.js"
-                    },
-                    "WebAPI.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/docs/WebAPI.md",
-                        "title": "Web API"
-                    },
-                    "Vue.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/docs/Vue.md",
-                        "title": ""
-                    },
-                    "Tricks.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/docs/Tricks.md",
-                        "title": ""
-                    },
-                    "Testing.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/docs/Testing.md",
-                        "title": "Testing"
-                    },
-                    "Snippet.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/docs/Snippet.md",
-                        "title": ""
-                    },
-                    "SEO.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/docs/SEO.md",
-                        "title": "SEO"
-                    },
-                    "Regexp.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/docs/Regexp.md",
-                        "title": "Regexp"
-                    },
-                    "ReactHook.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/docs/ReactHook.md",
-                        "title": "React Hook - 速览"
-                    },
-                    "React.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/docs/React.md",
-                        "title": "React: 总结整理"
-                    },
-                    "NPM.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/docs/NPM.md",
-                        "title": "NPM and Plugin Guide"
-                    },
-                    "Jest.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/docs/Jest.md",
-                        "title": "Jest learning manual"
-                    },
-                    "IntelliJ-IDEA.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/docs/IntelliJ-IDEA.md",
-                        "title": "IntelliJ IDEA"
-                    },
-                    "Git.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/docs/Git.md",
-                        "title": "Git 命令集"
-                    },
-                    "Dos.md": {
-                        "date": "2020年6月6日",
-                        "path": "_book/frontend/docs/Dos.md",
-                        "title": "DOS command"
-                    }
-                }
-            }
+                "react": {},
+                "docs": {}
+            },
+            "daily-life": {}
         }
     }
 };
