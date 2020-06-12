@@ -471,7 +471,13 @@ git config --global core.autocrlf false
 # For windows: run below script with Administrator authority
 npm install --global --production windows-build-tools
 ```
-  
+
+##### 分支 Merge 后仍然提示：有未合并文件
+> commit is not possible because you have unmerged files
+```shell script
+# 合并后有新增文件，未被添加到仓库里，需要命令添加
+git add .
+```
 
 ## 练习
 - [Learn Git Branching](https://learngitbranching.js.org/)
