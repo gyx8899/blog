@@ -401,75 +401,76 @@ git remote -v
 ```
 
 ### Questions: 常见问题
-    - SSL_read: SSL_ERROR_SYSCALL, errno 10054
-    ```shell script
-    YX-JS-ToolKit\docs>git push
-    fatal: unable to access 'https://github.com/gyx8899/YX-JS-ToolKit.git/': Op
-    enSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054
-    ```
-    ```shell script
-    git config http.sslVerify "false"
-    git config --global http.sslVerify "false"
-    git push
-    Username:
-    Password:
-    ```
+
+##### SSL_read: SSL_ERROR_SYSCALL, errno 10054
+```shell script
+YX-JS-ToolKit\docs>git push
+fatal: unable to access 'https://github.com/gyx8899/YX-JS-ToolKit.git/': Op
+enSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054
+```
+```shell script
+git config http.sslVerify "false"
+git config --global http.sslVerify "false"
+git push
+Username:
+Password:
+```
   
-    - remote: HTTP Basic: Access denied
-      fatal: Authentication failed for 'Your remove url'
-    ```shell script
-    # 方案1（来自网络）
-    git config --system --unset credential.helper
-    # 方案2（来自网络）
-    git config --global http.emptyAuth true
-    ```
-    > 方案3：第一次输入账号密码错误后，#1 和 #2 都不行的情况下，到“控制面板\用户帐户\凭据管理器\Windows凭据”下删除对应 git 的凭据，然后继续尝试 git clone 命令，会重新提示输入用户名和密码。
-         
-    - Github, Gitlab, Gitee, 多账号管理 - 提交时的用户选择
-    ```shell script
-    # 设置全局账号
-    git config --global user.name "Steper Kuo @github"
-    git config --global user.email "gyx8899@126.com"
-    # 设置局部账号, 需要在每个 gitlab 项目下都设置一次
-    git config --local user.name "Steper Kuo @gitlab"
-    git config --local user.email "gyx8899@126.com"
-    # 设置局部账号, 需要在每个 gitee 项目下都设置一次
-    git config --local user.name "Steper Kuo @gitee"
-    git config --local user.email "gyx8899@126.com"
-    ```
+##### remote: HTTP Basic: Access denied
+fatal: Authentication failed for 'Your remove url'
+```shell script
+# 方案1（来自网络）
+git config --system --unset credential.helper
+# 方案2（来自网络）
+git config --global http.emptyAuth true
+```
+> 方案3：第一次输入账号密码错误后，#1 和 #2 都不行的情况下，到“控制面板\用户帐户\凭据管理器\Windows凭据”下删除对应 git 的凭据，然后继续尝试 git clone 命令，会重新提示输入用户名和密码。
+     
+##### Github, Gitlab, Gitee, 多账号管理 - 提交时的用户选择
+```shell script
+# 设置全局账号
+git config --global user.name "Steper Kuo @github"
+git config --global user.email "gyx8899@126.com"
+# 设置局部账号, 需要在每个 gitlab 项目下都设置一次
+git config --local user.name "Steper Kuo @gitlab"
+git config --local user.email "gyx8899@126.com"
+# 设置局部账号, 需要在每个 gitee 项目下都设置一次
+git config --local user.name "Steper Kuo @gitee"
+git config --local user.email "gyx8899@126.com"
+```
  
-    - Could not merge origin/master: You have not concluded your merge (MERGE_HEAD exists). Please, commit your changes before you merge.
-    ```shell script
-    # 方案：保留本地。终止合并 -》 重新合并 -》 重新拉取
-    git merge --abort
-    git reset --merge
-    git pull
-    ```
+##### Could not merge origin/master: You have not concluded your merge (MERGE_HEAD exists). Please, commit your changes before you merge.
+```shell script
+# 方案：保留本地。终止合并 -》 重新合并 -》 重新拉取
+git merge --abort
+git reset --merge
+git pull
+```
     
-    - Your local changes to the following files would be overwritten by merge: Please commit your changes or stash them before you merge.
-    ```shell script
-    git stash
-    git pull origin master  #== git fetch + get merge
-    git stash pop
-    ```
+##### Your local changes to the following files would be overwritten by merge: Please commit your changes or stash them before you merge.
+```shell script
+git stash
+git pull origin master  #== git fetch + get merge
+git stash pop
+```
   
-    - `git merge master` fatal: refusing to merge unrelated histories
-    ```shell script
-    git merge master --allow-unrelated-histories
-    # 同理 git pull/push same fatal
-    git pull origin master --allow-unrelated-histories
-    ```
+##### `git merge master` fatal: refusing to merge unrelated histories
+```shell script
+git merge master --allow-unrelated-histories
+# 同理 git pull/push same fatal
+git pull origin master --allow-unrelated-histories
+```
   
-    - Warning: LF will be replaced by CRLF
-    ```shell script
-    git config --global core.autocrlf false
-    ```
+##### Warning: LF will be replaced by CRLF
+```shell script
+git config --global core.autocrlf false
+```
   
-    - npm install: Error: Can't find Python executable "python", you can set the PYTHON env variable
-    ```shell script
-    # For windows: run below script with Administrator authority
-    npm install --global --production windows-build-tools
-    ```
+##### npm install: Error: Can't find Python executable "python", you can set the PYTHON env variable
+```shell script
+# For windows: run below script with Administrator authority
+npm install --global --production windows-build-tools
+```
   
 
 ## 练习

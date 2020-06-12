@@ -51,7 +51,7 @@ Office 工具技巧
 - [CSS: 日常拾遗](/frontend/docs/CSS.md): <sub><sup>(2020年5月15日)</sup></sub>
 - [Console](/frontend/docs/Console.md): <sub><sup>(2020年6月5日)</sup></sub>
 - [DOS command](/frontend/docs/Dos.md): <sub><sup>(2020年5月27日)</sup></sub>
-- [Git 命令集](/frontend/docs/Git.md): <sub><sup>(2020年6月4日)</sup></sub>
+- [Git 命令集](/frontend/docs/Git.md): <sub><sup>(2020年6月12日)</sup></sub>
 - [IntelliJ-IDEA: 使用技巧](/frontend/docs/IntelliJ-IDEA.md): <sub><sup>(2020年3月16日)</sup></sub>
 - [Jest: 测试是为了更好的开发](/frontend/docs/Jest.md): <sub><sup>(2020年3月22日)</sup></sub>
 - [NPM: 点滴记录](/frontend/docs/NPM.md): <sub><sup>(2020年4月30日)</sup></sub>
@@ -81,4 +81,4 @@ Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年5月27日)</sup></sub>
 
-最后更新于2020年6月9日
+最后更新于2020年6月12日
