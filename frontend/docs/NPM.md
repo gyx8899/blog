@@ -137,5 +137,10 @@ npm clean cache --force
 - [exit status 1: 'C:\Program' is not recognized as an internal or external command](https://github.com/coreybutler/nvm-windows/issues/168)
 > The problem is with the spaces in URL(C:\Program Files). Try to install the nvm directly in C:/ or in other folder without spaces in the PATH.
 
+##### npm ERR! 403 403 Forbidden - PUT * - [no_perms] Private mode enable, only admin can publish this module
 
-最后更新于2020年4月30日
+> registry 配置项被修改为非 npmjs, 需要重新设置为 npmjs
+```shell script
+npm config set registry https://registry.npmjs.org
+```
+

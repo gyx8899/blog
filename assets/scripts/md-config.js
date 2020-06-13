@@ -55,9 +55,9 @@ module.exports = {
                     "title": "Jest: 测试是为了更好的开发"
                 },
                 "NPM.md": {
-                    "date": "2020年4月30日",
+                    "date": "2020年6月14日",
                     "path": "frontend/docs/NPM.md",
-                    "title": "NPM: 点滴记录"
+                    "title": "NPM and Plugin Guide"
                 },
                 "ReactHook.md": {
                     "date": "2020年6月5日",
