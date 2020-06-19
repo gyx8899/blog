@@ -8,7 +8,7 @@ module.exports = {
 				'积累，是为了更好的爆发；',
 		]
 	},
-	frontend: '前端知识总结',
+	'full-stack': '全栈知识总结',
 	docs: '个人知识文档',
 	react: 'React 相关知识总结',
 	"daily-life": '日常工作中的随感',
