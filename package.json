@@ -4,7 +4,8 @@
   "description": "Personal blog for growing up.",
   "main": "index.js",
   "scripts": {
-    "auto-commit": "auto-commit.sh"
+    "auto-commit": "auto-commit.sh",
+    "gitbook-publish": "publish-gitbook.sh"
   },
   "repository": {
     "type": "git",
