@@ -25,6 +25,11 @@ module.exports = {
                 "date": "2020年3月9日",
                 "path": "daily-life/TheImportantOfSelfIntroduction.md",
                 "title": "优秀的自我介绍很重要"
+            },
+            "HowToHaveLeadership.md": {
+                "date": "2020年6月20日",
+                "path": "daily-life/HowToHaveLeadership.md",
+                "title": "HowToHaveLeadership"
             }
         },
         "full-stack": {
