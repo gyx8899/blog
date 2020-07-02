@@ -133,6 +133,11 @@ module.exports = {
                     "date": "2020年5月15日",
                     "path": "full-stack/docs/CSS.md",
                     "title": "CSS: 日常拾遗"
+                },
+                "HTTP.md": {
+                    "date": "2020年7月2日",
+                    "path": "full-stack/docs/HTTP.md",
+                    "title": "HTTP: 小知识巧总结"
                 }
             },
             "react": {
