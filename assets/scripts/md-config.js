@@ -30,6 +30,11 @@ module.exports = {
                 "date": "2020年6月20日",
                 "path": "daily-life/HowToHaveLeadership.md",
                 "title": "HowToHaveLeadership"
+            },
+            "SelfReview.md": {
+                "date": "2020年7月2日",
+                "path": "daily-life/SelfReview.md",
+                "title": "自我迭代"
             }
         },
         "full-stack": {

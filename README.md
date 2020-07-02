@@ -35,6 +35,7 @@ Office 工具技巧
 - [如何走出个人舒适圈](/daily-life/GetOutOfYourComfortZone.md): <sub><sup>(2020年2月9日)</sup></sub>
 - [HowToHaveLeadership](/daily-life/HowToHaveLeadership.md): <sub><sup>(2020年6月20日)</sup></sub>
 - [个人装换机之 Windows 系列](/daily-life/InstallSystem-windows.md): <sub><sup>(2020年5月28日)</sup></sub>
+- [自我迭代](/daily-life/SelfReview.md): <sub><sup>(2020年7月2日)</sup></sub>
 - [优秀的自我介绍很重要](/daily-life/TheImportantOfSelfIntroduction.md): <sub><sup>(2020年3月9日)</sup></sub>
 
 ## Full-stack
@@ -78,4 +79,4 @@ Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年5月27日)</sup></sub>
 
-最后更新于2020年6月20日
+最后更新于2020年7月2日
