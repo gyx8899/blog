@@ -174,9 +174,8 @@ git branch -d feature2
 git push origin -d feature2
 
 ```
-- Feature branching 工作流 - 方式2-Pull Request
+#### Feature branching 工作流 - 方式2 - Pull Request
 
-- 修正
 ```shell script
 # 用这一次新的commit, 合并上一次 commit。进而达到修复上一次 commit 的 comment 内容
 git add .

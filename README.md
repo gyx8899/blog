@@ -49,7 +49,7 @@ Office 工具技巧
 - [CSS: 日常拾遗](/full-stack/docs/CSS.md): <sub><sup>(2020年5月15日)</sup></sub>
 - [Console](/full-stack/docs/Console.md): <sub><sup>(2020年6月5日)</sup></sub>
 - [DOS command](/full-stack/docs/Dos.md): <sub><sup>(2020年5月27日)</sup></sub>
-- [Git 命令集](/full-stack/docs/Git.md): <sub><sup>(2020年6月12日)</sup></sub>
+- [Git 命令集](/full-stack/docs/Git.md): <sub><sup>(2020年7月10日)</sup></sub>
 - [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md): <sub><sup>(2020年7月2日)</sup></sub>
 - [IntelliJ-IDEA: 使用技巧](/full-stack/docs/IntelliJ-IDEA.md): <sub><sup>(2020年3月16日)</sup></sub>
 - [Jest: 测试是为了更好的开发](/full-stack/docs/Jest.md): <sub><sup>(2020年3月22日)</sup></sub>
@@ -80,4 +80,4 @@ Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年5月27日)</sup></sub>
 
-最后更新于2020年7月2日
+最后更新于2020年7月10日
