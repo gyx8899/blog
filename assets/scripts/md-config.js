@@ -55,9 +55,9 @@ module.exports = {
                     "title": "Git 命令集"
                 },
                 "IntelliJ-IDEA.md": {
-                    "date": "2020年3月16日",
+                    "date": "2020年7月15日",
                     "path": "full-stack/docs/IntelliJ-IDEA.md",
-                    "title": "IntelliJ-IDEA: 使用技巧"
+                    "title": "IntelliJ IDEA"
                 },
                 "Jest.md": {
                     "date": "2020年3月22日",

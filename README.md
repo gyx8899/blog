@@ -51,7 +51,7 @@ Office 工具技巧
 - [DOS command](/full-stack/docs/Dos.md): <sub><sup>(2020年5月27日)</sup></sub>
 - [Git 命令集](/full-stack/docs/Git.md): <sub><sup>(2020年7月15日)</sup></sub>
 - [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md): <sub><sup>(2020年7月15日)</sup></sub>
-- [IntelliJ-IDEA: 使用技巧](/full-stack/docs/IntelliJ-IDEA.md): <sub><sup>(2020年3月16日)</sup></sub>
+- [IntelliJ IDEA](/full-stack/docs/IntelliJ-IDEA.md): <sub><sup>(2020年7月15日)</sup></sub>
 - [Jest: 测试是为了更好的开发](/full-stack/docs/Jest.md): <sub><sup>(2020年3月22日)</sup></sub>
 - [NPM and Plugin Guide](/full-stack/docs/NPM.md): <sub><sup>(2020年6月14日)</sup></sub>
 - [React: 总结整理](/full-stack/docs/React.md): <sub><sup>(2020年5月29日)</sup></sub>
