@@ -73,9 +73,14 @@ git commit
     # 4. 鼠标点击 cmd 区域，将焦点重新聚焦 cmd
     # 5.1 dos 模式 - Shift + Z, Shift + Z, 两次退出 Comment 编辑模式
     # 5.2 vim 模式 - 1. ESC, 2. :set noreadonly 3. :wq  (root 权限 :wq!)
-    # 简化 commit 的命令 -m
-    git commmit -m "Comment text"
-
+    
+    # 1. 简化 commit 的命令 -m
+    git commit -m "Comment text"
+    # 2. 简化多行 commit 的命令 -m, 两种方式：
+    git commit -m "commit title" -m "commit description"
+    git commit -m "commit title
+    >
+    > commit description"
 
 # 推送本地仓库改动到远程仓库（代码库）
 git push
