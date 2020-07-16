@@ -225,6 +225,7 @@ git rebase -i HEAD^^  #撤销最后2次
 git rebase -i HEAD~5  #撤销最后5次
 # 丢弃上一次提交 --hard
 git reset --hard HEAD^
+git push --force origin master
 # 以倒数第二个 commit 为起点（起点不包含在 rebase 序列里哟），branch1 为终点，rebase 到倒数第三个 commit 上。
 git rebase --onto HEAD^^ HEAD^ branch1
 ```
