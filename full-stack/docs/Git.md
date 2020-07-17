@@ -405,6 +405,114 @@ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 git remote -v
 ```
 
+### Learn Git Branching - 速查
+
+#### Git Remotes!
+
+##### Push & Pull
+```shell script
+# 1. Clone Intro
+git clone
+
+# 2. Remote Branches: git checkout <remote name>/<branch name>
+git checkout o/master
+
+# 3. Git Fetchin
+git fetch
+
+# 4. Git Pullin
+git pull
+# ===
+git fetch; git merge master
+
+# 5. Faking teamwork: branch, commit count
+git fakeTeamwork
+git fakeTeamwork foo 3
+
+## 克隆分支，增加两条提交记录，提交并拉取及合并代码
+git clone
+git fakeTeamwork 2
+git commit
+git pull
+
+# 6. Git Pushin
+git push
+
+# 7. Deverged History
+git fetch; git rebase master; git push;
+git pull --rebase; git push;
+
+git fetch; git merge master; git push;
+git pull; git push
+
+# 8. Locked Master: 推送改动到远程分支
+git checkout -b branch1
+git push
+```
+
+##### To Origin And Beyond
+```shell script
+# 1. Push master
+git fetch
+## 以 o/master 为 base, 把 side1 分支移动到 o/master 上
+git rebase o/master side1
+git rebase side1 side2
+git rebase side2 side3
+git rebase side3 master
+git push
+
+# 2. Merge with remotes
+git checkout master
+git pull origin master
+git merge side1
+git merge side2
+git merge side3
+git push origin master
+
+# 3. Remote tracking
+git checkout -b side o/master
+git commit
+git pull --rebase
+git push
+
+# 4. Git push arguments
+## 把本地 master 推送到远程仓库
+git push origin master
+## 把本地 foo 推送到远程仓库
+git push origin foo
+
+# 5. Git push arguments -- Expended
+## 把分支 foo 推送到远程仓库 master 上
+git push origin foo:master
+## 把本地 master 的前一条提交到远程仓库的 foo 分支上
+git push origin master^:foo
+
+# 6. Fetch arguments
+git fetch origin master^:foo
+git fetch origin foo:master
+git checkout foo
+git merge master
+
+git pull origin master^:foo
+git pull origin foo:master
+git branch -f foo
+git checkout foo
+
+# 7. Source of nothing
+## 删除远程仓库上的 bar 分支（提交空内容到远程仓库分支）
+git push origin :foo
+## 拉取远程仓库并创建 abc 分支
+git fetch origin :abc
+
+# 8. Pull arguments
+## 拉取远程仓库 bar 分支到本地，并基于 bar 新建分支 foo, 然后合并 foo 分支
+git pull origin bar:foo
+## 拉取远程仓库 master 到本地，并基于 master 新建分支 side, 然后合并 side 分支
+git pull origin master:side
+
+```
+
+
 ### Questions: 常见问题
 
 ##### SSL_read: SSL_ERROR_SYSCALL, errno 10054
