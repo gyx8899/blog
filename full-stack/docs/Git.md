@@ -593,6 +593,20 @@ npm install --global --production windows-build-tools
 git add .
 ```
 
+##### Rebasing master with "git pull --rebase"
+```shell script
+> git pull --rebase
+You are not currently on a branch.
+Please specify which branch you want to rebase against.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+```
+```shell script
+git rebase --abort
+git pull --rebase
+```
+
 ## 练习
 - [Learn Git Branching](https://learngitbranching.js.org/)
  
