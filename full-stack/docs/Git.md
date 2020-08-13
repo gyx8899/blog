@@ -607,6 +607,17 @@ git rebase --abort
 git pull --rebase
 ```
 
+##### Git set custom registry when group is using cnpm
+```shell script
+# Just only set @xx/xxxxxx for your group's components;
+npm config set "@xx:registry" https://npm.xxxxxx.net.cn:/
+
+# Reset default npm registry
+npm config set registry https://registry.npmjs.org
+# Reset Taobao npm registry
+npm config set registry https://registry.npm.taobao.org/
+```
+
 ## 练习
 - [Learn Git Branching](https://learngitbranching.js.org/)
  
