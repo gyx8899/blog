@@ -618,6 +618,15 @@ npm config set registry https://registry.npmjs.org
 npm config set registry https://registry.npm.taobao.org/
 ```
 
+##### git pull - error: You have not concluded your merge (MERGE_HEAD exists).
+> hint: Please, commit your changes before merging.
+> fatal: Exiting because of unfinished merge.
+```shell script
+# 发生冲突，解决 merge 问题
+git reset --hard
+git pull
+```
+
 ## 练习
 - [Learn Git Branching](https://learngitbranching.js.org/)
  
