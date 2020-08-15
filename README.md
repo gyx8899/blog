@@ -61,6 +61,7 @@ Office 工具技巧
 - [Snippet: 那些有趣的代码片段](/full-stack/docs/Snippet.md): <sub><sup>(2020年2月18日)</sup></sub>
 - [Testing: 测试技巧笔记](/full-stack/docs/Testing.md): <sub><sup>(2020年3月13日)</sup></sub>
 - [Tricks: 技巧黑暗料理](/full-stack/docs/Tricks.md): <sub><sup>(2020年2月18日)</sup></sub>
+- [TypeScript](/full-stack/docs/TypeScript.md): <sub><sup>(2020年8月15日)</sup></sub>
 - [Vue: 点滴都是赞](/full-stack/docs/Vue.md): <sub><sup>(2020年2月18日)</sup></sub>
 - [WebAPI: 那些容易忘，容易漏的必回方法](/full-stack/docs/WebAPI.md): <sub><sup>(2020年2月18日)</sup></sub>
 - [Webpack: 常规笔记](/full-stack/docs/Webpack.md): <sub><sup>(2020年4月28日)</sup></sub>
@@ -80,4 +81,4 @@ Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年5月27日)</sup></sub>
 
-最后更新于2020年8月14日
+最后更新于2020年8月15日

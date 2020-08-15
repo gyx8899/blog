@@ -138,6 +138,11 @@ module.exports = {
                     "date": "2020年7月15日",
                     "path": "full-stack/docs/HTTP.md",
                     "title": "HTTP: 小知识巧总结"
+                },
+                "TypeScript.md": {
+                    "date": "2020年8月15日",
+                    "path": "full-stack/docs/TypeScript.md",
+                    "title": "TypeScript"
                 }
             },
             "react": {
