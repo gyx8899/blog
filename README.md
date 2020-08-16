@@ -58,6 +58,7 @@ Office 工具技巧
 - [React Hook - 速览](/full-stack/docs/ReactHook.md): <sub><sup>(2020年6月5日)</sup></sub>
 - [Regexp: 日常表达式](/full-stack/docs/Regexp.md): <sub><sup>(2020年5月9日)</sup></sub>
 - [SEO: 搜索优化学习](/full-stack/docs/SEO.md): <sub><sup>(2020年4月17日)</sup></sub>
+- [SQL](/full-stack/docs/SQL.md): <sub><sup>(2020年8月16日)</sup></sub>
 - [Snippet: 那些有趣的代码片段](/full-stack/docs/Snippet.md): <sub><sup>(2020年2月18日)</sup></sub>
 - [Testing: 测试技巧笔记](/full-stack/docs/Testing.md): <sub><sup>(2020年3月13日)</sup></sub>
 - [Tricks: 技巧黑暗料理](/full-stack/docs/Tricks.md): <sub><sup>(2020年2月18日)</sup></sub>
@@ -81,4 +82,4 @@ Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年5月27日)</sup></sub>
 
-最后更新于2020年8月15日
+最后更新于2020年8月16日

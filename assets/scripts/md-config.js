@@ -143,6 +143,11 @@ module.exports = {
                     "date": "2020年8月15日",
                     "path": "full-stack/docs/TypeScript.md",
                     "title": "TypeScript"
+                },
+                "SQL.md": {
+                    "date": "2020年8月16日",
+                    "path": "full-stack/docs/SQL.md",
+                    "title": "SQL"
                 }
             },
             "react": {
