@@ -607,17 +607,6 @@ git rebase --abort
 git pull --rebase
 ```
 
-##### Git set custom registry when group is using cnpm
-```shell script
-# Just only set @xx/xxxxxx for your group's components;
-npm config set "@xx:registry" https://npm.xxxxxx.net.cn:/
-
-# Reset default npm registry
-npm config set registry https://registry.npmjs.org
-# Reset Taobao npm registry
-npm config set registry https://registry.npm.taobao.org/
-```
-
 ##### git pull - error: You have not concluded your merge (MERGE_HEAD exists).
 > hint: Please, commit your changes before merging.
 > fatal: Exiting because of unfinished merge.
@@ -633,5 +622,4 @@ git pull
 ## 参考
 - https://git-scm.com/docs Git - Reference
 - https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A 【第1864期】手撕Git，告别盲目记忆
-- https://nextfe.com/git-cheatsheet-advanced/ git 高级用法小抄
-
+- https://nextfe.com/git-cheatsheet-advanced/ git 高级用法小抄

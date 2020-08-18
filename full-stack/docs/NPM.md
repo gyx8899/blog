@@ -129,7 +129,7 @@ npm i -g webpack
 
 ## Questions
 
-- npm ERR! Unexpected end of JSON input while parsing near '....0.0","inherits":"^2.'
+##### npm ERR! Unexpected end of JSON input while parsing near '....0.0","inherits":"^2.'
 ```shell script
 npm clean cache --force
 ```
@@ -143,4 +143,13 @@ npm clean cache --force
 ```shell script
 npm config set registry https://registry.npmjs.org
 ```
-
+
+##### Git set custom registry when group is using cnpm
+```shell script
+# Just only set @xx/xxxxxx for your group's components;
+npm config set "@xx:registry" https://npm.xxxxxx.net.cn:/
+
+# Reset default npm registry
+npm config set registry https://registry.npmjs.org
+# Reset Taobao npm registry
+npm config set registry https://registry.npm.taobao.org/

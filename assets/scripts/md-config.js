@@ -50,7 +50,7 @@ module.exports = {
                     "title": "DOS command"
                 },
                 "Git.md": {
-                    "date": "2020年8月14日",
+                    "date": "2020年8月18日",
                     "path": "full-stack/docs/Git.md",
                     "title": "Git 命令集"
                 },
@@ -65,7 +65,7 @@ module.exports = {
                     "title": "Jest: 测试是为了更好的开发"
                 },
                 "NPM.md": {
-                    "date": "2020年6月14日",
+                    "date": "2020年8月18日",
                     "path": "full-stack/docs/NPM.md",
                     "title": "NPM and Plugin Guide"
                 },
