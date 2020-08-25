@@ -69,11 +69,6 @@ module.exports = {
                     "path": "full-stack/docs/NPM.md",
                     "title": "NPM and Plugin Guide"
                 },
-                "ReactHook.md": {
-                    "date": "2020年6月5日",
-                    "path": "full-stack/docs/ReactHook.md",
-                    "title": "React Hook - 速览"
-                },
                 "Snippet.md": {
                     "date": "2020年2月18日",
                     "path": "full-stack/docs/Snippet.md",
@@ -108,11 +103,6 @@ module.exports = {
                     "date": "2020年4月17日",
                     "path": "full-stack/docs/SEO.md",
                     "title": "SEO: 搜索优化学习"
-                },
-                "React.md": {
-                    "date": "2020年5月29日",
-                    "path": "full-stack/docs/React.md",
-                    "title": "React: 总结整理"
                 },
                 "Bash.md": {
                     "date": "2020年6月4日",
@@ -151,6 +141,16 @@ module.exports = {
                 }
             },
             "react": {
+                "React.md": {
+                    "date": "2020年5月29日",
+                    "path": "full-stack/docs/React.md",
+                    "title": "React: 总结整理"
+                },
+                "ReactHook.md": {
+                    "date": "2020年6月5日",
+                    "path": "full-stack/docs/ReactHook.md",
+                    "title": "React Hook - 速览"
+                },
                 "ReactLifeCycleToHooks1.md": {
                     "date": "2020年2月9日",
                     "path": "full-stack/react/ReactLifeCycleToHooks1.md",
