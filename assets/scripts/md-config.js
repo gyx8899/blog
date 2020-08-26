@@ -183,26 +183,12 @@ module.exports = {
                 }
             }
         },
-        "README.md": {
-            "date": "2020年4月11日",
-            "path": "README.md"
-        },
         "office": {
             "Word.md": {
                 "date": "2020年5月27日",
                 "path": "office/Word.md",
                 "title": "Word: 文档操作精选技巧"
             }
-        },
-        "SUMMARY.md": {
-            "date": "2020年6月6日",
-            "path": "SUMMARY.md",
-            "title": "Summary"
-        },
-        "GLOSSORY.md": {
-            "date": "2020年8月26日",
-            "path": "GLOSSORY.md",
-            "title": "术语"
         }
     }
 };

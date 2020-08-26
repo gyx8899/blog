@@ -6,6 +6,7 @@ const {readDataFromFile, writeDataToFile, iterateObject} = require('@daybyday/yx
 
 const readMeTimestamp = `yyyy年MM月dd日`;
 const readmeFilePath = './README.md';
+const summaryFilePath = './SUMMARY.md';
 // const summaryFilePath = './SUMMARY.md';
 const defaultTimestamp = `最后更新于yyyy年MM月dd日`;
 const ignoredMdFilesInTree = ['README.md', 'SUMMARY.md', 'GLOSSORY.md'];
@@ -116,7 +117,27 @@ function generateReadme(_mdConfig, _readMeConfig) {
 
 	const currentTimestamp = getFormatDateValue(new Date(), defaultTimestamp);
 	writeDataToFile(readmeFilePath, content + `\n${currentTimestamp}\n`);
-	// writeDataToFile(summaryFilePath, content);
+}
+function generateSummary(_mdConfig, _readMeConfig) {
+	let content = '# Summary\n\n[Introduction](README.md)\n';
+	const nonLeaf = function (key, level, value) {
+		if (value.date) {
+			leaf(key, value);
+		} else if (_readMeConfig[key]) {
+			const _config = _readMeConfig[key],
+					isConfigStr = typeof _config === 'string',
+					title = isConfigStr ? _config : _config.title;
+			content += `\n## ${key.substring(0, 1).toUpperCase() + key.substring(1)}\n${title || ''}\n\n`;
+		}
+	};
+	const leaf = function (key, value) {
+		if (ignoredMdFilesInTree.indexOf(key) === -1 && value.date) {
+			content += `* [${value.title || key.split('.md')[0]}](/${encodeURI(value.path)})\n`;
+		}
+	};
+	iterateObject(_mdConfig, 1, nonLeaf, ()=>{});
+
+	writeDataToFile(summaryFilePath, content);
 }
 
 cgf(function (err, results) {
@@ -126,7 +147,7 @@ cgf(function (err, results) {
 	results && results.forEach((file) => {
 		const {filename, status} = file;
 
-		if (filename.indexOf('.md') !== -1 && filename.indexOf('README.md') === -1) {
+		if (filename.indexOf('.md') !== -1 && ignoredMdFilesInTree.indexOf(filename) === -1) {
 			mdFilesChanged = true;
 			// console.log(JSON.stringify(mdConfig, null, 4));
 			updateMdConfig(filename, status);
@@ -142,5 +163,6 @@ cgf(function (err, results) {
 		writeDataToFile('./assets/scripts/md-config.js', `module.exports = ${JSON.stringify(mdConfig, null, 4)};\n`);
 		// Update README.md
 		generateReadme(mdConfig, readMeConfig);
+		generateSummary(mdConfig, readMeConfig);
 	}
 });

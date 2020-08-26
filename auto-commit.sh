@@ -52,6 +52,12 @@ if ((changes)); then
   git commit -m "$commitmsg"
   git pull --rebase
   git push
+
+  gitbook build
+
+  git commit -m "gitbook build"
+  git pull --rebase
+  git push
 fi
 
 exec bash
