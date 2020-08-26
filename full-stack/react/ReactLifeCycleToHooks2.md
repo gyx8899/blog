@@ -1,4 +1,4 @@
-# React：生命周期方法快速转 Hooks（2）
+# React: 生命周期方法快速转 Hooks（2）
 Tag: React, Hooks, Life cycle
 
 [TOC]
