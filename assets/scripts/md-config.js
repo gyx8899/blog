@@ -157,9 +157,9 @@ module.exports = {
                     "title": "React: 生命周期方法快速转 Hooks（1）"
                 },
                 "ReactLifeCycleToHooks2.md": {
-                    "date": "2020年2月9日",
+                    "date": "2020年8月26日",
                     "path": "full-stack/react/ReactLifeCycleToHooks2.md",
-                    "title": "React: 生命周期方法快速转 Hooks（2）"
+                    "title": "React-生命周期方法快速转 Hooks（2）"
                 },
                 "Router.md": {
                     "date": "2020年4月22日",
