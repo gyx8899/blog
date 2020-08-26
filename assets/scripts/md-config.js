@@ -138,6 +138,11 @@ module.exports = {
                     "date": "2020年8月16日",
                     "path": "full-stack/docs/SQL.md",
                     "title": "SQL"
+                },
+                "GitBook.md": {
+                    "date": "2020年8月26日",
+                    "path": "full-stack/docs/GitBook.md",
+                    "title": "GitBook"
                 }
             },
             "react": {
@@ -193,6 +198,11 @@ module.exports = {
             "date": "2020年6月6日",
             "path": "SUMMARY.md",
             "title": "Summary"
+        },
+        "GLOSSORY.md": {
+            "date": "2020年8月26日",
+            "path": "GLOSSORY.md",
+            "title": "术语"
         }
     }
 };
