@@ -4,25 +4,31 @@
 
 ## 常用示例
 
-##### useEffect 只在自己内部使用的 function，不用改写 fetchData 为 useCallback；
-
+##### 在 `useEffect` 内部使用异步 Function，
+- 不用改写 `fetchData` 为 `useCallback`；
+- 当副作用无法在 `return` 中消除的时候，如下异步请求（回调）中调用声明周期的方法 `setState`，则需要判断 `isMounted` 的值后再进行执行;
+- 是否销毁的状态 `isMounted`，写在 `useEffect` 内部，减少 `useState` 依赖;
 ```javascript
 useEffect(() => {
-    let didCancel = false;
+    let isMounted = true;
 
     const fetchData = async () => {
-        // ...
+        const article = await API.fetchArticle(id);
+        if (!isMounted) {
+          // check isMounted for async action which may have side effect
+          setArticle(article);
+        }
     };
 
     fetchData().then();
 
     return () => {
-        didCancel = true;
+        isMounted = false;
     };
-}, [url, options]);
+}, [id]);
 ```
 
-##### useEffect setInterval/setTimeout, clearInterval/clearTimeout 的使用，无需将 id 转为 useState;
+##### 在 `useEffect` 中使用 `setInterval/setTimeout`, `clearInterval/clearTimeout`，无需将 id 转换为 `useState`;
 ```javascript
 function Counter() {
   const [count, setCount] = useState(0);
@@ -38,7 +44,8 @@ function Counter() {
 }
 ```
 
-##### 使用 useReducer 解救无法去除的依赖
+##### 使用 `useReducer` 解救 `useEffect` 无法去除的依赖
+以 setCount 为例：
 ```javascript
 useEffect(() => {
   const id = setInterval(() => {
@@ -81,31 +88,10 @@ const { count, step } = state;
 
 useEffect(() => {
   const id = setInterval(() => {
-    dispatch({ type: "tick" }); // Instead of setCount(c => c + step);
+    dispatch({type: ACTIONS.INCREMENT}); // Instead of setCount(c => c + step);
   }, 1000);
   return () => clearInterval(id);
 }, [dispatch]);
 
-```
-
-##### 是否销毁的状态 didCancel/didUnMount 可写在 useEffect 内部，减少 useState 依赖。
-
-```javascript
-useEffect(() => {
-    // didCancel 赋值与变化的位置更内聚
-    let didCancel = false;
-
-    async function fetchData() {
-      const article = await API.fetchArticle(id);
-      if (!didCancel) {
-        setArticle(article);
-      }
-    }
-
-    fetchData();
-
-    return () => {
-      didCancel = true;
-    };
-  }, [fetchArticle]);
+return (<div><span>{count}</span><span>{step}</span></div>);
 ```

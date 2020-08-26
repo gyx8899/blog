@@ -54,8 +54,6 @@ Office 工具技巧
 - [IntelliJ IDEA](/full-stack/docs/IntelliJ-IDEA.md): <sub><sup>(2020年7月15日)</sup></sub>
 - [Jest: 测试是为了更好的开发](/full-stack/docs/Jest.md): <sub><sup>(2020年3月22日)</sup></sub>
 - [NPM and Plugin Guide](/full-stack/docs/NPM.md): <sub><sup>(2020年8月18日)</sup></sub>
-- [React: 总结整理](/full-stack/docs/React.md): <sub><sup>(2020年5月29日)</sup></sub>
-- [React Hook - 速览](/full-stack/docs/ReactHook.md): <sub><sup>(2020年6月5日)</sup></sub>
 - [Regexp: 日常表达式](/full-stack/docs/Regexp.md): <sub><sup>(2020年5月9日)</sup></sub>
 - [SEO: 搜索优化学习](/full-stack/docs/SEO.md): <sub><sup>(2020年4月17日)</sup></sub>
 - [SQL](/full-stack/docs/SQL.md): <sub><sup>(2020年8月16日)</sup></sub>
@@ -71,15 +69,17 @@ Office 工具技巧
 ### React
 React 相关知识总结
 
+- [React: 总结整理](/full-stack/docs/React.md): <sub><sup>(2020年5月29日)</sup></sub>
+- [React Hook - 速览](/full-stack/docs/ReactHook.md): <sub><sup>(2020年6月5日)</sup></sub>
 - [React: 生命周期方法快速转 Hooks（1）](/full-stack/react/ReactLifeCycleToHooks1.md): <sub><sup>(2020年2月9日)</sup></sub>
 - [React: 生命周期方法快速转 Hooks（2）](/full-stack/react/ReactLifeCycleToHooks2.md): <sub><sup>(2020年2月9日)</sup></sub>
 - [Redux: 精髓](/full-stack/react/Redux.md): <sub><sup>(2020年4月22日)</sup></sub>
 - [Router: 特殊之处](/full-stack/react/Router.md): <sub><sup>(2020年4月22日)</sup></sub>
-- [useEffect](/full-stack/react/useEffect.md): <sub><sup>(2020年6月9日)</sup></sub>
+- [useEffect](/full-stack/react/useEffect.md): <sub><sup>(2020年8月26日)</sup></sub>
 
 ## Office
 Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年5月27日)</sup></sub>
 
-最后更新于2020年8月18日
+最后更新于2020年8月26日

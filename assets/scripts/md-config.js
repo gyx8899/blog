@@ -172,7 +172,7 @@ module.exports = {
                     "title": "Redux: 精髓"
                 },
                 "useEffect.md": {
-                    "date": "2020年6月9日",
+                    "date": "2020年8月26日",
                     "path": "full-stack/react/useEffect.md",
                     "title": "useEffect"
                 }
