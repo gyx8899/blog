@@ -55,6 +55,7 @@ if ((changes)); then
 
   gitbook build
 
+  git add .
   git commit -m "gitbook build"
   git pull --rebase
   git push

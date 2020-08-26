@@ -18,4 +18,7 @@ gitbook build
 
 # 安装定义在 book.json 中的 plugin
 gitbook install
+
+# 查看安装版本
+gitbook ls
 ```
