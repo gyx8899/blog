@@ -8,6 +8,7 @@ const readMeTimestamp = `yyyy年MM月dd日`;
 const readmeFilePath = './README.md';
 // const summaryFilePath = './SUMMARY.md';
 const defaultTimestamp = `最后更新于yyyy年MM月dd日`;
+const ignoredMdFilesInTree = ['README.md', 'SUMMARY.md'];
 
 function getFormatDateValue(date, pattern) {
 	let year = date.getFullYear(),
@@ -107,7 +108,7 @@ function generateReadme(_mdConfig, _readMeConfig) {
 
 	};
 	const leaf = function (key, value) {
-		if (key !== 'README.md' && key !== 'SUMMARY.md' && value.date) {
+		if (ignoredMdFilesInTree.indexOf(key) === -1 && value.date) {
 			content += `- [${value.title || key.split('.md')[0]}](/${encodeURI(value.path)}): <sub><sup>(${value.date})</sup></sub>\n`;
 		}
 	};

@@ -193,14 +193,6 @@ module.exports = {
             "date": "2020年6月6日",
             "path": "SUMMARY.md",
             "title": "Summary"
-        },
-        "_book": {
-            "office": {},
-            "frontend": {
-                "react": {},
-                "docs": {}
-            },
-            "daily-life": {}
         }
     }
 };
