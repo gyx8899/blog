@@ -13,6 +13,9 @@ gitbook init
 # 编译和预览书籍
 gitbook serve
 
+# 只编译
+gitbook build
+
 # 安装定义在 book.json 中的 plugin
 gitbook install
 ```
