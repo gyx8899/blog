@@ -32,23 +32,8 @@
   "structure" : {
     "readme" : "README.md"
   },
-  "plugins": ["node-canvas", "autocover"],
-  "pluginsConfig": {
-    "autocover": {
-      "font": {
-        "size": null,
-        "family": "Impact",
-        "color": "#FFF"
-      },
-      "size": {
-        "w": 1800,
-        "h": 2360
-      },
-      "background": {
-        "color": "#09F"
-      }
-    }
-  },
+  "plugins": [],
+  "pluginsConfig": {},
   "gitbook": ">=2.0.0",
   "language": "ch",
   "title": "Kate's Blog",

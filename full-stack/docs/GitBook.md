@@ -2,7 +2,8 @@
 
 ## 安装
 ```shell script
-npm install gitbook -g
+# 安装 gitbook-cli，执行后续 gitbook 命令会自动安装最新版本的 gitbook
+npm install gitbook-cli -g
 
 # 初始化书籍目录，
 # 1. 初次执行生成 README.md 和 SUMMERY.md 文件；
@@ -10,4 +11,8 @@ npm install gitbook -g
 gitbook init
 
 # 编译和预览书籍
-gitbook serve
+gitbook serve
+
+# 安装定义在 book.json 中的 plugin
+gitbook install
+```

@@ -8,7 +8,7 @@ const readMeTimestamp = `yyyy年MM月dd日`;
 const readmeFilePath = './README.md';
 // const summaryFilePath = './SUMMARY.md';
 const defaultTimestamp = `最后更新于yyyy年MM月dd日`;
-const ignoredMdFilesInTree = ['README.md', 'SUMMARY.md'];
+const ignoredMdFilesInTree = ['README.md', 'SUMMARY.md', 'GLOSSORY.md'];
 
 function getFormatDateValue(date, pattern) {
 	let year = date.getFullYear(),
