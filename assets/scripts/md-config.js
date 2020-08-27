@@ -40,7 +40,7 @@ module.exports = {
         "full-stack": {
             "docs": {
                 "Console.md": {
-                    "date": "2020年6月5日",
+                    "date": "2020年8月27日",
                     "path": "full-stack/docs/Console.md",
                     "title": "Console"
                 },
@@ -105,7 +105,7 @@ module.exports = {
                     "title": "SEO: 搜索优化学习"
                 },
                 "Bash.md": {
-                    "date": "2020年6月4日",
+                    "date": "2020年8月27日",
                     "path": "full-stack/docs/Bash.md",
                     "title": "Bash: 入门重点"
                 },

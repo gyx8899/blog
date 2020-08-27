@@ -29,9 +29,9 @@
 ### Docs
 个人知识文档
 
-- [Bash: 入门重点](/full-stack/docs/Bash.md): <sub><sup>(2020年6月4日)</sup></sub>
+- [Bash: 入门重点](/full-stack/docs/Bash.md): <sub><sup>(2020年8月27日)</sup></sub>
 - [CSS: 日常拾遗](/full-stack/docs/CSS.md): <sub><sup>(2020年5月15日)</sup></sub>
-- [Console](/full-stack/docs/Console.md): <sub><sup>(2020年6月5日)</sup></sub>
+- [Console](/full-stack/docs/Console.md): <sub><sup>(2020年8月27日)</sup></sub>
 - [DOS command](/full-stack/docs/Dos.md): <sub><sup>(2020年5月27日)</sup></sub>
 - [Git 命令集](/full-stack/docs/Git.md): <sub><sup>(2020年8月18日)</sup></sub>
 - [GitBook](/full-stack/docs/GitBook.md): <sub><sup>(2020年8月27日)</sup></sub>
