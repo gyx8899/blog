@@ -57,5 +57,5 @@ if ((changes)); then
 
 fi
 
-exec bash
-exit 1;
+#exec bash
+exit
