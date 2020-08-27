@@ -189,6 +189,9 @@ module.exports = {
                 "path": "office/Word.md",
                 "title": "Word: 文档操作精选技巧"
             }
+        },
+        "frontend": {
+            "docs": {}
         }
     }
 };
