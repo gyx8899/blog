@@ -1,7 +1,0 @@
-# TypeScript
-
-[TOC]
-
-
-
-
