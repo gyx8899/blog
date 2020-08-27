@@ -100,25 +100,28 @@ echo "$multiLineStr2"
 
 #### Questions
 
-- [: !=: unary operator expected
+* unary operator expected: 表达式左边有可能为空，则表达式左侧就为空，报错
+```shell script
+[: !=: 
+if [ "${filename}" != 'README.md' ]; then
 
-    - 表达式左边有可能为空，则表达式左侧就为空，报错
-    ```shell script
-    if [ "${filename}" != 'README.md' ]; then
-    
-    fi
-    ```
-    - 判断不等，加上双中括号
-    
-    ```shell script
-    if [[ "${filename}" != 'README.md' ]]; then
-    
-    fi
-    ```
-    - 判断空，用双中括号和单等号
-    
-    ```shell script
-    if [[ "${filename}" = '' ]]; then
-    
-    fi
-    ```
+fi
+```
+
+* unary operator expected: 判断不等，加上双中括号
+
+```shell script
+[: !=: 
+if [[ "${filename}" != 'README.md' ]]; then
+
+fi
+```
+
+* unary operator expected: 判断空，用双中括号和单等号
+
+```shell script
+[: !=: 
+if [[ "${filename}" = '' ]]; then
+
+fi
+```

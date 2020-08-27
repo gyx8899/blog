@@ -52,6 +52,22 @@ function getFileObjInMdConfig(fileName) {
 	return [currentFile, filePaths.pop()];
 }
 
+function deleteEmptyMdConfig(fileName) {
+	const filePaths = fileName.split('/');
+	let currentFile = mdConfig.blog;
+	Array(3)
+			.fill('')
+			.forEach(() => {
+				for (let i = 0; i < filePaths.length - 1; i++) {
+					if (Object.keys(currentFile[filePaths[i]]).length === 0) {
+						delete currentFile[filePaths[i]];
+						break;
+					}
+					currentFile = currentFile[filePaths[i]];
+				}
+			});
+}
+
 function updateMdConfig(fileName, status) {
 	let [currentFile, name] = getFileObjInMdConfig(fileName);
 	switch (status) {
@@ -69,6 +85,7 @@ function updateMdConfig(fileName, status) {
 			if (currentFile && currentFile[name]) {
 				delete currentFile[name];
 			}
+			deleteEmptyMdConfig(fileName);
 			break;
 		case "Renamed":
 			// Not supported by changed-git-files
