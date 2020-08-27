@@ -94,4 +94,41 @@ useEffect(() => {
 }, [dispatch]);
 
 return (<div><span>{count}</span><span>{step}</span></div>);
+```
+
+##### 如何去除 ESLint 提示的组件内常量依赖
+示例：
+```javascript
+function Video() {
+    const {PLAYLIST_UPDATED} = EVENT_TYPES;
+    useEffect(() => {
+        const updatedCallback = () => {
+          //...
+        };
+        event.on(PLAYLIST_UPDATED, updatedCallback);
+        return () => {
+            event.off(PLAYLIST_UPDATED, updatedCallback);
+        };
+    }, []);
+  return (<div>...</div>)
+}
+// Line 166:5:  React Hook useEffect has a missing dependency: 'PLAYLIST_UPDATED'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+```
+方法：将对应常量移出组件内，放置在组件外部或单独的配置文件中。
+
+```javascript
+const {PLAYLIST_UPDATED} = EVENT_TYPES;
+
+function Video() {
+    useEffect(() => {
+        const updatedCallback = () => {
+          //...
+        };
+        event.on(PLAYLIST_UPDATED, updatedCallback);
+        return () => {
+            event.off(PLAYLIST_UPDATED, updatedCallback);
+        };
+    }, []);
+  return (<div>...</div>)
+}
 ```

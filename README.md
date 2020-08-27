@@ -60,11 +60,11 @@ React 相关知识总结
 - [React: 生命周期方法快速转 Hooks（2）](/full-stack/react/ReactLifeCycleToHooks2.md): <sub><sup>(2020年8月26日)</sup></sub>
 - [Redux: 精髓](/full-stack/react/Redux.md): <sub><sup>(2020年4月22日)</sup></sub>
 - [Router: 特殊之处](/full-stack/react/Router.md): <sub><sup>(2020年4月22日)</sup></sub>
-- [useEffect](/full-stack/react/useEffect.md): <sub><sup>(2020年8月26日)</sup></sub>
+- [useEffect](/full-stack/react/useEffect.md): <sub><sup>(2020年8月27日)</sup></sub>
 
 ## Office
 Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年5月27日)</sup></sub>
 
-最后更新于2020年8月26日
+最后更新于2020年8月27日
