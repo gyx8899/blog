@@ -119,7 +119,7 @@ function generateReadme(_mdConfig, _readMeConfig) {
 	writeDataToFile(readmeFilePath, content + `\n${currentTimestamp}\n`);
 }
 function generateSummary(_mdConfig, _readMeConfig) {
-	let content = '# Summary\n\n[Introduction](README.md)\n';
+	let content = '# Summary\n\n[Blog](README.md)\n';
 	const nonLeaf = function (key, level, value) {
 		if (value.date) {
 			leaf(key, value);

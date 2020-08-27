@@ -58,3 +58,4 @@ if ((changes)); then
 fi
 
 exec bash
+exit 1;

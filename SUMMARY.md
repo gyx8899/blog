@@ -1,6 +1,6 @@
 # Summary
 
-[Introduction](README.md)
+[Blog](README.md)
 
 ## Blog
 个人成长博客
