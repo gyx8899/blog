@@ -752,6 +752,39 @@ useEffect(() =&gt; {
 
 <span class="hljs-keyword">return</span> (<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{count}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{step}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>);
 </code></pre>
+<h5 id="&#x5982;&#x4F55;&#x53BB;&#x9664;-eslint-&#x63D0;&#x793A;&#x7684;&#x7EC4;&#x4EF6;&#x5185;&#x5E38;&#x91CF;&#x4F9D;&#x8D56;">&#x5982;&#x4F55;&#x53BB;&#x9664; ESLint &#x63D0;&#x793A;&#x7684;&#x7EC4;&#x4EF6;&#x5185;&#x5E38;&#x91CF;&#x4F9D;&#x8D56;</h5>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Video</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">const</span> {PLAYLIST_UPDATED} = EVENT_TYPES;
+    useEffect(() =&gt; {
+        <span class="hljs-keyword">const</span> updatedCallback = () =&gt; {
+          <span class="hljs-comment">//...</span>
+        };
+        event.on(PLAYLIST_UPDATED, updatedCallback);
+        <span class="hljs-keyword">return</span> () =&gt; {
+            event.off(PLAYLIST_UPDATED, updatedCallback);
+        };
+    }, []);
+  <span class="hljs-keyword">return</span> (<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>)
+}
+<span class="hljs-comment">// Line 166:5:  React Hook useEffect has a missing dependency: &apos;PLAYLIST_UPDATED&apos;. Either include it or remove the dependency array  react-hooks/exhaustive-deps</span>
+</code></pre>
+<p>&#x65B9;&#x6CD5;&#xFF1A;&#x5C06;&#x5BF9;&#x5E94;&#x5E38;&#x91CF;&#x79FB;&#x51FA;&#x7EC4;&#x4EF6;&#x5185;&#xFF0C;&#x653E;&#x7F6E;&#x5728;&#x7EC4;&#x4EF6;&#x5916;&#x90E8;&#x6216;&#x5355;&#x72EC;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> {PLAYLIST_UPDATED} = EVENT_TYPES;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Video</span>(<span class="hljs-params"></span>) </span>{
+    useEffect(() =&gt; {
+        <span class="hljs-keyword">const</span> updatedCallback = () =&gt; {
+          <span class="hljs-comment">//...</span>
+        };
+        event.on(PLAYLIST_UPDATED, updatedCallback);
+        <span class="hljs-keyword">return</span> () =&gt; {
+            event.off(PLAYLIST_UPDATED, updatedCallback);
+        };
+    }, []);
+  <span class="hljs-keyword">return</span> (<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>)
+}
+</code></pre>
 
                                 
                                 </section>
@@ -795,7 +828,7 @@ useEffect(() =&gt; {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"useEffect","level":"5.7","depth":1,"next":{"title":"Word: 文档操作精选技巧","level":"6.1","depth":1,"path":"office/Word.md","ref":"office/Word.md","articles":[]},"previous":{"title":"Router: 特殊之处","level":"5.6","depth":1,"path":"full-stack/react/Router.md","ref":"full-stack/react/Router.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kate Kuo <gyx8899@126.com>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kate's Blog","language":"ch","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Kate's Blog":"https://github.com/gyx8899/blog"}},"gitbook":">=2.0.0","description":"This is a blog book created by Kate Kuo","extension":null},"file":{"path":"full-stack/react/useEffect.md","mtime":"2020-08-26T10:14:48.482Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-26T10:42:01.196Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"useEffect","level":"5.7","depth":1,"next":{"title":"Word: 文档操作精选技巧","level":"6.1","depth":1,"path":"office/Word.md","ref":"office/Word.md","articles":[]},"previous":{"title":"Router: 特殊之处","level":"5.6","depth":1,"path":"full-stack/react/Router.md","ref":"full-stack/react/Router.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kate Kuo <gyx8899@126.com>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kate's Blog","language":"ch","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Kate's Blog":"https://github.com/gyx8899/blog"}},"gitbook":">=2.0.0","description":"This is a blog book created by Kate Kuo","extension":null},"file":{"path":"full-stack/react/useEffect.md","mtime":"2020-08-27T06:04:45.101Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-27T06:04:57.810Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
