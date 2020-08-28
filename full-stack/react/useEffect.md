@@ -117,6 +117,7 @@ function Video() {
 方法：将对应常量移出组件内，放置在组件外部或单独的配置文件中。
 
 ```javascript
+import event from 'Event';
 const {PLAYLIST_UPDATED} = EVENT_TYPES;
 
 function Video() {

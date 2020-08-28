@@ -53,8 +53,6 @@ if ((changes)); then
   git pull --rebase
   git push
 
-  gitbook build
-
 fi
 
 #exec bash
