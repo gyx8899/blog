@@ -36,5 +36,5 @@ gitbook install
 - 查看安装版本
 
 ```shell script
-gitbook ls
+gitbook -V
 ```

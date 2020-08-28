@@ -140,7 +140,7 @@ module.exports = {
                     "title": "SQL"
                 },
                 "GitBook.md": {
-                    "date": "2020年8月27日",
+                    "date": "2020年8月28日",
                     "path": "full-stack/docs/GitBook.md",
                     "title": "GitBook"
                 }
