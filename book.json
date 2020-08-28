@@ -32,16 +32,37 @@
   "structure" : {
     "readme" : "README.md"
   },
-  "plugins": ["autotheme", "donate", "ga", "github", "github-buttons", "meta-single", "-sharing", "sharing-plus", "theme-default", "tbfed-pagefooter"],
+  "plugins": ["anchor-navigation-ex", "autotheme", "donate", "ga", "github", "github-buttons", "meta-single", "-sharing", "sharing-plus", "theme-default", "tbfed-pagefooter"],
   "pluginsConfig": {
+    "anchor-navigation-ex": {
+      "showLevel": true,
+      "associatedWithSummary": false,
+      "printLog": false,
+      "multipleH1": true,
+      "mode": "float",
+      "showGoTop": true,
+      "float": {
+        "floatIcon": "fa fa-navicon",
+        "showLevelIcon": false,
+        "level1Icon": "fa fa-hand-o-right",
+        "level2Icon": "fa fa-hand-o-right",
+        "level3Icon": "fa fa-hand-o-right"
+      },
+      "pageTop": {
+        "showLevelIcon": false,
+        "level1Icon": "fa fa-hand-o-right",
+        "level2Icon": "fa fa-hand-o-right",
+        "level3Icon": "fa fa-hand-o-right"
+      }
+    },
     "autotheme": {
-      "white": [9, 10, 11, 12, 13, 14, 15, 16, 17],
-      "sepia": [6, 7, 8, 18, 19],
-      "night": [20, 21, 22, 23, 0, 1, 2, 3, 4, 5]
+      "white": [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+      "sepia": [],
+      "night": [20, 21, 22, 23, 0, 1, 2, 3, 4, 5, 6, 7]
     },
     "donate": {
-      "wechat": "/assets/images/wechat-pay.jpg",
-      "alipay": "/assets/images/ali-pay.png",
+      "wechat": "/blog/assets/images/wechat-pay.jpg",
+      "alipay": "/blog/assets/images/ali-pay.png",
       "title": "",
       "button": "打赏",
       "alipayText": "支付宝打赏",
