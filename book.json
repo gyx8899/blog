@@ -32,7 +32,7 @@
   "structure" : {
     "readme" : "README.md"
   },
-  "plugins": ["ga", "meta-single"],
+  "plugins": ["ga", "meta-single", "github-buttons"],
   "pluginsConfig": {
     "ga": {
       "token": "UA-104315567-4"
@@ -40,6 +40,13 @@
     "meta-single": {
       "name": "google-site-verification",
       "content": "szJqIPSIvin7laJ8pw4nH5DiYP2NGSFsyMGsGt7_x64"
+    },
+    "github-buttons": {
+      "repo": "gyx8899/blog",
+      "types": [
+        "star"
+      ],
+      "size": "small"
     }
   },
   "gitbook": ">=2.0.0",
