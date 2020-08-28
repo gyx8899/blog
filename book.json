@@ -32,10 +32,14 @@
   "structure" : {
     "readme" : "README.md"
   },
-  "plugins": ["ga"],
+  "plugins": ["ga", "meta-single"],
   "pluginsConfig": {
     "ga": {
       "token": "UA-104315567-4"
+    },
+    "meta-single": {
+      "name": "google-site-verification",
+      "content": "szJqIPSIvin7laJ8pw4nH5DiYP2NGSFsyMGsGt7_x64"
     }
   },
   "gitbook": ">=2.0.0",

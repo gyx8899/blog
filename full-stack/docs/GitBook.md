@@ -37,4 +37,7 @@ gitbook install
 
 ```shell script
 gitbook -V
-```
+
+CLI version: 2.3.2
+GitBook version: 3.2.3
+```
