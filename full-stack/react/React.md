@@ -11,6 +11,7 @@
 
 - `constructor` 创建组件
     1. 初始化 state;
+    2. 定义常量数据;
     
 - `getDerivedStateFromProps` 从外部属性初始化内部状态，或 merge 到 初始化的 state 上
 
@@ -43,6 +44,4 @@
     3. 缺陷：callback 嵌套地狱；React.PureComponent性能问题 （声明 this 函数解决）
 
 - Render Props VS HOC
-> 避免 JSX 嵌套地狱；避免 Props 命名冲突；不同组合时机 （HOC 静态组合，Render Porps 动态组合）
-
-最后更新于2020年5月29日
+> 避免 JSX 嵌套地狱；避免 Props 命名冲突；不同组合时机 （HOC 静态组合，Render Porps 动态组合）

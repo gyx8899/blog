@@ -32,8 +32,12 @@
   "structure" : {
     "readme" : "README.md"
   },
-  "plugins": [],
-  "pluginsConfig": {},
+  "plugins": ["ga"],
+  "pluginsConfig": {
+    "ga": {
+      "token": "UA-104315567-4"
+    }
+  },
   "gitbook": ">=2.0.0",
   "language": "ch",
   "title": "Kate's Blog",

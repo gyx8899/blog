@@ -22,10 +22,6 @@
 - [自我迭代](/daily-life/SelfReview.md): <sub><sup>(2020年7月2日)</sup></sub>
 - [优秀的自我介绍很重要](/daily-life/TheImportantOfSelfIntroduction.md): <sub><sup>(2020年3月9日)</sup></sub>
 
-### Docs
-个人知识文档
-
-
 ## Full-stack
 全栈知识总结
 
@@ -58,7 +54,7 @@
 ### React
 React 相关知识总结
 
-- [React: 总结整理](/full-stack/docs/React.md): <sub><sup>(2020年5月29日)</sup></sub>
+- [React: 总结整理](/full-stack/react/React.md): <sub><sup>(2020年8月28日)</sup></sub>
 - [React Hook - 速览](/full-stack/docs/ReactHook.md): <sub><sup>(2020年6月5日)</sup></sub>
 - [React: 生命周期方法快速转 Hooks（1）](/full-stack/react/ReactLifeCycleToHooks1.md): <sub><sup>(2020年2月9日)</sup></sub>
 - [React: 生命周期方法快速转 Hooks（2）](/full-stack/react/ReactLifeCycleToHooks2.md): <sub><sup>(2020年8月26日)</sup></sub>
@@ -71,4 +67,4 @@ Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年5月27日)</sup></sub>
 
-最后更新于2020年8月27日
+最后更新于2020年8月28日
