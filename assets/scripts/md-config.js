@@ -2,7 +2,7 @@ module.exports = {
     "blog": {
         "daily-life": {
             "AboutResume.md": {
-                "date": "2020年3月13日",
+                "date": "2020年8月29日",
                 "path": "daily-life/AboutResume.md",
                 "title": "关于简历"
             },

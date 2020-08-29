@@ -14,7 +14,7 @@
 ## Daily-life
 日常工作中的随感
 
-- [关于简历](/daily-life/AboutResume.md): <sub><sup>(2020年3月13日)</sup></sub>
+- [关于简历](/daily-life/AboutResume.md): <sub><sup>(2020年8月29日)</sup></sub>
 - [如何做好劳逸结合](/daily-life/CombineExertionAndRest.md): <sub><sup>(2020年3月9日)</sup></sub>
 - [如何走出个人舒适圈](/daily-life/GetOutOfYourComfortZone.md): <sub><sup>(2020年2月9日)</sup></sub>
 - [HowToHaveLeadership](/daily-life/HowToHaveLeadership.md): <sub><sup>(2020年6月20日)</sup></sub>
