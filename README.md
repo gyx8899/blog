@@ -66,6 +66,6 @@ React 相关知识总结
 ## Office
 Office 工具技巧
 
-- [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月29日)</sup></sub>
+- [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
 最后更新于2020年8月31日
