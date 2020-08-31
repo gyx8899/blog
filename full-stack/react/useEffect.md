@@ -1,6 +1,6 @@
 # useEffect
 
-[TOC]
+<!-- toc -->
 
 ## 常用示例
 

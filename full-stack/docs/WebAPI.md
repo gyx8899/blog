@@ -1,5 +1,6 @@
 # Web API 
-[TOC]
+
+<!-- toc -->
 
 ## Common
 
@@ -12,7 +13,4 @@ window.location.assign(redirectUrl);
 window.location.replace(redirectUrl);
 ```
 
-
-最后更新于2020年2月18日
-
-[^footnote]: timestamp-最后更新于2020年2月18日
+

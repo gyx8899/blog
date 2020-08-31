@@ -1,6 +1,6 @@
 # TypeScript
 
-[TOC]
+<!-- toc -->
 
 
 

@@ -1,6 +1,6 @@
 # Redux
 
-[TOC]
+<!-- toc -->
 
 ## 特性
 - Single source of truth
@@ -11,5 +11,4 @@
 - getState()
 - dispatch(action)
 - subscribe(listener)
-
-最后更新于2020年4月22日
+

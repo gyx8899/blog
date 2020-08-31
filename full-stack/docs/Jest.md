@@ -1,5 +1,6 @@
 # Jest learning manual
-[TOC]
+
+<!-- toc -->
 
 ## Docs
 [Jestjs](https://jestjs.io/zh-Hans/)
@@ -83,7 +84,4 @@ afterEach(() => {
         transformIgnorePatterns: ["<rootDir>/node_modules/(?!(lodash-es|other-es-lib))"]
     };
     ```
-
-最后更新于2020年3月22日
-
-[^footnote]: timestamp-最后更新于2020年3月22日
+

@@ -1,5 +1,6 @@
 # Bash: 入门重点
-[TOC]
+
+<!-- toc -->
 
 ##### Command List
 (Not work in windows dos)
@@ -124,4 +125,4 @@ fi
 if [[ "${filename}" = '' ]]; then
 
 fi
-```
+```

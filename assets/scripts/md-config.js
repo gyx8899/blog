@@ -7,17 +7,17 @@ module.exports = {
                 "title": "关于简历"
             },
             "CombineExertionAndRest.md": {
-                "date": "2020年3月9日",
+                "date": "2020年8月31日",
                 "path": "daily-life/CombineExertionAndRest.md",
                 "title": "如何做好劳逸结合"
             },
             "GetOutOfYourComfortZone.md": {
-                "date": "2020年2月9日",
+                "date": "2020年8月31日",
                 "path": "daily-life/GetOutOfYourComfortZone.md",
                 "title": "如何走出个人舒适圈"
             },
             "InstallSystem-windows.md": {
-                "date": "2020年5月28日",
+                "date": "2020年8月31日",
                 "path": "daily-life/InstallSystem-windows.md",
                 "title": "个人装换机之 Windows 系列"
             },
@@ -27,7 +27,7 @@ module.exports = {
                 "title": "优秀的自我介绍很重要"
             },
             "HowToHaveLeadership.md": {
-                "date": "2020年6月20日",
+                "date": "2020年8月31日",
                 "path": "daily-life/HowToHaveLeadership.md",
                 "title": "HowToHaveLeadership"
             },
@@ -40,7 +40,7 @@ module.exports = {
         "full-stack": {
             "docs": {
                 "Console.md": {
-                    "date": "2020年8月27日",
+                    "date": "2020年8月31日",
                     "path": "full-stack/docs/Console.md",
                     "title": "Console"
                 },
@@ -60,9 +60,9 @@ module.exports = {
                     "title": "IntelliJ IDEA"
                 },
                 "Jest.md": {
-                    "date": "2020年3月22日",
+                    "date": "2020年8月31日",
                     "path": "full-stack/docs/Jest.md",
-                    "title": "Jest: 测试是为了更好的开发"
+                    "title": "Jest learning manual"
                 },
                 "NPM.md": {
                     "date": "2020年8月18日",
@@ -85,14 +85,14 @@ module.exports = {
                     "title": "Vue: 点滴都是赞"
                 },
                 "Testing.md": {
-                    "date": "2020年3月13日",
+                    "date": "2020年8月31日",
                     "path": "full-stack/docs/Testing.md",
-                    "title": "Testing: 测试技巧笔记"
+                    "title": "Testing"
                 },
                 "WebAPI.md": {
-                    "date": "2020年2月18日",
+                    "date": "2020年8月31日",
                     "path": "full-stack/docs/WebAPI.md",
-                    "title": "WebAPI: 那些容易忘，容易漏的必回方法"
+                    "title": "Web API"
                 },
                 "Webpack.md": {
                     "date": "2020年4月28日",
@@ -105,7 +105,7 @@ module.exports = {
                     "title": "SEO: 搜索优化学习"
                 },
                 "Bash.md": {
-                    "date": "2020年8月27日",
+                    "date": "2020年8月31日",
                     "path": "full-stack/docs/Bash.md",
                     "title": "Bash: 入门重点"
                 },
@@ -115,14 +115,14 @@ module.exports = {
                     "title": "Regexp: 日常表达式"
                 },
                 "Windows.md": {
-                    "date": "2020年5月12日",
+                    "date": "2020年8月31日",
                     "path": "full-stack/docs/Windows.md",
-                    "title": "Windows: 小打小闹"
+                    "title": "Windows"
                 },
                 "CSS.md": {
-                    "date": "2020年5月15日",
+                    "date": "2020年8月31日",
                     "path": "full-stack/docs/CSS.md",
-                    "title": "CSS: 日常拾遗"
+                    "title": "CSS"
                 },
                 "HTTP.md": {
                     "date": "2020年7月15日",
@@ -130,12 +130,12 @@ module.exports = {
                     "title": "HTTP: 小知识巧总结"
                 },
                 "TypeScript.md": {
-                    "date": "2020年8月15日",
+                    "date": "2020年8月31日",
                     "path": "full-stack/docs/TypeScript.md",
                     "title": "TypeScript"
                 },
                 "SQL.md": {
-                    "date": "2020年8月16日",
+                    "date": "2020年8月31日",
                     "path": "full-stack/docs/SQL.md",
                     "title": "SQL"
                 },
@@ -147,13 +147,13 @@ module.exports = {
             },
             "react": {
                 "React.md": {
-                    "date": "2020年8月28日",
+                    "date": "2020年8月31日",
                     "path": "full-stack/react/React.md",
                     "title": "React: 总结整理"
                 },
                 "ReactHook.md": {
-                    "date": "2020年6月5日",
-                    "path": "full-stack/docs/ReactHook.md",
+                    "date": "2020年8月31日",
+                    "path": "full-stack/react/ReactHook.md",
                     "title": "React Hook - 速览"
                 },
                 "ReactLifeCycleToHooks1.md": {
@@ -162,7 +162,7 @@ module.exports = {
                     "title": "React: 生命周期方法快速转 Hooks（1）"
                 },
                 "ReactLifeCycleToHooks2.md": {
-                    "date": "2020年8月26日",
+                    "date": "2020年8月31日",
                     "path": "full-stack/react/ReactLifeCycleToHooks2.md",
                     "title": "React: 生命周期方法快速转 Hooks（2）"
                 },
@@ -172,12 +172,12 @@ module.exports = {
                     "title": "Router: 特殊之处"
                 },
                 "Redux.md": {
-                    "date": "2020年4月22日",
+                    "date": "2020年8月31日",
                     "path": "full-stack/react/Redux.md",
-                    "title": "Redux: 精髓"
+                    "title": "Redux"
                 },
                 "useEffect.md": {
-                    "date": "2020年8月28日",
+                    "date": "2020年8月31日",
                     "path": "full-stack/react/useEffect.md",
                     "title": "useEffect"
                 }

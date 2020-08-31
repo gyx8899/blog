@@ -1,6 +1,6 @@
 # HowToHaveLeadership
 
-[TOC]
+<!-- toc -->
 
 > "一个人走得快，一群人走得远"
 
