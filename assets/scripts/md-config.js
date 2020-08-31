@@ -35,6 +35,11 @@ module.exports = {
                 "date": "2020年7月2日",
                 "path": "daily-life/SelfReview.md",
                 "title": "自我迭代"
+            },
+            "WorkExperience.md": {
+                "date": "2020年8月31日",
+                "path": "daily-life/WorkExperience.md",
+                "title": "工作心得"
             }
         },
         "full-stack": {

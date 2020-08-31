@@ -16,6 +16,7 @@
 * [个人装换机之 Windows 系列](/daily-life/InstallSystem-windows.md)
 * [自我迭代](/daily-life/SelfReview.md)
 * [优秀的自我介绍很重要](/daily-life/TheImportantOfSelfIntroduction.md)
+* [工作心得](/daily-life/WorkExperience.md)
 
 ## Full-stack
 全栈知识总结
