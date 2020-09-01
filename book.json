@@ -32,7 +32,7 @@
   "structure" : {
     "readme" : "README.md"
   },
-  "plugins": ["anchors", "anchor-navigation-ex", "atoc", "autotheme", "baidu", "book-summary-scroll-position-saver",
+  "plugins": ["anchors", "anchor-navigation-ex", "atoc", "autotheme", "baidu-v3", "book-summary-scroll-position-saver",
     "copy-code-button", "donate", "expandable-chapters-small", "ga", "github", "github-buttons", "meta-single",
     "multipart", "mygitalk", "sitemap-general", "-sharing", "sharing-plus", "splitter", "theme-default",
     "tbfed-pagefooter"],
