@@ -1,11 +1,12 @@
-# CSS
+# CSS 特殊用法
 
 <!-- toc -->
 
-## Tricks
+## 精选技巧
 
 - Website: Support dark mode
 > When your system uses Dark Mode (System Preferences -> General -> Appearance -> Dark)
+
 ```css
 body {
     color: black;
@@ -20,4 +21,3 @@ body {
 }
 ```
 
-
