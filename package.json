@@ -41,6 +41,7 @@
     "gitbook-plugin-book-summary-scroll-position-saver": "0.0.7",
     "gitbook-plugin-copy-code-button": "0.0.2",
     "gitbook-plugin-donate": "^1.0.2",
+    "gitbook-plugin-edit-link": "^2.0.2",
     "gitbook-plugin-expandable-chapters-small": "^0.1.7",
     "gitbook-plugin-ga": "^1.0.1",
     "gitbook-plugin-github": "^2.0.0",
@@ -52,6 +53,7 @@
     "gitbook-plugin-sitemap-general": "^0.1.1",
     "gitbook-plugin-splitter": "0.0.8",
     "gitbook-plugin-tbfed-pagefooter": "0.0.1",
+    "gitbook-plugin-theme-comscore": "0.0.3",
     "gitbook-plugin-theme-default": "^1.0.7"
   }
 }
