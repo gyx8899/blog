@@ -36,7 +36,7 @@
 - [DOS command](/full-stack/docs/Dos.md): <sub><sup>(2020年5月27日)</sup></sub>
 - [Git 命令集](/full-stack/docs/Git.md): <sub><sup>(2020年8月18日)</sup></sub>
 - [GitBook](/full-stack/docs/GitBook.md): <sub><sup>(2020年8月28日)</sup></sub>
-- [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md): <sub><sup>(2020年7月15日)</sup></sub>
+- [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md): <sub><sup>(2020年9月1日)</sup></sub>
 - [IntelliJ IDEA](/full-stack/docs/IntelliJ-IDEA.md): <sub><sup>(2020年7月15日)</sup></sub>
 - [Jest learning manual](/full-stack/docs/Jest.md): <sub><sup>(2020年8月31日)</sup></sub>
 - [NPM and Plugin Guide](/full-stack/docs/NPM.md): <sub><sup>(2020年8月18日)</sup></sub>
