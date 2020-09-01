@@ -130,7 +130,9 @@
       ]
     },
     "sitemap-general": {
-      "prefix": "https://gyx8899.github.io/blog/"
+      "prefix": "https://gyx8899.github.io/blog/",
+      "changefreq": "daily",
+      "priority": 0.8
     },
     "tbfed-pagefooter": {
       "copyright": "Copyright &copy <a href='https://github.com/gyx8899/blog' target='_blank'>Kate-Kuo</a> 2020",
