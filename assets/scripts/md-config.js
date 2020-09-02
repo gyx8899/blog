@@ -37,7 +37,7 @@ module.exports = {
                 "title": "自我迭代"
             },
             "WorkExperience.md": {
-                "date": "2020年9月1日",
+                "date": "2020年9月2日",
                 "path": "daily-life/WorkExperience.md",
                 "title": "工作心得"
             }
