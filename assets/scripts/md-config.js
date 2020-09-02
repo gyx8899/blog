@@ -50,7 +50,7 @@ module.exports = {
                     "title": "Console"
                 },
                 "Dos.md": {
-                    "date": "2020年5月27日",
+                    "date": "2020年9月2日",
                     "path": "full-stack/docs/Dos.md",
                     "title": "DOS command"
                 },

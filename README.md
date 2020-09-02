@@ -33,7 +33,7 @@
 - [Bash: 入门重点](/full-stack/docs/Bash.md): <sub><sup>(2020年8月31日)</sup></sub>
 - [CSS](/full-stack/docs/CSS.md): <sub><sup>(2020年8月31日)</sup></sub>
 - [Console](/full-stack/docs/Console.md): <sub><sup>(2020年8月31日)</sup></sub>
-- [DOS command](/full-stack/docs/Dos.md): <sub><sup>(2020年5月27日)</sup></sub>
+- [DOS command](/full-stack/docs/Dos.md): <sub><sup>(2020年9月2日)</sup></sub>
 - [Git 命令集](/full-stack/docs/Git.md): <sub><sup>(2020年8月18日)</sup></sub>
 - [GitBook](/full-stack/docs/GitBook.md): <sub><sup>(2020年8月28日)</sup></sub>
 - [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md): <sub><sup>(2020年9月1日)</sup></sub>
@@ -68,4 +68,4 @@ Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2020年9月1日
+最后更新于2020年9月2日

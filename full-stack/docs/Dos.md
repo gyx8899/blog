@@ -2,45 +2,30 @@
 
 ## 常见内部命令
 
-```shell script
-\# change directory 
-cd directoryName
+- change directory: `cd directoryName`
 
-\# show directory content
-dir
+- show directory content: `dir`
 
-\# create directory
-md directoryName
+- create directory: `md directoryName`
 
-\# remove directory
-rd directoryName
+- remove directory: `rd directoryName`
 
-\# copy dir/file A to dir/file B
-copy A B
+- copy dir/file A to dir/file B: `copy A B`
 
-\# delete dir or file
-del directoryName
-del directoryName/fileName
-del fileName
+- delete dir or file
+`del directoryName`
+`del directoryName/fileName`
+`del fileName`
 
-\# clear screen
-cls
+- clear screen: `cls`
 
-\# re-name dir/file
-ren 
+- re-name dir/file: `ren`
 
-\# copy dir/file
-- COPY directoryName
-- COPY fileName
+- copy dir/file: `COPY directoryName` `COPY fileName`
 
-\# 改变当前盘符
-c:
-d:
-e:
+- 改变当前盘符: `c:` `d:` `e:`
 
-\# .bat 执行闪退情况，添加 pause，提示：请按任意键继续...
-pause
-```
+- .bat 执行闪退情况，添加 pause，提示：请按任意键继续...: `pause`
 
 ## 常见问题及解决方案
 
@@ -63,4 +48,4 @@ pause
     ```
     - 在任务管理器 - 服务 - ID:4116 - 右键关闭该进程
     - [dos-netstat-80.bat](https://github.com/gyx8899/yx-env/blob/master/dos-netstat-80.bat)
-
+
