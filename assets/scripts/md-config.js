@@ -60,7 +60,7 @@ module.exports = {
                     "title": "Git 命令集"
                 },
                 "IntelliJ-IDEA.md": {
-                    "date": "2020年7月15日",
+                    "date": "2020年9月2日",
                     "path": "full-stack/docs/IntelliJ-IDEA.md",
                     "title": "IntelliJ IDEA"
                 },
@@ -162,27 +162,27 @@ module.exports = {
                     "title": "React Hook - 速览"
                 },
                 "ReactLifeCycleToHooks1.md": {
-                    "date": "2020年2月9日",
+                    "date": "2020年9月2日",
                     "path": "full-stack/react/ReactLifeCycleToHooks1.md",
-                    "title": "React: 生命周期方法快速转 Hooks（1）"
+                    "title": "React-生命周期方法快速转 Hooks（1）"
                 },
                 "ReactLifeCycleToHooks2.md": {
-                    "date": "2020年8月31日",
+                    "date": "2020年9月2日",
                     "path": "full-stack/react/ReactLifeCycleToHooks2.md",
                     "title": "React: 生命周期方法快速转 Hooks（2）"
                 },
                 "Router.md": {
-                    "date": "2020年4月22日",
+                    "date": "2020年9月2日",
                     "path": "full-stack/react/Router.md",
-                    "title": "Router: 特殊之处"
+                    "title": "React router"
                 },
                 "Redux.md": {
-                    "date": "2020年8月31日",
+                    "date": "2020年9月2日",
                     "path": "full-stack/react/Redux.md",
                     "title": "Redux"
                 },
                 "useEffect.md": {
-                    "date": "2020年8月31日",
+                    "date": "2020年9月2日",
                     "path": "full-stack/react/useEffect.md",
                     "title": "useEffect"
                 }

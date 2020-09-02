@@ -1,13 +1,13 @@
 # useEffect
 
-<!-- toc -->
-
 ## 常用示例
 
-##### 在 `useEffect` 内部使用异步 Function，
+##### 在 `useEffect` 内部使用异步 Function
+
 - 不用改写 `fetchData` 为 `useCallback`；
 - 当副作用无法在 `return` 中消除的时候，如下异步请求（回调）中调用声明周期的方法 `setState`，则需要判断 `isMounted` 的值后再进行执行;
 - 是否销毁的状态 `isMounted`，写在 `useEffect` 内部，减少 `useState` 依赖;
+
 ```javascript
 useEffect(() => {
     let isMounted = true;
@@ -29,6 +29,7 @@ useEffect(() => {
 ```
 
 ##### 在 `useEffect` 中使用 `setInterval/setTimeout`, `clearInterval/clearTimeout`，无需将 id 转换为 `useState`;
+
 ```javascript
 function Counter() {
   const [count, setCount] = useState(0);
@@ -45,7 +46,9 @@ function Counter() {
 ```
 
 ##### 使用 `useReducer` 解救 `useEffect` 无法去除的依赖
-以 setCount 为例：
+
+1. 以 setCount 为例：
+
 ```javascript
 useEffect(() => {
   const id = setInterval(() => {
@@ -54,7 +57,9 @@ useEffect(() => {
   return () => clearInterval(id);
 }, [step]);
 ```
-将 setCount 转换成 reducer 事件 action ：
+
+2. 将 setCount 转换成 reducer 事件 action ：
+
 ```javascript
 const initialState = () => ({
   count: 0,
@@ -81,8 +86,6 @@ const countReducer = ({count, step}, action) => {
   }
 };
 
-//...
-
 const [state, dispatch] = useReducer(countReducer, initialState);
 const { count, step } = state;
 
@@ -97,6 +100,7 @@ return (<div><span>{count}</span><span>{step}</span></div>);
 ```
 
 ##### 如何去除 ESLint 提示的组件内常量依赖
+
 示例：
 ```javascript
 function Video() {

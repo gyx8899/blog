@@ -1,7 +1,5 @@
 # Redux
 
-<!-- toc -->
-
 ## 特性
 - Single source of truth
 - 可预测性：state + action = newState

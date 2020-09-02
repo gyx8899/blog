@@ -1,7 +1,8 @@
 # React-生命周期方法快速转 Hooks（1）
+
 Tag: React, Hooks, Life cycle
 
-最近由于特殊需求，要把一个旧 React 项目转 Hooks，发现自己在 React 生命周期方法转 Hooks 时竟然还需要翻官方文档，真是惊掉下巴了。
+由于特殊需求，要把一个旧 React 项目转 Hooks，发现自己在 React 生命周期方法转 Hooks 时竟然还需要翻官方文档，真是惊掉下巴了。
 ![react-hooks](../../assets/images/react-hooks.png)
 
 > Function Component 不存在生命周期，所以不要把 Class Component 的生命周期概念搬过来试图对号入座。
@@ -9,14 +10,19 @@ Tag: React, Hooks, Life cycle
 *本文仅供部分生命周期方便快速转 Hooks, 并不代表所有生命周期方法都可以使用 Hooks 改写, 还需要根据具体使用场景分析。* 
 
 ## 生命周期图
+
 先上 React 的生命周期图：
-> 1. 旧生命周期图
-> ![react life cycle old](../../assets/images/react-life-cycle-old.png)
-> 2. 新生命周期图
-> ![react life cycle new](../../assets/images/react-life-cycle-new.jpg)
+
+1. 旧生命周期图
+![react life cycle old](../../assets/images/react-life-cycle-old.png)
+
+2. 新生命周期图
+![react life cycle new](../../assets/images/react-life-cycle-new.jpg)
 
 ## 生命周期方法转 Hooks
-### 1. componentDidMount
+
+### componentDidMount
+
 难易程度：*
 ```jsx harmony
 import React from 'react';
@@ -41,7 +47,8 @@ function Component() {
 }
 ```
 
-### 2. componentDidUpdate
+### componentDidUpdate
+
 难易程度：***
 ```jsx harmony
 import React from 'react';
@@ -67,7 +74,8 @@ function Component() {
 }
 ```
 
-### 3. componentWillUnmount
+### componentWillUnmount
+
 难易程度：*
 ```jsx harmony
 import React from 'react';
@@ -97,9 +105,4 @@ function Component() {
 
 ## 结束语
 以上生命周期方法可以直接套用对应的 hooks 示例，其他生命周期方法会在（2）中继续整理。
-（本文意在巩固自己对 Hooks 理解，同时也为有需要者提供直接而有效的快速转换示例）
-
-
-最后更新于2020年2月9日
-
-[^footnote]: timestamp-最后更新于2020年2月9日
+（本文意在巩固自己对 Hooks 理解，同时也为有需要者提供直接而有效的快速转换示例）
