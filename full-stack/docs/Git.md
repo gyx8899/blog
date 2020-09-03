@@ -6,6 +6,7 @@
 ### 常用指令
 
 #### 初始化一个空的 Git 仓库 demo
+
 ```shell script
 mkdir demo
 cd demo
@@ -13,6 +14,7 @@ git init
 ```
 
 #### 克隆项目基本操作
+
 ```shell script
 # 克隆 HTTPS
 git clone https://github.com/gyx8899/YX-JS-ToolKit.git
@@ -179,6 +181,7 @@ git branch -d feature2
 git push origin -d feature2
 
 ```
+
 #### Feature branching 工作流 - 方式2 - Pull Request
 
 ```shell script
@@ -512,10 +515,10 @@ git pull origin master:side
 
 ```
 
-
 ### Questions: 常见问题
 
-##### SSL_read: SSL_ERROR_SYSCALL, errno 10054
+- SSL_read: SSL_ERROR_SYSCALL, errno 10054
+
 ```shell script
 YX-JS-ToolKit\docs>git push
 fatal: unable to access 'https://github.com/gyx8899/YX-JS-ToolKit.git/': Op
@@ -529,8 +532,9 @@ Username:
 Password:
 ```
   
-##### remote: HTTP Basic: Access denied
+- remote: HTTP Basic: Access denied
 fatal: Authentication failed for 'Your remove url'
+
 ```shell script
 # 方案1（来自网络）
 git config --system --unset credential.helper
@@ -540,7 +544,8 @@ git config --global http.emptyAuth true
 > 方案3 情况：第一次输入账号密码错误后，或者 git 账号更新了密码， 或者 Git 管理员强制用户更新密码；
 > 方案3 方法：到”控制面板 \ 用户帐户 \ 凭据管理器 \ Windows凭据”下找到对应 git 的凭据，1. 直接修改凭据里的账号密码； 2. 删除凭据，然后继续尝试 git clone 命令，会重新提示输入用户名和密码；
      
-##### Github, Gitlab, Gitee, 多账号管理 - 提交时的用户选择
+- Github, Gitlab, Gitee, 多账号管理 - 提交时的用户选择
+
 ```shell script
 # 设置全局账号
 git config --global user.name "Steper Kuo @github"
@@ -553,7 +558,8 @@ git config --local user.name "Steper Kuo @gitee"
 git config --local user.email "gyx8899@126.com"
 ```
  
-##### Could not merge origin/master: You have not concluded your merge (MERGE_HEAD exists). Please, commit your changes before you merge.
+- Could not merge origin/master: You have not concluded your merge (MERGE_HEAD exists). Please, commit your changes before you merge.
+
 ```shell script
 # 方案：保留本地。终止合并 -》 重新合并 -》 重新拉取
 git merge --abort
@@ -561,39 +567,46 @@ git reset --merge
 git pull
 ```
     
-##### Your local changes to the following files would be overwritten by merge: Please commit your changes or stash them before you merge.
+- Your local changes to the following files would be overwritten by merge: Please commit your changes or stash them before you merge.
+
 ```shell script
 git stash
 git pull origin master  #== git fetch + get merge
 git stash pop
 ```
   
-##### `git merge master` fatal: refusing to merge unrelated histories
+- `git merge master` fatal: refusing to merge unrelated histories
+
 ```shell script
 git merge master --allow-unrelated-histories
 # 同理 git pull/push same fatal
 git pull origin master --allow-unrelated-histories
 ```
   
-##### Warning: LF will be replaced by CRLF
+- Warning: LF will be replaced by CRLF
+
 ```shell script
 git config --global core.autocrlf false
 ```
   
-##### npm install: Error: Can't find Python executable "python", you can set the PYTHON env variable
+- npm install: Error: Can't find Python executable "python", you can set the PYTHON env variable
+
 ```shell script
 # For windows: run below script with Administrator authority
 npm install --global --production windows-build-tools
 ```
 
-##### 分支 Merge 后仍然提示：有未合并文件
+- 分支 Merge 后仍然提示：有未合并文件
+
 > commit is not possible because you have unmerged files
+
 ```shell script
 # 合并后有新增文件，未被添加到仓库里，需要命令添加
 git add .
 ```
 
-##### Rebasing master with "git pull --rebase"
+- Rebasing master with "git pull --rebase"
+
 ```shell script
 > git pull --rebase
 You are not currently on a branch.
@@ -602,19 +615,29 @@ See git-pull(1) for details.
 
     git pull <remote> <branch>
 ```
+
 ```shell script
 git rebase --abort
 git pull --rebase
 ```
 
-##### git pull - error: You have not concluded your merge (MERGE_HEAD exists).
+- git pull - error: You have not concluded your merge (MERGE_HEAD exists).
+
 > hint: Please, commit your changes before merging.
 > fatal: Exiting because of unfinished merge.
+
 ```shell script
 # 发生冲突，解决 merge 问题
 git reset --hard
 git pull
 ```
+
+- Please move or remove them before you switch branches.
+Aborting
+fatal: Could not detach HEAD
+First, rewinding head to replay your work on top of it
+
+> 手动删除或添加哪些未被添加到 git 的本地文件，然后再 `git pull`。
 
 ## 练习
 - [Learn Git Branching](https://learngitbranching.js.org/)
