@@ -50,7 +50,7 @@ module.exports = {
                     "title": "Console"
                 },
                 "Dos.md": {
-                    "date": "2020年9月2日",
+                    "date": "2020年9月4日",
                     "path": "full-stack/docs/Dos.md",
                     "title": "DOS command"
                 },
@@ -65,7 +65,7 @@ module.exports = {
                     "title": "IntelliJ IDEA"
                 },
                 "Jest.md": {
-                    "date": "2020年8月31日",
+                    "date": "2020年9月4日",
                     "path": "full-stack/docs/Jest.md",
                     "title": "Jest learning manual"
                 },
@@ -110,7 +110,7 @@ module.exports = {
                     "title": "SEO: 搜索优化学习"
                 },
                 "Bash.md": {
-                    "date": "2020年8月31日",
+                    "date": "2020年9月4日",
                     "path": "full-stack/docs/Bash.md",
                     "title": "Bash: 入门重点"
                 },
@@ -145,7 +145,7 @@ module.exports = {
                     "title": "SQL"
                 },
                 "GitBook.md": {
-                    "date": "2020年8月28日",
+                    "date": "2020年9月4日",
                     "path": "full-stack/docs/GitBook.md",
                     "title": "GitBook"
                 }
@@ -191,7 +191,7 @@ module.exports = {
                 "ReadMeTemplatePackage.md": {
                     "date": "2020年9月4日",
                     "path": "full-stack/project/ReadMeTemplatePackage.md",
-                    "title": "Name of the project"
+                    "title": "README 模板：Project Name"
                 }
             }
         },

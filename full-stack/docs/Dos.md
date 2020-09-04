@@ -2,37 +2,74 @@
 
 ## 常见内部命令
 
-- change directory: `cd directoryName`
+- change directory: 
+```shell
+cd directoryName
+```
 
-- show directory content: `dir`
+- show directory content: 
+```shell
+dir
+```
 
-- create directory: `md directoryName`
+- create directory: 
+```shell
+md directoryName
+```
 
-- remove directory: `rd directoryName`
+- remove directory: 
+```shell
+rd directoryName
+```
 
-- copy dir/file A to dir/file B: `copy A B`
+- copy dir/file A to dir/file B: 
+```shell
+copy A B
+```
 
 - delete dir or file
-`del directoryName`
-`del directoryName/fileName`
-`del fileName`
+```shell
+del directoryName
+del directoryName/fileName
+del fileName
+```
 
-- clear screen: `cls`
+- clear screen: 
+```shell
+cls
+```
 
-- re-name dir/file: `ren`
+- re-name dir/file: 
+```shell
+ren
+```
 
-- copy dir/file: `COPY directoryName` `COPY fileName`
+- copy dir/file:
+```shell
+# 注意全大写的 COPY
+COPY directoryName
+COPY fileName
+```
 
-- 改变当前盘符: `c:` `d:` `e:`
+- 改变当前盘符: 
+```shell
+c:
+d:
+e:
+```
 
-- .bat 执行闪退情况，添加 pause，提示：请按任意键继续...: `pause`
+- .bat 执行闪退情况，添加 pause，提示：请按任意键继续...: 
+```shell
+pause
+```
 
 ## 常见问题及解决方案
 
 - 80 端口占用 (Windows)
 
     - 查看所有网络端口使用
-    ```shell script
+    
+    ```shell
     netstat -ano
     
     协议  本地地址          外部地址        状态           PID
@@ -40,7 +77,8 @@
     ``` 
 
     - netsh http show servicestate
-    ```shell script
+    
+    ```shell
     HTTP://+:80/REPORTSERVER_SQLEXPRESS/
     HTTP://+:80/REPORTS_SQLEXPRESS/
     进程 ID:

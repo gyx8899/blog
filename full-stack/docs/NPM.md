@@ -2,41 +2,29 @@
 
 ---
 
-## Init project
+## NPM 日常使用
 
-```sh
+### 新建项目
+
+```shell
 # Commands tested on windows
 mkdir projectName
 cd projectName
+
+# 1. 根据提示输入，一步一步创建 package.json;
+npm init
+
+# 2. 直接初始化一个默认的 package.json (y = yes)
 npm init -y
+
 mkdir src
 cd src
 echo off > index.js
 ```
 
-## NVM: Node version manager
+### 常用命令
 
-### 镜像设置
-
-在使用nvm安装node的过程中如果速度太慢的话，可以设置改用淘宝的镜像地址
-
-在nvm安装目录下的setting.txt文件中加入以下代码
-
-```sh
-node_mirror: https://npm.taobao.org/mirrors/node/
-npm_mirror: https://npm.taobao.org/mirrors/npm/
-```
-
-### Install
-
-> coreybutler/nvm-windows: A node.js version management utility for Windows. Ironically written in Go.
-
-1. Uninstall all node;
-2. Download and install nvm; (windows: nvm-setup.zip)
-[nvm-windows](https://github.com/coreybutler/nvm-windows)
-3. Check and find usage;
-
-```sh
+```shell
 nvm -v //检查nvm是否安装成功
 
 Running version 1.1.7.
@@ -66,12 +54,16 @@ Usage:
 
 ## 基本用法
 
-- View info
+- 安装包，查看包信息
 
-```sh
+```shell
+# Dependency package
 npm install <packageName>
 npm install <packageName> -f
 npm install <packageName> --force
+
+# Dev dependency package
+npm install --save-dev <packageName>
 
 npm update <packageName>
 
@@ -80,49 +72,11 @@ npm view 的别名
 npm info react
 npm show react
 npm v react
-
-# Not work
-npm cache ls react
-# But return
-npm cache add <tarball file>
-npm cache add <folder>
-npm cache add <tarball url>
-npm cache add <git url>
-npm cache add <name>@<version>
-npm cache clean
-npm cache verify
-npm cache clean
-
-# Publish NPM package
-# 1. Create your custom package project with package.json;
-# 2. Export your package in index.js;
-module.exports = customPackage;
-# 3. Login, input your NPM account username, password, email
-npm login
-# 4. Publish
-npm publish
-# 5. Update
-npm version patch
-npm version minor
-npm version major
-npm publish
-# 6. 撤销
-npm --force unpublish npm-event@1.0.1
-```
-
-- Init package.json 
-
-```sh
-# Step by step: info
-npm init
-
-# Init with all default value in package.json (y = yes)
-npm init -y
 ```
 
 - Install webpack webpack-cli
 
-```sh
+```shell
 # 安装多插件到开发环境依赖
 npm install webpack webpack-cli --save-dev
 # 简写 i = install, 简写 -D = --save-dev, 简写 -S = --save
@@ -135,11 +89,35 @@ npm i webpack --save
 npm i -g webpack
 ```
 
+- Publish NPM package
+
+```shell
+# 1. Create your custom package project with package.json;
+
+# 2. Export your package in index.js;
+module.exports = customPackage;
+
+# 3. Login, input your NPM account username, password, email
+npm login
+
+# 4. Publish
+npm publish
+
+# 5. Update
+npm version patch
+npm version minor
+npm version major
+npm publish
+
+# 6. 撤销
+npm --force unpublish npm-event@1.0.1
+```
+
 ## 问题列表
 
 - npm ERR! Unexpected end of JSON input while parsing near '....0.0","inherits":"^2.'
 
-```sh
+```shell
 npm clean cache --force
 ```
 
@@ -150,13 +128,13 @@ npm clean cache --force
 
 > registry 配置项被修改为非 npmjs, 需要重新设置为 npmjs
 
-```sh
+```shell
 npm config set registry https://registry.npmjs.org
 ```
 
 - Git set custom registry when group is using cnpm
 
-```sh
+```shell
 # Just only set @xx/xxxxxx for your group's components;
 npm config set "@xx:registry" https://npm.xxxxxx.net.cn:/
 
@@ -165,6 +143,28 @@ npm config set registry https://registry.npmjs.org
 # Reset Taobao npm registry
 npm config set registry https://registry.npm.taobao.org/
 ```
+
+## NVM: Node version manager
+
+### 镜像设置
+
+在使用nvm安装node的过程中如果速度太慢的话，可以设置改用淘宝的镜像地址
+
+在nvm安装目录下的setting.txt文件中加入以下代码
+
+```shell
+node_mirror: https://npm.taobao.org/mirrors/node/
+npm_mirror: https://npm.taobao.org/mirrors/npm/
+```
+### 安装 NVM
+
+> coreybutler/nvm-windows: A node.js version management utility for Windows. Ironically written in Go.
+
+1. Uninstall all node;
+2. Download and install nvm; (windows: nvm-setup.zip)
+[nvm-windows](https://github.com/coreybutler/nvm-windows)
+3. Check and find usage;
+
 
 ## 参考
 

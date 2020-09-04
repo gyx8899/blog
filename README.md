@@ -30,15 +30,15 @@
 ### Docs
 个人知识文档
 
-- [Bash: 入门重点](/full-stack/docs/Bash.md): <sub><sup>(2020年8月31日)</sup></sub>
+- [Bash: 入门重点](/full-stack/docs/Bash.md): <sub><sup>(2020年9月4日)</sup></sub>
 - [CSS](/full-stack/docs/CSS.md): <sub><sup>(2020年8月31日)</sup></sub>
 - [Console](/full-stack/docs/Console.md): <sub><sup>(2020年8月31日)</sup></sub>
-- [DOS command](/full-stack/docs/Dos.md): <sub><sup>(2020年9月2日)</sup></sub>
+- [DOS command](/full-stack/docs/Dos.md): <sub><sup>(2020年9月4日)</sup></sub>
 - [Git 命令集](/full-stack/docs/Git.md): <sub><sup>(2020年9月4日)</sup></sub>
-- [GitBook](/full-stack/docs/GitBook.md): <sub><sup>(2020年8月28日)</sup></sub>
+- [GitBook](/full-stack/docs/GitBook.md): <sub><sup>(2020年9月4日)</sup></sub>
 - [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md): <sub><sup>(2020年9月1日)</sup></sub>
 - [IntelliJ IDEA](/full-stack/docs/IntelliJ-IDEA.md): <sub><sup>(2020年9月2日)</sup></sub>
-- [Jest learning manual](/full-stack/docs/Jest.md): <sub><sup>(2020年8月31日)</sup></sub>
+- [Jest learning manual](/full-stack/docs/Jest.md): <sub><sup>(2020年9月4日)</sup></sub>
 - [NPM and Plugin Guide](/full-stack/docs/NPM.md): <sub><sup>(2020年9月4日)</sup></sub>
 - [Regexp: 日常表达式](/full-stack/docs/Regexp.md): <sub><sup>(2020年5月9日)</sup></sub>
 - [SEO: 搜索优化学习](/full-stack/docs/SEO.md): <sub><sup>(2020年4月17日)</sup></sub>
@@ -51,7 +51,7 @@
 - [Web API](/full-stack/docs/WebAPI.md): <sub><sup>(2020年8月31日)</sup></sub>
 - [Webpack: 常规笔记](/full-stack/docs/Webpack.md): <sub><sup>(2020年4月28日)</sup></sub>
 - [Windows](/full-stack/docs/Windows.md): <sub><sup>(2020年8月31日)</sup></sub>
-- [Name of the project](/full-stack/project/ReadMeTemplatePackage.md): <sub><sup>(2020年9月4日)</sup></sub>
+- [README 模板：Project Name](/full-stack/project/ReadMeTemplatePackage.md): <sub><sup>(2020年9月4日)</sup></sub>
 
 ### React
 React 相关知识总结

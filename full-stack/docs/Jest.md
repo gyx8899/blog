@@ -57,7 +57,7 @@ afterEach(() => {
     > https://www.cnblogs.com/xueyoucd/p/10495922.html 解决jest处理es模块 - 学友2000 - 博客园
 
     - 安装依赖包，特别是 `babel-plugin-transform-es2015-modules-commonjs`
-    ```shell script
+    ```shell
     yarn add --dev babel-jest @babel/core @babel/preset-env babel-plugin-transform-es2015-modules-commonjs
     ```
     - 配置 `babel.config.js`
