@@ -24,7 +24,7 @@
     1. 在页面 Render （componentDidUpdate） 之前调用，state 已更新；
     2. 典型场景：获取 render 之前的 dom 状态；
         
-        示例：一个在顶部定时新增最新消息的可滚动列表，用户在滚动位置阅读消息，在新消息到来时，未做处理会导致列表抖动，在 `getSnapshotBeforeUpdate` 中记录
+    > 示例：一个在顶部定时新增最新消息的可滚动列表，用户在滚动位置阅读消息，在新消息到来时，未做处理会导致列表抖动，在 `getSnapshotBeforeUpdate` 中记录
 
 - `componentDidMount` 
     1. 发起 ajax 请求；

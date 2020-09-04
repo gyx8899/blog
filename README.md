@@ -56,7 +56,7 @@
 ### React
 React 相关知识总结
 
-- [React: 总结整理](/full-stack/react/React.md): <sub><sup>(2020年8月31日)</sup></sub>
+- [React: 总结整理](/full-stack/react/React.md): <sub><sup>(2020年9月4日)</sup></sub>
 - [React Hook - 速览](/full-stack/react/ReactHook.md): <sub><sup>(2020年8月31日)</sup></sub>
 - [React-生命周期方法快速转 Hooks（1）](/full-stack/react/ReactLifeCycleToHooks1.md): <sub><sup>(2020年9月2日)</sup></sub>
 - [React: 生命周期方法快速转 Hooks（2）](/full-stack/react/ReactLifeCycleToHooks2.md): <sub><sup>(2020年9月2日)</sup></sub>

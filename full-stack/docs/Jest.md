@@ -10,8 +10,9 @@
 
 ## 采坑系列
 
-- await expect(fetchData()).rejects not work
-```javascript
+- 异步 `await expect(fetchData()).rejects` does not work
+
+```
 function fetchData() {
   return new Promise(function(resolve, reject) {
     if (true) {
@@ -30,9 +31,11 @@ test("the fetch fails with an error", async () => {
 // expect(received).rejects.toThrow()
 // Expected received Promise to reject, instead it resolved to value "peanut butter"
 });
+
 ```
 
 - Cannot spy the fetch property because it is not a function;
+
 ```javascript
 beforeEach(() => {
 	global.fetch = jest.fn().mockImplementation(() => mockFetchPromise);
