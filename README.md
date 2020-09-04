@@ -51,6 +51,7 @@
 - [Web API](/full-stack/docs/WebAPI.md): <sub><sup>(2020年8月31日)</sup></sub>
 - [Webpack: 常规笔记](/full-stack/docs/Webpack.md): <sub><sup>(2020年4月28日)</sup></sub>
 - [Windows](/full-stack/docs/Windows.md): <sub><sup>(2020年8月31日)</sup></sub>
+- [Name of the project](/full-stack/project/ReadMeTemplatePackage.md): <sub><sup>(2020年9月4日)</sup></sub>
 
 ### React
 React 相关知识总结

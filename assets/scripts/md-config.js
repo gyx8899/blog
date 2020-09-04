@@ -186,6 +186,13 @@ module.exports = {
                     "path": "full-stack/react/useEffect.md",
                     "title": "useEffect"
                 }
+            },
+            "project": {
+                "ReadMeTemplatePackage.md": {
+                    "date": "2020年9月4日",
+                    "path": "full-stack/project/ReadMeTemplatePackage.md",
+                    "title": "Name of the project"
+                }
             }
         },
         "office": {

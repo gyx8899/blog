@@ -46,6 +46,7 @@
 * [Web API](/full-stack/docs/WebAPI.md)
 * [Webpack: 常规笔记](/full-stack/docs/Webpack.md)
 * [Windows](/full-stack/docs/Windows.md)
+* [Name of the project](/full-stack/project/ReadMeTemplatePackage.md)
 
 ## React
 React 相关知识总结
