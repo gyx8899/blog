@@ -3,7 +3,8 @@
 ---
 
 ## Init project
-```shell script
+
+```sh
 # Commands tested on windows
 mkdir projectName
 cd projectName
@@ -16,22 +17,26 @@ echo off > index.js
 ## NVM: Node version manager
 
 ### 镜像设置
+
 在使用nvm安装node的过程中如果速度太慢的话，可以设置改用淘宝的镜像地址
 
 在nvm安装目录下的setting.txt文件中加入以下代码
-```shell script
+
+```sh
 node_mirror: https://npm.taobao.org/mirrors/node/
 npm_mirror: https://npm.taobao.org/mirrors/npm/
 ```
 
 ### Install
+
 > coreybutler/nvm-windows: A node.js version management utility for Windows. Ironically written in Go.
 
 1. Uninstall all node;
 2. Download and install nvm; (windows: nvm-setup.zip)
 [nvm-windows](https://github.com/coreybutler/nvm-windows)
 3. Check and find usage;
-```shell script
+
+```sh
 nvm -v //检查nvm是否安装成功
 
 Running version 1.1.7.
@@ -59,8 +64,11 @@ Usage:
 
 ```
 
-## Base cases
-```shell script
+## 基本用法
+
+- View info
+
+```sh
 npm install <packageName>
 npm install <packageName> -f
 npm install <packageName> --force
@@ -102,10 +110,9 @@ npm publish
 npm --force unpublish npm-event@1.0.1
 ```
 
-### Install cases
+- Init package.json 
 
-> Init package.json 
-```shell script
+```sh
 # Step by step: info
 npm init
 
@@ -113,8 +120,9 @@ npm init
 npm init -y
 ```
 
-> Install webpack webpack-cli
-```shell script
+- Install webpack webpack-cli
+
+```sh
 # 安装多插件到开发环境依赖
 npm install webpack webpack-cli --save-dev
 # 简写 i = install, 简写 -D = --save-dev, 简写 -S = --save
@@ -127,29 +135,37 @@ npm i webpack --save
 npm i -g webpack
 ```
 
-## Questions
+## 问题列表
 
-##### npm ERR! Unexpected end of JSON input while parsing near '....0.0","inherits":"^2.'
-```shell script
+- npm ERR! Unexpected end of JSON input while parsing near '....0.0","inherits":"^2.'
+
+```sh
 npm clean cache --force
 ```
 
 - [exit status 1: 'C:\Program' is not recognized as an internal or external command](https://github.com/coreybutler/nvm-windows/issues/168)
 > The problem is with the spaces in URL(C:\Program Files). Try to install the nvm directly in C:/ or in other folder without spaces in the PATH.
 
-##### 发布 NPM 包版本时： npm ERR! 403 403 Forbidden - PUT * - [no_perms] Private mode enable, only admin can publish this module
+- 发布 NPM 包版本时： npm ERR! 403 403 Forbidden - PUT * - [no_perms] Private mode enable, only admin can publish this module
 
 > registry 配置项被修改为非 npmjs, 需要重新设置为 npmjs
-```shell script
+
+```sh
 npm config set registry https://registry.npmjs.org
 ```
 
-##### Git set custom registry when group is using cnpm
-```shell script
+- Git set custom registry when group is using cnpm
+
+```sh
 # Just only set @xx/xxxxxx for your group's components;
 npm config set "@xx:registry" https://npm.xxxxxx.net.cn:/
 
 # Reset default npm registry
 npm config set registry https://registry.npmjs.org
 # Reset Taobao npm registry
-npm config set registry https://registry.npm.taobao.org/
+npm config set registry https://registry.npm.taobao.org/
+```
+
+## 参考
+
+- [npm-package.json | npm Documentation](https://docs.npmjs.com/files/package.json.html)
