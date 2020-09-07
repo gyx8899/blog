@@ -17,7 +17,7 @@
 - [关于简历](/daily-life/AboutResume.md): <sub><sup>(2020年8月29日)</sup></sub>
 - [如何做好劳逸结合](/daily-life/CombineExertionAndRest.md): <sub><sup>(2020年8月31日)</sup></sub>
 - [如何走出个人舒适圈](/daily-life/GetOutOfYourComfortZone.md): <sub><sup>(2020年8月31日)</sup></sub>
-- [HowToHaveLeadership](/daily-life/HowToHaveLeadership.md): <sub><sup>(2020年8月31日)</sup></sub>
+- [怎样提升领导能力](/daily-life/HowToHaveLeadership.md): <sub><sup>(2020年9月7日)</sup></sub>
 - [个人装换机之 Windows 系列](/daily-life/InstallSystem-windows.md): <sub><sup>(2020年8月31日)</sup></sub>
 - [自我迭代](/daily-life/SelfReview.md): <sub><sup>(2020年7月2日)</sup></sub>
 - [优秀的自我介绍很重要](/daily-life/TheImportantOfSelfIntroduction.md): <sub><sup>(2020年3月9日)</sup></sub>
@@ -50,7 +50,7 @@
 - [Vue: 点滴都是赞](/full-stack/docs/Vue.md): <sub><sup>(2020年2月18日)</sup></sub>
 - [Web API](/full-stack/docs/WebAPI.md): <sub><sup>(2020年8月31日)</sup></sub>
 - [Webpack: 常规笔记](/full-stack/docs/Webpack.md): <sub><sup>(2020年4月28日)</sup></sub>
-- [Windows](/full-stack/docs/Windows.md): <sub><sup>(2020年8月31日)</sup></sub>
+- [Windows 之路遇精彩](/full-stack/docs/Windows.md): <sub><sup>(2020年9月7日)</sup></sub>
 - [README 模板：Project Name](/full-stack/project/ReadMeTemplatePackage.md): <sub><sup>(2020年9月4日)</sup></sub>
 
 ### React
@@ -69,4 +69,4 @@ Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2020年9月4日
+最后更新于2020年9月7日

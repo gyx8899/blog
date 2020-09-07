@@ -12,7 +12,7 @@
 * [关于简历](/daily-life/AboutResume.md)
 * [如何做好劳逸结合](/daily-life/CombineExertionAndRest.md)
 * [如何走出个人舒适圈](/daily-life/GetOutOfYourComfortZone.md)
-* [HowToHaveLeadership](/daily-life/HowToHaveLeadership.md)
+* [怎样提升领导能力](/daily-life/HowToHaveLeadership.md)
 * [个人装换机之 Windows 系列](/daily-life/InstallSystem-windows.md)
 * [自我迭代](/daily-life/SelfReview.md)
 * [优秀的自我介绍很重要](/daily-life/TheImportantOfSelfIntroduction.md)
@@ -45,7 +45,7 @@
 * [Vue: 点滴都是赞](/full-stack/docs/Vue.md)
 * [Web API](/full-stack/docs/WebAPI.md)
 * [Webpack: 常规笔记](/full-stack/docs/Webpack.md)
-* [Windows](/full-stack/docs/Windows.md)
+* [Windows 之路遇精彩](/full-stack/docs/Windows.md)
 * [README 模板：Project Name](/full-stack/project/ReadMeTemplatePackage.md)
 
 ## React

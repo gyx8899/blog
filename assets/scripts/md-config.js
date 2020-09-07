@@ -27,9 +27,9 @@ module.exports = {
                 "title": "优秀的自我介绍很重要"
             },
             "HowToHaveLeadership.md": {
-                "date": "2020年8月31日",
+                "date": "2020年9月7日",
                 "path": "daily-life/HowToHaveLeadership.md",
-                "title": "HowToHaveLeadership"
+                "title": "怎样提升领导能力"
             },
             "SelfReview.md": {
                 "date": "2020年7月2日",
@@ -120,9 +120,9 @@ module.exports = {
                     "title": "Regexp: 日常表达式"
                 },
                 "Windows.md": {
-                    "date": "2020年8月31日",
+                    "date": "2020年9月7日",
                     "path": "full-stack/docs/Windows.md",
-                    "title": "Windows"
+                    "title": "Windows 之路遇精彩"
                 },
                 "CSS.md": {
                     "date": "2020年8月31日",
