@@ -32,10 +32,31 @@
   "structure" : {
     "readme" : "README.md"
   },
-  "plugins": ["anchors", "anchor-navigation-ex", "atoc", "autotheme", "baidu-v3", "book-summary-scroll-position-saver",
-    "copy-code-button", "donate", "edit-link", "expandable-chapters-small", "ga", "github", "github-buttons",
-    "meta-single", "multipart", "mygitalk", "sitemap-general", "-sharing", "sharing-plus", "splitter", "theme-default",
-    "tbfed-pagefooter"],
+  "plugins": [
+    "advanced-emoji",
+    "anchors",
+    "anchor-navigation-ex",
+    "atoc",
+    "autotheme",
+    "baidu-v3",
+    "book-summary-scroll-position-saver",
+    "copy-code-button",
+    "donate",
+    "edit-link",
+    "expandable-chapters-small",
+    "ga",
+    "github",
+    "github-buttons",
+    "meta-single",
+    "multipart",
+    "mygitalk",
+    "sitemap-general",
+    "-sharing",
+    "sharing-plus",
+    "splitter",
+    "theme-default",
+    "tbfed-pagefooter"
+  ],
   "pluginsConfig": {
     "anchor-navigation-ex": {
       "showLevel": true,

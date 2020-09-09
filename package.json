@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "git-push": "node ./assets/scripts/add-timestamp.js file=. && cd ../yx-env && git-push.sh blog",
-    "gh-pages": "npm run git-push && gitbook install && gitbook build && gh-pages -d _book",
+    "gh-pages": "npm run git-push && npm run gitbook-build && gh-pages -d _book",
     "gitbook-build": "gitbook install && gitbook build",
     "gitbook-serve": "gitbook install && gitbook serve"
   },
@@ -34,6 +34,7 @@
     "gh-pages": "^3.1.0"
   },
   "dependencies": {
+    "gitbook-plugin-advanced-emoji": "^0.2.2",
     "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
     "gitbook-plugin-anchors": "^0.7.1",
     "gitbook-plugin-atoc": "^1.0.3",
