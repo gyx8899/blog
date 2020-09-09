@@ -148,6 +148,11 @@ module.exports = {
                     "date": "2020年9月4日",
                     "path": "full-stack/docs/GitBook.md",
                     "title": "GitBook"
+                },
+                "Emoji.md": {
+                    "date": "2020年9月9日",
+                    "path": "full-stack/docs/Emoji.md",
+                    "title": "Emoji: 供日常学习、查询及使用"
                 }
             },
             "react": {

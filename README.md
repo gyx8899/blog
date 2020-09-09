@@ -34,6 +34,7 @@
 - [CSS](/full-stack/docs/CSS.md): <sub><sup>(2020年8月31日)</sup></sub>
 - [Console](/full-stack/docs/Console.md): <sub><sup>(2020年8月31日)</sup></sub>
 - [DOS command](/full-stack/docs/Dos.md): <sub><sup>(2020年9月4日)</sup></sub>
+- [Emoji: 供日常学习、查询及使用](/full-stack/docs/Emoji.md): <sub><sup>(2020年9月9日)</sup></sub>
 - [Git 命令集](/full-stack/docs/Git.md): <sub><sup>(2020年9月4日)</sup></sub>
 - [GitBook](/full-stack/docs/GitBook.md): <sub><sup>(2020年9月4日)</sup></sub>
 - [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md): <sub><sup>(2020年9月1日)</sup></sub>
@@ -69,4 +70,4 @@ Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2020年9月7日
+最后更新于2020年9月9日

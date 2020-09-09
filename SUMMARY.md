@@ -29,6 +29,7 @@
 * [CSS](/full-stack/docs/CSS.md)
 * [Console](/full-stack/docs/Console.md)
 * [DOS command](/full-stack/docs/Dos.md)
+* [Emoji: 供日常学习、查询及使用](/full-stack/docs/Emoji.md)
 * [Git 命令集](/full-stack/docs/Git.md)
 * [GitBook](/full-stack/docs/GitBook.md)
 * [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md)
