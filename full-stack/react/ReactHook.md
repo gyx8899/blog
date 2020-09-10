@@ -365,5 +365,15 @@ function useClientRect() {
 /**
  * 在依赖列表中省略函数是否安全？
  * 一般来说，不安全。
+ * 如果是非通用、非公共的 custom 逻辑，可以把该函数放到 useEffect 内部。
  */
-function Example({ someProp }) {
+function Example({ someProp }) {
+  useEffect(() => {
+    function doSomething() {
+      console.log(someProp);
+    }
+
+    doSomething();
+  }, [someProp]); // ✅ 安全（我们的 effect 仅用到了 `someProp`）
+}
+```
