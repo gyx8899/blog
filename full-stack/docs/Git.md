@@ -639,6 +639,23 @@ First, rewinding head to replay your work on top of it
 
 > 手动删除或添加哪些未被添加到 git 的本地文件，然后再 `git pull`。
 
+- Squash commits in git after they have been pushed?
+
+Such as squash last 4 commits in remote master
+```sheel
+# 1. Solution on master
+git rebase -i origin/master~4 master
+git push origin +master
+```
+
+```shell
+# 2. Solution on branch
+git checkout my_branch
+git reset --soft HEAD~4
+git commit
+git push --force origin my_branch
+```
+
 ## 练习
 - [Learn Git Branching](https://learngitbranching.js.org/)
  
