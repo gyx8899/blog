@@ -163,6 +163,11 @@ module.exports = {
                     "date": "2020年9月26日",
                     "path": "full-stack/docs/CodeTips.md",
                     "title": "代码教鞭：不值得犯第二次错"
+                },
+                "WebSite.md": {
+                    "date": "2020年9月27日",
+                    "path": "full-stack/docs/WebSite.md",
+                    "title": "站点：那些可以经常逛逛的开发工具网站"
                 }
             },
             "react": {

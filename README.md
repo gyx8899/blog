@@ -52,6 +52,7 @@
 - [TypeScript](/full-stack/docs/TypeScript.md): <sub><sup>(2020年8月31日)</sup></sub>
 - [Vue: 点滴都是赞](/full-stack/docs/Vue.md): <sub><sup>(2020年2月18日)</sup></sub>
 - [Web API](/full-stack/docs/WebAPI.md): <sub><sup>(2020年8月31日)</sup></sub>
+- [站点：那些可以经常逛逛的开发工具网站](/full-stack/docs/WebSite.md): <sub><sup>(2020年9月27日)</sup></sub>
 - [Webpack: 常规笔记](/full-stack/docs/Webpack.md): <sub><sup>(2020年4月28日)</sup></sub>
 - [Windows 之路遇精彩](/full-stack/docs/Windows.md): <sub><sup>(2020年9月7日)</sup></sub>
 - [README 模板：Project Name](/full-stack/project/ReadMeTemplatePackage.md): <sub><sup>(2020年9月4日)</sup></sub>
