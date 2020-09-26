@@ -32,6 +32,7 @@
 
 - [Bash: 入门重点](/full-stack/docs/Bash.md): <sub><sup>(2020年9月4日)</sup></sub>
 - [CSS](/full-stack/docs/CSS.md): <sub><sup>(2020年8月31日)</sup></sub>
+- [代码教鞭：不值得犯第二次错](/full-stack/docs/CodeTips.md): <sub><sup>(2020年9月26日)</sup></sub>
 - [Console](/full-stack/docs/Console.md): <sub><sup>(2020年8月31日)</sup></sub>
 - [DOS command](/full-stack/docs/Dos.md): <sub><sup>(2020年9月4日)</sup></sub>
 - [Emoji: 供日常学习、查询及使用](/full-stack/docs/Emoji.md): <sub><sup>(2020年9月9日)</sup></sub>
@@ -70,4 +71,4 @@ Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2020年9月11日
+最后更新于2020年9月26日
