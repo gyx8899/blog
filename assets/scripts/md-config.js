@@ -160,9 +160,9 @@ module.exports = {
                     "title": "Emoji: 供日常学习、查询及使用"
                 },
                 "CodeTips.md": {
-                    "date": "2020年9月26日",
+                    "date": "2020年9月28日",
                     "path": "full-stack/docs/CodeTips.md",
-                    "title": "代码教鞭：不值得犯第二次错"
+                    "title": "代码教鞭：不值得犯第二次的错"
                 },
                 "WebSite.md": {
                     "date": "2020年9月27日",

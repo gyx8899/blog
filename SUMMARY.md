@@ -28,7 +28,7 @@
 
 * [Bash: 入门重点](/full-stack/docs/Bash.md)
 * [CSS](/full-stack/docs/CSS.md)
-* [代码教鞭：不值得犯第二次错](/full-stack/docs/CodeTips.md)
+* [代码教鞭：不值得犯第二次的错](/full-stack/docs/CodeTips.md)
 * [Console](/full-stack/docs/Console.md)
 * [DOS command](/full-stack/docs/Dos.md)
 * [Emoji: 供日常学习、查询及使用](/full-stack/docs/Emoji.md)
