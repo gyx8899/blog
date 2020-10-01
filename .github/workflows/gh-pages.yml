@@ -13,6 +13,7 @@ jobs:
       - name: Build and Deploy
         uses: JamesIves/github-pages-deploy-action@master
         env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: master
           FOLDER: _book
           BUILD_SCRIPT: gitbook install && gitbook build && gh-pages -d _book
