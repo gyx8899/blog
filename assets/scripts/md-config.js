@@ -168,6 +168,11 @@ module.exports = {
                     "date": "2020年9月27日",
                     "path": "full-stack/docs/WebSite.md",
                     "title": "站点：那些可以经常逛逛的开发工具网站"
+                },
+                "BestTools.md": {
+                    "date": "2020年10月1日",
+                    "path": "full-stack/docs/BestTools.md",
+                    "title": "最好的工具: 理解并使用那些耳目一新的巧工具"
                 }
             },
             "react": {
