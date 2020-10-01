@@ -16,4 +16,4 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: _book
-          BUILD_SCRIPT: npm install && gitbook install && gitbook build
+          BUILD_SCRIPT: npm install gitbook-cli && gitbook install && gitbook build ./_book
