@@ -13,4 +13,4 @@ node_modules/
 *.iml
 
 package-lock.json
-_book/
+_book/*
