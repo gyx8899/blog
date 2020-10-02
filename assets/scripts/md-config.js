@@ -45,6 +45,11 @@ module.exports = {
                 "date": "2020年9月27日",
                 "path": "daily-life/Search.md",
                 "title": "Search: 业余的专业搜索技能"
+            },
+            "Explore.md": {
+                "date": "2020年10月2日",
+                "path": "daily-life/Explore.md",
+                "title": "探索历程"
             }
         },
         "full-stack": {

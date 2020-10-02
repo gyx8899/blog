@@ -16,6 +16,7 @@
 
 - [关于简历](/daily-life/AboutResume.md): <sub><sup>(2020年8月29日)</sup></sub>
 - [如何做好劳逸结合](/daily-life/CombineExertionAndRest.md): <sub><sup>(2020年8月31日)</sup></sub>
+- [探索历程](/daily-life/Explore.md): <sub><sup>(2020年10月2日)</sup></sub>
 - [如何走出个人舒适圈](/daily-life/GetOutOfYourComfortZone.md): <sub><sup>(2020年8月31日)</sup></sub>
 - [怎样提升领导能力](/daily-life/HowToHaveLeadership.md): <sub><sup>(2020年9月7日)</sup></sub>
 - [个人装换机之 Windows 系列](/daily-life/InstallSystem-windows.md): <sub><sup>(2020年8月31日)</sup></sub>
@@ -74,4 +75,4 @@ Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2020年10月1日
+最后更新于2020年10月2日

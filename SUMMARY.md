@@ -11,6 +11,7 @@
 
 * [关于简历](/daily-life/AboutResume.md)
 * [如何做好劳逸结合](/daily-life/CombineExertionAndRest.md)
+* [探索历程](/daily-life/Explore.md)
 * [如何走出个人舒适圈](/daily-life/GetOutOfYourComfortZone.md)
 * [怎样提升领导能力](/daily-life/HowToHaveLeadership.md)
 * [个人装换机之 Windows 系列](/daily-life/InstallSystem-windows.md)
