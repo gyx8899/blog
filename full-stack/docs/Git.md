@@ -656,6 +656,12 @@ git commit
 git push --force origin my_branch
 ```
 
+- Failed to connect to github.com port 443: Timed out
+
+> fatal: unable to access 'https://github.com/gyx8899/blog.git/': Failed to connect to github.com port 443: Timed out
+
+检查网络状态，发现并解决网络问题，或重连（启）网络连接，重新尝试 git 命令即可。
+
 ## 练习
 - [Learn Git Branching](https://learngitbranching.js.org/)
  
