@@ -1,0 +1,929 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Jest learning manual · Kate's Blog</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Kate Kuo <gyx8899@126.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="NPM.html" />
+    
+    
+    <link rel="prev" href="IntelliJ-IDEA.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/gyx8899/blog" target="_blank" class="custom-link">Kate's Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">Blog</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Daily-life</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../daily-life/AboutResume.html">
+            
+                <a href="../../daily-life/AboutResume.html">
+            
+                    
+                    关于简历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../daily-life/CombineExertionAndRest.html">
+            
+                <a href="../../daily-life/CombineExertionAndRest.html">
+            
+                    
+                    如何做好劳逸结合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../daily-life/Explore.html">
+            
+                <a href="../../daily-life/Explore.html">
+            
+                    
+                    探索历程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../daily-life/GetOutOfYourComfortZone.html">
+            
+                <a href="../../daily-life/GetOutOfYourComfortZone.html">
+            
+                    
+                    如何走出个人舒适圈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../daily-life/HowToHaveLeadership.html">
+            
+                <a href="../../daily-life/HowToHaveLeadership.html">
+            
+                    
+                    怎样提升领导能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../../daily-life/InstallSystem-windows.html">
+            
+                <a href="../../daily-life/InstallSystem-windows.html">
+            
+                    
+                    个人装换机之 Windows 系列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../../daily-life/Search.html">
+            
+                <a href="../../daily-life/Search.html">
+            
+                    
+                    Search: 业余的专业搜索技能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../../daily-life/SelfReview.html">
+            
+                <a href="../../daily-life/SelfReview.html">
+            
+                    
+                    自我迭代
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../../daily-life/TheImportantOfSelfIntroduction.html">
+            
+                <a href="../../daily-life/TheImportantOfSelfIntroduction.html">
+            
+                    
+                    优秀的自我介绍很重要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../../daily-life/WorkExperience.html">
+            
+                <a href="../../daily-life/WorkExperience.html">
+            
+                    
+                    工作心得
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Full-stack</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Docs</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="Bash.html">
+            
+                <a href="Bash.html">
+            
+                    
+                    Bash: 入门重点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="BestTools.html">
+            
+                <a href="BestTools.html">
+            
+                    
+                    最好的工具: 理解并使用那些耳目一新的巧工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="CSS.html">
+            
+                <a href="CSS.html">
+            
+                    
+                    CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="CodeTips.html">
+            
+                <a href="CodeTips.html">
+            
+                    
+                    代码教鞭：不值得犯第二次的错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="Console.html">
+            
+                <a href="Console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="Dos.html">
+            
+                <a href="Dos.html">
+            
+                    
+                    DOS command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="Emoji.html">
+            
+                <a href="Emoji.html">
+            
+                    
+                    Emoji: 供日常学习、查询及使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="Git.html">
+            
+                <a href="Git.html">
+            
+                    
+                    Git 命令集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="GitBook.html">
+            
+                <a href="GitBook.html">
+            
+                    
+                    GitBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="HTTP.html">
+            
+                <a href="HTTP.html">
+            
+                    
+                    HTTP: 小知识巧总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="IntelliJ-IDEA.html">
+            
+                <a href="IntelliJ-IDEA.html">
+            
+                    
+                    IntelliJ IDEA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.12" data-path="Jest.html">
+            
+                <a href="Jest.html">
+            
+                    
+                    Jest learning manual
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="NPM.html">
+            
+                <a href="NPM.html">
+            
+                    
+                    NPM and Plugin Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="Regexp.html">
+            
+                <a href="Regexp.html">
+            
+                    
+                    Regexp: 日常表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="SEO.html">
+            
+                <a href="SEO.html">
+            
+                    
+                    SEO: 搜索优化学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="SQL.html">
+            
+                <a href="SQL.html">
+            
+                    
+                    SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.17" data-path="Snippet.html">
+            
+                <a href="Snippet.html">
+            
+                    
+                    Snippet: 那些有趣的代码片段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.18" data-path="Testing.html">
+            
+                <a href="Testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.19" data-path="Tricks.html">
+            
+                <a href="Tricks.html">
+            
+                    
+                    Tricks: 技巧黑暗料理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.20" data-path="TypeScript.html">
+            
+                <a href="TypeScript.html">
+            
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.21" data-path="Vue.html">
+            
+                <a href="Vue.html">
+            
+                    
+                    Vue: 点滴都是赞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.22" data-path="WebAPI.html">
+            
+                <a href="WebAPI.html">
+            
+                    
+                    Web API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.23" data-path="WebSite.html">
+            
+                <a href="WebSite.html">
+            
+                    
+                    站点：那些可以经常逛逛的开发工具网站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.24" data-path="Webpack.html">
+            
+                <a href="Webpack.html">
+            
+                    
+                    Webpack: 常规笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.25" data-path="Windows.html">
+            
+                <a href="Windows.html">
+            
+                    
+                    Windows 之路遇精彩
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.26" data-path="../project/ReadMeTemplatePackage.html">
+            
+                <a href="../project/ReadMeTemplatePackage.html">
+            
+                    
+                    README 模板：Project Name
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">React</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../react/React.html">
+            
+                <a href="../react/React.html">
+            
+                    
+                    React: 总结整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../react/ReactHook.html">
+            
+                <a href="../react/ReactHook.html">
+            
+                    
+                    React Hook - 速览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../react/ReactLifeCycleToHooks1.html">
+            
+                <a href="../react/ReactLifeCycleToHooks1.html">
+            
+                    
+                    React-生命周期方法快速转 Hooks（1）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../react/ReactLifeCycleToHooks2.html">
+            
+                <a href="../react/ReactLifeCycleToHooks2.html">
+            
+                    
+                    React: 生命周期方法快速转 Hooks（2）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../react/Redux.html">
+            
+                <a href="../react/Redux.html">
+            
+                    
+                    Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="../react/Router.html">
+            
+                <a href="../react/Router.html">
+            
+                    
+                    React router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="../react/useEffect.html">
+            
+                <a href="../react/useEffect.html">
+            
+                    
+                    useEffect
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Office</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../office/Word.html">
+            
+                <a href="../../office/Word.html">
+            
+                    
+                    Word: 文档操作精选技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Jest learning manual</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="jest-learning-manual">Jest learning manual</h1>
+<!-- toc -->
+<h2 id="docs">Docs</h2>
+<p><a href="https://jestjs.io/zh-Hans/" target="_blank">Jestjs</a></p>
+<h2 id="samples">Samples</h2>
+<p><a href="https://codesandbox.io/s/weathered-cdn-sjxck?fontsize=14&amp;hidenavigation=1&amp;theme=dark" target="_blank"><img src="https://codesandbox.io/static/img/play-codesandbox.svg" alt="Edit Jest-Samples"></a></p>
+<h2 id="&#x91C7;&#x5751;&#x7CFB;&#x5217;">&#x91C7;&#x5751;&#x7CFB;&#x5217;</h2>
+<ul>
+<li>&#x5F02;&#x6B65; <code>await expect(fetchData()).rejects</code> does not work</li>
+</ul>
+<pre><code>function fetchData() {
+  return new Promise(function(resolve, reject) {
+    if (true) {
+      resolve(&quot;peanut butter&quot;);
+    } else {
+      reject(new Error(&quot;error&quot;));
+    }
+  });
+}
+test(&quot;the fetch fails with an error&quot;, async () =&gt; {
+// await expect(fetchData()).rejects.toMatch(&quot;error&quot;);
+//expect(received).rejects.toMatch()
+// Expected received Promise to reject, instead it resolved to value &quot;peanut butter&quot;
+
+// await expect(fetchData()).rejects.toThrow(&quot;error&quot;);
+// expect(received).rejects.toThrow()
+// Expected received Promise to reject, instead it resolved to value &quot;peanut butter&quot;
+});
+</code></pre><ul>
+<li>Cannot spy the fetch property because it is not a function;</li>
+</ul>
+<pre><code class="lang-javascript">beforeEach(() =&gt; {
+    global.fetch = jest.fn().mockImplementation(() =&gt; mockFetchPromise);
+});
+
+afterEach(() =&gt; {
+    <span class="hljs-comment">// &#x9000;&#x51FA;&#x65F6;&#x8FDB;&#x884C;&#x6E05;&#x7406;</span>
+    global.fetch.mockClear();
+    <span class="hljs-keyword">delete</span> global.fetch;
+});
+</code></pre>
+<ul>
+<li><p>No tests found, exiting with code 1</p>
+<blockquote>
+<p>The test file need to be xxx.test.js, not xxx.js when the Jest config contains testRegex &quot;.test.js&quot;</p>
+</blockquote>
+</li>
+<li><p>Jest encountered an unexpected token</p>
+<p>This usually means that you are trying to import a file which Jest cannot parse, e.g. it&apos;s not plain JavaScript.</p>
+<p>By default, if Jest sees a Babel config, it will use that to transform your files, ignoring &quot;node_modules&quot;.</p>
+<blockquote>
+<p><a href="https://www.cnblogs.com/xueyoucd/p/10495922.html" target="_blank">https://www.cnblogs.com/xueyoucd/p/10495922.html</a> &#x89E3;&#x51B3;jest&#x5904;&#x7406;es&#x6A21;&#x5757; - &#x5B66;&#x53CB;2000 - &#x535A;&#x5BA2;&#x56ED;</p>
+</blockquote>
+<ul>
+<li>&#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x5305;&#xFF0C;&#x7279;&#x522B;&#x662F; <code>babel-plugin-transform-es2015-modules-commonjs</code><pre><code class="lang-shell">yarn add --dev babel-jest @babel/core @babel/preset-env babel-plugin-transform-es2015-modules-commonjs
+</code></pre>
+</li>
+<li>&#x914D;&#x7F6E; <code>babel.config.js</code><pre><code class="lang-javascript"><span class="hljs-built_in">module</span>.exports = {
+  presets: [
+      [
+          <span class="hljs-string">&quot;@babel/preset-env&quot;</span>,
+          {
+              targets: {
+                  node: <span class="hljs-string">&quot;current&quot;</span>
+              }
+          }
+      ]
+  ],
+  plugins: [<span class="hljs-string">&quot;transform-es2015-modules-commonjs&quot;</span>]
+};
+</code></pre>
+</li>
+<li>&#x914D;&#x7F6E; <code>jest.config.js</code> &#x6216;&#x5728; <code>package.json</code> &#x4E2D;&#x6DFB;&#x52A0; <code>jest</code> &#x914D;&#x7F6E;<pre><code class="lang-javascript"><span class="hljs-built_in">module</span>.exports = {
+  <span class="hljs-comment">// &#x67E5;&#x770B;&#x62A5;&#x9519;&#x7684; import &#x65B9;&#x6CD5;&#x6765;&#x6E90;&#x7684;&#x5305;&#xFF0C;&#x6BD4;&#x5982;&#x662F; lodash-es, &#x5982;&#x679C;&#x8FD8;&#x6709;&#x5176;&#x4ED6;&#x7684;&#xFF0C;&#x6DFB;&#x52A0;&#x5230; other-es-lib &#x7684;&#x4F4D;&#x7F6E;</span>
+  <span class="hljs-comment">// &#x91CD;&#x70B9;&#xFF1A;&#x5C06;&#x4E0D;&#x5FFD;&#x7565; lodash-es, other-es-lib &#x8FD9;&#x4E9B;es&#x5E93;, &#x4ECE;&#x800C;&#x4F7F; babel-jest &#x53BB;&#x5904;&#x7406;&#x5B83;&#x4EEC;</span>
+  transformIgnorePatterns: [<span class="hljs-string">&quot;&lt;rootDir&gt;/node_modules/(?!(lodash-es|other-es-lib))&quot;</span>]
+};
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="IntelliJ-IDEA.html" class="navigation navigation-prev " aria-label="Previous page: IntelliJ IDEA">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="NPM.html" class="navigation navigation-next " aria-label="Next page: NPM and Plugin Guide">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Jest learning manual","level":"4.12","depth":1,"next":{"title":"NPM and Plugin Guide","level":"4.13","depth":1,"path":"full-stack/docs/NPM.md","ref":"full-stack/docs/NPM.md","articles":[]},"previous":{"title":"IntelliJ IDEA","level":"4.11","depth":1,"path":"full-stack/docs/IntelliJ-IDEA.md","ref":"full-stack/docs/IntelliJ-IDEA.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kate Kuo <gyx8899@126.com>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kate's Blog","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Kate's Blog":"https://github.com/gyx8899/blog"}},"gitbook":">=2.0.0","description":"This is a blog book created by Kate Kuo","extension":null},"file":{"path":"full-stack/docs/Jest.md","mtime":"2020-09-05T02:41:21.511Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-02T02:52:16.860Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

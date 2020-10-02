@@ -1,0 +1,1235 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>React Hook - 速览 · Kate's Blog</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Kate Kuo <gyx8899@126.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ReactLifeCycleToHooks1.html" />
+    
+    
+    <link rel="prev" href="React.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/gyx8899/blog" target="_blank" class="custom-link">Kate's Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">Blog</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Daily-life</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../daily-life/AboutResume.html">
+            
+                <a href="../../daily-life/AboutResume.html">
+            
+                    
+                    关于简历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../daily-life/CombineExertionAndRest.html">
+            
+                <a href="../../daily-life/CombineExertionAndRest.html">
+            
+                    
+                    如何做好劳逸结合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../daily-life/Explore.html">
+            
+                <a href="../../daily-life/Explore.html">
+            
+                    
+                    探索历程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../daily-life/GetOutOfYourComfortZone.html">
+            
+                <a href="../../daily-life/GetOutOfYourComfortZone.html">
+            
+                    
+                    如何走出个人舒适圈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../daily-life/HowToHaveLeadership.html">
+            
+                <a href="../../daily-life/HowToHaveLeadership.html">
+            
+                    
+                    怎样提升领导能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../../daily-life/InstallSystem-windows.html">
+            
+                <a href="../../daily-life/InstallSystem-windows.html">
+            
+                    
+                    个人装换机之 Windows 系列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../../daily-life/Search.html">
+            
+                <a href="../../daily-life/Search.html">
+            
+                    
+                    Search: 业余的专业搜索技能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../../daily-life/SelfReview.html">
+            
+                <a href="../../daily-life/SelfReview.html">
+            
+                    
+                    自我迭代
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../../daily-life/TheImportantOfSelfIntroduction.html">
+            
+                <a href="../../daily-life/TheImportantOfSelfIntroduction.html">
+            
+                    
+                    优秀的自我介绍很重要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../../daily-life/WorkExperience.html">
+            
+                <a href="../../daily-life/WorkExperience.html">
+            
+                    
+                    工作心得
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Full-stack</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Docs</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../docs/Bash.html">
+            
+                <a href="../docs/Bash.html">
+            
+                    
+                    Bash: 入门重点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../docs/BestTools.html">
+            
+                <a href="../docs/BestTools.html">
+            
+                    
+                    最好的工具: 理解并使用那些耳目一新的巧工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../docs/CSS.html">
+            
+                <a href="../docs/CSS.html">
+            
+                    
+                    CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../docs/CodeTips.html">
+            
+                <a href="../docs/CodeTips.html">
+            
+                    
+                    代码教鞭：不值得犯第二次的错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../docs/Console.html">
+            
+                <a href="../docs/Console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../docs/Dos.html">
+            
+                <a href="../docs/Dos.html">
+            
+                    
+                    DOS command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../docs/Emoji.html">
+            
+                <a href="../docs/Emoji.html">
+            
+                    
+                    Emoji: 供日常学习、查询及使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../docs/Git.html">
+            
+                <a href="../docs/Git.html">
+            
+                    
+                    Git 命令集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../docs/GitBook.html">
+            
+                <a href="../docs/GitBook.html">
+            
+                    
+                    GitBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../docs/HTTP.html">
+            
+                <a href="../docs/HTTP.html">
+            
+                    
+                    HTTP: 小知识巧总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../docs/IntelliJ-IDEA.html">
+            
+                <a href="../docs/IntelliJ-IDEA.html">
+            
+                    
+                    IntelliJ IDEA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../docs/Jest.html">
+            
+                <a href="../docs/Jest.html">
+            
+                    
+                    Jest learning manual
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="../docs/NPM.html">
+            
+                <a href="../docs/NPM.html">
+            
+                    
+                    NPM and Plugin Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="../docs/Regexp.html">
+            
+                <a href="../docs/Regexp.html">
+            
+                    
+                    Regexp: 日常表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="../docs/SEO.html">
+            
+                <a href="../docs/SEO.html">
+            
+                    
+                    SEO: 搜索优化学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="../docs/SQL.html">
+            
+                <a href="../docs/SQL.html">
+            
+                    
+                    SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.17" data-path="../docs/Snippet.html">
+            
+                <a href="../docs/Snippet.html">
+            
+                    
+                    Snippet: 那些有趣的代码片段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.18" data-path="../docs/Testing.html">
+            
+                <a href="../docs/Testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.19" data-path="../docs/Tricks.html">
+            
+                <a href="../docs/Tricks.html">
+            
+                    
+                    Tricks: 技巧黑暗料理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.20" data-path="../docs/TypeScript.html">
+            
+                <a href="../docs/TypeScript.html">
+            
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.21" data-path="../docs/Vue.html">
+            
+                <a href="../docs/Vue.html">
+            
+                    
+                    Vue: 点滴都是赞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.22" data-path="../docs/WebAPI.html">
+            
+                <a href="../docs/WebAPI.html">
+            
+                    
+                    Web API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.23" data-path="../docs/WebSite.html">
+            
+                <a href="../docs/WebSite.html">
+            
+                    
+                    站点：那些可以经常逛逛的开发工具网站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.24" data-path="../docs/Webpack.html">
+            
+                <a href="../docs/Webpack.html">
+            
+                    
+                    Webpack: 常规笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.25" data-path="../docs/Windows.html">
+            
+                <a href="../docs/Windows.html">
+            
+                    
+                    Windows 之路遇精彩
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.26" data-path="../project/ReadMeTemplatePackage.html">
+            
+                <a href="../project/ReadMeTemplatePackage.html">
+            
+                    
+                    README 模板：Project Name
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">React</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="React.html">
+            
+                <a href="React.html">
+            
+                    
+                    React: 总结整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.2" data-path="ReactHook.html">
+            
+                <a href="ReactHook.html">
+            
+                    
+                    React Hook - 速览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="ReactLifeCycleToHooks1.html">
+            
+                <a href="ReactLifeCycleToHooks1.html">
+            
+                    
+                    React-生命周期方法快速转 Hooks（1）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="ReactLifeCycleToHooks2.html">
+            
+                <a href="ReactLifeCycleToHooks2.html">
+            
+                    
+                    React: 生命周期方法快速转 Hooks（2）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="Redux.html">
+            
+                <a href="Redux.html">
+            
+                    
+                    Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="Router.html">
+            
+                <a href="Router.html">
+            
+                    
+                    React router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="useEffect.html">
+            
+                <a href="useEffect.html">
+            
+                    
+                    useEffect
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Office</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../office/Word.html">
+            
+                <a href="../../office/Word.html">
+            
+                    
+                    Word: 文档操作精选技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >React Hook - 速览</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="react-hook---&#x901F;&#x89C8;">React Hook - &#x901F;&#x89C8;</h1>
+<!-- toc -->
+<h2 id="&#x4ECB;&#x7ECD;">&#x4ECB;&#x7ECD;</h2>
+<blockquote>
+<p>Hook &#x662F; React 16.8 &#x7684;&#x65B0;&#x589E;&#x7279;&#x6027;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x5728;&#x4E0D;&#x7F16;&#x5199; class &#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4F7F;&#x7528; state &#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x7684; React &#x7279;&#x6027;&#x3002;</p>
+<ol>
+<li>&#x5411;&#x4E0B;&#x517C;&#x5BB9;;</li>
+<li>&#x5728;&#x65E0;&#x9700;&#x4FEE;&#x6539;&#x7EC4;&#x4EF6;&#x7ED3;&#x6784;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x590D;&#x7528;&#x72B6;&#x6001;&#x903B;&#x8F91;;</li>
+<li>class &#x4E0D;&#x80FD;&#x5F88;&#x597D;&#x7684;&#x538B;&#x7F29;&#xFF0C;&#x5E76;&#x4E14;&#x4F1A;&#x4F7F;&#x70ED;&#x91CD;&#x8F7D;&#x51FA;&#x73B0;&#x4E0D;&#x7A33;&#x5B9A;&#x7684;&#x60C5;&#x51B5; &#x2014;&#x2014; Hook &#x4F7F;&#x4F60;&#x5728;&#x975E; class &#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x66F4;&#x591A;&#x7684; React &#x7279;&#x6027;</li>
+<li>&#x89E3;&#x51B3; class &#x4E2D;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;&#x7ECF;&#x5E38;&#x5305;&#x542B;&#x4E0D;&#x76F8;&#x5173;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x4F46;&#x53C8;&#x628A;&#x76F8;&#x5173;&#x903B;&#x8F91;&#x5206;&#x79BB;&#x5230;&#x4E86;&#x51E0;&#x4E2A;&#x4E0D;&#x540C;&#x65B9;&#x6CD5;&#x4E2D;&#x7684;&#x95EE;&#x9898;&#x3002;</li>
+</ol>
+</blockquote>
+<h2 id="&#x4F7F;&#x7528;&#x89C4;&#x5219;">&#x4F7F;&#x7528;&#x89C4;&#x5219;</h2>
+<blockquote>
+<ol>
+<li>&#x53EA;&#x80FD;&#x5728;&#x51FD;&#x6570;&#x6700;&#x5916;&#x5C42;&#x8C03;&#x7528; Hook&#x3002;&#x4E0D;&#x8981;&#x5728;&#x5FAA;&#x73AF;&#x3001;&#x6761;&#x4EF6;&#x5224;&#x65AD;&#x6216;&#x8005;&#x5B50;&#x51FD;&#x6570;&#x4E2D;&#x8C03;&#x7528;&#x3002;</li>
+<li>&#x53EA;&#x80FD;&#x5728; React &#x7684;&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x4E2D;&#x8C03;&#x7528; Hook&#x3002;&#x4E0D;&#x8981;&#x5728;&#x5176;&#x4ED6; JavaScript &#x51FD;&#x6570;&#x4E2D;&#x8C03;&#x7528;&#x3002;</li>
+<li>&#xFF08;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x53EF;&#x4EE5;&#x8C03;&#x7528; Hook &#x2014;&#x2014; &#x5C31;&#x662F;&#x81EA;&#x5B9A;&#x4E49;&#x7684; Hook &#x4E2D;)</li>
+</ol>
+</blockquote>
+<h2 id="&#x88AB;&#x5F00;&#x53D1;&#x7684;&#x4E09;&#x4E2A;&#x7406;&#x7531;">&#x88AB;&#x5F00;&#x53D1;&#x7684;&#x4E09;&#x4E2A;&#x7406;&#x7531;</h2>
+<blockquote>
+<p>&#x96BE;&#x4EE5;&#x590D;&#x7528;&#x7C7B;&#x7EC4;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x903B;&#x8F91;
+&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#x7ECF;&#x5E38;&#x5305;&#x542B;&#x4E00;&#x4E9B;&#x83AB;&#x540D;&#x5176;&#x5999;&#x7684;&#x4E0D;&#x76F8;&#x5173;&#x903B;&#x8F91;
+&#x7C7B;&#x7EC4;&#x4EF6;&#x96BE;&#x4EE5;&#x88AB;&#x673A;&#x5668;&#x548C;&#x4EBA;&#x7406;&#x89E3;</p>
+</blockquote>
+<h2 id="hook-&#x65B9;&#x6CD5;">Hook &#x65B9;&#x6CD5;</h2>
+<h3 id="&#x5206;&#x7C7B;">&#x5206;&#x7C7B;</h3>
+<h4 id="&#x4E3B;&#x8981;-hook">&#x4E3B;&#x8981; hook</h4>
+<ul>
+<li><a href="#useState">useState</a>-&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x7F16;&#x5199;&#x5E26;&#x6709;&#x72B6;&#x6001;&#x7684;&#x7EAF;&#x51FD;&#x6570;</li>
+<li><a href="#useEffect">useEffect</a>-&#x8BA9;&#x6211;&#x4EEC;&#x6267;&#x884C;&#x526F;&#x4F5C;&#x7528;&#x3002;&#x526F;&#x4F5C;&#x7528;&#x53EF;&#x80FD;&#x662F;API&#x8C03;&#x7528;&#xFF0C;&#x66F4;&#x65B0;DOM&#xFF0C;&#x8BA2;&#x9605;&#x4E8B;&#x4EF6;&#x4FA6;&#x542C;&#x5668;</li>
+<li><a href="#useContext">useContext</a>-&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x7F16;&#x5199;&#x5E26;&#x6709;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x7EAF;&#x51FD;&#x6570;</li>
+<li><a href="#useRef">useRef</a> &#x2014;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x7F16;&#x5199;&#x8FD4;&#x56DE;&#x53EF;&#x53D8;ref&#x5BF9;&#x8C61;&#x7684;&#x7EAF;&#x51FD;&#x6570;</li>
+</ul>
+<h4 id="&#x5728;&#x7279;&#x5B9A;&#x7684;&#x6781;&#x7AEF;&#x60C5;&#x51B5;&#x4E0B;&#x7684;&#x5176;&#x4ED6;hook">&#x5728;&#x7279;&#x5B9A;&#x7684;&#x6781;&#x7AEF;&#x60C5;&#x51B5;&#x4E0B;&#x7684;&#x5176;&#x4ED6;Hook</h4>
+<ul>
+<li><a href="#useReducer">useReducer</a> &#x2014;&#x7684;&#x66FF;&#x4EE3;&#x54C1;useState&#x3002;&#x63A5;&#x53D7;type&#x7684;&#x5316;&#x7B80;&#x5668;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x4E0E;&#x65B9;&#x6CD5;&#x914D;&#x5BF9;&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x3002;&#x901A;&#x5E38;&#xFF0C;&#x5F53;&#x60A8;&#x5177;&#x6709;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x5B50;&#x503C;&#x7684;&#x590D;&#x6742;&#x72B6;&#x6001;&#x903B;&#x8F91;&#x6216;&#x4E0B;&#x4E00;&#x72B6;&#x6001;&#x53D6;&#x51B3;&#x4E8E;&#x4E0A;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x65F6;&#xFF0C;&#x901A;&#x5E38;&#x66F4;&#x53EF;&#x53D6;(state, action) =&gt; newStatedispatchuseState</li>
+<li><a href="#useMemo">useMemo</a> &#x2014; useMemo&#x7528;&#x4E8E;&#x8FD4;&#x56DE;&#x5DF2;&#x8BB0;&#x5FC6;&#x7684;&#x503C;</li>
+<li><a href="#useCallback">useCallback</a> &#x2014; useCallback&#x6302;&#x94A9;&#x7528;&#x4E8E;&#x8FD4;&#x56DE;&#x8BB0;&#x5F55;&#x7684;&#x56DE;&#x8C03;</li>
+<li><a href="#useImperativeMethods">useImperativeMethods</a> &#x2014; useImperativeMethods&#x81EA;&#x5B9A;&#x4E49;&#x4F7F;&#x7528;&#x65F6;&#x66B4;&#x9732;&#x7ED9;&#x7236;&#x7EC4;&#x4EF6;&#x7684;&#x5B9E;&#x4F8B;&#x503C; ref</li>
+<li><a href="#useMutationEffects">useMutationEffects</a> &#x2014;&#x5728;&#x5141;&#x8BB8;&#x60A8;&#x6267;&#x884C;DOM&#x7A81;&#x53D8;&#x7684;&#x610F;&#x4E49;&#x4E0A;&#xFF0C;useMutationEffect&#x4E0E;useEffect Hook&#x76F8;&#x4F3C;</li>
+<li><a href="#useLayoutEffect">useLayoutEffect</a> &#x2014; useLayoutEffect&#x6302;&#x94A9;&#x7528;&#x4E8E;&#x4ECE;DOM&#x8BFB;&#x53D6;&#x5E03;&#x5C40;&#x5E76;&#x540C;&#x6B65;&#x91CD;&#x65B0;&#x6E32;&#x67D3;</li>
+</ul>
+<h3 id="usestate"><span id="useState">useState</span></h3>
+<blockquote>
+<p>useState &#x5C31;&#x662F;&#x4E00;&#x4E2A; Hook &#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x5BF9;&#x503C;&#xFF1A;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x548C;&#x4E00;&#x4E2A;&#x8BA9;&#x4F60;&#x66F4;&#x65B0;&#x5B83;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x51FD;&#x6570;&#x4E2D;&#x6216;&#x5176;&#x4ED6;&#x4E00;&#x4E9B;&#x5730;&#x65B9;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x66FF;&#x4EE3; setState</span>
+<span class="hljs-keyword">const</span> [count, setCount] = useState(<span class="hljs-number">0</span>);
+<span class="hljs-keyword">const</span> [state, setState] = useState({ left: <span class="hljs-number">0</span>, top: <span class="hljs-number">0</span>, width: <span class="hljs-number">100</span>, height: <span class="hljs-number">100</span> });
+setState(state =&gt; ({ ...state, left: e.pageX, top: e.pageY }));
+<span class="hljs-keyword">const</span> [position, setPosition] = useState({ left: <span class="hljs-number">0</span>, top: <span class="hljs-number">0</span> });
+</code></pre>
+</blockquote>
+<h3 id="useeffect"><span id="useEffect">useEffect</span></h3>
+<blockquote>
+<p>useEffect &#x5C31;&#x662F;&#x4E00;&#x4E2A; Effect Hook&#xFF0C;&#x7ED9;&#x51FD;&#x6570;&#x7EC4;&#x4EF6;&#x589E;&#x52A0;&#x4E86;&#x64CD;&#x4F5C;&#x526F;&#x4F5C;&#x7528;&#x7684;&#x80FD;&#x529B;&#x3002;&#x5B83;&#x8DDF; class &#x7EC4;&#x4EF6;&#x4E2D;&#x7684; componentDidMount&#x3001;componentDidUpdate &#x548C; componentWillUnmount &#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x7528;&#x9014;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x88AB;&#x5408;&#x5E76;&#x6210;&#x4E86;&#x4E00;&#x4E2A; API&#x3002;</p>
+<ol>
+<li>&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5230;&#x7EC4;&#x4EF6;&#x7684; props &#x548C; state;</li>
+<li>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;React &#x4F1A;&#x5728;&#x6BCF;&#x6B21;&#x6E32;&#x67D3;&#x540E;&#x8C03;&#x7528;&#x526F;&#x4F5C;&#x7528;&#x51FD;&#x6570; &#x2014;&#x2014; &#x5305;&#x62EC;&#x7B2C;&#x4E00;&#x6B21;&#x6E32;&#x67D3;&#x7684;&#x65F6;&#x5019;;</li>
+<li>&#x526F;&#x4F5C;&#x7528;&#x51FD;&#x6570;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6765;&#x6307;&#x5B9A;&#x5982;&#x4F55;&#x201C;&#x6E05;&#x9664;&#x201D;&#x526F;&#x4F5C;&#x7528;;</li>
+<li>&#x4F7F;&#x7528;&#x591A;&#x4E2A; Effect &#x5B9E;&#x73B0;&#x5173;&#x6CE8;&#x70B9;&#x5206;&#x79BB;</li>
+<li>&#x5982;&#x679C;&#x67D0;&#x4E9B;&#x7279;&#x5B9A;&#x503C;&#x5728;&#x4E24;&#x6B21;&#x91CD;&#x6E32;&#x67D3;&#x4E4B;&#x95F4;&#x6CA1;&#x6709;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x77E5; React &#x8DF3;&#x8FC7;&#x5BF9; effect &#x7684;&#x8C03;&#x7528;&#xFF0C;&#x53EA;&#x8981;&#x4F20;&#x9012;&#x6570;&#x7EC4;&#x4F5C;&#x4E3A; useEffect &#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x53EF;&#x9009;&#x53C2;&#x6570;&#x5373;&#x53EF;&#xFF1A;
+&#x786E;&#x4FDD;&#x6570;&#x7EC4;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x6240;&#x6709;&#x5916;&#x90E8;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x4F1A;&#x968F;&#x65F6;&#x95F4;&#x53D8;&#x5316;&#x5E76;&#x4E14;&#x5728; effect &#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x5426;&#x5219;&#x4F60;&#x7684;&#x4EE3;&#x7801;&#x4F1A;&#x5F15;&#x7528;&#x5230;&#x5148;&#x524D;&#x6E32;&#x67D3;&#x4E2D;&#x7684;&#x65E7;&#x53D8;&#x91CF;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x60F3;&#x6267;&#x884C;&#x53EA;&#x8FD0;&#x884C;&#x4E00;&#x6B21;&#x7684; effect&#xFF08;&#x4EC5;&#x5728;&#x7EC4;&#x4EF6;&#x6302;&#x8F7D;&#x548C;&#x5378;&#x8F7D;&#x65F6;&#x6267;&#x884C;&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x7A7A;&#x6570;&#x7EC4;&#xFF08;[]&#xFF09;&#x4F5C;&#x4E3A;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x3002;</li>
+<li>&#x867D;&#x7136; useEffect &#x4F1A;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x7ED8;&#x5236;&#x540E;&#x5EF6;&#x8FDF;&#x6267;&#x884C;&#xFF0C;&#x4F46;&#x4F1A;&#x4FDD;&#x8BC1;&#x5728;&#x4EFB;&#x4F55;&#x65B0;&#x7684;&#x6E32;&#x67D3;&#x524D;&#x6267;&#x884C;&#x3002;React &#x5C06;&#x5728;&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#x524D;&#x5237;&#x65B0;&#x4E0A;&#x4E00;&#x8F6E;&#x6E32;&#x67D3;&#x7684; effect&#x3002;</li>
+</ol>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Demo</span>
+useEffect(() =&gt; {
+  <span class="hljs-comment">// &#x5728; componentDidMount&#x3001;(&#x6240;&#x6709;)componentDidUpdate&#x6267;&#x884C;</span>
+  <span class="hljs-built_in">document</span>.title = <span class="hljs-string">`You clicked <span class="hljs-subst">${count}</span> times`</span>; 
+
+  <span class="hljs-comment">// &#x5728; componentWillUnmount &#x6267;&#x884C;</span>
+  <span class="hljs-keyword">return</span> () =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x5728; componentWillUnmount &#x6267;&#x884C;&apos;</span>);
+  }
+});
+
+useEffect(() =&gt; {
+  <span class="hljs-comment">// &#x5728; componentDidMount &#x6267;&#x884C;</span>
+  <span class="hljs-built_in">document</span>.title = <span class="hljs-string">`You clicked <span class="hljs-subst">${count}</span> times`</span>;
+
+  <span class="hljs-comment">// &#x5728; componentWillUnmount &#x6267;&#x884C;</span>
+  <span class="hljs-keyword">return</span> () =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x5728; componentWillUnmount &#x6267;&#x884C;&apos;</span>);
+  }
+}, []);
+
+useEffect(() =&gt; {
+  <span class="hljs-built_in">document</span>.title = <span class="hljs-string">`You clicked <span class="hljs-subst">${count}</span> times`</span>;
+}, [count]); <span class="hljs-comment">// &#x4EC5;&#x5728; count &#x66F4;&#x6539;&#x65F6;&#x66F4;&#x65B0;</span>
+
+<span class="hljs-comment">// &#x5E38;&#x89C4;&#x7528;&#x6CD5;</span>
+<span class="hljs-keyword">let</span> timeout = <span class="hljs-literal">null</span>;
+useEffect(() =&gt; {
+  <span class="hljs-built_in">document</span>.title = <span class="hljs-string">`You clicked <span class="hljs-subst">${count}</span> times`</span>;
+
+  timeout = setTimeout(() =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;timeout&apos;</span>);
+  }, <span class="hljs-number">5000</span>);
+  <span class="hljs-keyword">return</span> () =&gt; {
+    <span class="hljs-comment">// &#x6E05;&#x9664;&#x526F;&#x4F5C;&#x7528;: &#x6570;&#x636E;&#x83B7;&#x53D6;&#x3001;&#x8BA2;&#x9605;&#x3001;&#x624B;&#x52A8;&#x4FEE;&#x6539;&#x8FC7; DOM&#x3001;setTimeout, setInterval</span>
+    clearTimeout(timeout);
+  }
+}, [count]); <span class="hljs-comment">// &#x4EC5;&#x5728; count &#x66F4;&#x6539;&#x65F6;&#x66F4;&#x65B0;</span>
+</code></pre>
+<h3 id="uselayouteffect"><span id="useLayoutEffect">useLayoutEffect</span></h3>
+<blockquote>
+<ol>
+<li>&#x5176;&#x51FD;&#x6570;&#x7B7E;&#x540D;&#x4E0E; useEffect &#x76F8;&#x540C;&#xFF0C;&#x4F46;&#x5B83;&#x4F1A;&#x5728;&#x6240;&#x6709;&#x7684; DOM &#x53D8;&#x66F4;&#x4E4B;&#x540E;&#x540C;&#x6B65;&#x8C03;&#x7528; effect&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B83;&#x6765;&#x8BFB;&#x53D6; DOM &#x5E03;&#x5C40;&#x5E76;&#x540C;&#x6B65;&#x89E6;&#x53D1;&#x91CD;&#x6E32;&#x67D3;&#x3002;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x6267;&#x884C;&#x7ED8;&#x5236;&#x4E4B;&#x524D;&#xFF0C;useLayoutEffect &#x5185;&#x90E8;&#x7684;&#x66F4;&#x65B0;&#x8BA1;&#x5212;&#x5C06;&#x88AB;&#x540C;&#x6B65;&#x5237;&#x65B0;&#x3002;</li>
+<li>&#x5C3D;&#x53EF;&#x80FD;&#x4F7F;&#x7528;&#x6807;&#x51C6;&#x7684; useEffect &#x4EE5;&#x907F;&#x514D;&#x963B;&#x585E;&#x89C6;&#x89C9;&#x66F4;&#x65B0;&#x3002;</li>
+<li>useLayoutEffect &#x4E0E; componentDidMount&#x3001;componentDidUpdate &#x7684;&#x8C03;&#x7528;&#x9636;&#x6BB5;&#x662F;&#x4E00;&#x6837;&#x7684;</li>
+</ol>
+<p>&#x5E76;&#x975E;&#x6240;&#x6709; effect &#x90FD;&#x53EF;&#x4EE5;&#x88AB;&#x5EF6;&#x8FDF;&#x6267;&#x884C;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x6267;&#x884C;&#x4E0B;&#x4E00;&#x6B21;&#x7ED8;&#x5236;&#x524D;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x89C1;&#x7684; DOM &#x53D8;&#x66F4;&#x5C31;&#x5FC5;&#x987B;&#x540C;&#x6B65;&#x6267;&#x884C;&#xFF0C;
+&#x8FD9;&#x6837;&#x7528;&#x6237;&#x624D;&#x4E0D;&#x4F1A;&#x611F;&#x89C9;&#x5230;&#x89C6;&#x89C9;&#x4E0A;&#x7684;&#x4E0D;&#x4E00;&#x81F4;&#x3002;&#xFF08;&#x6982;&#x5FF5;&#x4E0A;&#x7C7B;&#x4F3C;&#x4E8E;&#x88AB;&#x52A8;&#x76D1;&#x542C;&#x4E8B;&#x4EF6;&#x548C;&#x4E3B;&#x52A8;&#x76D1;&#x542C;&#x4E8B;&#x4EF6;&#x7684;&#x533A;&#x522B;&#x3002;&#xFF09;
+React &#x4E3A;&#x6B64;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x989D;&#x5916;&#x7684; useLayoutEffect Hook &#x6765;&#x5904;&#x7406;&#x8FD9;&#x7C7B; effect&#x3002;
+&#x5B83;&#x548C; useEffect &#x7684;&#x7ED3;&#x6784;&#x76F8;&#x540C;&#xFF0C;&#x533A;&#x522B;&#x53EA;&#x662F;&#x8C03;&#x7528;&#x65F6;&#x673A;&#x4E0D;&#x540C;&#x3002;</p>
+</blockquote>
+<h3 id="usecontext"><span id="useContext">useContext</span></h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> value = useContext(MyContext);
+
+<span class="hljs-comment">// Demo</span>
+<span class="hljs-keyword">const</span> themes = {
+  light: {
+    foreground: <span class="hljs-string">&quot;#000000&quot;</span>,
+    background: <span class="hljs-string">&quot;#eeeeee&quot;</span>
+  },
+  dark: {
+    foreground: <span class="hljs-string">&quot;#ffffff&quot;</span>,
+    background: <span class="hljs-string">&quot;#222222&quot;</span>
+  }
+};
+
+<span class="hljs-keyword">const</span> ThemeContext = React.createContext(themes.light);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    &lt;ThemeContext.Provider value={themes.dark}&gt;
+      &lt;Toolbar /&gt;
+    &lt;/ThemeContext.Provider&gt;
+  );
+}
+
+function Toolbar(props) {
+  return (
+    &lt;div&gt;
+      &lt;ThemedButton /&gt;
+    &lt;/div&gt;
+  );
+}
+
+function ThemedButton() {
+  const theme = useContext(ThemeContext);
+  const style = { background: theme.background, color: theme.foreground };
+
+  return (
+    &lt;button style={style}&gt;
+      I am styled by theme context!
+    &lt;/button&gt;
+  );
+}
+</code></pre>
+<blockquote>
+<ol>
+<li>&#x63A5;&#x6536;&#x4E00;&#x4E2A; context &#x5BF9;&#x8C61;&#xFF08;React.createContext &#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF09;&#x5E76;&#x8FD4;&#x56DE;&#x8BE5; context &#x7684;&#x5F53;&#x524D;&#x503C;&#x3002;&#x5F53;&#x524D;&#x7684; context &#x503C;&#x7531;&#x4E0A;&#x5C42;&#x7EC4;&#x4EF6;&#x4E2D;&#x8DDD;&#x79BB;&#x5F53;&#x524D;&#x7EC4;&#x4EF6;&#x6700;&#x8FD1;&#x7684; <mycontext.provider> &#x7684; value prop &#x51B3;&#x5B9A;&#x3002;</mycontext.provider></li>
+<li>&#x5F53;&#x7EC4;&#x4EF6;&#x4E0A;&#x5C42;&#x6700;&#x8FD1;&#x7684; <mycontext.provider> &#x66F4;&#x65B0;&#x65F6;&#xFF0C;&#x8BE5; Hook &#x4F1A;&#x89E6;&#x53D1;&#x91CD;&#x6E32;&#x67D3;&#xFF0C;&#x5E76;&#x4F7F;&#x7528;&#x6700;&#x65B0;&#x4F20;&#x9012;&#x7ED9; MyContext provider &#x7684; context value &#x503C;&#x3002;</mycontext.provider></li>
+<li>&#x522B;&#x5FD8;&#x8BB0; useContext &#x7684;&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x662F; context &#x5BF9;&#x8C61;&#x672C;&#x8EAB;&#xFF1A;</li>
+</ol>
+<p>context API&#x73B0;&#x5728;&#x662F;React&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;useContext&#x4EC5;&#x4EC5;&#x662F;&#x8BA9;&#x4F60;&#x4E0D;&#x7528;&#x5305;&#x88F9;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;context&#x3002;&#x5E76;&#x4E14;&#x6709;&#x4E00;&#x4E9B;&#x5F00;&#x53D1;&#x8FD9;&#x7528;context&#x6765;&#x7BA1;&#x7406;&#x6574;&#x4E2A;&#x5E94;&#x7528;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x8FD9;&#x4E0D;&#x662F;&#x8BBE;&#x8BA1;context&#x7684;&#x76EE;&#x7684;&#x3002;&#x901A;&#x8FC7;&#x6587;&#x6863;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF1A;
+Context is designed to share data that can be considered &#x201C;global&#x201D; for a tree of React components, such as the current authenticated user, theme, or preferred language.
+Context&#x662F;&#x4E3A;&#x4E86;&#x5171;&#x4EAB;&#x6570;&#x636E;&#x800C;&#x88AB;&#x8BBE;&#x8BA1;&#x51FA;&#x6765;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;React&#x7EC4;&#x4EF6;&#x6811;&#x7684;&#x201C;&#x5168;&#x5C40;&#x201D;&#xFF0C;&#x6BD4;&#x5982;&#x5F53;&#x524D;&#x5DF2;&#x6388;&#x6743;&#x7684;&#x7528;&#x6237;&#x3001;&#x4E3B;&#x9898;&#x6216;&#x8005;&#x9996;&#x9009;&#x7684;&#x8BED;&#x8A00;&#x3002;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x5C31;&#x662F;&#x90A3;&#x4E9B;&#x9884;&#x8BA1;&#x4E0D;&#x4F1A;&#x9891;&#x7E41;&#x66F4;&#x65B0;&#x7684;&#x4E1C;&#x897F;&#x3002;
+&#x6587;&#x6863;&#x4E2D;&#x4E5F;&#x5EFA;&#x8BAE;&#x6709;&#x8282;&#x5236;&#x5730;&#x4F7F;&#x7528;context&#xFF0C;&#x56E0;&#x4E3A;&#x201C;&#x5B83;&#x4F1A;&#x4F7F;&#x5F97;&#x7EC4;&#x4EF6;&#x96BE;&#x4EE5;&#x590D;&#x7528;&#x201D;&#x3002;&#x4ED6;&#x4EEC;&#x4E5F;&#x63D0;&#x9192;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x5982;&#x679C;&#x5F00;&#x53D1;&#x8005;&#x4E0D;&#x5C0F;&#x5FC3;&#xFF0C;context&#x5F88;&#x5BB9;&#x6613;&#x89E6;&#x53D1;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x91CD;&#x590D;&#x6E32;&#x67D3;&#x3002;</p>
+</blockquote>
+<h3 id="usereducer"><span id="useReducer">useReducer</span></h3>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x901A;&#x8FC7; reducer &#x6765;&#x7BA1;&#x7406;&#x7EC4;&#x4EF6;&#x672C;&#x5730;&#x7684;&#x590D;&#x6742; state.
+```javascript
+function reducer(state, action) {
+  switch (action.type) {
+    case &apos;aa&apos;:
+      // return {...state};
+    default: 
+      throw new Error();
+  }
+}
+const initialArg = {count: 0};</p>
+</blockquote>
+<p>const [state, dispatch] = useReducer(reducer, initialArg, init);</p>
+<p>// initialArg, init &#x7684;&#x5185;&#x90E8;&#x4F7F;&#x7528;
+let initialState = void 0;
+  if (init !== undefined) {
+    initialState = init(initialArg);
+  } else {
+    initialState = initialArg;
+  }</p>
+<pre><code>
+```javascript
+// Demo
+const initialState = {count: 0};
+
+function reducer(state, action) {
+  switch (action.type) {
+    case &apos;increment&apos;:
+      return {count: state.count + 1};
+    case &apos;decrement&apos;:
+      return {count: state.count - 1};
+    default:
+      throw new Error();
+  }
+}
+
+function Counter() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+  return (
+    &lt;&gt;
+      Count: {state.count}
+      &lt;button onClick={() =&gt; dispatch({type: &apos;decrement&apos;})}&gt;-&lt;/button&gt;
+      &lt;button onClick={() =&gt; dispatch({type: &apos;increment&apos;})}&gt;+&lt;/button&gt;
+    &lt;/&gt;
+  );
+}
+</code></pre><h3 id="usecallback"><span id="useCallback">useCallback</span></h3>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">doSomething</span>(<span class="hljs-params">param1, param2</span>) </span>{}
+<span class="hljs-keyword">const</span> memoizedCallback = useCallback(
+   () =&gt; {
+     doSomething(a, b);
+   },
+   [a, b],
+ );
+</code></pre>
+<blockquote>
+<ol>
+<li>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; memoized &#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</li>
+<li>&#x628A;&#x5185;&#x8054;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x53CA;&#x4F9D;&#x8D56;&#x9879;&#x6570;&#x7EC4;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x5165; useCallback&#xFF0C;&#x5B83;&#x5C06;&#x8FD4;&#x56DE;&#x8BE5;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684; memoized &#x7248;&#x672C;&#xFF0C;
+&#x8BE5;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4EC5;&#x5728;&#x67D0;&#x4E2A;&#x4F9D;&#x8D56;&#x9879;&#x6539;&#x53D8;&#x65F6;&#x624D;&#x4F1A;&#x66F4;&#x65B0;&#x3002;
+&#x5F53;&#x4F60;&#x628A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4F20;&#x9012;&#x7ED9;&#x7ECF;&#x8FC7;&#x4F18;&#x5316;&#x7684;&#x5E76;&#x4F7F;&#x7528;&#x5F15;&#x7528;&#x76F8;&#x7B49;&#x6027;&#x53BB;&#x907F;&#x514D;&#x975E;&#x5FC5;&#x8981;&#x6E32;&#x67D3;&#xFF08;&#x4F8B;&#x5982; shouldComponentUpdate&#xFF09;&#x7684;&#x5B50;&#x7EC4;&#x4EF6;&#x65F6;&#xFF0C;&#x5B83;&#x5C06;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;
+useCallback(fn, deps) &#x76F8;&#x5F53;&#x4E8E; useMemo(() =&gt; fn, deps)&#x3002;</li>
+</ol>
+</blockquote>
+<h3 id="usememo"><span id="useMemo">useMemo</span></h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> memoizedValue = useMemo(() =&gt; computeExpensiveValue(a, b), [a, b]);
+</code></pre>
+<blockquote>
+<ol>
+<li>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A; memoized &#x503C;&#x3002;</li>
+<li>&#x628A;&#x201C;&#x521B;&#x5EFA;&#x201D;&#x51FD;&#x6570;&#x548C;&#x4F9D;&#x8D56;&#x9879;&#x6570;&#x7EC4;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x5165; useMemo&#xFF0C;&#x5B83;&#x4EC5;&#x4F1A;&#x5728;&#x67D0;&#x4E2A;&#x4F9D;&#x8D56;&#x9879;&#x6539;&#x53D8;&#x65F6;&#x624D;&#x91CD;&#x65B0;&#x8BA1;&#x7B97; memoized &#x503C;&#x3002;&#x8FD9;&#x79CD;&#x4F18;&#x5316;&#x6709;&#x52A9;&#x4E8E;&#x907F;&#x514D;&#x5728;&#x6BCF;&#x6B21;&#x6E32;&#x67D3;&#x65F6;&#x90FD;&#x8FDB;&#x884C;&#x9AD8;&#x5F00;&#x9500;&#x7684;&#x8BA1;&#x7B97;&#x3002;</li>
+<li>&#x4F20;&#x5165; useMemo &#x7684;&#x51FD;&#x6570;&#x4F1A;&#x5728;&#x6E32;&#x67D3;&#x671F;&#x95F4;&#x6267;&#x884C;&#x3002;&#x8BF7;&#x4E0D;&#x8981;&#x5728;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x6267;&#x884C;&#x4E0E;&#x6E32;&#x67D3;&#x65E0;&#x5173;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x8BF8;&#x5982;&#x526F;&#x4F5C;&#x7528;&#x8FD9;&#x7C7B;&#x7684;&#x64CD;&#x4F5C;&#x5C5E;&#x4E8E; useEffect &#x7684;&#x9002;&#x7528;&#x8303;&#x7574;&#xFF0C;&#x800C;&#x4E0D;&#x662F; useMemo&#x3002;</li>
+<li>&#x4F60;&#x53EF;&#x4EE5;&#x628A; useMemo &#x4F5C;&#x4E3A;&#x6027;&#x80FD;&#x4F18;&#x5316;&#x7684;&#x624B;&#x6BB5;&#xFF0C;&#x4F46;&#x4E0D;&#x8981;&#x628A;&#x5B83;&#x5F53;&#x6210;&#x8BED;&#x4E49;&#x4E0A;&#x7684;&#x4FDD;&#x8BC1;&#x3002;</li>
+</ol>
+</blockquote>
+<h3 id="useref"><span id="useRef">useRef</span></h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> refContainer = useRef(initialValue);
+</code></pre>
+<blockquote>
+<ol>
+<li>useRef &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x53EF;&#x53D8;&#x7684; ref &#x5BF9;&#x8C61;&#xFF0C;&#x5176; .current &#x5C5E;&#x6027;&#x88AB;&#x521D;&#x59CB;&#x5316;&#x4E3A;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#xFF08;initialValue&#xFF09;&#x3002;</li>
+<li>&#x8FD4;&#x56DE;&#x7684; ref &#x5BF9;&#x8C61;&#x5728;&#x7EC4;&#x4EF6;&#x7684;&#x6574;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x5185;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;&#x3002;</li>
+</ol>
+</blockquote>
+<h3 id="useimperativehandle"><span id="useImperativeHandle">useImperativeHandle</span></h3>
+<pre><code class="lang-javascript">useImperativeHandle(ref, createHandle, [deps])
+</code></pre>
+<blockquote>
+<p>useImperativeHandle &#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x5728;&#x4F7F;&#x7528; ref &#x65F6;&#x81EA;&#x5B9A;&#x4E49;&#x66B4;&#x9732;&#x7ED9;&#x7236;&#x7EC4;&#x4EF6;&#x7684;&#x5B9E;&#x4F8B;&#x503C;&#x3002;
+&#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5E94;&#x5F53;&#x907F;&#x514D;&#x4F7F;&#x7528; ref &#x8FD9;&#x6837;&#x7684;&#x547D;&#x4EE4;&#x5F0F;&#x4EE3;&#x7801;&#x3002;
+useImperativeHandle &#x5E94;&#x5F53;&#x4E0E; forwardRef &#x4E00;&#x8D77;&#x4F7F;&#x7528;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">FancyInput</span>(<span class="hljs-params">props, ref</span>) </span>{
+  <span class="hljs-keyword">const</span> inputRef = useRef();
+  useImperativeHandle(ref, () =&gt; ({
+    focus: () =&gt; {
+      inputRef.current.focus();
+    }
+  }));
+  <span class="hljs-keyword">return</span> &lt;input ref={inputRef} {...props} /&gt;;
+}
+FancyInput = forwardRef(FancyInput);
+// &#x5728;&#x672C;&#x4F8B;&#x4E2D;&#xFF0C;&#x6E32;&#x67D3; &lt;FancyInput ref={inputRef} /&gt; &#x7684;&#x7236;&#x7EC4;&#x4EF6;&#x53EF;&#x4EE5;&#x8C03;&#x7528; inputRef.current.focus()&#x3002;
+</code></pre>
+</blockquote>
+<h3 id="usedebugvalue"><span id="useDebugValue">useDebugValue</span></h3>
+<blockquote>
+<p>useDebugValue(value)
+useDebugValue &#x53EF;&#x7528;&#x4E8E;&#x5728; React &#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#x4E2D;&#x663E;&#x793A;&#x81EA;&#x5B9A;&#x4E49; hook &#x7684;&#x6807;&#x7B7E;&#x3002;</p>
+</blockquote>
+<h2 id="&#x81EA;&#x5B9A;&#x4E49;-hook">&#x81EA;&#x5B9A;&#x4E49; Hook</h2>
+<blockquote>
+<p>&#x901A;&#x8FC7;&#x81EA;&#x5B9A;&#x4E49; Hook&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x7EC4;&#x4EF6;&#x903B;&#x8F91;&#x63D0;&#x53D6;&#x5230;&#x53EF;&#x91CD;&#x7528;&#x7684;&#x51FD;&#x6570;&#x4E2D;&#x3002;</p>
+<ol>
+<li>&#x81EA;&#x5B9A;&#x4E49; Hook &#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5176;&#x540D;&#x79F0;&#x4EE5; &#x201C;use&#x201D; &#x5F00;&#x5934;&#xFF0C;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x5176;&#x4ED6;&#x7684; Hook&#x3002;</li>
+</ol>
+</blockquote>
+<h3 id="demos">Demos</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> React, { useState, useEffect } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">useFriendStatus</span>(<span class="hljs-params">friendID</span>) </span>{
+  <span class="hljs-keyword">const</span> [isOnline, setIsOnline] = useState(<span class="hljs-literal">null</span>);
+
+  useEffect(() =&gt; {
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handleStatusChange</span>(<span class="hljs-params">status</span>) </span>{
+      setIsOnline(status.isOnline);
+    }
+
+    ChatAPI.subscribeToFriendStatus(friendID, handleStatusChange);
+    <span class="hljs-keyword">return</span> () =&gt; {
+      ChatAPI.unsubscribeFromFriendStatus(friendID, handleStatusChange);
+    };
+  });
+
+  <span class="hljs-keyword">return</span> isOnline;
+}
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">/**
+ * &#x5982;&#x4F55;&#x83B7;&#x53D6;&#x4E0A;&#x4E00;&#x8F6E;&#x7684; props &#x6216; state&#xFF1F;
+ * &#x76EE;&#x524D;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5; &#x901A;&#x8FC7; ref &#x6765;&#x624B;&#x52A8;&#x5B9E;&#x73B0;&#xFF1A;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Counter</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> [count, setCount] = useState(<span class="hljs-number">0</span>);
+  <span class="hljs-keyword">const</span> prevCount = usePrevious(count);
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Now: {count}, before: {prevCount}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">usePrevious</span>(<span class="hljs-params">value</span>) </span>{
+  <span class="hljs-keyword">const</span> ref = useRef();
+  useEffect(() =&gt; {
+    ref.current = value;
+  });
+  <span class="hljs-keyword">return</span> ref.current;
+}
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">/**
+ * &#x6211;&#x8BE5;&#x5982;&#x4F55;&#x6D4B;&#x91CF; DOM &#x8282;&#x70B9;&#xFF1F;
+ &#x8981;&#x60F3;&#x6D4B;&#x91CF;&#x4E00;&#x4E2A; DOM &#x8282;&#x70B9;&#x7684;&#x4F4D;&#x7F6E;&#x6216;&#x662F;&#x5C3A;&#x5BF8;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; callback ref&#x3002;&#x6BCF;&#x5F53; ref &#x88AB;&#x9644;&#x52A0;&#x5230;&#x4E00;&#x4E2A;&#x53E6;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF0C;React &#x5C31;&#x4F1A;&#x8C03;&#x7528; callback&#x3002;&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x4E2A; &#x5C0F; demo:
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MeasureExample</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> [height, setHeight] = useState(<span class="hljs-number">0</span>);
+
+  <span class="hljs-keyword">const</span> measuredRef = useCallback(node =&gt; {
+    <span class="hljs-keyword">if</span> (node !== <span class="hljs-literal">null</span>) {
+      setHeight(node.getBoundingClientRect().height);
+    }
+  }, []);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">{measuredRef}</span>&gt;</span>Hello, world<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>The above header is {Math.round(height)}px tall<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;/&gt;</span>
+  );
+}
+</span></code></pre>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">MeasureExample</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> [rect, ref] = useClientRect();
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">{ref}</span>&gt;</span>Hello, world<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+      {rect !== null &amp;&amp;
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>The above header is {Math.round(rect.height)}px tall<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+      }
+    <span class="hljs-tag">&lt;/&gt;</span>
+  );
+}
+
+function useClientRect() {
+  const [rect, setRect] = useState(null);
+  const ref = useCallback(node =&gt; {
+    if (node !== null) {
+      setRect(node.getBoundingClientRect());
+    }
+  }, []);
+  return [rect, ref];
+}
+</span></code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">/**
+ * &#x5728;&#x4F9D;&#x8D56;&#x5217;&#x8868;&#x4E2D;&#x7701;&#x7565;&#x51FD;&#x6570;&#x662F;&#x5426;&#x5B89;&#x5168;&#xFF1F;
+ * &#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x4E0D;&#x5B89;&#x5168;&#x3002;
+ * &#x5982;&#x679C;&#x662F;&#x975E;&#x901A;&#x7528;&#x3001;&#x975E;&#x516C;&#x5171;&#x7684; custom &#x903B;&#x8F91;&#xFF0C;&#x53EF;&#x4EE5;&#x628A;&#x8BE5;&#x51FD;&#x6570;&#x653E;&#x5230; useEffect &#x5185;&#x90E8;&#x3002;
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Example</span>(<span class="hljs-params">{ someProp }</span>) </span>{
+  useEffect(() =&gt; {
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">doSomething</span>(<span class="hljs-params"></span>) </span>{
+      <span class="hljs-built_in">console</span>.log(someProp);
+    }
+
+    doSomething();
+  }, [someProp]); <span class="hljs-comment">// &#x2705; &#x5B89;&#x5168;&#xFF08;&#x6211;&#x4EEC;&#x7684; effect &#x4EC5;&#x7528;&#x5230;&#x4E86; `someProp`&#xFF09;</span>
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="React.html" class="navigation navigation-prev " aria-label="Previous page: React: 总结整理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ReactLifeCycleToHooks1.html" class="navigation navigation-next " aria-label="Next page: React-生命周期方法快速转 Hooks（1）">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"React Hook - 速览","level":"5.2","depth":1,"next":{"title":"React-生命周期方法快速转 Hooks（1）","level":"5.3","depth":1,"path":"full-stack/react/ReactLifeCycleToHooks1.md","ref":"full-stack/react/ReactLifeCycleToHooks1.md","articles":[]},"previous":{"title":"React: 总结整理","level":"5.1","depth":1,"path":"full-stack/react/React.md","ref":"full-stack/react/React.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kate Kuo <gyx8899@126.com>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kate's Blog","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Kate's Blog":"https://github.com/gyx8899/blog"}},"gitbook":">=2.0.0","description":"This is a blog book created by Kate Kuo","extension":null},"file":{"path":"full-stack/react/ReactHook.md","mtime":"2020-09-12T03:17:56.019Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-02T02:52:16.860Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

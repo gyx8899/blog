@@ -1,0 +1,61 @@
+{
+  "name": "blog",
+  "version": "0.1.0",
+  "description": "Personal blog for growing up.",
+  "main": "index.js",
+  "scripts": {
+    "git-push": "node ./assets/scripts/add-timestamp.js file=. && cd ../yx-env && git-push.sh blog",
+    "gh-pages": "npm run gitbook-build && gh-pages -d _book",
+    "gitbook-build": "gitbook install && gitbook build",
+    "gitbook-serve": "gitbook install && gitbook serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gyx8899/blog.git"
+  },
+  "keywords": [
+    "blog",
+    "frondend",
+    "markdown",
+    "react",
+    "javascript",
+    "node",
+    "js"
+  ],
+  "author": "steper <gyx8899@126.com> (http://github.com/gyx8899)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gyx8899/blog/issues"
+  },
+  "homepage": "https://github.com/gyx8899/blog#readme",
+  "devDependencies": {
+    "@daybyday/yx-node": "^0.1.7",
+    "changed-git-files": "0.0.1",
+    "gh-pages": "^3.1.0"
+  },
+  "dependencies": {
+    "gitbook-plugin-advanced-emoji": "^0.2.2",
+    "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
+    "gitbook-plugin-anchors": "^0.7.1",
+    "gitbook-plugin-atoc": "^1.0.3",
+    "gitbook-plugin-autotheme": "^1.0.1",
+    "gitbook-plugin-baidu": "^0.1.0",
+    "gitbook-plugin-baidu-v3": "0.0.3",
+    "gitbook-plugin-book-summary-scroll-position-saver": "0.0.7",
+    "gitbook-plugin-copy-code-button": "0.0.2",
+    "gitbook-plugin-donate": "^1.0.2",
+    "gitbook-plugin-edit-link": "^2.0.2",
+    "gitbook-plugin-expandable-chapters-small": "^0.1.7",
+    "gitbook-plugin-ga": "^1.0.1",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-github-buttons": "^3.0.0",
+    "gitbook-plugin-meta-single": "^0.1.13",
+    "gitbook-plugin-multipart": "^0.3.0",
+    "gitbook-plugin-mygitalk": "^0.2.6",
+    "gitbook-plugin-sharing-plus": "0.0.2",
+    "gitbook-plugin-sitemap-general": "^0.1.1",
+    "gitbook-plugin-splitter": "0.0.8",
+    "gitbook-plugin-tbfed-pagefooter": "0.0.1",
+    "gitbook-plugin-theme-default": "^1.0.7"
+  }
+}
