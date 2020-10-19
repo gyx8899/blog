@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url> <loc>https://gyx8899.github.io/blog/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/daily-life/AboutResume.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/daily-life/CombineExertionAndRest.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/daily-life/GetOutOfYourComfortZone.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/daily-life/HowToHaveLeadership.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/daily-life/InstallSystem-windows.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/daily-life/SelfReview.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/daily-life/TheImportantOfSelfIntroduction.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/daily-life/WorkExperience.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/Bash.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/CSS.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/Console.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/Dos.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/Emoji.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/Git.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/GitBook.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/HTTP.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/IntelliJ-IDEA.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/Jest.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/NPM.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/Regexp.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/SEO.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/SQL.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/Snippet.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/Testing.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/Tricks.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/TypeScript.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/Vue.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/WebAPI.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/Webpack.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/docs/Windows.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/project/ReadMeTemplatePackage.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/react/React.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/react/ReactHook.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/react/ReactLifeCycleToHooks1.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/react/ReactLifeCycleToHooks2.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/react/Redux.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/react/Router.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/full-stack/react/useEffect.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://gyx8899.github.io/blog/office/Word.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+</urlset>

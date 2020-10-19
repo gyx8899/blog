@@ -73,6 +73,8 @@
 |410|Gone||
 |411|Length Required||
 |...|...||
+|431|Request Header Fields Too Large||
+|...|...||
 |451|Unavailable For Legal Reasons|...|
 
 #### 5xx: 服务器错误
@@ -92,5 +94,4 @@
 |511|Network Authentication Required|...|
 
 ## 参考
-
-- https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status HTTP 响应代码 - HTTP | MDN
+
