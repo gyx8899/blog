@@ -37,7 +37,7 @@
 - [CSS](/full-stack/docs/CSS.md): <sub><sup>(2020年8月31日)</sup></sub>
 - [代码教鞭：不值得犯第二次的错](/full-stack/docs/CodeTips.md): <sub><sup>(2020年9月28日)</sup></sub>
 - [Console](/full-stack/docs/Console.md): <sub><sup>(2020年8月31日)</sup></sub>
-- [DOS command](/full-stack/docs/Dos.md): <sub><sup>(2020年9月4日)</sup></sub>
+- [DOS command](/full-stack/docs/Dos.md): <sub><sup>(2020年10月30日)</sup></sub>
 - [Emoji: 供日常学习、查询及使用](/full-stack/docs/Emoji.md): <sub><sup>(2020年9月9日)</sup></sub>
 - [Git 命令集](/full-stack/docs/Git.md): <sub><sup>(2020年10月2日)</sup></sub>
 - [GitBook](/full-stack/docs/GitBook.md): <sub><sup>(2020年9月4日)</sup></sub>
