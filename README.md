@@ -44,7 +44,7 @@
 - [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md): <sub><sup>(2020年10月19日)</sup></sub>
 - [IntelliJ IDEA](/full-stack/docs/IntelliJ-IDEA.md): <sub><sup>(2020年9月2日)</sup></sub>
 - [Jest learning manual](/full-stack/docs/Jest.md): <sub><sup>(2020年9月4日)</sup></sub>
-- [NPM and Plugin Guide](/full-stack/docs/NPM.md): <sub><sup>(2020年9月4日)</sup></sub>
+- [NPM and Plugin Guide](/full-stack/docs/NPM.md): <sub><sup>(2020年10月30日)</sup></sub>
 - [Regexp: 日常表达式](/full-stack/docs/Regexp.md): <sub><sup>(2020年5月9日)</sup></sub>
 - [SEO: 搜索优化学习](/full-stack/docs/SEO.md): <sub><sup>(2020年4月17日)</sup></sub>
 - [SQL](/full-stack/docs/SQL.md): <sub><sup>(2020年8月31日)</sup></sub>
@@ -75,4 +75,4 @@ Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2020年10月19日
+最后更新于2020年10月30日
