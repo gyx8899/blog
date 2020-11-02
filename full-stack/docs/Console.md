@@ -24,4 +24,5 @@ console.timeEnd('Loop event');
 ```javascript
 jQuery().jquery
 jQuery.fn.jquery
+$.fn.jquery
 ```
