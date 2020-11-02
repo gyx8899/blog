@@ -55,7 +55,7 @@ module.exports = {
         "full-stack": {
             "docs": {
                 "Console.md": {
-                    "date": "2020年8月31日",
+                    "date": "2020年11月2日",
                     "path": "full-stack/docs/Console.md",
                     "title": "Console"
                 },
