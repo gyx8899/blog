@@ -662,6 +662,14 @@ git push --force origin my_branch
 
 检查网络状态，发现并解决网络问题，或重连（启）网络连接，重新尝试 git 命令即可。
 
+- "fatal: ambiguous argument 'HEAD" after "git reset --hard HEAD^" in windows
+> ^在 windows (terminal) 中是特殊字符。
+```shell
+git reset --hard "HEAD^"
+git reset --hard HEAD"^"
+git reset --hard HEAD~1
+```
+
 ## 练习
 - [Learn Git Branching](https://learngitbranching.js.org/)
  
