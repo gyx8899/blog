@@ -674,6 +674,10 @@ git push --force origin my_branch
 
 检查网络状态，发现并解决网络问题，或重连（启）网络连接，重新尝试 git 命令即可。
 
+- Pull request 提交后， 如果 diff 文件被 revert 并提交，会导致 pull request 自动关闭
+
+注意确保修改文件的改动在分支上，然后再建分支进行进一步测试。而不是直接在同一个分支或 Master 上修改提交，这会对当前的 pull request 造成影响，因为这些后续改动也会被包含在 pull request 中。
+
 - "fatal: ambiguous argument 'HEAD" after "git reset --hard HEAD^" in windows
 > ^在 windows (terminal) 中是特殊字符。
 ```shell
