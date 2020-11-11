@@ -1,0 +1,25 @@
+# File: .github/workflows/sync2gitee.yml
+name: sync2gitee
+on:
+  push:
+    branches:
+      - master
+jobs:
+  repo-sync:
+    env:
+      dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: sync github -> gitee
+        uses: Yikun/hub-mirror-action@master
+        if: env.dst_key
+        with:
+          src: github/gyx8899
+          dst: gitee/steper
+          static_list: "scripts"
+          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          dst_token: ${{ secrets.GITEE_TOKEN }}
