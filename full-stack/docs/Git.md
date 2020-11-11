@@ -566,7 +566,19 @@ git merge --abort
 git reset --merge
 git pull
 ```
-    
+
+- Committing is not possible because you have unmerged files.
+```shell
+git status
+# After merge, still can't submit, check your git status
+cd unmerged files folder
+git add .
+git add [file]
+
+git commit -m "message"
+git push
+```
+
 - Your local changes to the following files would be overwritten by merge: Please commit your changes or stash them before you merge.
 
 ```shell
