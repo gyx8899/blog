@@ -41,6 +41,7 @@
 - [Emoji: 供日常学习、查询及使用](/full-stack/docs/Emoji.md): <sub><sup>(2020年9月9日)</sup></sub>
 - [Git 命令集](/full-stack/docs/Git.md): <sub><sup>(2020年11月11日)</sup></sub>
 - [GitBook](/full-stack/docs/GitBook.md): <sub><sup>(2020年9月4日)</sup></sub>
+- [Github Action](/full-stack/docs/GitHubAction.md): <sub><sup>(2020年11月12日)</sup></sub>
 - [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md): <sub><sup>(2020年10月19日)</sup></sub>
 - [IntelliJ IDEA](/full-stack/docs/IntelliJ-IDEA.md): <sub><sup>(2020年9月2日)</sup></sub>
 - [Jest learning manual](/full-stack/docs/Jest.md): <sub><sup>(2020年9月4日)</sup></sub>
@@ -75,4 +76,4 @@ Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2020年11月11日
+最后更新于2020年11月12日

@@ -178,6 +178,11 @@ module.exports = {
                     "date": "2020年10月1日",
                     "path": "full-stack/docs/BestTools.md",
                     "title": "最好的工具: 理解并使用那些耳目一新的巧工具"
+                },
+                "GitHubAction.md": {
+                    "date": "2020年11月12日",
+                    "path": "full-stack/docs/GitHubAction.md",
+                    "title": "Github Action"
                 }
             },
             "react": {

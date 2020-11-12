@@ -36,6 +36,7 @@
 * [Emoji: 供日常学习、查询及使用](/full-stack/docs/Emoji.md)
 * [Git 命令集](/full-stack/docs/Git.md)
 * [GitBook](/full-stack/docs/GitBook.md)
+* [Github Action](/full-stack/docs/GitHubAction.md)
 * [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md)
 * [IntelliJ IDEA](/full-stack/docs/IntelliJ-IDEA.md)
 * [Jest learning manual](/full-stack/docs/Jest.md)

@@ -1,4 +1,4 @@
-# File: .github/workflows/sync2gitee.yml
+# 通过 Github action， 在仓库的每一次 commit 后自动同步到 Gitee 上
 name: sync2gitee
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           # 必选，Gitee对应的用于创建仓库的token，https://gitee.com/profile/personal_access_tokens
           dst_token:  ${{ secrets.GITEE_TOKEN }}
-          # 如果是组织，指定组织即可，默认为用户user
+          # 如果是组织，指定组织即可，默认为用户 user
           # account_type: org
           # 直接取当前项目的仓库名
           static_list: ${{ github.event.repository.name }}
@@ -36,18 +36,3 @@ jobs:
           # static_list: 'repo_name,repo_name2'
           # black_list: 'repo_name,repo_name2'
           # white_list: 'repo_name,repo_name2'
-
-      - name: 11src
-        env:
-          src: 'github/${{ github.repository_owner }}'
-        run: echo "$src"
-
-      - name: 11dst
-        env:
-          dst: 'gitee/${{ secrets.GITEE_USER }}'
-        run: echo "$dst"
-
-      - name: 11reponame
-        env:
-          name: ${{ github.event.repository.name }}
-        run: echo "$name"
