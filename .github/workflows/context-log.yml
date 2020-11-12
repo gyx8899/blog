@@ -1,6 +1,18 @@
 # Example printing context information to the log file
 name: context-log
-on: push
+
+on:
+  workflow_dispatch:
+    # 手动触发，不设置 schedule
+    inputs:
+      name:
+        description: 'Hello'
+        required: true
+        default: 'Hi context log'
+      home:
+        description: 'context'
+        required: false
+        default: 'This is context log'
 
 jobs:
   one:
