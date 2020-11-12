@@ -36,17 +36,17 @@ jobs:
           # black_list: 'repo_name,repo_name2'
           # white_list: 'repo_name,repo_name2'
 
-      - name: src
-          env:
-            src: 'github/${{ github.repository_owner }}'
-          run: echo "$src"
+      - name: 11src
+        env:
+          src: 'github/${{ github.repository_owner }}'
+        run: echo "$src"
 
-      - name: dst
-          env:
-            dst: 'gitee/${{ secrets.GITEE_USER }}'
-          run: echo "$dst"
+      - name: 11dst
+        env:
+          dst: 'gitee/${{ secrets.GITEE_USER }}'
+        run: echo "$dst"
 
-      - name: name
-          env:
-            name: ${{ github.event.repository.name }}
-          run: echo "$name"
+      - name: 11reponame
+        env:
+          name: ${{ github.event.repository.name }}
+        run: echo "$name"
