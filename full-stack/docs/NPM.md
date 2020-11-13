@@ -113,6 +113,21 @@ npm publish
 npm --force unpublish npm-event@1.0.1
 ```
 
+- NPM Link: Test packages before publish
+```shell script
+# cd yx-node
+# Go to package directory, such as @daybyday/yx-node
+# Generate package link
+npm link
+
+# cd blog
+# Go to your test project which use your package
+# Add link to project package.json
+npm link @daybyday/yx-node
+
+# You can test it now.
+```
+
 ## 问题列表
 
 - npm ERR! Unexpected end of JSON input while parsing near '....0.0","inherits":"^2.'

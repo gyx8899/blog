@@ -1,0 +1,175 @@
+{
+  "author": "Kate Kuo <gyx8899@126.com>",
+  "description": "This is a blog book created by Kate Kuo",
+  "extension": null,
+  "generator": "site",
+  "links": {
+    "sharing": {
+      "all": null,
+      "facebook": null,
+      "google": null,
+      "twitter": null,
+      "weibo": null
+    },
+    "sidebar": {
+      "Kate's Blog": "https://github.com/gyx8899/blog"
+    }
+  },
+  "output": null,
+  "pdf": {
+    "fontSize": 12,
+    "footerTemplate": null,
+    "headerTemplate": null,
+    "margin": {
+      "bottom": 36,
+      "left": 62,
+      "right": 62,
+      "top": 36
+    },
+    "pageNumbers": false,
+    "paperSize": "a4"
+  },
+  "structure" : {
+    "readme" : "README.md"
+  },
+  "plugins": [
+    "advanced-emoji",
+    "anchors",
+    "anchor-navigation-ex",
+    "atoc",
+    "autotheme",
+    "baidu-v3",
+    "book-summary-scroll-position-saver",
+    "copy-code-button",
+    "donate",
+    "edit-link",
+    "expandable-chapters-small",
+    "ga",
+    "github",
+    "github-buttons",
+    "meta-single",
+    "multipart",
+    "mygitalk",
+    "sitemap-general",
+    "-sharing",
+    "sharing-plus",
+    "splitter",
+    "theme-default",
+    "tbfed-pagefooter"
+  ],
+  "pluginsConfig": {
+    "anchor-navigation-ex": {
+      "showLevel": true,
+      "associatedWithSummary": false,
+      "printLog": false,
+      "multipleH1": true,
+      "mode": "float",
+      "showGoTop": true,
+      "float": {
+        "floatIcon": "fa fa-navicon",
+        "showLevelIcon": false,
+        "level1Icon": "fa fa-hand-o-right",
+        "level2Icon": "fa fa-hand-o-right",
+        "level3Icon": "fa fa-hand-o-right"
+      },
+      "pageTop": {
+        "showLevelIcon": false,
+        "level1Icon": "fa fa-hand-o-right",
+        "level2Icon": "fa fa-hand-o-right",
+        "level3Icon": "fa fa-hand-o-right"
+      }
+    },
+    "atoc": {
+      "addClass": true,
+      "className": "atoc"
+    },
+    "autotheme": {
+      "white": [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+      "sepia": [],
+      "night": [20, 21, 22, 23, 0, 1, 2, 3, 4, 5, 6, 7]
+    },
+    "baidu": {
+      "token": "7cd809740367af53226b712edb58be52"
+    },
+    "donate": {
+      "wechat": "/blog/assets/images/wechat-pay.jpg",
+      "alipay": "/blog/assets/images/ali-pay.png",
+      "title": "",
+      "button": "打赏",
+      "alipayText": "支付宝打赏",
+      "wechatText": "微信打赏"
+    },
+    "edit-link": {
+      "base": "https://github.com/gyx8899/blog/edit/master",
+      "label": "编辑此页面"
+    },
+    "ga": {
+      "token": "UA-104315567-4"
+    },
+    "github": {
+      "url": "https://github.com/gyx8899"
+    },
+    "github-buttons": {
+      "buttons": [{
+        "user": "gyx8899",
+        "repo": "blog",
+        "type": "star",
+        "size": "small",
+        "count": true
+      }]
+    },
+    "mygitalk": {
+      "clientID": "5e8bbf0eb9e1b2b33ad3",
+      "clientSecret": "ea451002eb5c12a4076356af35ad02723168ae33",
+      "repo": "blog",
+      "owner": "gyx8899",
+      "admin": ["gyx8899"],
+      "distractionFreeMode": false
+    },
+    "meta-single": {
+      "name": "google-site-verification",
+      "content": "szJqIPSIvin7laJ8pw4nH5DiYP2NGSFsyMGsGt7_x64"
+    },
+    "sharing": {
+      "douban": false,
+      "facebook": false,
+      "google": true,
+      "hatenaBookmark": false,
+      "instapaper": false,
+      "line": true,
+      "linkedin": true,
+      "messenger": false,
+      "pocket": false,
+      "qq": false,
+      "qzone": true,
+      "stumbleupon": false,
+      "twitter": false,
+      "viber": false,
+      "vk": false,
+      "weibo": true,
+      "whatsapp": false,
+      "all": [
+        "facebook", "google", "twitter",
+        "weibo", "instapaper", "linkedin",
+        "pocket", "stumbleupon"
+      ]
+    },
+    "sitemap-general": {
+      "prefix": "https://gyx8899.github.io/blog/",
+      "changefreq": "daily",
+      "priority": 0.8
+    },
+    "tbfed-pagefooter": {
+      "copyright": "Copyright &copy <a href='https://github.com/gyx8899' target='_blank'>Kate-Kuo</a> 2020",
+      "modify_label": "修订时间：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    },
+    "theme-default": {
+      "showLevel": true
+    }
+  },
+  "gitbook": ">=2.0.0",
+  "language": "zh-hans",
+  "title": "Kate's Blog",
+  "variables": {}
+}

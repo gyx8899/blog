@@ -55,15 +55,20 @@ function getFileObjInMdConfig(fileName) {
 function deleteEmptyMdConfig(fileName) {
 	const filePaths = fileName.split('/');
 	let currentFile = mdConfig.blog;
+	if (!currentFile) {
+		return ;
+	}
 	Array(3)
 			.fill('')
 			.forEach(() => {
 				for (let i = 0; i < filePaths.length - 1; i++) {
-					if (Object.keys(currentFile[filePaths[i]]).length === 0) {
-						delete currentFile[filePaths[i]];
-						break;
+					if (currentFile[filePaths[i]]) {
+						if (Object.keys(currentFile[filePaths[i]]).length === 0) {
+							delete currentFile[filePaths[i]];
+							break;
+						}
+						currentFile = currentFile[filePaths[i]];
 					}
-					currentFile = currentFile[filePaths[i]];
 				}
 			});
 }

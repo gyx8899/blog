@@ -55,17 +55,17 @@ module.exports = {
         "full-stack": {
             "docs": {
                 "Console.md": {
-                    "date": "2020年8月31日",
+                    "date": "2020年11月2日",
                     "path": "full-stack/docs/Console.md",
                     "title": "Console"
                 },
                 "Dos.md": {
-                    "date": "2020年9月4日",
+                    "date": "2020年10月30日",
                     "path": "full-stack/docs/Dos.md",
                     "title": "DOS command"
                 },
                 "Git.md": {
-                    "date": "2020年9月11日",
+                    "date": "2020年11月13日",
                     "path": "full-stack/docs/Git.md",
                     "title": "Git 命令集"
                 },
@@ -80,7 +80,7 @@ module.exports = {
                     "title": "Jest learning manual"
                 },
                 "NPM.md": {
-                    "date": "2020年9月4日",
+                    "date": "2020年10月30日",
                     "path": "full-stack/docs/NPM.md",
                     "title": "NPM and Plugin Guide"
                 },
@@ -105,7 +105,7 @@ module.exports = {
                     "title": "Testing"
                 },
                 "WebAPI.md": {
-                    "date": "2020年8月31日",
+                    "date": "2020年11月13日",
                     "path": "full-stack/docs/WebAPI.md",
                     "title": "Web API"
                 },
@@ -140,7 +140,7 @@ module.exports = {
                     "title": "CSS"
                 },
                 "HTTP.md": {
-                    "date": "2020年9月1日",
+                    "date": "2020年10月19日",
                     "path": "full-stack/docs/HTTP.md",
                     "title": "HTTP: 小知识巧总结"
                 },
@@ -150,7 +150,7 @@ module.exports = {
                     "title": "TypeScript"
                 },
                 "SQL.md": {
-                    "date": "2020年8月31日",
+                    "date": "2020年11月13日",
                     "path": "full-stack/docs/SQL.md",
                     "title": "SQL"
                 },
@@ -178,6 +178,16 @@ module.exports = {
                     "date": "2020年10月1日",
                     "path": "full-stack/docs/BestTools.md",
                     "title": "最好的工具: 理解并使用那些耳目一新的巧工具"
+                },
+                "GitHubAction.md": {
+                    "date": "2020年11月12日",
+                    "path": "full-stack/docs/GitHubAction.md",
+                    "title": "Github Action"
+                },
+                "TechTerms.md": {
+                    "date": "2020年11月13日",
+                    "path": "full-stack/docs/TechTerms.md",
+                    "title": "专业名词"
                 }
             },
             "react": {

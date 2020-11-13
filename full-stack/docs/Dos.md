@@ -84,6 +84,6 @@ pause
     进程 ID:
         4116
     ```
-    - 在任务管理器 - 服务 - ID:4116 - 右键关闭该进程
+    - 在任务管理器 - 服务 - ID:4116 - 右键关闭该进程, 已遇到的服务有：SQLServer, Skype, VMware 等；
     - [dos-netstat-80.bat](https://github.com/gyx8899/yx-env/blob/master/dos-netstat-80.bat)
 
