@@ -515,6 +515,24 @@ git pull origin master:side
 
 ```
 
+#### Branch
+
+##### Delete local branch
+```shell
+# 先查看本地分支
+git branch -a
+# 删除本地分支
+git branch -d <branch-name>
+
+# 有一些分支有未 merge 的该动，需要使用 -D 删除
+git branch -D <branch-name>
+```
+
+##### Delete remote branch
+```shell
+git push orign --delete <branch-name>
+```
+
 ### Questions: 常见问题
 
 - SSL_read: SSL_ERROR_SYSCALL, errno 10054
