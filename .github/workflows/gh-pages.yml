@@ -4,16 +4,17 @@ on:
     branches:
       - master
 jobs:
-  build-and-deploy:
+  build:
+    name: Build Gitbook
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
-
-      - name: Build and Deploy
-        uses: JamesIves/github-pages-deploy-action@master
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: _book
-          BUILD_SCRIPT: npm install gitbook-cli -g && gitbook install && gitbook build ./_book
+      # Check out the repo first
+      - name: Checkout code
+        uses: actions/checkout@v2
+      # Run this action to publish gitbook
+      - name: Publish
+        uses: tuliren/publish-gitbook@v1.0.0
+        with:
+          # specify either github_token or personal_token
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          # personal_token: ${{ secrets.PERSONAL_TOKEN }}
