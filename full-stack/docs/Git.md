@@ -704,6 +704,16 @@ git reset --hard HEAD"^"
 git reset --hard HEAD~1
 ```
 
+- [Git 提交信息中的 Author 和 Committer 的差异](https://blog.darkthread.net/blog/git-author-n-committer/)：
+> Git 的每个Commit 都有作者(Author)跟提交者(Committer)两种角色，每次新增修改删除档案并使用git commit 指令存成Commit，一开始Commit 的作者与提交者都是执行提交动作的操作人员(严格来说是user.name 跟user.email 所设定的身分)，而作者日期(AuthorDate)及提交日期(CommitDate)就是执行git commit 的时间。但如果Commit 经过再处理或操作，提交日期将会更新，而也可能出现提交者与作者不同的状况。造成作者/作者日期与提交者/提交日期不同的常见情境有：
+
+> - 执行Rebase (包含git pull --rebase)
+> - 执行Amend 修改Commit 讯息
+> - 执行Cherry-Pick 搬动Commit
+> - 产生更新档交付他人套用
+>
+> 总之，只要Git 操作导致Commit ID 改变，就必须更新提交者及提交日期，若操作者并非该Commit 的原始提交者，便会发生作者与提交者不同的状况。要观察提交日期与提交者，除使用Visual Studio、Source Tree、Git GUI 等GUI 工具，用git show --pretty=fuller commit_id 亦可查看
+
 ## 练习
 - [Learn Git Branching](https://learngitbranching.js.org/)
  
