@@ -105,7 +105,7 @@ module.exports = {
                     "title": "Testing"
                 },
                 "WebAPI.md": {
-                    "date": "2020年8月31日",
+                    "date": "2020年11月13日",
                     "path": "full-stack/docs/WebAPI.md",
                     "title": "Web API"
                 },
@@ -150,7 +150,7 @@ module.exports = {
                     "title": "TypeScript"
                 },
                 "SQL.md": {
-                    "date": "2020年8月31日",
+                    "date": "2020年11月13日",
                     "path": "full-stack/docs/SQL.md",
                     "title": "SQL"
                 },
@@ -183,6 +183,11 @@ module.exports = {
                     "date": "2020年11月12日",
                     "path": "full-stack/docs/GitHubAction.md",
                     "title": "Github Action"
+                },
+                "TechTerms.md": {
+                    "date": "2020年11月13日",
+                    "path": "full-stack/docs/TechTerms.md",
+                    "title": "专业名词"
                 }
             },
             "react": {

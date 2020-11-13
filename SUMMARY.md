@@ -45,6 +45,7 @@
 * [SEO: 搜索优化学习](/full-stack/docs/SEO.md)
 * [SQL](/full-stack/docs/SQL.md)
 * [Snippet: 那些有趣的代码片段](/full-stack/docs/Snippet.md)
+* [专业名词](/full-stack/docs/TechTerms.md)
 * [Testing](/full-stack/docs/Testing.md)
 * [Tricks: 技巧黑暗料理](/full-stack/docs/Tricks.md)
 * [TypeScript](/full-stack/docs/TypeScript.md)
