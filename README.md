@@ -32,7 +32,7 @@
 ## Full-stack
 全栈知识总结
 
-- [3步自动同步你的 Github 仓库到 Gitee 仓库](/full-stack/Share/SyncGithubToGitee.md): <sub><sup>(2020年11月14日)</sup></sub>
+- [3步自动同步你的 Github 仓库到 Gitee 仓库](/full-stack/Share/SyncGithubToGitee.md): <sub><sup>(2020年11月15日)</sup></sub>
 
 ### Docs
 个人知识文档
@@ -82,4 +82,4 @@ Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2020年11月14日
+最后更新于2020年11月15日
