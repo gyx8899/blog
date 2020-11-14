@@ -92,6 +92,6 @@ jobs:
 
 ### 真实例，见效果
 
-- 从 Github 仓库 Action [gyx8899/blog](https://github.com/gyx8899/blog/actions)
+- 从 Github 仓库 Action [gyx8899/blog](https://github.com/gyx8899/blog)
 
 - 到 Gitee 仓库 [steper/blog](https://gitee.com/steper/blog)

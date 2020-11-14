@@ -236,7 +236,7 @@ module.exports = {
             },
             "Share": {
                 "SyncGithubToGitee.md": {
-                    "date": "2020年11月14日",
+                    "date": "2020年11月15日",
                     "path": "full-stack/Share/SyncGithubToGitee.md",
                     "title": "3步自动同步你的 Github 仓库到 Gitee 仓库"
                 }
