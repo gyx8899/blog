@@ -69,20 +69,24 @@ jobs:
 
     - `GITEE_USER`，比如个人的 Gitee user id: [steper](https://gitee.com/steper)
     - `GITEE_PRIVATE_KEY`，获取方法(如果已有，直接设置) - [Gitee公钥对应的私钥](https://gitee.com/profile/sshkeys)
+        
         新建 private key 方法：
         - [生成 SSH 公钥](https://gitee.com/help/articles/4181#article-header0)
         - [将 SSH 公钥添加到 Gitee 公钥](https://gitee.com/profile/sshkeys)
         - 同时将公钥添加到 Github 项目的 secrets 中;
     - `GITEE_TOKEN`，获取方法 - [Gitee对应的用于创建仓库的token](https://gitee.com/profile/personal_access_tokens)
+        
         新建 token 方法：
         - 点击上面的链接并登录 Gitee, 点击“生成新令牌”，
         - 添加描述，比如用处 - Github 仓库同步到 Gitee；
         - 权限默认全选，点击提交，显示出生成的 token 值；（注意保存，需要填到 Github 的 secrets 中）
-1. 复制 [sync2gitee.yml](https://github.com/gyx8899/actionsflow/blob/main/workflows/sync2gitee.yml)，到 Github 仓库下的 `.github` 文件夹的 `workflows` 下，并提交到 Github 仓库。（这次操作就会触发同步的 Action）
+1. 复制 [sync2gitee.yml](https://github.com/gyx8899/actionsflow/blob/main/workflows/sync2gitee.yml)，到 Github 仓库下的 `.github` 文件夹的 `workflows` 文件夹下，即 `[project-folder]/.github/workflows/sync2gitee.yml`，并提交到 Github 仓库。（这次操作就会触发同步的 Action）
 
 后续在 Github 仓库上提交改动（如修改 README.md），都可以到 [Gitee](https://gitee.com/) 上对应仓库验证是否同步成功。
 
 ### GitHub Actions 对于私有项目，每个月有 2000 分钟的免费额度。
+普通的一次 GitHub Action 执行需要 2-3 分钟，`2000 / 3 = 666`次提交，足足满足一天 22 次的改动提交，几乎没有任何顾虑。
+
 - [关于 GitHub 操作的计费](https://docs.github.com/cn/free-pro-team@latest/github/setting-up-and-managing-billing-and-payments-on-github/about-billing-for-github-actions)
 - [查看个人已用量](https://github.com/settings/billing)
 
