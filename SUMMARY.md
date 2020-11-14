@@ -27,6 +27,7 @@
 ## Full-stack
 全栈知识总结
 
+* [3步自动同步你的 Github 仓库到 Gitee 仓库](/full-stack/Share/SyncGithubToGitee.md)
 
 ## Docs
 个人知识文档

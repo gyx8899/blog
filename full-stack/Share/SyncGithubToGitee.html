@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>useEffect · Kate's Blog</title>
+        <title>3步自动同步你的 Github 仓库到 Gitee 仓库 · Kate's Blog</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../../office/Word.html" />
+    <link rel="next" href="../docs/Bash.html" />
     
     
-    <link rel="prev" href="Router.html" />
+    <link rel="prev" href="../../daily-life/WorkExperience.html" />
     
 
     </head>
@@ -264,9 +264,9 @@
         
         
     
-        <li class="chapter " data-level="4.1" data-path="../Share/SyncGithubToGitee.html">
+        <li class="chapter active" data-level="4.1" data-path="SyncGithubToGitee.html">
             
-                <a href="../Share/SyncGithubToGitee.html">
+                <a href="SyncGithubToGitee.html">
             
                     
                     3步自动同步你的 Github 仓库到 Gitee 仓库
@@ -655,9 +655,9 @@
         
         
     
-        <li class="chapter " data-level="6.1" data-path="React.html">
+        <li class="chapter " data-level="6.1" data-path="../react/React.html">
             
-                <a href="React.html">
+                <a href="../react/React.html">
             
                     
                     React: 总结整理
@@ -668,9 +668,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.2" data-path="ReactHook.html">
+        <li class="chapter " data-level="6.2" data-path="../react/ReactHook.html">
             
-                <a href="ReactHook.html">
+                <a href="../react/ReactHook.html">
             
                     
                     React Hook - 速览
@@ -681,9 +681,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.3" data-path="ReactLifeCycleToHooks1.html">
+        <li class="chapter " data-level="6.3" data-path="../react/ReactLifeCycleToHooks1.html">
             
-                <a href="ReactLifeCycleToHooks1.html">
+                <a href="../react/ReactLifeCycleToHooks1.html">
             
                     
                     React-生命周期方法快速转 Hooks（1）
@@ -694,9 +694,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.4" data-path="ReactLifeCycleToHooks2.html">
+        <li class="chapter " data-level="6.4" data-path="../react/ReactLifeCycleToHooks2.html">
             
-                <a href="ReactLifeCycleToHooks2.html">
+                <a href="../react/ReactLifeCycleToHooks2.html">
             
                     
                     React: 生命周期方法快速转 Hooks（2）
@@ -707,9 +707,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.5" data-path="Redux.html">
+        <li class="chapter " data-level="6.5" data-path="../react/Redux.html">
             
-                <a href="Redux.html">
+                <a href="../react/Redux.html">
             
                     
                     Redux
@@ -720,9 +720,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.6" data-path="Router.html">
+        <li class="chapter " data-level="6.6" data-path="../react/Router.html">
             
-                <a href="Router.html">
+                <a href="../react/Router.html">
             
                     
                     React router
@@ -733,9 +733,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="6.7" data-path="useEffect.html">
+        <li class="chapter " data-level="6.7" data-path="../react/useEffect.html">
             
-                <a href="useEffect.html">
+                <a href="../react/useEffect.html">
             
                     
                     useEffect
@@ -796,7 +796,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >useEffect</a>
+        <a href="../.." >3步自动同步你的 Github 仓库到 Gitee 仓库</a>
     </h1>
 </div>
 
@@ -811,131 +811,103 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="useeffect">useEffect</h1>
-<h2 id="&#x5E38;&#x7528;&#x793A;&#x4F8B;">&#x5E38;&#x7528;&#x793A;&#x4F8B;</h2>
-<h5 id="&#x5728;-useeffect-&#x5185;&#x90E8;&#x4F7F;&#x7528;&#x5F02;&#x6B65;-function">&#x5728; <code>useEffect</code> &#x5185;&#x90E8;&#x4F7F;&#x7528;&#x5F02;&#x6B65; Function</h5>
+                                <h1 id="3&#x6B65;&#x81EA;&#x52A8;&#x540C;&#x6B65;&#x4F60;&#x7684;-github-&#x4ED3;&#x5E93;&#x5230;-gitee-&#x4ED3;&#x5E93;">3&#x6B65;&#x81EA;&#x52A8;&#x540C;&#x6B65;&#x4F60;&#x7684; Github &#x4ED3;&#x5E93;&#x5230; Gitee &#x4ED3;&#x5E93;</h1>
+<p>&#x76F8;&#x4FE1;&#x6709;&#x5F88;&#x591A;&#x4EE5; Github &#x4E3A;&#x4E3B;&#x9635;&#x5730;&#x7684;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x90FD;&#x540C;&#x6837;&#x62E5;&#x6709;&#x4E00;&#x4E2A;&#x955C;&#x50CF;&#x5907;&#x4EFD;&#x7684;&#x5FC3;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#x6211;&#x5C31;&#x5076;&#x5C14;&#x4F7F;&#x7528; Gitee &#x540C;&#x6B65; Github&#xFF0C;&#x5BF9; Gitee &#x5DF2;&#x6709;&#x5F3A;&#x5927;&#x7684;&#x201C;&#x4ECE; Github/Gitlab &#x5BFC;&#x5165;&#x4ED3;&#x5E93;&#x201D;&#x548C;&#x201C;&#x9879;&#x76EE;&#x540D;&#x65C1;&#x8FB9;&#x7684;&#x5237;&#x65B0;&#x6309;&#x94AE;&#x70B9;&#x51FB;&#x540C;&#x6B65;&#x201D;&#x529F;&#x80FD;&#x975E;&#x5E38;&#x6EE1;&#x610F;&#xFF0C;&#x4F46;&#x662F;&#x8BA4;&#x8BC6;&#x5230; Github Actions &#x7684;&#x5F3A;&#x5927;&#x548C;&#x4FBF;&#x6377;&#x540E;&#xFF0C;&#x4ECD;&#x5FCD;&#x4E0D;&#x4F4F;&#x8981;&#x641E;&#x4E00;&#x4E9B;&#x5C0F;&#x8F6E;&#x5B50;&#xFF08;&#x5C0F;&#x52A8;&#x4F5C;&#xFF09;&#x3002;</p>
+<p>&#x6700;&#x7EC8;&#x53D1;&#x73B0;&#xFF1A;&#x7AD9;&#x5728;&#x5DE8;&#x4EBA;&#x7684;&#x80A9;&#x8180;&#x4E0A;&#x771F;&#x9999;&#xFF0C;&#x611F;&#x8C22; <a href="https://github.com/Yikun/hub-mirror-action" target="_blank">Yikun/hub-mirror-action</a> &#x9879;&#x76EE;&#x8BA9;&#x8FD9;&#x4E2A;&#x5907;&#x4EFD;&#x7684;&#x76EE;&#x6807;&#x53C8;&#x8FDB;&#x4E00;&#x6B65;&#x3002;</p>
+<h2 id="&#x5148;&#x5B9A;&#x4E2A;&#x5C0F;&#x76EE;&#x6807;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x5206;&#x89E3;&#x76EE;&#x6807;">&#x5148;&#x5B9A;&#x4E2A;&#x5C0F;&#x76EE;&#x6807;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x5206;&#x89E3;&#x76EE;&#x6807;</h2>
+<blockquote>
+<p>Github &#x4ED3;&#x5E93;&#x6BCF;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x540E;&#xFF0C;&#x901A;&#x8FC7; Github Actions &#x81EA;&#x52A8;&#x5C06;&#x4ED3;&#x5E93;&#x540C;&#x6B65;&#x5230; Gitee &#x4E0A;&#x3002;</p>
+</blockquote>
+<h3 id="&#x4E86;&#x89E3;-github-actions">&#x4E86;&#x89E3; Github Actions</h3>
+<p>&#xFF08;&#x5DF2;&#x4E86;&#x89E3;&#x7684;&#x76F4;&#x63A5;&#x8DF3;&#x8FC7;&#xFF09;</p>
 <ul>
-<li>&#x4E0D;&#x7528;&#x6539;&#x5199; <code>fetchData</code> &#x4E3A; <code>useCallback</code>&#xFF1B;</li>
-<li>&#x5F53;&#x526F;&#x4F5C;&#x7528;&#x65E0;&#x6CD5;&#x5728; <code>return</code> &#x4E2D;&#x6D88;&#x9664;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x4E0B;&#x5F02;&#x6B65;&#x8BF7;&#x6C42;&#xFF08;&#x56DE;&#x8C03;&#xFF09;&#x4E2D;&#x8C03;&#x7528;&#x58F0;&#x660E;&#x5468;&#x671F;&#x7684;&#x65B9;&#x6CD5; <code>setState</code>&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5224;&#x65AD; <code>isMounted</code> &#x7684;&#x503C;&#x540E;&#x518D;&#x8FDB;&#x884C;&#x6267;&#x884C;;</li>
-<li>&#x662F;&#x5426;&#x9500;&#x6BC1;&#x7684;&#x72B6;&#x6001; <code>isMounted</code>&#xFF0C;&#x5199;&#x5728; <code>useEffect</code> &#x5185;&#x90E8;&#xFF0C;&#x51CF;&#x5C11; <code>useState</code> &#x4F9D;&#x8D56;;</li>
+<li><a href="https://github.com/features/actions" target="_blank">https://github.com/features/actions</a> Features &#x2022; GitHub Actions</li>
+<li><a href="https://docs.github.com/cn/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions" target="_blank">https://docs.github.com/cn/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions</a> GitHub &#x64CD;&#x4F5C;&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x8BED;&#x6CD5; - GitHub Docs</li>
+<li><a href="http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html" target="_blank">http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html</a> GitHub Actions &#x5165;&#x95E8;&#x6559;&#x7A0B; - &#x962E;&#x4E00;&#x5CF0;&#x7684;&#x7F51;&#x7EDC;&#x65E5;&#x5FD7;</li>
+<li><a href="https://gabrieltanner.org/blog/an-introduction-to-github-actions" target="_blank">https://gabrieltanner.org/blog/an-introduction-to-github-actions</a> An Introduction to Github Actions</li>
 </ul>
-<pre><code class="lang-javascript">useEffect(() =&gt; {
-    <span class="hljs-keyword">let</span> isMounted = <span class="hljs-literal">true</span>;
+<h3 id="&#x5148;&#x4E0A;&#x83DC;&#xFF0C;&#x518D;&#x7EC6;&#x54C1;">&#x5148;&#x4E0A;&#x83DC;&#xFF0C;&#x518D;&#x7EC6;&#x54C1;</h3>
+<p>&#x53EA;&#x6709;&#x4E0D;&#x5230; 40 &#x884C;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x8FD8;&#x662F;&#x76F4;&#x63A5;&#x4E0A;&#x5427;&#x3002;</p>
+<ul>
+<li>&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x4ED3;&#x5E93;&#x4E0A;&#x7684;&#x4EE3;&#x7801;&#x6587;&#x4EF6; <a href="https://github.com/gyx8899/actionsflow/blob/main/workflows/sync2gitee.yml" target="_blank">sync2gitee.yml</a></li>
+</ul>
+<pre><code class="lang-yaml"><span class="hljs-comment"># &#x901A;&#x8FC7; Github actions&#xFF0C; &#x5728; Github &#x4ED3;&#x5E93;&#x7684;&#x6BCF;&#x4E00;&#x6B21; commit &#x540E;&#x81EA;&#x52A8;&#x540C;&#x6B65;&#x5230; Gitee &#x4E0A;</span>
+<span class="hljs-attr">name:</span> sync2gitee
+<span class="hljs-attr">on:</span>
+<span class="hljs-attr">  push:</span>
+<span class="hljs-attr">    branches:</span>
+<span class="hljs-bullet">      -</span> master
+<span class="hljs-attr">jobs:</span>
+<span class="hljs-attr">  repo-sync:</span>
+<span class="hljs-attr">    env:</span>
+<span class="hljs-attr">      dst_key:</span> $
+<span class="hljs-attr">      dst_token:</span> $
+<span class="hljs-attr">      gitee_user:</span> $
+<span class="hljs-attr">    runs-on:</span> ubuntu-latest
+<span class="hljs-attr">    steps:</span>
+<span class="hljs-attr">      - uses:</span> actions/checkout@v2
+<span class="hljs-attr">        with:</span>
+<span class="hljs-attr">          persist-credentials:</span> <span class="hljs-literal">false</span>
 
-    <span class="hljs-keyword">const</span> fetchData = <span class="hljs-keyword">async</span> () =&gt; {
-        <span class="hljs-keyword">const</span> article = <span class="hljs-keyword">await</span> API.fetchArticle(id);
-        <span class="hljs-keyword">if</span> (!isMounted) {
-          <span class="hljs-comment">// check isMounted for async action which may have side effect</span>
-          setArticle(article);
-        }
-    };
-
-    fetchData().then();
-
-    <span class="hljs-keyword">return</span> () =&gt; {
-        isMounted = <span class="hljs-literal">false</span>;
-    };
-}, [id]);
+<span class="hljs-attr">      - name:</span> sync github -&gt; gitee
+<span class="hljs-attr">        uses:</span> Yikun/hub-mirror-action@master
+<span class="hljs-attr">        if:</span> env.dst_key &amp;&amp; env.dst_token &amp;&amp; env.gitee_user
+<span class="hljs-attr">        with:</span>
+          <span class="hljs-comment"># &#x5FC5;&#x9009;&#xFF0C;&#x9700;&#x8981;&#x540C;&#x6B65;&#x7684; Github &#x7528;&#x6237;&#xFF08;&#x6E90;&#xFF09;</span>
+<span class="hljs-attr">          src:</span> <span class="hljs-string">&apos;github/$&apos;</span>
+          <span class="hljs-comment"># &#x5FC5;&#x9009;&#xFF0C;&#x9700;&#x8981;&#x540C;&#x6B65;&#x5230;&#x7684; Gitee &#x7528;&#x6237;&#xFF08;&#x76EE;&#x7684;&#xFF09;</span>
+<span class="hljs-attr">          dst:</span> <span class="hljs-string">&apos;gitee/$&apos;</span>
+          <span class="hljs-comment"># &#x5FC5;&#x9009;&#xFF0C;Gitee&#x516C;&#x94A5;&#x5BF9;&#x5E94;&#x7684;&#x79C1;&#x94A5;&#xFF0C;https://gitee.com/profile/sshkeys</span>
+<span class="hljs-attr">          dst_key:</span> $
+          <span class="hljs-comment"># &#x5FC5;&#x9009;&#xFF0C;Gitee&#x5BF9;&#x5E94;&#x7684;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x4ED3;&#x5E93;&#x7684;token&#xFF0C;https://gitee.com/profile/personal_access_tokens</span>
+<span class="hljs-attr">          dst_token:</span>  $
+          <span class="hljs-comment"># &#x5982;&#x679C;&#x662F;&#x7EC4;&#x7EC7;&#xFF0C;&#x6307;&#x5B9A;&#x7EC4;&#x7EC7;&#x5373;&#x53EF;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x7528;&#x6237; user</span>
+          <span class="hljs-comment"># account_type: org</span>
+          <span class="hljs-comment"># &#x76F4;&#x63A5;&#x53D6;&#x5F53;&#x524D;&#x9879;&#x76EE;&#x7684;&#x4ED3;&#x5E93;&#x540D;</span>
+<span class="hljs-attr">          static_list:</span> $
+          <span class="hljs-comment"># &#x8FD8;&#x6709;&#x9ED1;&#x3001;&#x767D;&#x540D;&#x5355;&#xFF0C;&#x9759;&#x6001;&#x540D;&#x5355;&#x673A;&#x5236;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x66F4;&#x65B0;&#x67D0;&#x4E9B;&#x6307;&#x5B9A;&#x5E93;</span>
+          <span class="hljs-comment"># static_list: &apos;repo_name,repo_name2&apos;</span>
+          <span class="hljs-comment"># black_list: &apos;repo_name,repo_name2&apos;</span>
+          <span class="hljs-comment"># white_list: &apos;repo_name,repo_name2&apos;</span>
 </code></pre>
-<h5 id="&#x5728;-useeffect-&#x4E2D;&#x4F7F;&#x7528;-setintervalsettimeout-clearintervalcleartimeout&#xFF0C;&#x65E0;&#x9700;&#x5C06;-id-&#x8F6C;&#x6362;&#x4E3A;-usestate">&#x5728; <code>useEffect</code> &#x4E2D;&#x4F7F;&#x7528; <code>setInterval/setTimeout</code>, <code>clearInterval/clearTimeout</code>&#xFF0C;&#x65E0;&#x9700;&#x5C06; id &#x8F6C;&#x6362;&#x4E3A; <code>useState</code>;</h5>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Counter</span>(<span class="hljs-params"></span>) </span>{
-  <span class="hljs-keyword">const</span> [count, setCount] = useState(<span class="hljs-number">0</span>);
-
-  useEffect(() =&gt; {
-    <span class="hljs-keyword">const</span> id = setInterval(() =&gt; {
-      setCount(prevCount =&gt; prevCount + <span class="hljs-number">1</span>);
-    }, <span class="hljs-number">1000</span>);
-    <span class="hljs-keyword">return</span> () =&gt; clearInterval(id);
-  }, []);
-
-  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{count}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>;
-}
-</code></pre>
-<h5 id="&#x4F7F;&#x7528;-usereducer-&#x89E3;&#x6551;-useeffect-&#x65E0;&#x6CD5;&#x53BB;&#x9664;&#x7684;&#x4F9D;&#x8D56;">&#x4F7F;&#x7528; <code>useReducer</code> &#x89E3;&#x6551; <code>useEffect</code> &#x65E0;&#x6CD5;&#x53BB;&#x9664;&#x7684;&#x4F9D;&#x8D56;</h5>
+<h3 id="&#x81EA;&#x52A8;&#x540C;&#x6B65;&#x4EC5;&#x9700;3&#x6B65;&#xFF1A;">&#x81EA;&#x52A8;&#x540C;&#x6B65;&#x4EC5;&#x9700;3&#x6B65;&#xFF1A;</h3>
 <ol>
-<li>&#x4EE5; setCount &#x4E3A;&#x4F8B;&#xFF1A;</li>
+<li>&#x5728; <a href="https://gitee.com/" target="_blank">Gitee</a> &#x8D26;&#x6237;&#x4E2D;&#xFF0C;&#x901A;&#x8FC7; <code>+</code>&#x4E0B;&#x62C9;&#x5217;&#x8868;&#x4E2D;&#x7684; &#x201C;&#x4ECE; Github/Gitlab &#x5BFC;&#x5165;&#x4ED3;&#x5E93;&#x201D;&#xFF0C;&#x5BFC;&#x5165;&#x8981;&#x540C;&#x6B65;&#x7684; Github &#x4ED3;&#x5E93;&#xFF1B;</li>
+<li><p>&#x5728; Github &#x9700;&#x8981;&#x540C;&#x6B65;&#x7684;&#x4ED3;&#x5E93;&#x4E0A;&#x6DFB;&#x52A0; 3 &#x4E2A; secrets: (Setting -&gt; Secrets -&gt; New repository secret)</p>
+<ul>
+<li><code>GITEE_USER</code>&#xFF0C;&#x6BD4;&#x5982;&#x4E2A;&#x4EBA;&#x7684; Gitee user id: <a href="https://gitee.com/steper" target="_blank">steper</a></li>
+<li><code>GITEE_PRIVATE_KEY</code>&#xFF0C;&#x83B7;&#x53D6;&#x65B9;&#x6CD5;(&#x5982;&#x679C;&#x5DF2;&#x6709;&#xFF0C;&#x76F4;&#x63A5;&#x8BBE;&#x7F6E;) - <a href="https://gitee.com/profile/sshkeys" target="_blank">Gitee&#x516C;&#x94A5;&#x5BF9;&#x5E94;&#x7684;&#x79C1;&#x94A5;</a>
+  &#x65B0;&#x5EFA; private key &#x65B9;&#x6CD5;&#xFF1A;<ul>
+<li><a href="https://gitee.com/help/articles/4181#article-header0" target="_blank">&#x751F;&#x6210; SSH &#x516C;&#x94A5;</a></li>
+<li><a href="https://gitee.com/profile/sshkeys" target="_blank">&#x5C06; SSH &#x516C;&#x94A5;&#x6DFB;&#x52A0;&#x5230; Gitee &#x516C;&#x94A5;</a></li>
+<li>&#x540C;&#x65F6;&#x5C06;&#x516C;&#x94A5;&#x6DFB;&#x52A0;&#x5230; Github &#x9879;&#x76EE;&#x7684; secrets &#x4E2D;;</li>
+</ul>
+</li>
+<li><code>GITEE_TOKEN</code>&#xFF0C;&#x83B7;&#x53D6;&#x65B9;&#x6CD5; - <a href="https://gitee.com/profile/personal_access_tokens" target="_blank">Gitee&#x5BF9;&#x5E94;&#x7684;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x4ED3;&#x5E93;&#x7684;token</a>
+  &#x65B0;&#x5EFA; token &#x65B9;&#x6CD5;&#xFF1A;<ul>
+<li>&#x70B9;&#x51FB;&#x4E0A;&#x9762;&#x7684;&#x94FE;&#x63A5;&#x5E76;&#x767B;&#x5F55; Gitee, &#x70B9;&#x51FB;&#x201C;&#x751F;&#x6210;&#x65B0;&#x4EE4;&#x724C;&#x201D;&#xFF0C;</li>
+<li>&#x6DFB;&#x52A0;&#x63CF;&#x8FF0;&#xFF0C;&#x6BD4;&#x5982;&#x7528;&#x5904; - Github &#x4ED3;&#x5E93;&#x540C;&#x6B65;&#x5230; Gitee&#xFF1B;</li>
+<li>&#x6743;&#x9650;&#x9ED8;&#x8BA4;&#x5168;&#x9009;&#xFF0C;&#x70B9;&#x51FB;&#x63D0;&#x4EA4;&#xFF0C;&#x663E;&#x793A;&#x51FA;&#x751F;&#x6210;&#x7684; token &#x503C;&#xFF1B;&#xFF08;&#x6CE8;&#x610F;&#x4FDD;&#x5B58;&#xFF0C;&#x9700;&#x8981;&#x586B;&#x5230; Github &#x7684; secrets &#x4E2D;&#xFF09;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>&#x590D;&#x5236; <a href="https://github.com/gyx8899/actionsflow/blob/main/workflows/sync2gitee.yml" target="_blank">sync2gitee.yml</a>&#xFF0C;&#x5230; Github &#x4ED3;&#x5E93;&#x4E0B;&#x7684; <code>.github</code> &#x6587;&#x4EF6;&#x5939;&#x7684; <code>workflows</code> &#x4E0B;&#xFF0C;&#x5E76;&#x63D0;&#x4EA4;&#x5230; Github &#x4ED3;&#x5E93;&#x3002;&#xFF08;&#x8FD9;&#x6B21;&#x64CD;&#x4F5C;&#x5C31;&#x4F1A;&#x89E6;&#x53D1;&#x540C;&#x6B65;&#x7684; Action&#xFF09;</li>
 </ol>
-<pre><code class="lang-javascript">useEffect(() =&gt; {
-  <span class="hljs-keyword">const</span> id = setInterval(() =&gt; {
-    setCount(c =&gt; c + step);
-  }, <span class="hljs-number">1000</span>);
-  <span class="hljs-keyword">return</span> () =&gt; clearInterval(id);
-}, [step]);
-</code></pre>
-<ol>
-<li>&#x5C06; setCount &#x8F6C;&#x6362;&#x6210; reducer &#x4E8B;&#x4EF6; action &#xFF1A;</li>
-</ol>
-<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> initialState = () =&gt; ({
-  count: <span class="hljs-number">0</span>,
-  step: <span class="hljs-number">1</span>,
-});
-<span class="hljs-keyword">const</span> ACTIONS = {
-  INCREMENT: <span class="hljs-string">&apos;INCREMENT&apos;</span>,
-  DECREMENT: <span class="hljs-string">&apos;DECREMENT&apos;</span>,
-};
-<span class="hljs-keyword">const</span> countReducer = ({count, step}, action) =&gt; {
-  <span class="hljs-keyword">const</span> {INCREMENT, DECREMENT} = ACTIONS;
-  <span class="hljs-keyword">switch</span> (action.type) 
-  {
-    <span class="hljs-keyword">case</span> INCREMENT: 
-      <span class="hljs-keyword">return</span> {
-        count: count + step,
-      };
-    <span class="hljs-keyword">case</span> DECREMENT: 
-      <span class="hljs-keyword">return</span> {
-        count: count - step,
-      };
-    <span class="hljs-keyword">default</span>:
-      <span class="hljs-keyword">return</span> state;
-  }
-};
-
-<span class="hljs-keyword">const</span> [state, dispatch] = useReducer(countReducer, initialState);
-<span class="hljs-keyword">const</span> { count, step } = state;
-
-useEffect(() =&gt; {
-  <span class="hljs-keyword">const</span> id = setInterval(() =&gt; {
-    dispatch({type: ACTIONS.INCREMENT}); <span class="hljs-comment">// Instead of setCount(c =&gt; c + step);</span>
-  }, <span class="hljs-number">1000</span>);
-  <span class="hljs-keyword">return</span> () =&gt; clearInterval(id);
-}, [dispatch]);
-
-<span class="hljs-keyword">return</span> (<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{count}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{step}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>);
-</code></pre>
-<h5 id="&#x5982;&#x4F55;&#x53BB;&#x9664;-eslint-&#x63D0;&#x793A;&#x7684;&#x7EC4;&#x4EF6;&#x5185;&#x5E38;&#x91CF;&#x4F9D;&#x8D56;">&#x5982;&#x4F55;&#x53BB;&#x9664; ESLint &#x63D0;&#x793A;&#x7684;&#x7EC4;&#x4EF6;&#x5185;&#x5E38;&#x91CF;&#x4F9D;&#x8D56;</h5>
-<p>&#x793A;&#x4F8B;&#xFF1A;</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Video</span>(<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">const</span> {PLAYLIST_UPDATED} = EVENT_TYPES;
-    useEffect(() =&gt; {
-        <span class="hljs-keyword">const</span> updatedCallback = () =&gt; {
-          <span class="hljs-comment">//...</span>
-        };
-        event.on(PLAYLIST_UPDATED, updatedCallback);
-        <span class="hljs-keyword">return</span> () =&gt; {
-            event.off(PLAYLIST_UPDATED, updatedCallback);
-        };
-    }, []);
-  <span class="hljs-keyword">return</span> (<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>)
-}
-<span class="hljs-comment">// Line 166:5:  React Hook useEffect has a missing dependency: &apos;PLAYLIST_UPDATED&apos;. Either include it or remove the dependency array  react-hooks/exhaustive-deps</span>
-</code></pre>
-<p>&#x65B9;&#x6CD5;&#xFF1A;&#x5C06;&#x5BF9;&#x5E94;&#x5E38;&#x91CF;&#x79FB;&#x51FA;&#x7EC4;&#x4EF6;&#x5185;&#xFF0C;&#x653E;&#x7F6E;&#x5728;&#x7EC4;&#x4EF6;&#x5916;&#x90E8;&#x6216;&#x5355;&#x72EC;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> event <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;Event&apos;</span>;
-<span class="hljs-keyword">const</span> {PLAYLIST_UPDATED} = EVENT_TYPES;
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Video</span>(<span class="hljs-params"></span>) </span>{
-    useEffect(() =&gt; {
-        <span class="hljs-keyword">const</span> updatedCallback = () =&gt; {
-          <span class="hljs-comment">//...</span>
-        };
-        event.on(PLAYLIST_UPDATED, updatedCallback);
-        <span class="hljs-keyword">return</span> () =&gt; {
-            event.off(PLAYLIST_UPDATED, updatedCallback);
-        };
-    }, []);
-  <span class="hljs-keyword">return</span> (<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>)
-}
-</code></pre>
+<p>&#x540E;&#x7EED;&#x5728; Github &#x4ED3;&#x5E93;&#x4E0A;&#x63D0;&#x4EA4;&#x6539;&#x52A8;&#xFF08;&#x5982;&#x4FEE;&#x6539; README.md&#xFF09;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x5230; <a href="https://gitee.com/" target="_blank">Gitee</a> &#x4E0A;&#x5BF9;&#x5E94;&#x4ED3;&#x5E93;&#x9A8C;&#x8BC1;&#x662F;&#x5426;&#x540C;&#x6B65;&#x6210;&#x529F;&#x3002;</p>
+<h3 id="github-actions-&#x5BF9;&#x4E8E;&#x79C1;&#x6709;&#x9879;&#x76EE;&#xFF0C;&#x6BCF;&#x4E2A;&#x6708;&#x6709;-2000-&#x5206;&#x949F;&#x7684;&#x514D;&#x8D39;&#x989D;&#x5EA6;&#x3002;">GitHub Actions &#x5BF9;&#x4E8E;&#x79C1;&#x6709;&#x9879;&#x76EE;&#xFF0C;&#x6BCF;&#x4E2A;&#x6708;&#x6709; 2000 &#x5206;&#x949F;&#x7684;&#x514D;&#x8D39;&#x989D;&#x5EA6;&#x3002;</h3>
+<ul>
+<li><a href="https://docs.github.com/cn/free-pro-team@latest/github/setting-up-and-managing-billing-and-payments-on-github/about-billing-for-github-actions" target="_blank">&#x5173;&#x4E8E; GitHub &#x64CD;&#x4F5C;&#x7684;&#x8BA1;&#x8D39;</a></li>
+<li><a href="https://github.com/settings/billing" target="_blank">&#x67E5;&#x770B;&#x4E2A;&#x4EBA;&#x5DF2;&#x7528;&#x91CF;</a></li>
+</ul>
+<h3 id="&#x771F;&#x5B9E;&#x4F8B;&#xFF0C;&#x89C1;&#x6548;&#x679C;">&#x771F;&#x5B9E;&#x4F8B;&#xFF0C;&#x89C1;&#x6548;&#x679C;</h3>
+<ul>
+<li><p>&#x4ECE; Github &#x4ED3;&#x5E93; Action <a href="https://github.com/gyx8899/blog/actions" target="_blank">gyx8899/blog</a></p>
+</li>
+<li><p>&#x5230; Gitee &#x4ED3;&#x5E93; <a href="https://gitee.com/steper/blog" target="_blank">steper/blog</a></p>
+</li>
+</ul>
 
                                 
                                 </section>
@@ -963,12 +935,12 @@ useEffect(() =&gt; {
 
             
                 
-                <a href="Router.html" class="navigation navigation-prev " aria-label="Previous page: React router">
+                <a href="../../daily-life/WorkExperience.html" class="navigation navigation-prev " aria-label="Previous page: 工作心得">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../../office/Word.html" class="navigation navigation-next " aria-label="Next page: Word: 文档操作精选技巧">
+                <a href="../docs/Bash.html" class="navigation navigation-next " aria-label="Next page: Bash: 入门重点">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -979,7 +951,7 @@ useEffect(() =&gt; {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"useEffect","level":"6.7","depth":1,"next":{"title":"Word: 文档操作精选技巧","level":"7.1","depth":1,"path":"office/Word.md","ref":"office/Word.md","articles":[]},"previous":{"title":"React router","level":"6.6","depth":1,"path":"full-stack/react/Router.md","ref":"full-stack/react/Router.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kate Kuo <gyx8899@126.com>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kate's Blog","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Kate's Blog":"https://github.com/gyx8899/blog"}},"gitbook":">=2.0.0","description":"This is a blog book created by Kate Kuo","extension":null},"file":{"path":"full-stack/react/useEffect.md","mtime":"2020-11-14T10:42:01.708Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-14T10:42:47.403Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3步自动同步你的 Github 仓库到 Gitee 仓库","level":"4.1","depth":1,"next":{"title":"Bash: 入门重点","level":"5.1","depth":1,"path":"full-stack/docs/Bash.md","ref":"full-stack/docs/Bash.md","articles":[]},"previous":{"title":"工作心得","level":"3.10","depth":1,"path":"daily-life/WorkExperience.md","ref":"daily-life/WorkExperience.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kate Kuo <gyx8899@126.com>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kate's Blog","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Kate's Blog":"https://github.com/gyx8899/blog"}},"gitbook":">=2.0.0","description":"This is a blog book created by Kate Kuo","extension":null},"file":{"path":"full-stack/Share/SyncGithubToGitee.md","mtime":"2020-11-14T10:42:01.708Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-14T10:42:47.403Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
