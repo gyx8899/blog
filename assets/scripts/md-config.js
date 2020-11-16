@@ -241,9 +241,9 @@ module.exports = {
                     "title": "3步自动同步你的 Github 仓库到 Gitee 仓库"
                 },
                 "TipsForRuanKaoGaoJi.md": {
-                    "date": "2020年11月16日",
+                    "date": "2020年11月17日",
                     "path": "full-stack/share/TipsForRuanKaoGaoJi.md",
-                    "title": "软考高级信息系统项目管理师考试忠告"
+                    "title": "软考高级“信息系统项目管理师”考试忠告"
                 }
             }
         },

@@ -6,10 +6,6 @@
 个人成长博客
 
 
-## Full-stack
-全栈知识总结
-
-
 ## Daily-life
 日常工作中的随感
 
@@ -27,7 +23,6 @@
 ## Full-stack
 全栈知识总结
 
-* [3步自动同步你的 Github 仓库到 Gitee 仓库](/full-stack/Share/SyncGithubToGitee.md)
 
 ## Docs
 个人知识文档
@@ -59,6 +54,10 @@
 * [站点：那些可以经常逛逛的开发工具网站](/full-stack/docs/WebSite.md)
 * [Webpack: 常规笔记](/full-stack/docs/Webpack.md)
 * [Windows 之路遇精彩](/full-stack/docs/Windows.md)
+
+## Project
+通用项目文档
+
 * [README 模板：Project Name](/full-stack/project/ReadMeTemplatePackage.md)
 
 ## React
@@ -71,8 +70,12 @@ React 相关知识总结
 * [Redux](/full-stack/react/Redux.md)
 * [React router](/full-stack/react/Router.md)
 * [useEffect](/full-stack/react/useEffect.md)
+
+## Share
+总结分享发布
+
 * [3步自动同步你的 Github 仓库到 Gitee 仓库](/full-stack/share/SyncGithubToGitee.md)
-* [软考高级信息系统项目管理师考试忠告](/full-stack/share/TipsForRuanKaoGaoJi.md)
+* [软考高级“信息系统项目管理师”考试忠告](/full-stack/share/TipsForRuanKaoGaoJi.md)
 
 ## Office
 Office 工具技巧

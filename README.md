@@ -11,10 +11,6 @@
 > 积累，是为了更好的爆发；
 > 
 
-### Full-stack
-全栈知识总结
-
-
 ## Daily-life
 日常工作中的随感
 
@@ -32,7 +28,6 @@
 ## Full-stack
 全栈知识总结
 
-- [3步自动同步你的 Github 仓库到 Gitee 仓库](/full-stack/Share/SyncGithubToGitee.md): <sub><sup>(2020年11月15日)</sup></sub>
 
 ### Docs
 个人知识文档
@@ -64,6 +59,10 @@
 - [站点：那些可以经常逛逛的开发工具网站](/full-stack/docs/WebSite.md): <sub><sup>(2020年9月27日)</sup></sub>
 - [Webpack: 常规笔记](/full-stack/docs/Webpack.md): <sub><sup>(2020年4月28日)</sup></sub>
 - [Windows 之路遇精彩](/full-stack/docs/Windows.md): <sub><sup>(2020年9月7日)</sup></sub>
+
+### Project
+通用项目文档
+
 - [README 模板：Project Name](/full-stack/project/ReadMeTemplatePackage.md): <sub><sup>(2020年9月4日)</sup></sub>
 
 ### React
@@ -76,12 +75,16 @@ React 相关知识总结
 - [Redux](/full-stack/react/Redux.md): <sub><sup>(2020年9月2日)</sup></sub>
 - [React router](/full-stack/react/Router.md): <sub><sup>(2020年9月2日)</sup></sub>
 - [useEffect](/full-stack/react/useEffect.md): <sub><sup>(2020年9月2日)</sup></sub>
+
+### Share
+总结分享发布
+
 - [3步自动同步你的 Github 仓库到 Gitee 仓库](/full-stack/share/SyncGithubToGitee.md): <sub><sup>(2020年11月16日)</sup></sub>
-- [软考高级信息系统项目管理师考试忠告](/full-stack/share/TipsForRuanKaoGaoJi.md): <sub><sup>(2020年11月16日)</sup></sub>
+- [软考高级“信息系统项目管理师”考试忠告](/full-stack/share/TipsForRuanKaoGaoJi.md): <sub><sup>(2020年11月17日)</sup></sub>
 
 ## Office
 Office 工具技巧
 
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2020年11月16日
+最后更新于2020年11月17日
