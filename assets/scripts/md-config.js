@@ -240,6 +240,13 @@ module.exports = {
                     "path": "full-stack/Share/SyncGithubToGitee.md",
                     "title": "3步自动同步你的 Github 仓库到 Gitee 仓库"
                 }
+            },
+            "share": {
+                "SyncGithubToGitee.md": {
+                    "date": "2020年11月16日",
+                    "path": "full-stack/share/SyncGithubToGitee.md",
+                    "title": "3步自动同步你的 Github 仓库到 Gitee 仓库"
+                }
             }
         },
         "office": {
