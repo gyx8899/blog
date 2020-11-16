@@ -222,8 +222,12 @@ git rebase --continue
 
 #### 撤销commit
 ```shell
+# ^在 windows (terminal) 中是特殊字符，使用时加上引号："^"
 # 撤销前某一次提交, 把编辑区域中想删掉的那一次 commit comment 删掉即可。
 git rebase -i HEAD^   #撤销最后1次
+git reset -i HEAD"^"  #For windows
+git reset -i "HEAD^"  #For windows
+
 git rebase -i HEAD^^  #撤销最后2次
 git rebase -i HEAD~5  #撤销最后5次
 # 丢弃上一次提交 --hard
@@ -231,6 +235,10 @@ git reset --hard HEAD^
 git push --force origin master
 # 以倒数第二个 commit 为起点（起点不包含在 rebase 序列里哟），branch1 为终点，rebase 到倒数第三个 commit 上。
 git rebase --onto HEAD^^ HEAD^ branch1
+# 撤销本地分支上的所有提交
+```shell
+git reset --hard origin/<branch-name>
+```
 ```
 
 #### 撤销已在中央仓库的 branch 的 commit
@@ -719,5 +727,4 @@ git reset --hard HEAD~1
  
 ## 参考
 - https://git-scm.com/docs Git - Reference
-- https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A 【第1864期】手撕Git，告别盲目记忆
-- https://nextfe.com/git-cheatsheet-advanced/ git 高级用法小抄
+- https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A 【第1864期】手撕Git，告别盲目记忆
