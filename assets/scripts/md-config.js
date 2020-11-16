@@ -244,6 +244,11 @@ module.exports = {
                     "date": "2020年11月17日",
                     "path": "full-stack/share/TipsForRuanKaoGaoJi.md",
                     "title": "软考高级“信息系统项目管理师”考试忠告"
+                },
+                "UsingWebworker.md": {
+                    "date": "2020年11月17日",
+                    "path": "full-stack/share/UsingWebworker.md",
+                    "title": "轻松使用WebWorker，解放耗时较大的算法代码"
                 }
             }
         },

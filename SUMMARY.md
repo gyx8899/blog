@@ -76,6 +76,7 @@ React 相关知识总结
 
 * [3步自动同步你的 Github 仓库到 Gitee 仓库](/full-stack/share/SyncGithubToGitee.md)
 * [软考高级“信息系统项目管理师”考试忠告](/full-stack/share/TipsForRuanKaoGaoJi.md)
+* [轻松使用WebWorker，解放耗时较大的算法代码](/full-stack/share/UsingWebworker.md)
 
 ## Office
 Office 工具技巧
