@@ -72,6 +72,7 @@ React 相关知识总结
 * [React router](/full-stack/react/Router.md)
 * [useEffect](/full-stack/react/useEffect.md)
 * [3步自动同步你的 Github 仓库到 Gitee 仓库](/full-stack/share/SyncGithubToGitee.md)
+* [软考高级信息系统项目管理师考试忠告](/full-stack/share/TipsForRuanKaoGaoJi.md)
 
 ## Office
 Office 工具技巧
