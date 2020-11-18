@@ -722,6 +722,16 @@ git reset --hard HEAD~1
 >
 > 总之，只要Git 操作导致Commit ID 改变，就必须更新提交者及提交日期，若操作者并非该Commit 的原始提交者，便会发生作者与提交者不同的状况。要观察提交日期与提交者，除使用Visual Studio、Source Tree、Git GUI 等GUI 工具，用git show --pretty=fuller commit_id 亦可查看
 
+- 修改 branch 的名字
+```shell script
+# 修改本地 branch name
+git branch -m <new_name>
+# 将新的 branch push 到 remote
+git push origin -u <new_name>
+# 删除 remote old branch
+git push origin --delete <old_name>
+```
+
 ## 练习
 - [Learn Git Branching](https://learngitbranching.js.org/)
  
