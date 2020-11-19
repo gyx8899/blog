@@ -180,7 +180,7 @@ module.exports = {
                     "title": "最好的工具: 理解并使用那些耳目一新的巧工具"
                 },
                 "GitHubAction.md": {
-                    "date": "2020年11月12日",
+                    "date": "2020年11月19日",
                     "path": "full-stack/docs/GitHubAction.md",
                     "title": "Github Action"
                 },
