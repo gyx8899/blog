@@ -750,7 +750,6 @@ git remote set-url origin https://gyx8899@github.com/gyx8899/blog.git
 
     1. Github: [生成新 SSH 密钥并添加到 ssh-agent - GitHub Docs](https://docs.github.com/cn/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
     1. Github: [新增 SSH 密钥到 GitHub 帐户 - GitHub Docs](https://docs.github.com/cn/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
-    1. Gitlab: [Readme · Ssh · Help · GitLab](https://gitlab.neulion.com.cn:645/help/ssh/README#generating-a-new-ssh-key-pair)
     1. 验证测试参考：[同一台电脑怎样配置并使用多个git账号_冰河世纪-CSDN博客](https://blog.csdn.net/u010132177/article/details/104825446/)
 
 ## 练习
