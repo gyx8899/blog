@@ -732,6 +732,20 @@ git push origin -u <new_name>
 git push origin --delete <old_name>
 ```
 
+- 使用 git 命令中出现 - remote: Repository not found.
+> fatal: repository 'https://github.com/xxxxxx/xxxxxx.git/' not found
+
+此处的情况是：提交另一个 github 账号下的仓库改动，但是这个仓库是私有的。而本地 git 记录的账号密码不是这个 github 账号。
+解决方法：
+```shell 
+# 正常的 repo https url
+https://github.com/gyx8899/blog.git
+# (一步搞定)设置 remote，之后就会提示输入密码了，然后顺利提交
+git remote set-url origin https://[user-name]@github.com/[user-name]/[repo-name].git
+# 例子：
+git remote set-url origin https://gyx8899@github.com/gyx8899/blog.git
+```
+
 ## 练习
 - [Learn Git Branching](https://learngitbranching.js.org/)
  
