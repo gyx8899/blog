@@ -376,7 +376,8 @@ git cherry-pick <start-commit-id>^..<end-commit-id>
 
 #### Pull changes from a template repository
 ```shell
-# 1. Add this template repository as a remote
+# 1. Remove/Add this template repository as a remote
+git remote rm upstream
 # git remote add template [URL of the template repo]
 git remote add template https://github.com/gyx8899/npm-template.git
 
@@ -414,6 +415,8 @@ git checkout master
 git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 # 查看
 git remote -v
+# 移除 upstream
+git remote rm upstream
 ```
 
 ### Learn Git Branching - 速查
