@@ -762,6 +762,7 @@ git remote set-url origin https://gyx8899@github.com/gyx8899/blog.git
 ```shell
 git config --global core.quotepath false
 ```
+> [Git中文显示问题解决](http://xstarcd.github.io/wiki/shell/git_chinese.html)
 
 ## 练习
 - [Learn Git Branching](https://learngitbranching.js.org/)
