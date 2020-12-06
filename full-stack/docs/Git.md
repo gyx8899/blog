@@ -738,7 +738,9 @@ git push origin --delete <old_name>
 - 使用 git 命令中出现 - remote: Repository not found.
 > fatal: repository 'https://github.com/xxxxxx/xxxxxx.git/' not found
 
-此处的情况是：提交另一个 github 账号下的仓库改动，但是这个仓库是私有的。而本地 git 记录的账号密码不是这个 github 账号。
+此处的情况有：
+ - 提交另一个 github 账号下的仓库改动，但是这个仓库是私有的。而本地 git 记录的账号密码不是这个 github 账号。
+ - fatal: unable to access 'https://github.com/[user-name]/[repo-name].git/': The requested URL returned error: 403
 解决方法：
 ```shell 
 # 正常的 repo https url
@@ -754,6 +756,12 @@ git remote set-url origin https://gyx8899@github.com/gyx8899/blog.git
     1. Github: [生成新 SSH 密钥并添加到 ssh-agent - GitHub Docs](https://docs.github.com/cn/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
     1. Github: [新增 SSH 密钥到 GitHub 帐户 - GitHub Docs](https://docs.github.com/cn/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
     1. 验证测试参考：[同一台电脑怎样配置并使用多个git账号_冰河世纪-CSDN博客](https://blog.csdn.net/u010132177/article/details/104825446/)
+
+- Git 提交的中文文件名乱码
+> "\346\265\213\350\257\225.txt"
+```shell
+git config --global core.quotepath false
+```
 
 ## 练习
 - [Learn Git Branching](https://learngitbranching.js.org/)
