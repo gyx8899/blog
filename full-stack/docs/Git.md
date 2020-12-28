@@ -767,6 +767,11 @@ git config --global core.quotepath false
 - fatal: not a git repository (or any of the parent directories): .git
 > git 命令只能在 git 目录中使用，执行：git init
 
+- Failed to connect to github.com port 443:connection timed out
+> git config --global --unset http.proxy
+>
+> git config --global --unset https.proxy
+
 ## 练习
 - [Learn Git Branching](https://learngitbranching.js.org/)
  
