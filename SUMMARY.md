@@ -81,4 +81,5 @@ React 相关知识总结
 ## Office
 Office 工具技巧
 
+* [Excel 常用操作](/office/Excel.md)
 * [Word: 文档操作精选技巧](/office/Word.md)

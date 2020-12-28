@@ -257,6 +257,11 @@ module.exports = {
                 "date": "2020年8月31日",
                 "path": "office/Word.md",
                 "title": "Word: 文档操作精选技巧"
+            },
+            "Excel.md": {
+                "date": "2020年12月28日",
+                "path": "office/Excel.md",
+                "title": "Excel 常用操作"
             }
         }
     }
