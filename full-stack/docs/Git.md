@@ -764,6 +764,9 @@ git config --global core.quotepath false
 ```
 > [Git中文显示问题解决](http://xstarcd.github.io/wiki/shell/git_chinese.html)
 
+- fatal: not a git repository (or any of the parent directories): .git
+> git 命令只能在 git 目录中使用，执行：git init
+
 ## 练习
 - [Learn Git Branching](https://learngitbranching.js.org/)
  
