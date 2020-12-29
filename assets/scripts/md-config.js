@@ -37,7 +37,7 @@ module.exports = {
                 "title": "自我迭代"
             },
             "WorkExperience.md": {
-                "date": "2020年9月2日",
+                "date": "2020年12月29日",
                 "path": "daily-life/WorkExperience.md",
                 "title": "工作心得"
             },
@@ -145,7 +145,7 @@ module.exports = {
                     "title": "HTTP: 小知识巧总结"
                 },
                 "TypeScript.md": {
-                    "date": "2020年8月31日",
+                    "date": "2020年12月29日",
                     "path": "full-stack/docs/TypeScript.md",
                     "title": "TypeScript"
                 },

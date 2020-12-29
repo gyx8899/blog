@@ -23,7 +23,7 @@
 - [Search: 业余的专业搜索技能](/daily-life/Search.md): <sub><sup>(2020年9月27日)</sup></sub>
 - [自我迭代](/daily-life/SelfReview.md): <sub><sup>(2020年7月2日)</sup></sub>
 - [优秀的自我介绍很重要](/daily-life/TheImportantOfSelfIntroduction.md): <sub><sup>(2020年3月9日)</sup></sub>
-- [工作心得](/daily-life/WorkExperience.md): <sub><sup>(2020年9月2日)</sup></sub>
+- [工作心得](/daily-life/WorkExperience.md): <sub><sup>(2020年12月29日)</sup></sub>
 
 ## Full-stack
 全栈知识总结
@@ -53,7 +53,7 @@
 - [专业名词](/full-stack/docs/TechTerms.md): <sub><sup>(2020年11月13日)</sup></sub>
 - [Testing](/full-stack/docs/Testing.md): <sub><sup>(2020年8月31日)</sup></sub>
 - [Tricks: 技巧黑暗料理](/full-stack/docs/Tricks.md): <sub><sup>(2020年2月18日)</sup></sub>
-- [TypeScript](/full-stack/docs/TypeScript.md): <sub><sup>(2020年8月31日)</sup></sub>
+- [TypeScript](/full-stack/docs/TypeScript.md): <sub><sup>(2020年12月29日)</sup></sub>
 - [Vue: 点滴都是赞](/full-stack/docs/Vue.md): <sub><sup>(2020年2月18日)</sup></sub>
 - [Web API](/full-stack/docs/WebAPI.md): <sub><sup>(2020年11月13日)</sup></sub>
 - [站点：那些可以经常逛逛的开发工具网站](/full-stack/docs/WebSite.md): <sub><sup>(2020年9月27日)</sup></sub>
@@ -89,4 +89,4 @@ Office 工具技巧
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(2020年12月28日)</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2020年12月28日
+最后更新于2020年12月29日
