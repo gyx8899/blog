@@ -42,7 +42,7 @@
 - [Git 命令集](/full-stack/docs/Git.md): <sub><sup>(2020年12月28日)</sup></sub>
 - [GitBook](/full-stack/docs/GitBook.md): <sub><sup>(2020年9月4日)</sup></sub>
 - [Github Action](/full-stack/docs/GitHubAction.md): <sub><sup>(2020年11月19日)</sup></sub>
-- [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md): <sub><sup>(2020年10月19日)</sup></sub>
+- [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md): <sub><sup>(2021年1月6日)</sup></sub>
 - [IntelliJ IDEA](/full-stack/docs/IntelliJ-IDEA.md): <sub><sup>(2020年9月2日)</sup></sub>
 - [Jest learning manual](/full-stack/docs/Jest.md): <sub><sup>(2020年9月4日)</sup></sub>
 - [NPM and Plugin Guide](/full-stack/docs/NPM.md): <sub><sup>(2020年10月30日)</sup></sub>
@@ -89,4 +89,4 @@ Office 工具技巧
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(2020年12月28日)</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2020年12月29日
+最后更新于2021年1月6日
