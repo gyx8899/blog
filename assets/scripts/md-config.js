@@ -80,7 +80,7 @@ module.exports = {
                     "title": "Jest learning manual"
                 },
                 "NPM.md": {
-                    "date": "2020年10月30日",
+                    "date": "2021年1月8日",
                     "path": "full-stack/docs/NPM.md",
                     "title": "NPM and Plugin Guide"
                 },
@@ -110,9 +110,9 @@ module.exports = {
                     "title": "Web API"
                 },
                 "Webpack.md": {
-                    "date": "2020年4月28日",
+                    "date": "2021年1月8日",
                     "path": "full-stack/docs/Webpack.md",
-                    "title": "Webpack: 常规笔记"
+                    "title": "Webpack"
                 },
                 "SEO.md": {
                     "date": "2020年4月17日",

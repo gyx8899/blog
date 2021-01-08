@@ -52,7 +52,7 @@
 * [Vue: 点滴都是赞](/full-stack/docs/Vue.md)
 * [Web API](/full-stack/docs/WebAPI.md)
 * [站点：那些可以经常逛逛的开发工具网站](/full-stack/docs/WebSite.md)
-* [Webpack: 常规笔记](/full-stack/docs/Webpack.md)
+* [Webpack](/full-stack/docs/Webpack.md)
 * [Windows 之路遇精彩](/full-stack/docs/Windows.md)
 
 ## Project
