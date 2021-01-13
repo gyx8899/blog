@@ -162,6 +162,10 @@ npm config set registry https://registry.npmjs.org
 npm config set registry https://registry.npm.taobao.org/
 ```
 
+- npm ERR! code E401
+  npm ERR! 401 Unauthorized - PUT https://xxx - [unauthorized] Login first
+> 可能是 cnpm 和 npm 设置 registry 的变更导致已登录账号的信息在另外的环境上，暂时是通过修改账号名的方式解决。
+
 ## NVM: Node version manager
 
 ### 镜像设置
