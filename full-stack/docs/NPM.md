@@ -165,6 +165,7 @@ npm config set registry https://registry.npm.taobao.org/
 - npm ERR! code E401
   npm ERR! 401 Unauthorized - PUT https://xxx - [unauthorized] Login first
 > 可能是 cnpm 和 npm 设置 registry 的变更导致已登录账号的信息在另外的环境上，暂时是通过修改账号名的方式解决。
+[npm ERR! 409 Conflict - PUT https://[cnpm]/-/user/org.couchdb.user:[username] - [conflict] User [username] already exists · Issue #1607 · cnpm/cnpmjs.org](https://github.com/cnpm/cnpmjs.org/issues/1607)
 
 ## NVM: Node version manager
 
