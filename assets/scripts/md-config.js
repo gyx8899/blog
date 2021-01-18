@@ -197,7 +197,7 @@ module.exports = {
                     "title": "React: 总结整理"
                 },
                 "ReactHook.md": {
-                    "date": "2020年9月10日",
+                    "date": "2021年1月18日",
                     "path": "full-stack/react/ReactHook.md",
                     "title": "React Hook - 速览"
                 },
