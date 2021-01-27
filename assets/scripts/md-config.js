@@ -80,7 +80,7 @@ module.exports = {
                     "title": "Jest learning manual"
                 },
                 "NPM.md": {
-                    "date": "2021年1月13日",
+                    "date": "2021年1月27日",
                     "path": "full-stack/docs/NPM.md",
                     "title": "NPM and Plugin Guide"
                 },

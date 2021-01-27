@@ -5,6 +5,15 @@
 ## 版本
 - NPM 
 
+## package.json
+
+### peerDependency
+
+https://docs.npmjs.com/cli/v6/configuring-npm/package-json#peerdependencies
+> In some cases, you want to express the compatibility of your package with a host tool or library, while not necessarily doing a require of this host. This is usually referred to as a plugin. Notably, your module may be exposing a specific interface, expected and specified by the host documentation.
+> 
+> 通常是在插件开发的场景下，你的插件需要某些依赖的支持，但是你又没必要去安装，因为插件的宿主会去安装这些依赖，你就可以用peerDependencies去声明一下需要依赖的插件和版本，如果出问题npm就会有警告来提醒使用者去解决版本冲突问题。(翻译出处之一)
+
 ## NPM 日常使用
 
 ### 新建项目
