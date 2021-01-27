@@ -32,7 +32,7 @@
 ### Docs
 个人知识文档
 
-- [Bash: 入门重点](/full-stack/docs/Bash.md): <sub><sup>(2020年9月4日)</sup></sub>
+- [Bash: 入门重点](/full-stack/docs/Bash.md): <sub><sup>(2021年1月27日)</sup></sub>
 - [最好的工具: 理解并使用那些耳目一新的巧工具](/full-stack/docs/BestTools.md): <sub><sup>(2020年10月1日)</sup></sub>
 - [CSS](/full-stack/docs/CSS.md): <sub><sup>(2020年8月31日)</sup></sub>
 - [代码教鞭：不值得犯第二次的错](/full-stack/docs/CodeTips.md): <sub><sup>(2020年9月28日)</sup></sub>
@@ -89,4 +89,4 @@ Office 工具技巧
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(2020年12月28日)</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2021年1月18日
+最后更新于2021年1月27日

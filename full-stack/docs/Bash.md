@@ -97,6 +97,15 @@ multiLineStr2+="Second line"
 echo "$multiLineStr2"
 ```
 
+- Get value from output string
+```shell
+template=$(git remote | grep template);
+
+if [[ $template != template ]]; then
+	git remote add template $REPO
+fi
+```
+
 #### Questions
 
 * unary operator expected: 表达式左边有可能为空，则表达式左侧就为空，报错
