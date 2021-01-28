@@ -23,7 +23,7 @@
 - [Search: 业余的专业搜索技能](/daily-life/Search.md): <sub><sup>(2020年9月27日)</sup></sub>
 - [自我迭代](/daily-life/SelfReview.md): <sub><sup>(2020年7月2日)</sup></sub>
 - [优秀的自我介绍很重要](/daily-life/TheImportantOfSelfIntroduction.md): <sub><sup>(2020年3月9日)</sup></sub>
-- [工作心得](/daily-life/WorkExperience.md): <sub><sup>(2020年12月29日)</sup></sub>
+- [工作心得](/daily-life/WorkExperience.md): <sub><sup>(2021年1月28日)</sup></sub>
 
 ## Full-stack
 全栈知识总结
@@ -89,4 +89,4 @@ Office 工具技巧
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(2020年12月28日)</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2021年1月27日
+最后更新于2021年1月28日
