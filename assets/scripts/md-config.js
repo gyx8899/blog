@@ -188,6 +188,11 @@ module.exports = {
                     "date": "2020年11月13日",
                     "path": "full-stack/docs/TechTerms.md",
                     "title": "专业名词"
+                },
+                "Rollup.md": {
+                    "date": "2021年1月28日",
+                    "path": "full-stack/docs/Rollup.md",
+                    "title": "Rollup"
                 }
             },
             "react": {

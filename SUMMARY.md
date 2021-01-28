@@ -42,6 +42,7 @@
 * [Jest learning manual](/full-stack/docs/Jest.md)
 * [NPM and Plugin Guide](/full-stack/docs/NPM.md)
 * [Regexp: 日常表达式](/full-stack/docs/Regexp.md)
+* [Rollup](/full-stack/docs/Rollup.md)
 * [SEO: 搜索优化学习](/full-stack/docs/SEO.md)
 * [SQL](/full-stack/docs/SQL.md)
 * [Snippet: 那些有趣的代码片段](/full-stack/docs/Snippet.md)

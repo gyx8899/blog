@@ -47,6 +47,7 @@
 - [Jest learning manual](/full-stack/docs/Jest.md): <sub><sup>(2020年9月4日)</sup></sub>
 - [NPM and Plugin Guide](/full-stack/docs/NPM.md): <sub><sup>(2021年1月27日)</sup></sub>
 - [Regexp: 日常表达式](/full-stack/docs/Regexp.md): <sub><sup>(2020年5月9日)</sup></sub>
+- [Rollup](/full-stack/docs/Rollup.md): <sub><sup>(2021年1月28日)</sup></sub>
 - [SEO: 搜索优化学习](/full-stack/docs/SEO.md): <sub><sup>(2020年4月17日)</sup></sub>
 - [SQL](/full-stack/docs/SQL.md): <sub><sup>(2020年11月13日)</sup></sub>
 - [Snippet: 那些有趣的代码片段](/full-stack/docs/Snippet.md): <sub><sup>(2020年2月18日)</sup></sub>
