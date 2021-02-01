@@ -772,6 +772,25 @@ git config --global core.quotepath false
 >
 > git config --global --unset https.proxy
 
+- You have unstaged changes.
+```
+error: cannot pull with rebase: You have unstaged changes.
+error: additionally, your index contains uncommitted changes.
+error: please commit or stash them.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   src/***/image.jpg
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    src/***/image.jpg
+```
+```shell script
+# cd to target folder, restore current folder's all unstaged files
+git restore --staged .
+```
+
 ## 练习
 - [Learn Git Branching](https://learngitbranching.js.org/)
  
