@@ -1,6 +1,6 @@
 # TypeScript
 
-## 基本语法示例
+## 基本类型示例
 
 ```typescript jsx
 let hasDone: boolean = false;
@@ -84,6 +84,19 @@ let someValue: any = "this is a string";
 let strLength: number = (someValue as string).length;
 ```
 
+## 变量声明
 
+此处对 var, let, const 的介绍及对比省略。
+```typescript jsx
+// 解构
+type C = {a: string, b?: number}
+function f({ a, b}: C): void {}
+function ff({a="", b=0} = {}): void {}
+function fff({a, b = 0} = {a:""}): void {}
+```
 
-
+## 接口
+
+```typescript jsx
+
+```
