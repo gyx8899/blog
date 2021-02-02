@@ -11,6 +11,26 @@ let numberArray: number[] = [1, 2, 3];
 let stringArray: Array<string> = ['', 'a', 'cc'];
 let numberStringArray: (number | string)[] = [1, '3', 4];
 let numberBooleanArray: Array<number | boolean> = [true, 1, 3];
+let b: 10;
+b = 10;
+let c: 'girl' | 'boy';
+c = 'boy';
+// c = 'abc';
+let d: boolean | string;
+// d = 1;
+d = true;
+d = '1234';
+let e: unknown; // 类似 any, 是一个类型安全的any， 但不能赋值给其他类型的变量；
+e = 1;
+e = true;
+e = '134';
+let s: string;
+// s = e;
+if (typeof e === 'string') {
+  s = e;
+}
+s = e as string;
+// s = <string> e;
 
 let unknownValue: any = 4;
 unknownValue = '1234';
@@ -89,10 +109,41 @@ let strLength: number = (someValue as string).length;
 此处对 var, let, const 的介绍及对比省略。
 ```typescript jsx
 // 解构
-type C = {a: string, b?: number}
+type C = {a: string, b?: number} // ?: 可选参数
 function f({ a, b}: C): void {}
 function ff({a="", b=0} = {}): void {}
 function fff({a, b = 0} = {a:""}): void {}
+
+enum Gender{
+  Male = 0,
+  Female = 1
+}
+
+let b: {name: string};
+b = {name: 'zhangsan'};
+// b = {name: 'lisi', age: 123};
+
+let c: {name: string, age ?: number}; // ?: 表示 age 参数可选，非必须；
+c = {name: 'lisi'};
+c = {name: 'lisi', age: 12};
+// c = {name: 'wangwu', sex: 'gender'};
+
+let d: {name: string, [propName: string]: any};
+d = {name: 'zhaoliu', age: 123, sex: Gender.Male};
+
+let e: (p1: string, p2: string) => string;
+e = function (s1, s2) {
+  return s1 + s2;
+};
+
+let j: {name: string} & {age: number};
+// j = {name: 'lisi'};
+j = {name: 'zhangsan', age: 12};
+
+let k: 1|2|3;
+let l: 1|2|3;
+type myType= 1|2|3;
+let m: myType;
 ```
 
 ## 接口
