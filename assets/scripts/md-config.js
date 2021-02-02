@@ -130,7 +130,7 @@ module.exports = {
                     "title": "Regexp: 日常表达式"
                 },
                 "Windows.md": {
-                    "date": "2020年9月7日",
+                    "date": "2021年2月2日",
                     "path": "full-stack/docs/Windows.md",
                     "title": "Windows 之路遇精彩"
                 },

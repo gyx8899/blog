@@ -59,7 +59,7 @@
 - [Web API](/full-stack/docs/WebAPI.md): <sub><sup>(2020年11月13日)</sup></sub>
 - [站点：那些可以经常逛逛的开发工具网站](/full-stack/docs/WebSite.md): <sub><sup>(2020年9月27日)</sup></sub>
 - [Webpack](/full-stack/docs/Webpack.md): <sub><sup>(2021年1月8日)</sup></sub>
-- [Windows 之路遇精彩](/full-stack/docs/Windows.md): <sub><sup>(2020年9月7日)</sup></sub>
+- [Windows 之路遇精彩](/full-stack/docs/Windows.md): <sub><sup>(2021年2月2日)</sup></sub>
 
 ### Project
 通用项目文档
