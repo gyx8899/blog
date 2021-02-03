@@ -65,7 +65,7 @@ module.exports = {
                     "title": "DOS command"
                 },
                 "Git.md": {
-                    "date": "2021年2月1日",
+                    "date": "2021年2月3日",
                     "path": "full-stack/docs/Git.md",
                     "title": "Git 命令集"
                 },

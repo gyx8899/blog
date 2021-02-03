@@ -434,6 +434,9 @@ git checkout o/master
 # 3. Git Fetchin
 git fetch
 
+git fetch remotename
+# 获取远程仓库的更新
+
 # 4. Git Pullin
 git pull
 # ===
@@ -462,6 +465,14 @@ git pull; git push
 # 8. Locked Master: 推送改动到远程分支
 git checkout -b branch1
 git push
+
+# 9. 将在线更新与您的本地工作进行合并
+git merge remotename/branchname
+
+# git pull 是在同一个命令中完成 git fetch 和 git merge 的便捷方式。
+# 获取在线更新并将其与您的本地工作进行合并
+$ git pull remotename branchname
+
 ```
 
 ##### To Origin And Beyond
@@ -542,6 +553,19 @@ git branch -D <branch-name>
 ##### Delete remote branch
 ```shell
 git push orign --delete <branch-name>
+```
+
+#### Git Subtree
+
+```shell
+git subtree add   --prefix=<prefix> <commit>
+git subtree add   --prefix=<prefix> <repository> <ref>
+git subtree pull  --prefix=<prefix> <repository> <ref>
+git subtree push  --prefix=<prefix> <repository> <ref>
+git subtree merge --prefix=<prefix> <commit>
+git subtree split --prefix=<prefix> [OPTIONS] [<commit>]
+
+git subtree add --prefix=[relativePath] [repoUrl] [master/main] // --squash
 ```
 
 ### Questions: 常见问题
