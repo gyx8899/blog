@@ -140,6 +140,25 @@ npm link @daybyday/yx-node
 # You can test it now.
 ```
 
+- Config
+```shell script
+# package version prefix
+npm config set save-exact true  # 最高优先
+npm config set save-prefix "~"  # 注意双引号
+npm config set save-prefix "^"  # 注意双引号, 默认值
+
+# 查看安装包的版本与最新版本比较
+npm outdate
+#Package                    Current   Wanted   Latest  Location
+#@hot-loader/react-dom      16.13.0  16.14.0   17.0.1  xx
+#@testing-library/jest-dom   5.11.1   5.11.9   5.11.9  xx
+#dayjs                       1.10.3   1.10.4   1.10.4  xx
+#enzyme-adapter-react-16     1.15.2   1.15.6   1.15.6  xx
+#intersection-observer       0.11.0   0.11.0   0.12.0  xx
+#lodash                     4.17.19  4.17.20  4.17.20  xx
+
+```
+
 ## 问题列表
 
 - npm ERR! Unexpected end of JSON input while parsing near '....0.0","inherits":"^2.'
