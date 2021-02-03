@@ -810,9 +810,17 @@ Changes not staged for commit:
   (use "git restore <file>..." to discard changes in working directory)
         deleted:    src/***/image.jpg
 ```
-```shell script
+```shell
 # cd to target folder, restore current folder's all unstaged files
 git restore --staged .
+```
+
+- remote: Permission to gyx8899/blog.git (Owned by Git-User-A) denied to [Git-User-B].
+```
+#fatal: unable to access 'https://github.com/gyx8899/blog.git/': The requested URL returned error: 403
+1. Add Git-User-B to blog Reop contributer;
+2. Remove user-b from computer; (控制面板–>用户–>证书管理–>系统证书)
+3. Add A's SSH to B's github;
 ```
 
 ## 练习
