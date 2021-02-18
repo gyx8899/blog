@@ -150,4 +150,22 @@ let m: myType;
 
 ```typescript jsx
 
+```
+
+## 泛型
+
+```typescript jsx
+function fn<T> (a: T): T {
+  return a;
+}
+
+fn(2);
+fn<string>('hello');
+
+function fn2<T, K> (a: T, b: K): T {
+  console.log(b);
+  return a;
+}
+fn2<string, number>('hello', 123);
+
 ```
