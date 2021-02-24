@@ -264,7 +264,7 @@ module.exports = {
                 "title": "Word: 文档操作精选技巧"
             },
             "Excel.md": {
-                "date": "2020年12月28日",
+                "date": "2021年2月24日",
                 "path": "office/Excel.md",
                 "title": "Excel 常用操作"
             }
