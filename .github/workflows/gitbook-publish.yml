@@ -1,8 +1,10 @@
 name: gitbook publish to gh-pages
 on:
-  push:
-    branches:
-      - master
+  workflow_dispatch:
+  watch:
+    types: started
+  repository_dispatch:
+    types: gh-pages_deploy
 jobs:
   build:
     name: Build Gitbook
