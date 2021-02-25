@@ -1,0 +1,1093 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3步自动同步你的 Github 仓库到 Gitee 仓库 · Kate's Blog</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Kate Kuo <gyx8899@126.com>">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="TipsForRuanKaoGaoJi.html" />
+    
+    
+    <link rel="prev" href="../react/useEffect.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/gyx8899/blog" target="_blank" class="custom-link">Kate's Blog</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">Blog</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Daily-life</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../daily-life/AboutResume.html">
+            
+                <a href="../../daily-life/AboutResume.html">
+            
+                    
+                    关于简历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../daily-life/CombineExertionAndRest.html">
+            
+                <a href="../../daily-life/CombineExertionAndRest.html">
+            
+                    
+                    如何做好劳逸结合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../daily-life/Explore.html">
+            
+                <a href="../../daily-life/Explore.html">
+            
+                    
+                    探索历程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../daily-life/GetOutOfYourComfortZone.html">
+            
+                <a href="../../daily-life/GetOutOfYourComfortZone.html">
+            
+                    
+                    如何走出个人舒适圈
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../daily-life/HowToHaveLeadership.html">
+            
+                <a href="../../daily-life/HowToHaveLeadership.html">
+            
+                    
+                    怎样提升领导能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../../daily-life/InstallSystem-windows.html">
+            
+                <a href="../../daily-life/InstallSystem-windows.html">
+            
+                    
+                    个人装换机之 Windows 系列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../../daily-life/Search.html">
+            
+                <a href="../../daily-life/Search.html">
+            
+                    
+                    Search: 业余的专业搜索技能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../../daily-life/SelfReview.html">
+            
+                <a href="../../daily-life/SelfReview.html">
+            
+                    
+                    自我迭代
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../../daily-life/TheImportantOfSelfIntroduction.html">
+            
+                <a href="../../daily-life/TheImportantOfSelfIntroduction.html">
+            
+                    
+                    优秀的自我介绍很重要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../../daily-life/WorkExperience.html">
+            
+                <a href="../../daily-life/WorkExperience.html">
+            
+                    
+                    工作心得
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Full-stack</li>
+        
+        
+    
+
+    
+        
+        <li class="header">Docs</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../docs/Bash.html">
+            
+                <a href="../docs/Bash.html">
+            
+                    
+                    Bash: 入门重点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../docs/BestTools.html">
+            
+                <a href="../docs/BestTools.html">
+            
+                    
+                    最好的工具: 理解并使用那些耳目一新的巧工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../docs/CSS.html">
+            
+                <a href="../docs/CSS.html">
+            
+                    
+                    CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../docs/CodeTips.html">
+            
+                <a href="../docs/CodeTips.html">
+            
+                    
+                    代码教鞭：不值得犯第二次的错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../docs/Console.html">
+            
+                <a href="../docs/Console.html">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../docs/Dos.html">
+            
+                <a href="../docs/Dos.html">
+            
+                    
+                    DOS command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../docs/Emoji.html">
+            
+                <a href="../docs/Emoji.html">
+            
+                    
+                    Emoji: 供日常学习、查询及使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../docs/Git.html">
+            
+                <a href="../docs/Git.html">
+            
+                    
+                    Git 命令集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../docs/GitBook.html">
+            
+                <a href="../docs/GitBook.html">
+            
+                    
+                    GitBook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../docs/GitHubAction.html">
+            
+                <a href="../docs/GitHubAction.html">
+            
+                    
+                    Github Action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../docs/HTTP.html">
+            
+                <a href="../docs/HTTP.html">
+            
+                    
+                    HTTP: 小知识巧总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../docs/IntelliJ-IDEA.html">
+            
+                <a href="../docs/IntelliJ-IDEA.html">
+            
+                    
+                    IntelliJ IDEA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="../docs/Jest.html">
+            
+                <a href="../docs/Jest.html">
+            
+                    
+                    Jest learning manual
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="../docs/MiniProgram.html">
+            
+                <a href="../docs/MiniProgram.html">
+            
+                    
+                    小程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="../docs/NPM.html">
+            
+                <a href="../docs/NPM.html">
+            
+                    
+                    NPM and Plugin Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="../docs/PWA.html">
+            
+                <a href="../docs/PWA.html">
+            
+                    
+                    渐进式 Web 应用（PWA）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.17" data-path="../docs/Regexp.html">
+            
+                <a href="../docs/Regexp.html">
+            
+                    
+                    Regexp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.18" data-path="../docs/Rollup.html">
+            
+                <a href="../docs/Rollup.html">
+            
+                    
+                    Rollup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.19" data-path="../docs/SEO.html">
+            
+                <a href="../docs/SEO.html">
+            
+                    
+                    SEO: 搜索优化学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.20" data-path="../docs/SQL.html">
+            
+                <a href="../docs/SQL.html">
+            
+                    
+                    SQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.21" data-path="../docs/Snippet.html">
+            
+                <a href="../docs/Snippet.html">
+            
+                    
+                    Snippet: 那些有趣的代码片段
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.22" data-path="../docs/TechTerms.html">
+            
+                <a href="../docs/TechTerms.html">
+            
+                    
+                    专业名词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.23" data-path="../docs/Testing.html">
+            
+                <a href="../docs/Testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.24" data-path="../docs/Tricks.html">
+            
+                <a href="../docs/Tricks.html">
+            
+                    
+                    Tricks: 技巧黑暗料理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.25" data-path="../docs/TypeScript.html">
+            
+                <a href="../docs/TypeScript.html">
+            
+                    
+                    TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.26" data-path="../docs/Vue.html">
+            
+                <a href="../docs/Vue.html">
+            
+                    
+                    Vue: 点滴都是赞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.27" data-path="../docs/WebAPI.html">
+            
+                <a href="../docs/WebAPI.html">
+            
+                    
+                    Web API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.28" data-path="../docs/WebSite.html">
+            
+                <a href="../docs/WebSite.html">
+            
+                    
+                    站点：那些可以经常逛逛的开发工具网站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.29" data-path="../docs/Webpack.html">
+            
+                <a href="../docs/Webpack.html">
+            
+                    
+                    Webpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.30" data-path="../docs/Windows.html">
+            
+                <a href="../docs/Windows.html">
+            
+                    
+                    Windows 之路遇精彩
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Project</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../project/ReadMeTemplatePackage.html">
+            
+                <a href="../project/ReadMeTemplatePackage.html">
+            
+                    
+                    README 模板：Project Name
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../project/Specification.html">
+            
+                <a href="../project/Specification.html">
+            
+                    
+                    借鉴-项目规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">React</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../react/React.html">
+            
+                <a href="../react/React.html">
+            
+                    
+                    React: 总结整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../react/ReactHook.html">
+            
+                <a href="../react/ReactHook.html">
+            
+                    
+                    React Hook - 速览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../react/ReactLifeCycleToHooks1.html">
+            
+                <a href="../react/ReactLifeCycleToHooks1.html">
+            
+                    
+                    React-生命周期方法快速转 Hooks（1）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../react/ReactLifeCycleToHooks2.html">
+            
+                <a href="../react/ReactLifeCycleToHooks2.html">
+            
+                    
+                    React: 生命周期方法快速转 Hooks（2）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../react/Redux.html">
+            
+                <a href="../react/Redux.html">
+            
+                    
+                    Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../react/Router.html">
+            
+                <a href="../react/Router.html">
+            
+                    
+                    React router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../react/useEffect.html">
+            
+                <a href="../react/useEffect.html">
+            
+                    
+                    useEffect
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Share</li>
+        
+        
+    
+        <li class="chapter active" data-level="7.1" data-path="SyncGithubToGitee.html">
+            
+                <a href="SyncGithubToGitee.html">
+            
+                    
+                    3步自动同步你的 Github 仓库到 Gitee 仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="TipsForRuanKaoGaoJi.html">
+            
+                <a href="TipsForRuanKaoGaoJi.html">
+            
+                    
+                    软考高级“信息系统项目管理师”考试忠告
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="UsingWebworker.html">
+            
+                <a href="UsingWebworker.html">
+            
+                    
+                    轻松使用WebWorker，解放耗时较大的算法代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Office</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../../office/Excel.html">
+            
+                <a href="../../office/Excel.html">
+            
+                    
+                    Excel 常用操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../../office/Word.html">
+            
+                <a href="../../office/Word.html">
+            
+                    
+                    Word: 文档操作精选技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >3步自动同步你的 Github 仓库到 Gitee 仓库</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="3&#x6B65;&#x81EA;&#x52A8;&#x540C;&#x6B65;&#x4F60;&#x7684;-github-&#x4ED3;&#x5E93;&#x5230;-gitee-&#x4ED3;&#x5E93;">3&#x6B65;&#x81EA;&#x52A8;&#x540C;&#x6B65;&#x4F60;&#x7684; Github &#x4ED3;&#x5E93;&#x5230; Gitee &#x4ED3;&#x5E93;</h1>
+<p>&#x76F8;&#x4FE1;&#x6709;&#x5F88;&#x591A;&#x4EE5; Github &#x4E3A;&#x4E3B;&#x9635;&#x5730;&#x7684;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x90FD;&#x540C;&#x6837;&#x62E5;&#x6709;&#x4E00;&#x4E2A;&#x955C;&#x50CF;&#x5907;&#x4EFD;&#x7684;&#x5FC3;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#x6211;&#x5C31;&#x5076;&#x5C14;&#x4F7F;&#x7528; Gitee &#x540C;&#x6B65; Github&#xFF0C;&#x5BF9; Gitee &#x5DF2;&#x6709;&#x5F3A;&#x5927;&#x7684;&#x201C;&#x4ECE; Github/Gitlab &#x5BFC;&#x5165;&#x4ED3;&#x5E93;&#x201D;&#x548C;&#x201C;&#x9879;&#x76EE;&#x540D;&#x65C1;&#x8FB9;&#x7684;&#x5237;&#x65B0;&#x6309;&#x94AE;&#x70B9;&#x51FB;&#x540C;&#x6B65;&#x201D;&#x529F;&#x80FD;&#x975E;&#x5E38;&#x6EE1;&#x610F;&#xFF0C;&#x4F46;&#x662F;&#x8BA4;&#x8BC6;&#x5230; Github Actions &#x7684;&#x5F3A;&#x5927;&#x548C;&#x4FBF;&#x6377;&#x540E;&#xFF0C;&#x4ECD;&#x5FCD;&#x4E0D;&#x4F4F;&#x8981;&#x641E;&#x4E00;&#x4E9B;&#x5C0F;&#x8F6E;&#x5B50;&#xFF08;&#x5C0F;&#x52A8;&#x4F5C;&#xFF09;&#x3002;</p>
+<p>&#x6700;&#x7EC8;&#x53D1;&#x73B0;&#xFF1A;&#x7AD9;&#x5728;&#x5DE8;&#x4EBA;&#x7684;&#x80A9;&#x8180;&#x4E0A;&#x771F;&#x9999;&#xFF0C;&#x611F;&#x8C22; <a href="https://github.com/Yikun/hub-mirror-action" target="_blank">Yikun/hub-mirror-action</a> &#x9879;&#x76EE;&#x8BA9;&#x8FD9;&#x4E2A;&#x5907;&#x4EFD;&#x7684;&#x76EE;&#x6807;&#x53C8;&#x8FDB;&#x4E00;&#x6B65;&#x3002;</p>
+<h2 id="&#x5148;&#x5B9A;&#x4E2A;&#x5C0F;&#x76EE;&#x6807;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x5206;&#x89E3;&#x76EE;&#x6807;">&#x5148;&#x5B9A;&#x4E2A;&#x5C0F;&#x76EE;&#x6807;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x5206;&#x89E3;&#x76EE;&#x6807;</h2>
+<blockquote>
+<p>Github &#x4ED3;&#x5E93;&#x6BCF;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x540E;&#xFF0C;&#x901A;&#x8FC7; Github Actions &#x81EA;&#x52A8;&#x5C06;&#x4ED3;&#x5E93;&#x540C;&#x6B65;&#x5230; Gitee &#x4E0A;&#x3002;</p>
+</blockquote>
+<h3 id="&#x4E86;&#x89E3;-github-actions">&#x4E86;&#x89E3; Github Actions</h3>
+<p>&#xFF08;&#x5DF2;&#x4E86;&#x89E3;&#x7684;&#x76F4;&#x63A5;&#x8DF3;&#x8FC7;&#xFF09;</p>
+<ul>
+<li><a href="https://github.com/features/actions" target="_blank">https://github.com/features/actions</a> Features &#x2022; GitHub Actions</li>
+<li><a href="https://docs.github.com/cn/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions" target="_blank">https://docs.github.com/cn/free-pro-team@latest/actions/reference/workflow-syntax-for-github-actions</a> GitHub &#x64CD;&#x4F5C;&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x8BED;&#x6CD5; - GitHub Docs</li>
+<li><a href="http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html" target="_blank">http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html</a> GitHub Actions &#x5165;&#x95E8;&#x6559;&#x7A0B; - &#x962E;&#x4E00;&#x5CF0;&#x7684;&#x7F51;&#x7EDC;&#x65E5;&#x5FD7;</li>
+<li><a href="https://gabrieltanner.org/blog/an-introduction-to-github-actions" target="_blank">https://gabrieltanner.org/blog/an-introduction-to-github-actions</a> An Introduction to Github Actions</li>
+</ul>
+<h3 id="&#x5148;&#x4E0A;&#x83DC;&#xFF0C;&#x518D;&#x7EC6;&#x54C1;">&#x5148;&#x4E0A;&#x83DC;&#xFF0C;&#x518D;&#x7EC6;&#x54C1;</h3>
+<p>&#x53EA;&#x6709;&#x4E0D;&#x5230; 40 &#x884C;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x8FD8;&#x662F;&#x76F4;&#x63A5;&#x4E0A;&#x5427;&#x3002;</p>
+<ul>
+<li>&#x70B9;&#x51FB;&#x67E5;&#x770B;&#x4ED3;&#x5E93;&#x4E0A;&#x7684;&#x4EE3;&#x7801;&#x6587;&#x4EF6; <a href="https://github.com/gyx8899/actionsflow/blob/main/workflows/sync2gitee.yml" target="_blank">sync2gitee.yml</a></li>
+</ul>
+<pre><code class="lang-yaml"><span class="hljs-comment"># &#x901A;&#x8FC7; Github actions&#xFF0C; &#x5728; Github &#x4ED3;&#x5E93;&#x7684;&#x6BCF;&#x4E00;&#x6B21; commit &#x540E;&#x81EA;&#x52A8;&#x540C;&#x6B65;&#x5230; Gitee &#x4E0A;</span>
+<span class="hljs-attr">name:</span> sync2gitee
+<span class="hljs-attr">on:</span>
+<span class="hljs-attr">  push:</span>
+<span class="hljs-attr">    branches:</span>
+<span class="hljs-bullet">      -</span> master
+<span class="hljs-attr">jobs:</span>
+<span class="hljs-attr">  repo-sync:</span>
+<span class="hljs-attr">    env:</span>
+<span class="hljs-attr">      dst_key:</span> $
+<span class="hljs-attr">      dst_token:</span> $
+<span class="hljs-attr">      gitee_user:</span> $
+<span class="hljs-attr">    runs-on:</span> ubuntu-latest
+<span class="hljs-attr">    steps:</span>
+<span class="hljs-attr">      - uses:</span> actions/checkout@v2
+<span class="hljs-attr">        with:</span>
+<span class="hljs-attr">          persist-credentials:</span> <span class="hljs-literal">false</span>
+
+<span class="hljs-attr">      - name:</span> sync github -&gt; gitee
+<span class="hljs-attr">        uses:</span> Yikun/hub-mirror-action@master
+<span class="hljs-attr">        if:</span> env.dst_key &amp;&amp; env.dst_token &amp;&amp; env.gitee_user
+<span class="hljs-attr">        with:</span>
+          <span class="hljs-comment"># &#x5FC5;&#x9009;&#xFF0C;&#x9700;&#x8981;&#x540C;&#x6B65;&#x7684; Github &#x7528;&#x6237;&#xFF08;&#x6E90;&#xFF09;</span>
+<span class="hljs-attr">          src:</span> <span class="hljs-string">&apos;github/$&apos;</span>
+          <span class="hljs-comment"># &#x5FC5;&#x9009;&#xFF0C;&#x9700;&#x8981;&#x540C;&#x6B65;&#x5230;&#x7684; Gitee &#x7528;&#x6237;&#xFF08;&#x76EE;&#x7684;&#xFF09;</span>
+<span class="hljs-attr">          dst:</span> <span class="hljs-string">&apos;gitee/$&apos;</span>
+          <span class="hljs-comment"># &#x5FC5;&#x9009;&#xFF0C;Gitee&#x516C;&#x94A5;&#x5BF9;&#x5E94;&#x7684;&#x79C1;&#x94A5;&#xFF0C;https://gitee.com/profile/sshkeys</span>
+<span class="hljs-attr">          dst_key:</span> $
+          <span class="hljs-comment"># &#x5FC5;&#x9009;&#xFF0C;Gitee&#x5BF9;&#x5E94;&#x7684;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x4ED3;&#x5E93;&#x7684;token&#xFF0C;https://gitee.com/profile/personal_access_tokens</span>
+<span class="hljs-attr">          dst_token:</span>  $
+          <span class="hljs-comment"># &#x5982;&#x679C;&#x662F;&#x7EC4;&#x7EC7;&#xFF0C;&#x6307;&#x5B9A;&#x7EC4;&#x7EC7;&#x5373;&#x53EF;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x7528;&#x6237; user</span>
+          <span class="hljs-comment"># account_type: org</span>
+          <span class="hljs-comment"># &#x76F4;&#x63A5;&#x53D6;&#x5F53;&#x524D;&#x9879;&#x76EE;&#x7684;&#x4ED3;&#x5E93;&#x540D;</span>
+<span class="hljs-attr">          static_list:</span> $
+          <span class="hljs-comment"># &#x8FD8;&#x6709;&#x9ED1;&#x3001;&#x767D;&#x540D;&#x5355;&#xFF0C;&#x9759;&#x6001;&#x540D;&#x5355;&#x673A;&#x5236;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x66F4;&#x65B0;&#x67D0;&#x4E9B;&#x6307;&#x5B9A;&#x5E93;</span>
+          <span class="hljs-comment"># static_list: &apos;repo_name,repo_name2&apos;</span>
+          <span class="hljs-comment"># black_list: &apos;repo_name,repo_name2&apos;</span>
+          <span class="hljs-comment"># white_list: &apos;repo_name,repo_name2&apos;</span>
+</code></pre>
+<h3 id="&#x81EA;&#x52A8;&#x540C;&#x6B65;&#x4EC5;&#x9700;3&#x6B65;&#xFF1A;">&#x81EA;&#x52A8;&#x540C;&#x6B65;&#x4EC5;&#x9700;3&#x6B65;&#xFF1A;</h3>
+<ol>
+<li>&#x5728; <a href="https://gitee.com/" target="_blank">Gitee</a> &#x8D26;&#x6237;&#x4E2D;&#xFF0C;&#x901A;&#x8FC7; <code>+</code>&#x4E0B;&#x62C9;&#x5217;&#x8868;&#x4E2D;&#x7684; &#x201C;&#x4ECE; Github/Gitlab &#x5BFC;&#x5165;&#x4ED3;&#x5E93;&#x201D;&#xFF0C;&#x5BFC;&#x5165;&#x8981;&#x540C;&#x6B65;&#x7684; Github &#x4ED3;&#x5E93;&#xFF1B;</li>
+<li><p>&#x5728; Github &#x9700;&#x8981;&#x540C;&#x6B65;&#x7684;&#x4ED3;&#x5E93;&#x4E0A;&#x6DFB;&#x52A0; 3 &#x4E2A; secrets: (Setting -&gt; Secrets -&gt; New repository secret)</p>
+<ul>
+<li><code>GITEE_USER</code>&#xFF0C;&#x6BD4;&#x5982;&#x4E2A;&#x4EBA;&#x7684; Gitee user id: <a href="https://gitee.com/steper" target="_blank">steper</a></li>
+<li><p><code>GITEE_PRIVATE_KEY</code>&#xFF0C;&#x83B7;&#x53D6;&#x65B9;&#x6CD5;(&#x5982;&#x679C;&#x5DF2;&#x6709;&#xFF0C;&#x76F4;&#x63A5;&#x8BBE;&#x7F6E;) - <a href="https://gitee.com/profile/sshkeys" target="_blank">Gitee&#x516C;&#x94A5;&#x5BF9;&#x5E94;&#x7684;&#x79C1;&#x94A5;</a></p>
+<p>  &#x65B0;&#x5EFA; private key &#x65B9;&#x6CD5;&#xFF1A;</p>
+<ul>
+<li><a href="https://gitee.com/help/articles/4181#article-header0" target="_blank">&#x751F;&#x6210; SSH &#x516C;&#x94A5;</a></li>
+<li><a href="https://gitee.com/profile/sshkeys" target="_blank">&#x5C06; SSH &#x516C;&#x94A5;&#x6DFB;&#x52A0;&#x5230; Gitee &#x516C;&#x94A5;</a></li>
+<li>&#x540C;&#x65F6;&#x5C06;&#x516C;&#x94A5;&#x6DFB;&#x52A0;&#x5230; Github &#x9879;&#x76EE;&#x7684; secrets &#x4E2D;;</li>
+</ul>
+</li>
+<li><p><code>GITEE_TOKEN</code>&#xFF0C;&#x83B7;&#x53D6;&#x65B9;&#x6CD5; - <a href="https://gitee.com/profile/personal_access_tokens" target="_blank">Gitee&#x5BF9;&#x5E94;&#x7684;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x4ED3;&#x5E93;&#x7684;token</a></p>
+<p>  &#x65B0;&#x5EFA; token &#x65B9;&#x6CD5;&#xFF1A;</p>
+<ul>
+<li>&#x70B9;&#x51FB;&#x4E0A;&#x9762;&#x7684;&#x94FE;&#x63A5;&#x5E76;&#x767B;&#x5F55; Gitee, &#x70B9;&#x51FB;&#x201C;&#x751F;&#x6210;&#x65B0;&#x4EE4;&#x724C;&#x201D;&#xFF0C;</li>
+<li>&#x6DFB;&#x52A0;&#x63CF;&#x8FF0;&#xFF0C;&#x6BD4;&#x5982;&#x7528;&#x5904; - Github &#x4ED3;&#x5E93;&#x540C;&#x6B65;&#x5230; Gitee&#xFF1B;</li>
+<li>&#x6743;&#x9650;&#x9ED8;&#x8BA4;&#x5168;&#x9009;&#xFF0C;&#x70B9;&#x51FB;&#x63D0;&#x4EA4;&#xFF0C;&#x663E;&#x793A;&#x51FA;&#x751F;&#x6210;&#x7684; token &#x503C;&#xFF1B;&#xFF08;&#x6CE8;&#x610F;&#x4FDD;&#x5B58;&#xFF0C;&#x9700;&#x8981;&#x586B;&#x5230; Github &#x7684; secrets &#x4E2D;&#xFF09;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>&#x590D;&#x5236; <a href="https://github.com/gyx8899/actionsflow/blob/main/workflows/sync2gitee.yml" target="_blank">sync2gitee.yml</a>&#xFF0C;&#x5230; Github &#x4ED3;&#x5E93;&#x4E0B;&#x7684; <code>.github</code> &#x6587;&#x4EF6;&#x5939;&#x7684; <code>workflows</code> &#x6587;&#x4EF6;&#x5939;&#x4E0B;&#xFF0C;&#x5373; <code>[project-folder]/.github/workflows/sync2gitee.yml</code>&#xFF0C;&#x5E76;&#x63D0;&#x4EA4;&#x5230; Github &#x4ED3;&#x5E93;&#x3002;&#xFF08;&#x8FD9;&#x6B21;&#x64CD;&#x4F5C;&#x5C31;&#x4F1A;&#x89E6;&#x53D1;&#x540C;&#x6B65;&#x7684; Action&#xFF09;</li>
+</ol>
+<p>&#x540E;&#x7EED;&#x5728; Github &#x4ED3;&#x5E93;&#x4E0A;&#x63D0;&#x4EA4;&#x6539;&#x52A8;&#xFF08;&#x5982;&#x4FEE;&#x6539; README.md&#xFF09;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x5230; <a href="https://gitee.com/" target="_blank">Gitee</a> &#x4E0A;&#x5BF9;&#x5E94;&#x4ED3;&#x5E93;&#x9A8C;&#x8BC1;&#x662F;&#x5426;&#x540C;&#x6B65;&#x6210;&#x529F;&#x3002;</p>
+<h3 id="github-actions-&#x5BF9;&#x4E8E;&#x4E2A;&#x4EBA;&#x8D26;&#x53F7;&#xFF0C;&#x6BCF;&#x4E2A;&#x6708;&#x6709;-2000-&#x5206;&#x949F;&#x7684;&#x514D;&#x8D39;&#x989D;&#x5EA6;&#x3002;">GitHub Actions &#x5BF9;&#x4E8E;&#x4E2A;&#x4EBA;&#x8D26;&#x53F7;&#xFF0C;&#x6BCF;&#x4E2A;&#x6708;&#x6709; 2000 &#x5206;&#x949F;&#x7684;&#x514D;&#x8D39;&#x989D;&#x5EA6;&#x3002;</h3>
+<p>&#x666E;&#x901A;&#x7684;&#x4E00;&#x6B21; GitHub Action &#x6267;&#x884C;&#x9700;&#x8981; 2-3 &#x5206;&#x949F;&#xFF0C;<code>2000 / 3 = 666</code>&#x6B21;&#x63D0;&#x4EA4;&#xFF0C;&#x8DB3;&#x8DB3;&#x6EE1;&#x8DB3;&#x4E00;&#x5929; 22 &#x6B21;&#x7684;&#x6539;&#x52A8;&#x63D0;&#x4EA4;&#xFF0C;&#x51E0;&#x4E4E;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x987E;&#x8651;&#x3002;</p>
+<p>&#x5F53;&#x8D26;&#x53F7;&#x4F7F;&#x7528;&#x91CF;&#x8FBE;&#x5230; 75% &#x7684;&#x65F6;&#x5019;&#xFF0C;Github &#x4F1A;&#x53D1;&#x9001;&#x90AE;&#x4EF6;&#x63D0;&#x9192;&#xFF1A;</p>
+<blockquote>
+<p>You&apos;ve used 75% of included services for the xxx account</p>
+</blockquote>
+<ul>
+<li><a href="https://docs.github.com/cn/free-pro-team@latest/github/setting-up-and-managing-billing-and-payments-on-github/about-billing-for-github-actions" target="_blank">&#x5173;&#x4E8E; GitHub &#x64CD;&#x4F5C;&#x7684;&#x8BA1;&#x8D39;</a></li>
+<li><a href="https://github.com/settings/billing" target="_blank">&#x67E5;&#x770B;&#x4E2A;&#x4EBA;&#x5DF2;&#x7528;&#x91CF;</a></li>
+</ul>
+<h3 id="&#x771F;&#x5B9E;&#x4F8B;&#xFF0C;&#x89C1;&#x6548;&#x679C;">&#x771F;&#x5B9E;&#x4F8B;&#xFF0C;&#x89C1;&#x6548;&#x679C;</h3>
+<ul>
+<li>&#x4ECE; Github &#x4ED3;&#x5E93; Action <a href="https://github.com/gyx8899/blog" target="_blank">gyx8899/blog</a></li>
+<li>&#x5230; Gitee &#x4ED3;&#x5E93; <a href="https://gitee.com/steper/blog" target="_blank">steper/blog</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../react/useEffect.html" class="navigation navigation-prev " aria-label="Previous page: useEffect">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="TipsForRuanKaoGaoJi.html" class="navigation navigation-next " aria-label="Next page: 软考高级“信息系统项目管理师”考试忠告">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3步自动同步你的 Github 仓库到 Gitee 仓库","level":"7.1","depth":1,"next":{"title":"软考高级“信息系统项目管理师”考试忠告","level":"7.2","depth":1,"path":"full-stack/share/TipsForRuanKaoGaoJi.md","ref":"full-stack/share/TipsForRuanKaoGaoJi.md","articles":[]},"previous":{"title":"useEffect","level":"6.7","depth":1,"path":"full-stack/react/useEffect.md","ref":"full-stack/react/useEffect.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Kate Kuo <gyx8899@126.com>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kate's Blog","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Kate's Blog":"https://github.com/gyx8899/blog"}},"gitbook":">=2.0.0","description":"This is a blog book created by Kate Kuo","extension":null},"file":{"path":"full-stack/share/SyncGithubToGitee.md","mtime":"2021-02-25T09:57:33.915Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-02-25T09:58:18.522Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

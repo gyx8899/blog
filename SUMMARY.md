@@ -6,10 +6,6 @@
 个人成长博客
 
 
-## Full-stack
-全栈知识总结
-
-
 ## Daily-life
 日常工作中的随感
 
@@ -27,7 +23,6 @@
 ## Full-stack
 全栈知识总结
 
-* [3步自动同步你的 Github 仓库到 Gitee 仓库](/full-stack/Share/SyncGithubToGitee.md)
 
 ## Docs
 个人知识文档
@@ -45,8 +40,11 @@
 * [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md)
 * [IntelliJ IDEA](/full-stack/docs/IntelliJ-IDEA.md)
 * [Jest learning manual](/full-stack/docs/Jest.md)
+* [小程序](/full-stack/docs/MiniProgram.md)
 * [NPM and Plugin Guide](/full-stack/docs/NPM.md)
-* [Regexp: 日常表达式](/full-stack/docs/Regexp.md)
+* [渐进式 Web 应用（PWA）](/full-stack/docs/PWA.md)
+* [Regexp](/full-stack/docs/Regexp.md)
+* [Rollup](/full-stack/docs/Rollup.md)
 * [SEO: 搜索优化学习](/full-stack/docs/SEO.md)
 * [SQL](/full-stack/docs/SQL.md)
 * [Snippet: 那些有趣的代码片段](/full-stack/docs/Snippet.md)
@@ -57,9 +55,14 @@
 * [Vue: 点滴都是赞](/full-stack/docs/Vue.md)
 * [Web API](/full-stack/docs/WebAPI.md)
 * [站点：那些可以经常逛逛的开发工具网站](/full-stack/docs/WebSite.md)
-* [Webpack: 常规笔记](/full-stack/docs/Webpack.md)
+* [Webpack](/full-stack/docs/Webpack.md)
 * [Windows 之路遇精彩](/full-stack/docs/Windows.md)
+
+## Project
+通用项目文档
+
 * [README 模板：Project Name](/full-stack/project/ReadMeTemplatePackage.md)
+* [借鉴-项目规范](/full-stack/project/Specification.md)
 
 ## React
 React 相关知识总结
@@ -72,7 +75,15 @@ React 相关知识总结
 * [React router](/full-stack/react/Router.md)
 * [useEffect](/full-stack/react/useEffect.md)
 
+## Share
+总结分享发布
+
+* [3步自动同步你的 Github 仓库到 Gitee 仓库](/full-stack/share/SyncGithubToGitee.md)
+* [软考高级“信息系统项目管理师”考试忠告](/full-stack/share/TipsForRuanKaoGaoJi.md)
+* [轻松使用WebWorker，解放耗时较大的算法代码](/full-stack/share/UsingWebworker.md)
+
 ## Office
 Office 工具技巧
 
+* [Excel 常用操作](/office/Excel.md)
 * [Word: 文档操作精选技巧](/office/Word.md)

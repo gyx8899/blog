@@ -13,4 +13,19 @@
 
 ```shell
 - cron:  '1 1 1 1 *'
-```
+```
+
+## 发现及已解决的问题
+
+- GitHub Actions Error
+> Error
+  actions/checkout@v2 is not allowed to be used in xxxxx/xxxxxx. Actions in this workflow must be: within a repository owned by xxxx.
+
+在项目仓库 -> Setting -> Actions -> Actions permissions， 更改选项，选中 “Allow all actions”。
+> Allow local actions only
+> Only actions defined in a repository within gyx8899 can be used.
+>
+> => 
+>
+> Allow all actions
+> Any action can be used, regardless of who authored it or where it is defined.

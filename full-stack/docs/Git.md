@@ -376,7 +376,8 @@ git cherry-pick <start-commit-id>^..<end-commit-id>
 
 #### Pull changes from a template repository
 ```shell
-# 1. Add this template repository as a remote
+# 1. Remove/Add this template repository as a remote
+git remote rm upstream
 # git remote add template [URL of the template repo]
 git remote add template https://github.com/gyx8899/npm-template.git
 
@@ -414,6 +415,8 @@ git checkout master
 git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 # 查看
 git remote -v
+# 移除 upstream
+git remote rm upstream
 ```
 
 ### Learn Git Branching - 速查
@@ -430,6 +433,9 @@ git checkout o/master
 
 # 3. Git Fetchin
 git fetch
+
+git fetch remotename
+# 获取远程仓库的更新
 
 # 4. Git Pullin
 git pull
@@ -459,6 +465,14 @@ git pull; git push
 # 8. Locked Master: 推送改动到远程分支
 git checkout -b branch1
 git push
+
+# 9. 将在线更新与您的本地工作进行合并
+git merge remotename/branchname
+
+# git pull 是在同一个命令中完成 git fetch 和 git merge 的便捷方式。
+# 获取在线更新并将其与您的本地工作进行合并
+$ git pull remotename branchname
+
 ```
 
 ##### To Origin And Beyond
@@ -539,6 +553,19 @@ git branch -D <branch-name>
 ##### Delete remote branch
 ```shell
 git push orign --delete <branch-name>
+```
+
+#### Git Subtree
+
+```shell
+git subtree add   --prefix=<prefix> <commit>
+git subtree add   --prefix=<prefix> <repository> <ref>
+git subtree pull  --prefix=<prefix> <repository> <ref>
+git subtree push  --prefix=<prefix> <repository> <ref>
+git subtree merge --prefix=<prefix> <commit>
+git subtree split --prefix=<prefix> [OPTIONS] [<commit>]
+
+git subtree add --prefix=[relativePath] [repoUrl] [master/main] // --squash
 ```
 
 ### Questions: 常见问题
@@ -721,6 +748,80 @@ git reset --hard HEAD~1
 > - 产生更新档交付他人套用
 >
 > 总之，只要Git 操作导致Commit ID 改变，就必须更新提交者及提交日期，若操作者并非该Commit 的原始提交者，便会发生作者与提交者不同的状况。要观察提交日期与提交者，除使用Visual Studio、Source Tree、Git GUI 等GUI 工具，用git show --pretty=fuller commit_id 亦可查看
+
+- 修改 branch 的名字
+```shell script
+# 修改本地 branch name
+git branch -m <new_name>
+# 将新的 branch push 到 remote
+git push origin -u <new_name>
+# 删除 remote old branch
+git push origin --delete <old_name>
+```
+
+- 使用 git 命令中出现 - remote: Repository not found.
+> fatal: repository 'https://github.com/xxxxxx/xxxxxx.git/' not found
+
+此处的情况有：
+ - 提交另一个 github 账号下的仓库改动，但是这个仓库是私有的。而本地 git 记录的账号密码不是这个 github 账号。
+ - fatal: unable to access 'https://github.com/[user-name]/[repo-name].git/': The requested URL returned error: 403
+解决方法：
+```shell 
+# 正常的 repo https url
+https://github.com/gyx8899/blog.git
+# (一步搞定)设置 remote，之后就会提示输入密码了，然后顺利提交
+git remote set-url origin https://[user-name]@github.com/[user-name]/[repo-name].git
+# 例子：
+git remote set-url origin https://gyx8899@github.com/gyx8899/blog.git
+```
+
+- 一台电脑登录多个git 账户，如 github, gitlab
+
+    1. Github: [生成新 SSH 密钥并添加到 ssh-agent - GitHub Docs](https://docs.github.com/cn/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+    1. Github: [新增 SSH 密钥到 GitHub 帐户 - GitHub Docs](https://docs.github.com/cn/free-pro-team@latest/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
+    1. 验证测试参考：[同一台电脑怎样配置并使用多个git账号_冰河世纪-CSDN博客](https://blog.csdn.net/u010132177/article/details/104825446/)
+
+- Git 提交的中文文件名乱码
+> "\346\265\213\350\257\225.txt"
+```shell
+git config --global core.quotepath false
+```
+> [Git中文显示问题解决](http://xstarcd.github.io/wiki/shell/git_chinese.html)
+
+- fatal: not a git repository (or any of the parent directories): .git
+> git 命令只能在 git 目录中使用，执行：git init
+
+- Failed to connect to github.com port 443:connection timed out
+> git config --global --unset http.proxy
+>
+> git config --global --unset https.proxy
+
+- You have unstaged changes.
+```
+error: cannot pull with rebase: You have unstaged changes.
+error: additionally, your index contains uncommitted changes.
+error: please commit or stash them.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   src/***/image.jpg
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    src/***/image.jpg
+```
+```shell
+# cd to target folder, restore current folder's all unstaged files
+git restore --staged .
+```
+
+- remote: Permission to gyx8899/blog.git (Owned by Git-User-A) denied to [Git-User-B].
+```
+#fatal: unable to access 'https://github.com/gyx8899/blog.git/': The requested URL returned error: 403
+1. Add Git-User-B to blog Reop contributer;
+2. Remove user-b from computer; (控制面板–>用户–>证书管理–>系统证书)
+3. Add A's SSH to B's github;
+```
 
 ## 练习
 - [Learn Git Branching](https://learngitbranching.js.org/)

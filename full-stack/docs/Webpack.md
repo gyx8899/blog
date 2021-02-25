@@ -1,4 +1,19 @@
-# Webpack.config.js
+# Webpack
+
+## 版本
+
+- [Webpack 5](https://webpack.docschina.org/blog/2020-10-10-webpack-5-release/)
+
+    - 重大变更：功能清除
+    - 重大变更：长期缓存
+    - 重大变更：支持崭新的 Web 平台特性
+    - 重大变更：支持全新的 Node.js 生态特性
+    - 重大变更：开发体验
+    - 重大变更: 构建优化
+    - 重大变更：性能优化
+    - 重大变更：长期未解决的问题
+    - 重大变更：未来计划
+    - 重大内部变更
 
 ## Skills tree
 ### 自动清理构建目录产物： 
@@ -159,5 +174,4 @@ module.exports = {
     // 这其实也是我们命令中的 --mode production 的效果，后续的小节会介绍 webpack 的 mode 参数
   ],
 }
-```
-最后更新于2020年4月28日
+```

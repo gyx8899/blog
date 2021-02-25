@@ -37,7 +37,7 @@ module.exports = {
                 "title": "自我迭代"
             },
             "WorkExperience.md": {
-                "date": "2020年9月2日",
+                "date": "2021年1月28日",
                 "path": "daily-life/WorkExperience.md",
                 "title": "工作心得"
             },
@@ -65,7 +65,7 @@ module.exports = {
                     "title": "DOS command"
                 },
                 "Git.md": {
-                    "date": "2020年11月16日",
+                    "date": "2021年2月3日",
                     "path": "full-stack/docs/Git.md",
                     "title": "Git 命令集"
                 },
@@ -80,7 +80,7 @@ module.exports = {
                     "title": "Jest learning manual"
                 },
                 "NPM.md": {
-                    "date": "2020年10月30日",
+                    "date": "2021年2月3日",
                     "path": "full-stack/docs/NPM.md",
                     "title": "NPM and Plugin Guide"
                 },
@@ -100,7 +100,7 @@ module.exports = {
                     "title": "Vue: 点滴都是赞"
                 },
                 "Testing.md": {
-                    "date": "2020年8月31日",
+                    "date": "2021年2月25日",
                     "path": "full-stack/docs/Testing.md",
                     "title": "Testing"
                 },
@@ -110,9 +110,9 @@ module.exports = {
                     "title": "Web API"
                 },
                 "Webpack.md": {
-                    "date": "2020年4月28日",
+                    "date": "2021年1月8日",
                     "path": "full-stack/docs/Webpack.md",
-                    "title": "Webpack: 常规笔记"
+                    "title": "Webpack"
                 },
                 "SEO.md": {
                     "date": "2020年4月17日",
@@ -120,17 +120,17 @@ module.exports = {
                     "title": "SEO: 搜索优化学习"
                 },
                 "Bash.md": {
-                    "date": "2020年9月4日",
+                    "date": "2021年1月27日",
                     "path": "full-stack/docs/Bash.md",
                     "title": "Bash: 入门重点"
                 },
                 "Regexp.md": {
-                    "date": "2020年5月9日",
+                    "date": "2021年2月23日",
                     "path": "full-stack/docs/Regexp.md",
-                    "title": "Regexp: 日常表达式"
+                    "title": "Regexp"
                 },
                 "Windows.md": {
-                    "date": "2020年9月7日",
+                    "date": "2021年2月2日",
                     "path": "full-stack/docs/Windows.md",
                     "title": "Windows 之路遇精彩"
                 },
@@ -140,12 +140,12 @@ module.exports = {
                     "title": "CSS"
                 },
                 "HTTP.md": {
-                    "date": "2020年10月19日",
+                    "date": "2021年1月6日",
                     "path": "full-stack/docs/HTTP.md",
                     "title": "HTTP: 小知识巧总结"
                 },
                 "TypeScript.md": {
-                    "date": "2020年8月31日",
+                    "date": "2021年2月19日",
                     "path": "full-stack/docs/TypeScript.md",
                     "title": "TypeScript"
                 },
@@ -180,7 +180,7 @@ module.exports = {
                     "title": "最好的工具: 理解并使用那些耳目一新的巧工具"
                 },
                 "GitHubAction.md": {
-                    "date": "2020年11月12日",
+                    "date": "2020年11月19日",
                     "path": "full-stack/docs/GitHubAction.md",
                     "title": "Github Action"
                 },
@@ -188,6 +188,21 @@ module.exports = {
                     "date": "2020年11月13日",
                     "path": "full-stack/docs/TechTerms.md",
                     "title": "专业名词"
+                },
+                "Rollup.md": {
+                    "date": "2021年1月28日",
+                    "path": "full-stack/docs/Rollup.md",
+                    "title": "Rollup"
+                },
+                "PWA.md": {
+                    "date": "2021年2月25日",
+                    "path": "full-stack/docs/PWA.md",
+                    "title": "渐进式 Web 应用（PWA）"
+                },
+                "MiniProgram.md": {
+                    "date": "2021年2月25日",
+                    "path": "full-stack/docs/MiniProgram.md",
+                    "title": "小程序"
                 }
             },
             "react": {
@@ -197,7 +212,7 @@ module.exports = {
                     "title": "React: 总结整理"
                 },
                 "ReactHook.md": {
-                    "date": "2020年9月10日",
+                    "date": "2021年1月18日",
                     "path": "full-stack/react/ReactHook.md",
                     "title": "React Hook - 速览"
                 },
@@ -232,13 +247,28 @@ module.exports = {
                     "date": "2020年9月4日",
                     "path": "full-stack/project/ReadMeTemplatePackage.md",
                     "title": "README 模板：Project Name"
+                },
+                "Specification.md": {
+                    "date": "2021年2月25日",
+                    "path": "full-stack/project/Specification.md",
+                    "title": "借鉴-项目规范"
                 }
             },
-            "Share": {
+            "share": {
                 "SyncGithubToGitee.md": {
-                    "date": "2020年11月15日",
-                    "path": "full-stack/Share/SyncGithubToGitee.md",
+                    "date": "2020年11月17日",
+                    "path": "full-stack/share/SyncGithubToGitee.md",
                     "title": "3步自动同步你的 Github 仓库到 Gitee 仓库"
+                },
+                "TipsForRuanKaoGaoJi.md": {
+                    "date": "2020年11月17日",
+                    "path": "full-stack/share/TipsForRuanKaoGaoJi.md",
+                    "title": "软考高级“信息系统项目管理师”考试忠告"
+                },
+                "UsingWebworker.md": {
+                    "date": "2020年11月17日",
+                    "path": "full-stack/share/UsingWebworker.md",
+                    "title": "轻松使用WebWorker，解放耗时较大的算法代码"
                 }
             }
         },
@@ -247,11 +277,12 @@ module.exports = {
                 "date": "2020年8月31日",
                 "path": "office/Word.md",
                 "title": "Word: 文档操作精选技巧"
+            },
+            "Excel.md": {
+                "date": "2021年2月24日",
+                "path": "office/Excel.md",
+                "title": "Excel 常用操作"
             }
-        },
-        "_book": {
-            "gitbook": {},
-            "full-stack": {}
         }
     }
 };

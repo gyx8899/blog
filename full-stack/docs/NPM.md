@@ -2,6 +2,18 @@
 
 ---
 
+## 版本
+- NPM 
+
+## package.json
+
+### peerDependency
+
+https://docs.npmjs.com/cli/v6/configuring-npm/package-json#peerdependencies
+> In some cases, you want to express the compatibility of your package with a host tool or library, while not necessarily doing a require of this host. This is usually referred to as a plugin. Notably, your module may be exposing a specific interface, expected and specified by the host documentation.
+> 
+> 通常是在插件开发的场景下，你的插件需要某些依赖的支持，但是你又没必要去安装，因为插件的宿主会去安装这些依赖，你就可以用peerDependencies去声明一下需要依赖的插件和版本，如果出问题npm就会有警告来提醒使用者去解决版本冲突问题。(翻译出处之一)
+
 ## NPM 日常使用
 
 ### 新建项目
@@ -128,6 +140,25 @@ npm link @daybyday/yx-node
 # You can test it now.
 ```
 
+- Config
+```shell script
+# package version prefix
+npm config set save-exact true  # 最高优先
+npm config set save-prefix "~"  # 注意双引号
+npm config set save-prefix "^"  # 注意双引号, 默认值
+
+# 查看安装包的版本与最新版本比较
+npm outdate
+#Package                    Current   Wanted   Latest  Location
+#@hot-loader/react-dom      16.13.0  16.14.0   17.0.1  xx
+#@testing-library/jest-dom   5.11.1   5.11.9   5.11.9  xx
+#dayjs                       1.10.3   1.10.4   1.10.4  xx
+#enzyme-adapter-react-16     1.15.2   1.15.6   1.15.6  xx
+#intersection-observer       0.11.0   0.11.0   0.12.0  xx
+#lodash                     4.17.19  4.17.20  4.17.20  xx
+
+```
+
 ## 问题列表
 
 - npm ERR! Unexpected end of JSON input while parsing near '....0.0","inherits":"^2.'
@@ -158,6 +189,11 @@ npm config set registry https://registry.npmjs.org
 # Reset Taobao npm registry
 npm config set registry https://registry.npm.taobao.org/
 ```
+
+- npm ERR! code E401
+  npm ERR! 401 Unauthorized - PUT https://xxx - [unauthorized] Login first
+> 可能是 cnpm 和 npm 设置 registry 的变更导致已登录账号的信息在另外的环境上，暂时是通过修改账号名的方式解决。
+[npm ERR! 409 Conflict - PUT https://[cnpm]/-/user/org.couchdb.user:[username] - [conflict] User [username] already exists · Issue #1607 · cnpm/cnpmjs.org](https://github.com/cnpm/cnpmjs.org/issues/1607)
 
 ## NVM: Node version manager
 

@@ -84,8 +84,11 @@ jobs:
 
 后续在 Github 仓库上提交改动（如修改 README.md），都可以到 [Gitee](https://gitee.com/) 上对应仓库验证是否同步成功。
 
-### GitHub Actions 对于私有项目，每个月有 2000 分钟的免费额度。
+### GitHub Actions 对于个人账号，每个月有 2000 分钟的免费额度。
 普通的一次 GitHub Action 执行需要 2-3 分钟，`2000 / 3 = 666`次提交，足足满足一天 22 次的改动提交，几乎没有任何顾虑。
+
+当账号使用量达到 75% 的时候，Github 会发送邮件提醒：
+> You've used 75% of included services for the xxx account
 
 - [关于 GitHub 操作的计费](https://docs.github.com/cn/free-pro-team@latest/github/setting-up-and-managing-billing-and-payments-on-github/about-billing-for-github-actions)
 - [查看个人已用量](https://github.com/settings/billing)
@@ -93,4 +96,4 @@ jobs:
 ### 真实例，见效果
 
 - 从 Github 仓库 Action [gyx8899/blog](https://github.com/gyx8899/blog)
-
+- 到 Gitee 仓库 [steper/blog](https://gitee.com/steper/blog)
