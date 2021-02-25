@@ -45,7 +45,9 @@
 - [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md): <sub><sup>(2021年1月6日)</sup></sub>
 - [IntelliJ IDEA](/full-stack/docs/IntelliJ-IDEA.md): <sub><sup>(2020年9月2日)</sup></sub>
 - [Jest learning manual](/full-stack/docs/Jest.md): <sub><sup>(2020年9月4日)</sup></sub>
+- [小程序](/full-stack/docs/MiniProgram.md): <sub><sup>(2021年2月25日)</sup></sub>
 - [NPM and Plugin Guide](/full-stack/docs/NPM.md): <sub><sup>(2021年2月3日)</sup></sub>
+- [渐进式 Web 应用（PWA）](/full-stack/docs/PWA.md): <sub><sup>(2021年2月25日)</sup></sub>
 - [Regexp](/full-stack/docs/Regexp.md): <sub><sup>(2021年2月23日)</sup></sub>
 - [Rollup](/full-stack/docs/Rollup.md): <sub><sup>(2021年1月28日)</sup></sub>
 - [SEO: 搜索优化学习](/full-stack/docs/SEO.md): <sub><sup>(2020年4月17日)</sup></sub>
@@ -90,4 +92,4 @@ Office 工具技巧
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(2021年2月24日)</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2021年2月24日
+最后更新于2021年2月25日

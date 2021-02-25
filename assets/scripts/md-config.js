@@ -193,6 +193,16 @@ module.exports = {
                     "date": "2021年1月28日",
                     "path": "full-stack/docs/Rollup.md",
                     "title": "Rollup"
+                },
+                "PWA.md": {
+                    "date": "2021年2月25日",
+                    "path": "full-stack/docs/PWA.md",
+                    "title": "渐进式 Web 应用（PWA）"
+                },
+                "MiniProgram.md": {
+                    "date": "2021年2月25日",
+                    "path": "full-stack/docs/MiniProgram.md",
+                    "title": "小程序"
                 }
             },
             "react": {
