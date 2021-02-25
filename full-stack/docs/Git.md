@@ -231,7 +231,7 @@ git reset -i "HEAD^"  #For windows
 git rebase -i HEAD^^  #撤销最后2次
 git rebase -i HEAD~5  #撤销最后5次
 # 丢弃上一次提交 --hard
-git reset --hard HEAD^
+git reset --hard "HEAD^"   // Add quote for windows
 git push --force origin master
 # 以倒数第二个 commit 为起点（起点不包含在 rebase 序列里哟），branch1 为终点，rebase 到倒数第三个 commit 上。
 git rebase --onto HEAD^^ HEAD^ branch1
@@ -262,7 +262,7 @@ git revert HEAD^
 git reset HEAD^
     git reset CommitHashValue
     # 重置回退并清空工作目录的所有改动
-    git reset --hard HEAD^
+    git reset --hard "HEAD^"   // Add quote for windows
     git reset --hard CommitHashValue
     # 重置回退并保留工作目录和暂存区的内容，并把重置 HEAD 的位置所导致的新的文件差异放进暂存区
     git reset --soft HEAD^
