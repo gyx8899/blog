@@ -100,7 +100,7 @@ module.exports = {
                     "title": "Vue: 点滴都是赞"
                 },
                 "Testing.md": {
-                    "date": "2020年8月31日",
+                    "date": "2021年2月25日",
                     "path": "full-stack/docs/Testing.md",
                     "title": "Testing"
                 },
@@ -247,6 +247,11 @@ module.exports = {
                     "date": "2020年9月4日",
                     "path": "full-stack/project/ReadMeTemplatePackage.md",
                     "title": "README 模板：Project Name"
+                },
+                "Specification.md": {
+                    "date": "2021年2月25日",
+                    "path": "full-stack/project/Specification.md",
+                    "title": "借鉴-项目规范"
                 }
             },
             "share": {

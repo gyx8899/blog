@@ -54,7 +54,7 @@
 - [SQL](/full-stack/docs/SQL.md): <sub><sup>(2020年11月13日)</sup></sub>
 - [Snippet: 那些有趣的代码片段](/full-stack/docs/Snippet.md): <sub><sup>(2020年2月18日)</sup></sub>
 - [专业名词](/full-stack/docs/TechTerms.md): <sub><sup>(2020年11月13日)</sup></sub>
-- [Testing](/full-stack/docs/Testing.md): <sub><sup>(2020年8月31日)</sup></sub>
+- [Testing](/full-stack/docs/Testing.md): <sub><sup>(2021年2月25日)</sup></sub>
 - [Tricks: 技巧黑暗料理](/full-stack/docs/Tricks.md): <sub><sup>(2020年2月18日)</sup></sub>
 - [TypeScript](/full-stack/docs/TypeScript.md): <sub><sup>(2021年2月19日)</sup></sub>
 - [Vue: 点滴都是赞](/full-stack/docs/Vue.md): <sub><sup>(2020年2月18日)</sup></sub>
@@ -67,6 +67,7 @@
 通用项目文档
 
 - [README 模板：Project Name](/full-stack/project/ReadMeTemplatePackage.md): <sub><sup>(2020年9月4日)</sup></sub>
+- [借鉴-项目规范](/full-stack/project/Specification.md): <sub><sup>(2021年2月25日)</sup></sub>
 
 ### React
 React 相关知识总结

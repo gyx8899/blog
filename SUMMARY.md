@@ -62,6 +62,7 @@
 通用项目文档
 
 * [README 模板：Project Name](/full-stack/project/ReadMeTemplatePackage.md)
+* [借鉴-项目规范](/full-stack/project/Specification.md)
 
 ## React
 React 相关知识总结
