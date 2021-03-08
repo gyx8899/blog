@@ -52,6 +52,7 @@
 * [Testing](/full-stack/docs/Testing.md)
 * [Tricks: 技巧黑暗料理](/full-stack/docs/Tricks.md)
 * [TypeScript](/full-stack/docs/TypeScript.md)
+* [VS Code：发挥应有的效率](/full-stack/docs/VSCode.md)
 * [Vue: 点滴都是赞](/full-stack/docs/Vue.md)
 * [Web API](/full-stack/docs/WebAPI.md)
 * [站点：那些可以经常逛逛的开发工具网站](/full-stack/docs/WebSite.md)

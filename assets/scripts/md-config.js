@@ -105,7 +105,7 @@ module.exports = {
                     "title": "Testing"
                 },
                 "WebAPI.md": {
-                    "date": "2020年11月13日",
+                    "date": "2021年3月8日",
                     "path": "full-stack/docs/WebAPI.md",
                     "title": "Web API"
                 },
@@ -203,6 +203,11 @@ module.exports = {
                     "date": "2021年2月27日",
                     "path": "full-stack/docs/MiniProgram.md",
                     "title": "小程序"
+                },
+                "VSCode.md": {
+                    "date": "2021年3月8日",
+                    "path": "full-stack/docs/VSCode.md",
+                    "title": "VS Code：发挥应有的效率"
                 }
             },
             "react": {

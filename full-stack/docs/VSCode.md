@@ -20,4 +20,4 @@
 
 ## 参考链接
 
-- https://zhuanlan.zhihu.com/p/339258835 推荐 20个提高开发效率的 VS Code 快捷键！ - 知乎
+- <https://zhuanlan.zhihu.com/p/339258835> 推荐 20个提高开发效率的 VS Code 快捷键！ - 知乎
