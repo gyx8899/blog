@@ -15,6 +15,7 @@
 * [如何走出个人舒适圈](/daily-life/GetOutOfYourComfortZone.md)
 * [怎样提升领导能力](/daily-life/HowToHaveLeadership.md)
 * [个人装换机之 Windows 系列](/daily-life/InstallSystem-windows.md)
+* [工作之余 - 技能修炼](/daily-life/OutOfWork.md)
 * [Search: 业余的专业搜索技能](/daily-life/Search.md)
 * [自我迭代](/daily-life/SelfReview.md)
 * [优秀的自我介绍很重要](/daily-life/TheImportantOfSelfIntroduction.md)

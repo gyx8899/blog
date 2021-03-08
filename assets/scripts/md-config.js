@@ -50,6 +50,11 @@ module.exports = {
                 "date": "2020年10月2日",
                 "path": "daily-life/Explore.md",
                 "title": "探索历程"
+            },
+            "OutOfWork.md": {
+                "date": "2021年3月8日",
+                "path": "daily-life/OutOfWork.md",
+                "title": "工作之余 - 技能修炼"
             }
         },
         "full-stack": {
