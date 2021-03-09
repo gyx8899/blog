@@ -11,6 +11,8 @@
 |侧边-源代码管理|Ctrl + Shift + G| |
 |侧边-运行和调试|Ctrl + Shift + D|Command + Shift + D|
 |侧边-扩展|Ctrl + Shift + X| |
+|底部-新建终端|Ctrl + + Shift + \`||
+|底部-打开/关闭终端|Ctrl + \`||
 |向上向下复制行|Shift + Alt + Up/Down|Shift + Option + Up/Down|
 |格式化代码|Shift + Alt + F|Shift + Option + F|
 |代码折叠|Ctrl + Shift + [|Command+ Option + [|
