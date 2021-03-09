@@ -6,12 +6,15 @@
 
 |功能|快捷键（windows）|快捷键（Mac）|
 |--|--|--|
+|侧边-打开/关闭|Ctrl + B|Command + b|
+|侧边-资源管理器|Ctrl + Shift + E| |
+|侧边-源代码管理|Ctrl + Shift + G| |
+|侧边-运行和调试|Ctrl + Shift + D|Command + Shift + D|
+|侧边-扩展|Ctrl + Shift + X| |
 |向上向下复制行|Shift + Alt + Up/Down|Shift + Option + Up/Down|
-|复制行|Ctrl + Shift + D|Command + Shift + D|
 |格式化代码|Shift + Alt + F|Shift + Option + F|
 |代码折叠|Ctrl + Shift + [|Command+ Option + [|
 |代码展开|Ctrl + Shift + ]|Command+ Option + ]|
-|打开关闭侧边栏|Ctrl + B|Command + b|
 |文件中符号跳转|Ctrl + Shift + O|Command + Shift+ o|
 |工作区符号跳转|Ctrl + t|Command + t|
 |删除上一个词|Ctrl + Backsopace|Option + Delete|
@@ -20,4 +23,4 @@
 
 ## 参考链接
 
-- <https://zhuanlan.zhihu.com/p/339258835> 推荐 20个提高开发效率的 VS Code 快捷键！ - 知乎
+- <https://zhuanlan.zhihu.com/p/339258835> 推荐 20个提高开发效率的 VS Code 快捷键！ - 知乎
