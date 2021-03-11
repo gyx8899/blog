@@ -69,13 +69,13 @@ git stage A.txt
 # 提交工作区改动到本地仓库（代码库）
 git commit
     # 0. 进入 Comment 添加模式
-    # 1. 点击键盘键 i 
+    # 1. 点击键盘键 i
     # 2. 输入改动 Comment 注解
     # 3. 点击键盘键 Esc
     # 4. 鼠标点击 cmd 区域，将焦点重新聚焦 cmd
     # 5.1 dos 模式 - Shift + Z, Shift + Z, 两次退出 Comment 编辑模式
     # 5.2 vim 模式 - 1. ESC, 2. :set noreadonly 3. :wq  (root 权限 :wq!)
-    
+
     # 1. 简化 commit 的命令 -m
     git commit -m "Comment text"
     # 2. 简化多行 commit 的命令 -m, 两种方式：
@@ -136,7 +136,7 @@ git merge master
   git add conflict_file.txt
   git commit
   # 2. 冲突时，放弃合并
-  git merge --abort 
+  git merge --abort
 
 # 先把 branch 的基准更新到 master 的最新，再把 branch 上的提交记录，再在最新位置上重新提交
 git checkout branch1
@@ -202,7 +202,7 @@ git rebase --continue
 > ~ 的用法：在 commit 的后面加上 ~ 号和一个数，可以把 commit 往回偏移，偏移的数量是 ~ 号后面的数。例如：HEAD~5 表示 HEAD 指向的 commit往前数 5 个 commit。
 
 > Rebase 816f737..b13037a onto 816f737 (1 command)
-> 
+>
 > Commands:
 > p, pick = use commit
 > r, reword = use commit, but edit the commit message
@@ -253,7 +253,7 @@ git push origin branch1 -f
 git revert HEAD^
 ```
 > 如果出错内容在私有 branch：在本地把内容修正后，强制 push (push -f）一次就可以解决；
-> 
+>
 > 如果出错内容在 master：不要强制 push，而要用 revert 把写错的 commit 撤销。
 
 #### 重置回退
@@ -317,7 +317,7 @@ git reflog master
 #### tag
 ```shell
 # 查看 History 中已有的 tag
-git tag 
+git tag
 v0.1
 v1.3
 
@@ -584,7 +584,24 @@ git push
 Username:
 Password:
 ```
-  
+
+- OpenSSL SSL_read: Connection was reset, errno 10054
+
+```shell
+git clone https://github.com/gyx8899/yx-js.git
+# fatal: unable to access 'https://github.com/gyx8899/yx-js.git/': OpenSSL SSL_read: Connection was reset, errno 10054
+```
+
+    Solutions:
+
+    - Couldn't connect Github on your network, need use VPN;
+    - Update DNS cache;
+        - Mac:
+            sudo killall -HUP mDNSResponder
+            sudo dscacheutil -flushcache
+        - Windows:
+            ipconfig /flushdns
+
 - remote: HTTP Basic: Access denied
 fatal: Authentication failed for 'Your remove url'
 
@@ -596,7 +613,7 @@ git config --global http.emptyAuth true
 ```
 > 方案3 情况：第一次输入账号密码错误后，或者 git 账号更新了密码， 或者 Git 管理员强制用户更新密码；
 > 方案3 方法：到”控制面板 \ 用户帐户 \ 凭据管理器 \ Windows凭据”下找到对应 git 的凭据，1. 直接修改凭据里的账号密码； 2. 删除凭据，然后继续尝试 git clone 命令，会重新提示输入用户名和密码；
-     
+
 - Github, Gitlab, Gitee, 多账号管理 - 提交时的用户选择
 
 ```shell
@@ -610,7 +627,7 @@ git config --local user.email "gyx8899@126.com"
 git config --local user.name "Steper Kuo @gitee"
 git config --local user.email "gyx8899@126.com"
 ```
- 
+
 - Could not merge origin/master: You have not concluded your merge (MERGE_HEAD exists). Please, commit your changes before you merge.
 
 ```shell
@@ -639,7 +656,7 @@ git stash
 git pull origin master  #== git fetch + get merge
 git stash pop
 ```
-  
+
 - `git merge master` fatal: refusing to merge unrelated histories
 
 ```shell
@@ -647,13 +664,13 @@ git merge master --allow-unrelated-histories
 # 同理 git pull/push same fatal
 git pull origin master --allow-unrelated-histories
 ```
-  
+
 - Warning: LF will be replaced by CRLF
 
 ```shell
 git config --global core.autocrlf false
 ```
-  
+
 - npm install: Error: Can't find Python executable "python", you can set the PYTHON env variable
 
 ```shell
@@ -707,6 +724,7 @@ First, rewinding head to replay your work on top of it
 - Squash commits in git after they have been pushed?
 
 Such as squash last 4 commits in remote master
+
 ```sheel
 # 1. Solution on master
 git rebase -i origin/master~4 master
@@ -732,7 +750,9 @@ git push --force origin my_branch
 注意确保修改文件的改动在分支上，然后再建分支进行进一步测试。而不是直接在同一个分支或 Master 上修改提交，这会对当前的 pull request 造成影响，因为这些后续改动也会被包含在 pull request 中。
 
 - "fatal: ambiguous argument 'HEAD" after "git reset --hard HEAD^" in windows
+
 > ^在 windows (terminal) 中是特殊字符。
+
 ```shell
 git reset --hard "HEAD^"
 git reset --hard HEAD"^"
@@ -740,6 +760,7 @@ git reset --hard HEAD~1
 ```
 
 - [Git 提交信息中的 Author 和 Committer 的差异](https://blog.darkthread.net/blog/git-author-n-committer/)：
+
 > Git 的每个Commit 都有作者(Author)跟提交者(Committer)两种角色，每次新增修改删除档案并使用git commit 指令存成Commit，一开始Commit 的作者与提交者都是执行提交动作的操作人员(严格来说是user.name 跟user.email 所设定的身分)，而作者日期(AuthorDate)及提交日期(CommitDate)就是执行git commit 的时间。但如果Commit 经过再处理或操作，提交日期将会更新，而也可能出现提交者与作者不同的状况。造成作者/作者日期与提交者/提交日期不同的常见情境有：
 
 > - 执行Rebase (包含git pull --rebase)
@@ -750,6 +771,7 @@ git reset --hard HEAD~1
 > 总之，只要Git 操作导致Commit ID 改变，就必须更新提交者及提交日期，若操作者并非该Commit 的原始提交者，便会发生作者与提交者不同的状况。要观察提交日期与提交者，除使用Visual Studio、Source Tree、Git GUI 等GUI 工具，用git show --pretty=fuller commit_id 亦可查看
 
 - 修改 branch 的名字
+
 ```shell script
 # 修改本地 branch name
 git branch -m <new_name>
@@ -760,13 +782,18 @@ git push origin --delete <old_name>
 ```
 
 - 使用 git 命令中出现 - remote: Repository not found.
+
 > fatal: repository 'https://github.com/xxxxxx/xxxxxx.git/' not found
 
 此处的情况有：
- - 提交另一个 github 账号下的仓库改动，但是这个仓库是私有的。而本地 git 记录的账号密码不是这个 github 账号。
- - fatal: unable to access 'https://github.com/[user-name]/[repo-name].git/': The requested URL returned error: 403
+
+    # 提交另一个 github 账号下的仓库改动，但是这个仓库是私有的。而本地 git 记录的账号密码不是这个 github 账号。
+
+    # fatal: unable to access 'https://github.com/[user-name]/[repo-name].git/': The requested URL returned error: 403
+
 解决方法：
-```shell 
+
+```shell
 # 正常的 repo https url
 https://github.com/gyx8899/blog.git
 # (一步搞定)设置 remote，之后就会提示输入密码了，然后顺利提交
@@ -782,22 +809,28 @@ git remote set-url origin https://gyx8899@github.com/gyx8899/blog.git
     1. 验证测试参考：[同一台电脑怎样配置并使用多个git账号_冰河世纪-CSDN博客](https://blog.csdn.net/u010132177/article/details/104825446/)
 
 - Git 提交的中文文件名乱码
+
 > "\346\265\213\350\257\225.txt"
+
 ```shell
 git config --global core.quotepath false
 ```
+
 > [Git中文显示问题解决](http://xstarcd.github.io/wiki/shell/git_chinese.html)
 
 - fatal: not a git repository (or any of the parent directories): .git
+
 > git 命令只能在 git 目录中使用，执行：git init
 
 - Failed to connect to github.com port 443:connection timed out
+
 > git config --global --unset http.proxy
 >
 > git config --global --unset https.proxy
 
 - You have unstaged changes.
-```
+
+```shell
 error: cannot pull with rebase: You have unstaged changes.
 error: additionally, your index contains uncommitted changes.
 error: please commit or stash them.
@@ -810,13 +843,15 @@ Changes not staged for commit:
   (use "git restore <file>..." to discard changes in working directory)
         deleted:    src/***/image.jpg
 ```
+
 ```shell
 # cd to target folder, restore current folder's all unstaged files
 git restore --staged .
 ```
 
 - remote: Permission to gyx8899/blog.git (Owned by Git-User-A) denied to [Git-User-B].
-```
+
+```shell
 #fatal: unable to access 'https://github.com/gyx8899/blog.git/': The requested URL returned error: 403
 1. Add Git-User-B to blog Reop contributer;
 2. Remove user-b from computer; (控制面板–>用户–>证书管理–>系统证书)
@@ -824,8 +859,10 @@ git restore --staged .
 ```
 
 ## 练习
+
 - [Learn Git Branching](https://learngitbranching.js.org/)
- 
+
 ## 参考
-- https://git-scm.com/docs Git - Reference
-- https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A 【第1864期】手撕Git，告别盲目记忆
+
+- <https://git-scm.com/docs> Git - Reference
+- <https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A> 【第1864期】手撕Git，告别盲目记忆
