@@ -210,7 +210,7 @@ module.exports = {
                     "title": "小程序"
                 },
                 "VSCode.md": {
-                    "date": "2021年3月8日",
+                    "date": "2021年3月16日",
                     "path": "full-stack/docs/VSCode.md",
                     "title": "VS Code：发挥应有的效率"
                 }
