@@ -1,4 +1,5 @@
 # Git 命令集
+
 ![Git flow](../../assets/images/git-tool.png)
 
 ## Git 指令使用手册
@@ -109,6 +110,7 @@ git diff
 ```
 
 #### 分支操作
+
 ```shell
 ## 创建分支
 git branch_name
@@ -160,6 +162,7 @@ git merge template/master --allow-unrelated-histories
 ```
 
 #### Feature branching 工作流 - 方式1-靠吼
+
 ```shell
 ## User A
 git checkout -b feature2
@@ -195,12 +198,13 @@ git rebase -i HEAD~5
 # 继续 rebase, 把后面的 commit 应用上去。
 git rebase --continue
 ```
+
 > 说明：在 Git 中，有两个「偏移符号」： ^ 和 ~。
 >
 > ^ 的用法：在 commit 的后面加一个或多个 ^ 号，可以把 commit 往回偏移，偏移的数量是 ^ 的数量。例如：master^ 表示 master 指向的 commit 之前的那个 commit； HEAD^^ 表示 HEAD 所指向的 commit 往前数两个 commit。
 >
 > ~ 的用法：在 commit 的后面加上 ~ 号和一个数，可以把 commit 往回偏移，偏移的数量是 ~ 号后面的数。例如：HEAD~5 表示 HEAD 指向的 commit往前数 5 个 commit。
-
+>
 > Rebase 816f737..b13037a onto 816f737 (1 command)
 >
 > Commands:
@@ -221,6 +225,7 @@ git rebase --continue
 > Note that empty commits are commented out
 
 #### 撤销commit
+
 ```shell
 # ^在 windows (terminal) 中是特殊字符，使用时加上引号："^"
 # 撤销前某一次提交, 把编辑区域中想删掉的那一次 commit comment 删掉即可。
@@ -236,27 +241,29 @@ git push --force origin master
 # 以倒数第二个 commit 为起点（起点不包含在 rebase 序列里哟），branch1 为终点，rebase 到倒数第三个 commit 上。
 git rebase --onto HEAD^^ HEAD^ branch1
 # 撤销本地分支上的所有提交
-```shell
 git reset --hard origin/<branch-name>
-```
 ```
 
 #### 撤销已在中央仓库的 branch 的 commit
+
 ```shell
 # 先在本地仓库 branch 使用上面的 撤销 commit, 再强制提交到 branch。--force, 忽略冲突强制 push
 git push origin branch1 -f
 ```
 
 #### 撤销已在中央仓库的 master 的 commit, 只是新增一条 revert commit
+
 ```shell
 # 撤销 commit
 git revert HEAD^
 ```
+
 > 如果出错内容在私有 branch：在本地把内容修正后，强制 push (push -f）一次就可以解决；
 >
 > 如果出错内容在 master：不要强制 push，而要用 revert 把写错的 commit 撤销。
 
 #### 重置回退
+
 ```shell
 # 重置回退并保留工作目录的内容，并清空暂存区。
 git reset HEAD^
@@ -272,6 +279,7 @@ git reset HEAD^
     # ……或者……
     git reset --hard <提交的哈希值>
 ```
+
 > --hard：重置位置的同时，清空工作目录的所有改动；
 >
 > --soft（常用）：重置位置的同时，保留工作目录和暂存区的内容，并把重置 HEAD 的位置所导致的新的文件差异放进暂存区。
@@ -279,6 +287,7 @@ git reset HEAD^
 > --mixed（默认）：重置位置的同时，保留工作目录的内容，并清空暂存区。
 
 #### Checkout
+
 ```shell
 git checkout HEAD^^
 git checkout master~5
@@ -289,6 +298,7 @@ git checkout --detach
 ```
 
 #### Stash(暂存区): 临时存放工作目录的改动
+
 ```shell
 # 将工作区的改动保存到暂存区，工作区还原至上次commit
 git stash
@@ -304,6 +314,7 @@ git stash pop
 ```
 
 #### 重建已删除的 branch1
+
 ```shell
 # 从 log 中查找已删除 branch1 的 SHA-1
 git reflog
@@ -315,6 +326,7 @@ git reflog master
 ```
 
 #### tag
+
 ```shell
 # 查看 History 中已有的 tag
 git tag
@@ -359,6 +371,7 @@ git checkout -b version2 v2.0.0
 ```
 
 #### cherry-pick
+
 ```shell
 git cherry-pick [--edit] [-n] [-m parent-number] [-s] [-x] [--ff] [-S[<keyid>]] <commit>…​
 git cherry-pick (--continue | --skip | --abort | --quit)
@@ -375,6 +388,7 @@ git cherry-pick <start-commit-id>^..<end-commit-id>
 ```
 
 #### Pull changes from a template repository
+
 ```shell
 # 1. Remove/Add this template repository as a remote
 git remote rm upstream
@@ -390,6 +404,7 @@ git merge template/master --allow-unrelated-histories
 ```
 
 #### HEAD (*)
+
 ```shell
 # 强制把 master 指向分支 bugFix / bugFix parent / bugFix grand parent commit
 git branch -f master bugFix
@@ -410,6 +425,7 @@ git checkout master
 ```
 
 #### 更改远程仓库 URL
+
 ```shell
 # 更改
 git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
@@ -421,9 +437,10 @@ git remote rm upstream
 
 ### Learn Git Branching - 速查
 
-#### Git Remotes!
+#### Git Remotes
 
 ##### Push & Pull
+
 ```shell
 # 1. Clone Intro
 git clone
@@ -476,6 +493,7 @@ $ git pull remotename branchname
 ```
 
 ##### To Origin And Beyond
+
 ```shell
 # 1. Push master
 git fetch
@@ -540,6 +558,7 @@ git pull origin master:side
 #### Branch
 
 ##### Delete local branch
+
 ```shell
 # 先查看本地分支
 git branch -a
@@ -551,6 +570,7 @@ git branch -D <branch-name>
 ```
 
 ##### Delete remote branch
+
 ```shell
 git push orign --delete <branch-name>
 ```
@@ -577,6 +597,7 @@ YX-JS-ToolKit\docs>git push
 fatal: unable to access 'https://github.com/gyx8899/YX-JS-ToolKit.git/': Op
 enSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054
 ```
+
 ```shell
 git config http.sslVerify "false"
 git config --global http.sslVerify "false"
@@ -611,6 +632,7 @@ git config --system --unset credential.helper
 # 方案2（来自网络）
 git config --global http.emptyAuth true
 ```
+
 > 方案3 情况：第一次输入账号密码错误后，或者 git 账号更新了密码， 或者 Git 管理员强制用户更新密码；
 > 方案3 方法：到”控制面板 \ 用户帐户 \ 凭据管理器 \ Windows凭据”下找到对应 git 的凭据，1. 直接修改凭据里的账号密码； 2. 删除凭据，然后继续尝试 git clone 命令，会重新提示输入用户名和密码；
 
@@ -638,6 +660,7 @@ git pull
 ```
 
 - Committing is not possible because you have unmerged files.
+
 ```shell
 git status
 # After merge, still can't submit, check your git status
@@ -762,7 +785,7 @@ git reset --hard HEAD~1
 - [Git 提交信息中的 Author 和 Committer 的差异](https://blog.darkthread.net/blog/git-author-n-committer/)：
 
 > Git 的每个Commit 都有作者(Author)跟提交者(Committer)两种角色，每次新增修改删除档案并使用git commit 指令存成Commit，一开始Commit 的作者与提交者都是执行提交动作的操作人员(严格来说是user.name 跟user.email 所设定的身分)，而作者日期(AuthorDate)及提交日期(CommitDate)就是执行git commit 的时间。但如果Commit 经过再处理或操作，提交日期将会更新，而也可能出现提交者与作者不同的状况。造成作者/作者日期与提交者/提交日期不同的常见情境有：
-
+>
 > - 执行Rebase (包含git pull --rebase)
 > - 执行Amend 修改Commit 讯息
 > - 执行Cherry-Pick 搬动Commit
@@ -787,9 +810,8 @@ git push origin --delete <old_name>
 
 此处的情况有：
 
-    # 提交另一个 github 账号下的仓库改动，但是这个仓库是私有的。而本地 git 记录的账号密码不是这个 github 账号。
-
-    # fatal: unable to access 'https://github.com/[user-name]/[repo-name].git/': The requested URL returned error: 403
+> 1. 提交另一个 github 账号下的仓库改动，但是这个仓库是私有的。而本地 git 记录的账号密码不是这个 github 账号。
+> 1. fatal: unable to access '<https://github.com/[user-name>]/[repo-name].git/': The requested URL returned error: 403
 
 解决方法：
 
