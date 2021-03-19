@@ -880,6 +880,19 @@ git restore --staged .
 3. Add A's SSH to B's github;
 ```
 
+- npm install error: node-sass 3.13.1
+
+> 参考 https://blog.csdn.net/y_k_y/article/details/86535268 文章中最后的方案，即 https://github.com/pnp/sp-dev-fx-webparts/issues/501#issuecomment-389285371 方案，以管理员权限安装 npm 包 - windows-build-tools，成功后重新 npm install, legos install。问题即可解决。
+> 
+> 示例执行的命令：
+```shell
+npm install --global --production windows-build-tools
+```
+> 在 VS code 的 terminal 中执行（测试成功）
+```shell
+npm i -g windows-build-tools --vs2017
+```
+
 ## 练习
 
 - [Learn Git Branching](https://learngitbranching.js.org/)
@@ -887,4 +900,4 @@ git restore --staged .
 ## 参考
 
 - <https://git-scm.com/docs> Git - Reference
-- <https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A> 【第1864期】手撕Git，告别盲目记忆
+- <https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A> 【第1864期】手撕Git，告别盲目记忆
