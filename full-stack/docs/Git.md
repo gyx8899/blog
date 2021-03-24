@@ -882,7 +882,7 @@ git restore --staged .
 
 - npm install error: node-sass 3.13.1
 
-> 参考 https://blog.csdn.net/y_k_y/article/details/86535268 文章中最后的方案，即 https://github.com/pnp/sp-dev-fx-webparts/issues/501#issuecomment-389285371 方案，以管理员权限安装 npm 包 - windows-build-tools，成功后重新 npm install, legos install。问题即可解决。
+> 参考 https://blog.csdn.net/y_k_y/article/details/86535268 文章中最后的方案，即 https://github.com/pnp/sp-dev-fx-webparts/issues/501#issuecomment-389285371 方案，以管理员权限安装 npm 包 - windows-build-tools，成功后重新 npm install。问题即可解决。
 > 
 > 示例执行的命令：
 ```shell
