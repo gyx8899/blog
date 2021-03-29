@@ -227,14 +227,14 @@ module.exports = {
                     "title": "React Hook - 速览"
                 },
                 "ReactLifeCycleToHooks1.md": {
-                    "date": "2020年9月2日",
+                    "date": "2021年3月29日",
                     "path": "full-stack/react/ReactLifeCycleToHooks1.md",
-                    "title": "React-生命周期方法快速转 Hooks（1）"
+                    "title": "React-生命周期方法转 Hooks-1"
                 },
                 "ReactLifeCycleToHooks2.md": {
-                    "date": "2020年9月2日",
+                    "date": "2021年3月29日",
                     "path": "full-stack/react/ReactLifeCycleToHooks2.md",
-                    "title": "React: 生命周期方法快速转 Hooks（2）"
+                    "title": "React: 生命周期方法转 Hooks-2"
                 },
                 "Router.md": {
                     "date": "2020年9月2日",

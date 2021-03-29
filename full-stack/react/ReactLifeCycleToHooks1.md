@@ -1,4 +1,4 @@
-# React-生命周期方法快速转 Hooks（1）
+# React-生命周期方法转 Hooks-1
 
 Tag: React, Hooks, Life cycle
 
@@ -7,7 +7,7 @@ Tag: React, Hooks, Life cycle
 
 > Function Component 不存在生命周期，所以不要把 Class Component 的生命周期概念搬过来试图对号入座。
 
-*本文仅供部分生命周期方便快速转 Hooks, 并不代表所有生命周期方法都可以使用 Hooks 改写, 还需要根据具体使用场景分析。* 
+*本文仅供部分生命周期方便快速转 Hooks, 并不代表所有生命周期方法都可以使用 Hooks 改写, 还需要根据具体使用场景分析。*
 
 ## 生命周期图
 
@@ -24,6 +24,7 @@ Tag: React, Hooks, Life cycle
 ### componentDidMount
 
 难易程度：*
+
 ```jsx harmony
 import React from 'react';
 
@@ -36,6 +37,7 @@ class Component extends React.Component {
   }
 }
 ```
+
 ```jsx harmony
 import React, {useEffect} from 'react';
 
@@ -50,6 +52,7 @@ function Component() {
 ### componentDidUpdate
 
 难易程度：***
+
 ```jsx harmony
 import React from 'react';
 
@@ -59,6 +62,7 @@ class Component extends React.Component {
   }
 }
 ```
+
 ```jsx harmony
 import React, {useEffect, useState} from 'react';
 
@@ -77,6 +81,7 @@ function Component() {
 ### componentWillUnmount
 
 难易程度：*
+
 ```jsx harmony
 import React from 'react';
 
@@ -86,6 +91,7 @@ class Component extends React.Component {
   }
 }
 ```
+
 ```jsx harmony
 import React, {useEffect} from 'react';
 
@@ -104,5 +110,6 @@ function Component() {
 [![Edit hooks-lifecycle](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/hook-lifecycle-pwbrk?fontsize=14&hidenavigation=1&theme=dark)
 
 ## 结束语
+
 以上生命周期方法可以直接套用对应的 hooks 示例，其他生命周期方法会在（2）中继续整理。
 （本文意在巩固自己对 Hooks 理解，同时也为有需要者提供直接而有效的快速转换示例）

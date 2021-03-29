@@ -71,8 +71,8 @@ React 相关知识总结
 
 * [React: 总结整理](/full-stack/react/React.md)
 * [React Hook - 速览](/full-stack/react/ReactHook.md)
-* [React-生命周期方法快速转 Hooks（1）](/full-stack/react/ReactLifeCycleToHooks1.md)
-* [React: 生命周期方法快速转 Hooks（2）](/full-stack/react/ReactLifeCycleToHooks2.md)
+* [React-生命周期方法转 Hooks-1](/full-stack/react/ReactLifeCycleToHooks1.md)
+* [React: 生命周期方法转 Hooks-2](/full-stack/react/ReactLifeCycleToHooks2.md)
 * [Redux](/full-stack/react/Redux.md)
 * [React router](/full-stack/react/Router.md)
 * [useEffect](/full-stack/react/useEffect.md)
