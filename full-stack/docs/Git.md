@@ -14,6 +14,31 @@ cd demo
 git init
 ```
 
+```shell
+# 1. global user
+git config --global user.name "xxxx"
+git config --global user.email "xxxxx@xxxx.com"
+# 2. create new repo
+# 2.1 在命令行上创建一个新的存储库
+git clone https://xxxxx.git
+cd [project-name]
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+# 2.2 从命令行推送现有空的存储库
+cd existing_folder
+git init
+git remote add origin https://xxxxxx.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+# 2.3 命令行推送已有存储库
+cd existing_repo
+git remote set-url origin https://xxxxx.git
+git push --all https://xxxx.git
+```
+
 #### 克隆项目基本操作
 
 ```shell
