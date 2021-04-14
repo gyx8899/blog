@@ -613,6 +613,24 @@ git subtree split --prefix=<prefix> [OPTIONS] [<commit>]
 git subtree add --prefix=[relativePath] [repoUrl] [master/main] // --squash
 ```
 
+#### 迁移仓库
+
+- 在新的 Git 仓库上新建项目xxx;
+- 单独克隆一下旧仓库地址，包含所有提交记录
+```shell
+git clone --bare xxx.git
+```
+- 推送到新的仓库地址
+```shell
+git push --mirror xxx.git
+```
+- 切换旧项目的 remote url
+```shell
+git branch -r
+git remote -v
+git remote set-url origin xxx.git
+```
+
 ### Questions: 常见问题
 
 - SSL_read: SSL_ERROR_SYSCALL, errno 10054
