@@ -122,14 +122,14 @@ function generateReadme(_mdConfig, _readMeConfig) {
                 title = isConfigStr ? _config : _config.title;
             content += `\n${Array(level).fill("#").join("")} ${
                 key.substring(0, 1).toUpperCase() + key.substring(1)
-            }\n${title || ""}\n\n`;
+            }\n\n${title || ""}\n\n`;
             if (!isConfigStr) {
                 if (_config.desc) {
                     content += `*${_config.desc}*\n`;
                 }
                 if (_config.list && _config.list.length) {
                     _config.list.forEach((item) => {
-                        content += `\n> ${item}\n> `;
+                        content += `\n> ${item}\n>`;
                     });
                     content += "\n";
                 }
