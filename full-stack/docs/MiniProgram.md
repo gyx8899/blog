@@ -1,4 +1,5 @@
 # 小程序
+
 采用了 Hybird - 混合的架构模式
 
 ## 小程序的双线程
@@ -20,5 +21,4 @@
     |型号|W 像素|W / 750|750 / W|
     |iPhone5|320x2=640|1rpx = 0.42px|1px = 2rpx|
     |iPhone6|375x2=750|1rpx = 0.5px|1px = 2rpx|
-    |iPhone6 Plus|540x2=1080|1rpx = 0.552px|	1px = 1.81rpx|
-
+    |iPhone6 Plus|540x2=1080|1rpx = 0.552px|1px = 1.81rpx|

@@ -1,17 +1,19 @@
 
 # Blog
+
 个人成长博客
 
 *（写作）起点低不可怕，坚持下来才可怕！*
 
 > 输出（写作、教导）是最好的成长;
-> 
+>
 > 独立并结构化的思考；
-> 
+>
 > 积累，是为了更好的爆发；
-> 
+>
 
 ## Daily-life
+
 日常工作中的随感
 
 - [关于简历](/daily-life/AboutResume.md): <sub><sup>(2020年8月29日)</sup></sub>
@@ -27,10 +29,12 @@
 - [工作心得](/daily-life/WorkExperience.md): <sub><sup>(2021年1月28日)</sup></sub>
 
 ## Full-stack
+
 全栈知识总结
 
 
 ### Docs
+
 个人知识文档
 
 - [Bash: 入门重点](/full-stack/docs/Bash.md): <sub><sup>(2021年1月27日)</sup></sub>
@@ -46,7 +50,7 @@
 - [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md): <sub><sup>(2021年1月6日)</sup></sub>
 - [IntelliJ IDEA](/full-stack/docs/IntelliJ-IDEA.md): <sub><sup>(2020年9月2日)</sup></sub>
 - [Jest learning manual](/full-stack/docs/Jest.md): <sub><sup>(2020年9月4日)</sup></sub>
-- [小程序](/full-stack/docs/MiniProgram.md): <sub><sup>(2021年2月27日)</sup></sub>
+- [小程序](/full-stack/docs/MiniProgram.md): <sub><sup>(2021年4月21日)</sup></sub>
 - [NPM and Plugin Guide](/full-stack/docs/NPM.md): <sub><sup>(2021年4月7日)</sup></sub>
 - [渐进式 Web 应用（PWA）](/full-stack/docs/PWA.md): <sub><sup>(2021年2月25日)</sup></sub>
 - [Regexp](/full-stack/docs/Regexp.md): <sub><sup>(2021年2月23日)</sup></sub>
@@ -66,12 +70,14 @@
 - [Windows 之路遇精彩](/full-stack/docs/Windows.md): <sub><sup>(2021年2月2日)</sup></sub>
 
 ### Project
+
 通用项目文档
 
 - [README 模板：Project Name](/full-stack/project/ReadMeTemplatePackage.md): <sub><sup>(2020年9月4日)</sup></sub>
 - [借鉴-项目规范](/full-stack/project/Specification.md): <sub><sup>(2021年2月25日)</sup></sub>
 
 ### React
+
 React 相关知识总结
 
 - [React: 总结整理](/full-stack/react/React.md): <sub><sup>(2020年9月4日)</sup></sub>
@@ -83,6 +89,7 @@ React 相关知识总结
 - [useEffect](/full-stack/react/useEffect.md): <sub><sup>(2020年9月2日)</sup></sub>
 
 ### Share
+
 总结分享发布
 
 - [3步自动同步你的 Github 仓库到 Gitee 仓库](/full-stack/share/SyncGithubToGitee.md): <sub><sup>(2020年11月17日)</sup></sub>
@@ -90,9 +97,10 @@ React 相关知识总结
 - [轻松使用WebWorker，解放耗时较大的算法代码](/full-stack/share/UsingWebworker.md): <sub><sup>(2020年11月17日)</sup></sub>
 
 ## Office
+
 Office 工具技巧
 
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(2021年2月24日)</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2021年4月7日
+最后更新于2021年4月21日
