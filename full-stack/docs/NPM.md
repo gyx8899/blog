@@ -166,6 +166,13 @@ npm config get prefix
 C:\Users\xxxx\AppData\Roaming\npm
 ```
 
+- 场景示例
+
+```shell
+# script 参数
+npm build --param1 123
+```
+
 ## 问题列表
 
 - npm ERR! Unexpected end of JSON input while parsing near '....0.0","inherits":"^2.'
