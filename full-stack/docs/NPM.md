@@ -161,6 +161,9 @@ npm outdate
 #intersection-observer       0.11.0   0.11.0   0.12.0  xx
 #lodash                     4.17.19  4.17.20  4.17.20  xx
 
+# 查看 npm 安装路径
+npm config get prefix
+C:\Users\xxxx\AppData\Roaming\npm
 ```
 
 ## 问题列表
@@ -233,4 +236,4 @@ npm_mirror: https://npm.taobao.org/mirrors/npm/
 
 ## 参考
 
-- [npm-package.json | npm Documentation](https://docs.npmjs.com/files/package.json.html)
+- [npm-package.json | npm Documentation](https://docs.npmjs.com/files/package.json.html)
