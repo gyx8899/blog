@@ -266,7 +266,7 @@ module.exports = {
             },
             "share": {
                 "SyncGithubToGitee.md": {
-                    "date": "2020年11月17日",
+                    "date": "2021年5月5日",
                     "path": "full-stack/share/SyncGithubToGitee.md",
                     "title": "3步自动同步你的 Github 仓库到 Gitee 仓库"
                 },
@@ -279,6 +279,11 @@ module.exports = {
                     "date": "2020年11月17日",
                     "path": "full-stack/share/UsingWebworker.md",
                     "title": "轻松使用WebWorker，解放耗时较大的算法代码"
+                },
+                "StartToGit.md": {
+                    "date": "2021年5月5日",
+                    "path": "full-stack/share/StartToGit.md",
+                    "title": "StartToGit"
                 }
             }
         },

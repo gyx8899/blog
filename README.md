@@ -92,7 +92,8 @@ React 相关知识总结
 
 总结分享发布
 
-- [3步自动同步你的 Github 仓库到 Gitee 仓库](/full-stack/share/SyncGithubToGitee.md): <sub><sup>(2020年11月17日)</sup></sub>
+- [StartToGit](/full-stack/share/StartToGit.md): <sub><sup>(2021年5月5日)</sup></sub>
+- [3步自动同步你的 Github 仓库到 Gitee 仓库](/full-stack/share/SyncGithubToGitee.md): <sub><sup>(2021年5月5日)</sup></sub>
 - [软考高级“信息系统项目管理师”考试忠告](/full-stack/share/TipsForRuanKaoGaoJi.md): <sub><sup>(2020年11月17日)</sup></sub>
 - [轻松使用WebWorker，解放耗时较大的算法代码](/full-stack/share/UsingWebworker.md): <sub><sup>(2020年11月17日)</sup></sub>
 
@@ -103,4 +104,4 @@ Office 工具技巧
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(2021年2月24日)</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2021年4月21日
+最后更新于2021年5月5日

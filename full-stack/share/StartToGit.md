@@ -5,7 +5,7 @@
 1. [Download](https://git-scm.com/downloads) & Install Git
 
 1. [Download Github Desktop](https://desktop.github.com/)
-    
+
 1. [使用 SSH 连接到 GitHub](https://docs.github.com/cn/github/authenticating-to-github/connecting-to-github-with-ssh)
     - 关于 SSH
     - 检查现有的 SSH 密钥
@@ -15,8 +15,8 @@
     - 使用 SSH 密钥密码
 
 1. Clone repo 并测试提交改动，验证提交通过，无需输入账号密码
-   - modify file 
-   - git add . 
+   - modify file
+   - git add .
    - git commit -m ""
    - git push
 
@@ -83,7 +83,8 @@ Hi gyx8899! You've successfully authenticated, but GitHub does not provide shell
 ## Problems
 
 - Could not open a connection to your authentication agent.
+
 ```shell
 # Start ssh-agent fix auth issue
 ssh-agent bash
-```
+```
