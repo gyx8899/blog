@@ -140,9 +140,9 @@ module.exports = {
                     "title": "Windows 之路遇精彩"
                 },
                 "CSS.md": {
-                    "date": "2020年8月31日",
+                    "date": "2021年5月9日",
                     "path": "full-stack/docs/CSS.md",
-                    "title": "CSS"
+                    "title": "CSS 特殊用法"
                 },
                 "HTTP.md": {
                     "date": "2021年1月6日",

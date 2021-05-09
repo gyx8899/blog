@@ -30,7 +30,7 @@
 
 * [Bash: 入门重点](/full-stack/docs/Bash.md)
 * [最好的工具: 理解并使用那些耳目一新的巧工具](/full-stack/docs/BestTools.md)
-* [CSS](/full-stack/docs/CSS.md)
+* [CSS 特殊用法](/full-stack/docs/CSS.md)
 * [代码教鞭：不值得犯第二次的错](/full-stack/docs/CodeTips.md)
 * [Console](/full-stack/docs/Console.md)
 * [DOS command](/full-stack/docs/Dos.md)
