@@ -333,9 +333,23 @@ git stash -u
 git stash list
 # 清空 git stash
 git stash clear
-# 读取并恢复上次暂存的代码改动
+# 读取并恢复上次暂存的代码改动, apply 方式：只应用不删除，pop 方式：应用且删除
 git stash apply
 git stash pop
+# 给 stash 加上注释名
+git stash save "fix:xxxxx"
+# 应用指定的 stash
+git stash list
+stash@{0}: On master: fix:xxxxx
+stash@{1}: On new_branch: feat:xxxxx
+stash@{2}: On new_branch: doc:xxxxx
+git stash pop stash@\{1\}
+# 删除(丢弃）stash@{1}
+git stash drop 1
+# 查看 stash@{2}
+git stash show 2
+# 应用 stash@{2}
+git stash apply 2
 ```
 
 #### 重建已删除的 branch1
