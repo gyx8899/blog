@@ -397,8 +397,8 @@ git log --oneline
 git tag -a v1.4.2 9fceb02
 
 # 共享标签，即推送标签到远程仓库
-git push orgin v1.4.2   # 推送指定的标签
-git push orgin --tags   # 推送所有本地的标签
+git push origin v1.4.2   # 推送指定的标签
+git push origin --tags   # 推送所有本地的标签
 
 # 删除本地标签
 git tag -d v1.4.1
