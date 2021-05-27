@@ -21,4 +21,10 @@
     |型号|W 像素|W / 750|750 / W|
     |iPhone5|320x2=640|1rpx = 0.42px|1px = 2rpx|
     |iPhone6|375x2=750|1rpx = 0.5px|1px = 2rpx|
-    |iPhone6 Plus|540x2=1080|1rpx = 0.552px|1px = 1.81rpx|
+    |iPhone6 Plus|540x2=1080|1rpx = 0.552px|1px = 1.81rpx|
+
+## 踩坑记录
+
+- 人民币货币符号显示问题：`￥` 在 Android 中显示 `￥`，但应该显示`¥`
+
+> 复制`¥`，解决此问题
