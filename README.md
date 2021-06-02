@@ -61,7 +61,7 @@
 - [专业名词](/full-stack/docs/TechTerms.md): <sub><sup>(2020年11月13日)</sup></sub>
 - [Testing](/full-stack/docs/Testing.md): <sub><sup>(2021年2月25日)</sup></sub>
 - [Tricks: 技巧黑暗料理](/full-stack/docs/Tricks.md): <sub><sup>(2020年2月18日)</sup></sub>
-- [TypeScript](/full-stack/docs/TypeScript.md): <sub><sup>(2021年2月19日)</sup></sub>
+- [TypeScript](/full-stack/docs/TypeScript.md): <sub><sup>(2021年6月3日)</sup></sub>
 - [VS Code：发挥应有的效率](/full-stack/docs/VSCode.md): <sub><sup>(2021年3月16日)</sup></sub>
 - [Vue: 点滴都是赞](/full-stack/docs/Vue.md): <sub><sup>(2020年2月18日)</sup></sub>
 - [Web API](/full-stack/docs/WebAPI.md): <sub><sup>(2021年3月8日)</sup></sub>
@@ -104,4 +104,4 @@ Office 工具技巧
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(2021年2月24日)</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2021年5月9日
+最后更新于2021年6月3日
