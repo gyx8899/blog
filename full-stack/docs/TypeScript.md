@@ -149,7 +149,10 @@ let m: myType;
 ## 接口
 
 ```typescript jsx
-
+interface Person {
+  name: string
+  age?: string
+}
 ```
 
 ## 泛型
@@ -168,4 +171,17 @@ function fn2<T, K> (a: T, b: K): T {
 }
 fn2<string, number>('hello', 123);
 
-```
+```
+
+## 技巧点
+
+- 在构造函数的参数上使用public等同于创建了同名的成员变量
+
+```typescript jsx
+class Student {
+  fullName: string;
+  constructor(public firstName, public middleName, public lastName) {
+    this.fullName = `${firstName} ${middleName} ${lastName}`;
+  }
+}
+```
