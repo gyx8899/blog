@@ -217,7 +217,7 @@ module.exports = {
             },
             "react": {
                 "React.md": {
-                    "date": "2020年9月4日",
+                    "date": "2021年6月8日",
                     "path": "full-stack/react/React.md",
                     "title": "React: 总结整理"
                 },
@@ -237,17 +237,17 @@ module.exports = {
                     "title": "React: 生命周期方法转 Hooks-2"
                 },
                 "Router.md": {
-                    "date": "2020年9月2日",
+                    "date": "2021年6月8日",
                     "path": "full-stack/react/Router.md",
                     "title": "React router"
                 },
                 "Redux.md": {
-                    "date": "2020年9月2日",
+                    "date": "2021年6月8日",
                     "path": "full-stack/react/Redux.md",
                     "title": "Redux"
                 },
                 "useEffect.md": {
-                    "date": "2020年9月2日",
+                    "date": "2021年6月8日",
                     "path": "full-stack/react/useEffect.md",
                     "title": "useEffect"
                 }

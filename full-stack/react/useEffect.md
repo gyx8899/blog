@@ -2,7 +2,7 @@
 
 ## 常用示例
 
-##### 在 `useEffect` 内部使用异步 Function
+### 在 `useEffect` 内部使用异步 Function
 
 - 不用改写 `fetchData` 为 `useCallback`；
 - 当副作用无法在 `return` 中消除的时候，如下异步请求（回调）中调用声明周期的方法 `setState`，则需要判断 `isMounted` 的值后再进行执行;
@@ -28,7 +28,7 @@ useEffect(() => {
 }, [id]);
 ```
 
-##### 在 `useEffect` 中使用 `setInterval/setTimeout`, `clearInterval/clearTimeout`，无需将 id 转换为 `useState`;
+### 在 `useEffect` 中使用 `setInterval/setTimeout`, `clearInterval/clearTimeout`，无需将 id 转换为 `useState`
 
 ```javascript
 function Counter() {
@@ -45,7 +45,7 @@ function Counter() {
 }
 ```
 
-##### 使用 `useReducer` 解救 `useEffect` 无法去除的依赖
+### 使用 `useReducer` 解救 `useEffect` 无法去除的依赖
 
 1. 以 setCount 为例：
 
@@ -58,7 +58,7 @@ useEffect(() => {
 }, [step]);
 ```
 
-2. 将 setCount 转换成 reducer 事件 action ：
+1. 将 setCount 转换成 reducer 事件 action ：
 
 ```javascript
 const initialState = () => ({
@@ -99,9 +99,10 @@ useEffect(() => {
 return (<div><span>{count}</span><span>{step}</span></div>);
 ```
 
-##### 如何去除 ESLint 提示的组件内常量依赖
+### 如何去除 ESLint 提示的组件内常量依赖
 
 示例：
+
 ```javascript
 function Video() {
     const {PLAYLIST_UPDATED} = EVENT_TYPES;
@@ -118,6 +119,7 @@ function Video() {
 }
 // Line 166:5:  React Hook useEffect has a missing dependency: 'PLAYLIST_UPDATED'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
 ```
+
 方法：将对应常量移出组件内，放置在组件外部或单独的配置文件中。
 
 ```javascript
