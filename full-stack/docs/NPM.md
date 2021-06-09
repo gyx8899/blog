@@ -219,6 +219,16 @@ npm config rm proxy
 npm config rm https-proxy
 ```
 
+- TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+
+> throw new ERR_INVALID_ARG_TYPE(name, 'string', value);
+
+```shell script
+# (C:\Users\xxx\AppData\Roaming\npm\node_modules\nrm\cli.js:17:20)
+# const NRMRC = path.join(process.env.HOME, '.nrmrc');
+const NRMRC = path.join(process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME'], '.nrmrc');
+```
+
 ## NVM: Node version manager
 
 ### 镜像设置
