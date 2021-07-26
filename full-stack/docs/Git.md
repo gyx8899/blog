@@ -474,6 +474,30 @@ git remote -v
 git remote rm upstream
 ```
 
+#### git config
+
+```shell
+# 查看
+git config list
+# registry
+git config set registry http://registry.npmjs.org
+git config set registry https://registry.npm.taobao.org
+git config get registry
+git config delete registry
+## 示例：指定安装源
+npm i daybyday/yx-node --registry=https://registry.npm.taobao.org
+## 或者使用 nrm 管理 registry：https://www.npmjs.com/package/nrm
+npm i -g nrm
+nrm ls
+  npm -------- https://registry.npmjs.org/
+  yarn ------- https://registry.yarnpkg.com/
+  cnpm ------- http://r.cnpmjs.org/
+  taobao ----- https://registry.npm.taobao.org/
+  nj --------- https://registry.nodejitsu.com/
+  npmMirror -- https://skimdb.npmjs.com/registry/
+  edunpm ----- http://registry.enpmjs.org/
+```
+
 ### Learn Git Branching - 速查
 
 #### Git Remotes
@@ -956,6 +980,35 @@ npm install --global --production windows-build-tools
 
 ```shell
 npm i -g windows-build-tools --vs2017
+```
+
+- npm install nrm error: internal/validators.js:124 throw new ERR_INVALID_ARG_TYPE(name, ‘string’, value);
+
+```shell
+internal/validators.js:124
+    throw new ERR_INVALID_ARG_TYPE(name, 'string', value);
+    ^
+
+[TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+  at validateString (internal/validators.js:124:11)
+  at Object.join (path.js:375:7)
+  at Object.<anonymous> (C:\Users\xxxx\AppData\Roaming\npm\node_modules\nrm\cli.js:17:20)
+  at Module._compile (internal/modules/cjs/loader.js:1063:30)
+  at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+  at Module.load (internal/modules/cjs/loader.js:928:32)
+  at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+  at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+  at internal/main/run_main_module.js:17:47
+] {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+```
+
+```shell
+# C:\Users\xxxx\AppData\Roaming\npm\node_modules\nrm\cli.js:17:20
+# 修改 cli.js 第17行
+## const NRMRC = path.join(process.env.HOME, '.nrmrc');
+const NRMRC = path.join(process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME'], '.nrmrc');
 ```
 
 ## 练习
