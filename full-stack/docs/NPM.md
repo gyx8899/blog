@@ -229,6 +229,21 @@ npm config rm https-proxy
 const NRMRC = path.join(process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME'], '.nrmrc');
 ```
 
+- npm i -g whistle 后 w2 start 的 error
+
+```shell script
+# 无法加载文件 C:\Users\xxx\AppData\Roaming\npm\w2.ps1，因为在此系统上禁止运行脚本。有关详细信息，请参阅 https:/go.
+# microsoft.com/fwlink/?LinkID=135170 中的 about_Execution_Policies。
+# 所在位置 行:1 字符: 1
+```
+
+```shell
+  # 1. 以理员身份打开 powershell
+  # 2. 输入 `set-ExecutionPolicy RemoteSigned`
+  # 3. 输入 Y
+  # 4. 重试 w2 start
+```
+
 ## NVM: Node version manager
 
 ### 镜像设置
