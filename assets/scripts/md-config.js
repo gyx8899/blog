@@ -135,7 +135,7 @@ module.exports = {
                     "title": "Regexp"
                 },
                 "Windows.md": {
-                    "date": "2021年2月2日",
+                    "date": "2021年7月26日",
                     "path": "full-stack/docs/Windows.md",
                     "title": "Windows 之路遇精彩"
                 },

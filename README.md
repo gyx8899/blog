@@ -67,7 +67,7 @@
 - [Web API](/full-stack/docs/WebAPI.md): <sub><sup>(2021年3月8日)</sup></sub>
 - [站点：那些可以经常逛逛的开发工具网站](/full-stack/docs/WebSite.md): <sub><sup>(2020年9月27日)</sup></sub>
 - [Webpack](/full-stack/docs/Webpack.md): <sub><sup>(2021年1月8日)</sup></sub>
-- [Windows 之路遇精彩](/full-stack/docs/Windows.md): <sub><sup>(2021年2月2日)</sup></sub>
+- [Windows 之路遇精彩](/full-stack/docs/Windows.md): <sub><sup>(2021年7月26日)</sup></sub>
 
 ### Project
 
@@ -104,4 +104,4 @@ Office 工具技巧
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(2021年2月24日)</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2021年6月8日
+最后更新于2021年7月26日
