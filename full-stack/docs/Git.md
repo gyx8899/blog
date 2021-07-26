@@ -631,14 +631,19 @@ git subtree add --prefix=[relativePath] [repoUrl] [master/main] // --squash
 
 - 在新的 Git 仓库上新建项目xxx;
 - 单独克隆一下旧仓库地址，包含所有提交记录
+
 ```shell
 git clone --bare xxx.git
 ```
+
 - 推送到新的仓库地址
+
 ```shell
 git push --mirror xxx.git
 ```
+
 - 切换旧项目的 remote url
+
 ```shell
 git branch -r
 git remote -v
@@ -650,7 +655,7 @@ git remote set-url origin xxx.git
 - SSL_read: SSL_ERROR_SYSCALL, errno 10054
 
 ```shell
-YX-JS-ToolKit\docs>git push
+YX-JS-ToolKit\\docs>git push
 fatal: unable to access 'https://github.com/gyx8899/YX-JS-ToolKit.git/': Op
 enSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054
 ```
@@ -670,15 +675,15 @@ git clone https://github.com/gyx8899/yx-js.git
 # fatal: unable to access 'https://github.com/gyx8899/yx-js.git/': OpenSSL SSL_read: Connection was reset, errno 10054
 ```
 
-    Solutions:
+Solutions:
 
-    - Couldn't connect Github on your network, need use VPN;
-    - Update DNS cache;
-        - Mac:
-            sudo killall -HUP mDNSResponder
-            sudo dscacheutil -flushcache
-        - Windows:
-            ipconfig /flushdns
+- Couldn't connect Github on your network, need use VPN;
+- Update DNS cache;
+  - Mac:
+        sudo killall -HUP mDNSResponder
+        sudo dscacheutil -flushcache
+  - Windows:
+        ipconfig /flushdns
 
 - remote: HTTP Basic: Access denied
 fatal: Authentication failed for 'Your remove url'
@@ -939,13 +944,16 @@ git restore --staged .
 
 - npm install error: node-sass 3.13.1
 
-> 参考 https://blog.csdn.net/y_k_y/article/details/86535268 文章中最后的方案，即 https://github.com/pnp/sp-dev-fx-webparts/issues/501#issuecomment-389285371 方案，以管理员权限安装 npm 包 - windows-build-tools，成功后重新 npm install。问题即可解决。
-> 
+> 参考 <https://blog.csdn.net/y_k_y/article/details/86535268> 文章中最后的方案，即 <https://github.com/pnp/sp-dev-fx-webparts/issues/501#issuecomment-389285371> 方案，以管理员权限安装 npm 包 - windows-build-tools，成功后重新 npm install。问题即可解决。
+>
 > 示例执行的命令：
+
 ```shell
 npm install --global --production windows-build-tools
 ```
+
 > 在 VS code 的 terminal 中执行（测试成功）
+
 ```shell
 npm i -g windows-build-tools --vs2017
 ```
