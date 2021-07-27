@@ -8,4 +8,4 @@ before_install:
     - npm install
 
 scripts:
-    - npm run gh-pages
+    # - npm run gh-pages
