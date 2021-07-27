@@ -205,7 +205,7 @@ module.exports = {
                     "title": "渐进式 Web 应用（PWA）"
                 },
                 "MiniProgram.md": {
-                    "date": "2021年4月21日",
+                    "date": "2021年7月27日",
                     "path": "full-stack/docs/MiniProgram.md",
                     "title": "小程序"
                 },
