@@ -8,4 +8,4 @@ before_install:
     - npm install
 
 scripts:
-    - npm run gitbook-build
+    - npm run gh-pages
