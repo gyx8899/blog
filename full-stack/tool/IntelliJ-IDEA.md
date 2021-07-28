@@ -2,6 +2,8 @@
 
 ## 常见问题分类
 
+### 重点
+
 #### 报错问题
 
 - "Invalid authentication data. Connection reset" When trying to log in to github within IntelliJ IDEA
@@ -18,6 +20,4 @@
 > 2. Press Enter (because weirdly it won't let me click on **"New Module"**);
 > 3. In the window that pops up, click on the "..." next button which takes you to the Content root. Find your root folder and select it;
 > 4. Click the "ok" button;
-> 5. Ignore any warning that says the name is already in use;
-
-
+> 5. Ignore any warning that says the name is already in use;

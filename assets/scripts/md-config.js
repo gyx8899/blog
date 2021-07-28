@@ -270,6 +270,23 @@ module.exports = {
                     "path": "full-stack/share/StartToGit.md",
                     "title": "StartToGit"
                 }
+            },
+            "tool": {
+                "VSCode.md": {
+                    "date": "2021年7月28日",
+                    "path": "full-stack/tool/VSCode.md",
+                    "title": "VS Code：发挥应有的效率"
+                },
+                "IntelliJ-IDEA.md": {
+                    "date": "2021年7月28日",
+                    "path": "full-stack/tool/IntelliJ-IDEA.md",
+                    "title": "IntelliJ IDEA"
+                },
+                "BestTools.md": {
+                    "date": "2021年7月28日",
+                    "path": "full-stack/tool/BestTools.md",
+                    "title": "最好的工具: 理解并使用那些耳目一新的巧工具"
+                }
             }
         },
         "office": {

@@ -20,3 +20,5 @@
 2. 省掉 Network 中查找对应 WiFi名，并手动输入密码；
 
 ## 参考链接
+
+- [WiFi Card](https://wificard.bdw.to/)

@@ -14,5 +14,6 @@ module.exports = {
 	react: 'React 相关知识总结',
 	share: '总结分享发布',
 	"daily-life": '日常工作中的随感',
-	office: 'Office 工具技巧'
+	office: 'Office 工具技巧',
+	tool: '工具篇'
 };

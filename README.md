@@ -94,6 +94,14 @@ React 相关知识总结
 - [软考高级“信息系统项目管理师”考试忠告](/full-stack/share/TipsForRuanKaoGaoJi.md): <sub><sup>(2020年11月17日)</sup></sub>
 - [轻松使用WebWorker，解放耗时较大的算法代码](/full-stack/share/UsingWebworker.md): <sub><sup>(2020年11月17日)</sup></sub>
 
+### Tool
+
+工具篇
+
+- [最好的工具: 理解并使用那些耳目一新的巧工具](/full-stack/tool/BestTools.md): <sub><sup>(2021年7月28日)</sup></sub>
+- [IntelliJ IDEA](/full-stack/tool/IntelliJ-IDEA.md): <sub><sup>(2021年7月28日)</sup></sub>
+- [VS Code：发挥应有的效率](/full-stack/tool/VSCode.md): <sub><sup>(2021年7月28日)</sup></sub>
+
 ## Office
 
 Office 工具技巧

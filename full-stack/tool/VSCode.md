@@ -2,6 +2,10 @@
 
 总结的过程，也是是输出的的过程，也是学习的过程。
 
+## 查看快捷键
+
+[keyboard-shortcuts-windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+
 ## 快捷键专列
 
 | 功能            | 快捷键（windows）         | 快捷键（Mac）               |
