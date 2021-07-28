@@ -74,11 +74,6 @@ module.exports = {
                     "path": "full-stack/docs/Git.md",
                     "title": "Git 命令集"
                 },
-                "IntelliJ-IDEA.md": {
-                    "date": "2020年9月2日",
-                    "path": "full-stack/docs/IntelliJ-IDEA.md",
-                    "title": "IntelliJ IDEA"
-                },
                 "Jest.md": {
                     "date": "2020年9月4日",
                     "path": "full-stack/docs/Jest.md",
@@ -179,18 +174,13 @@ module.exports = {
                     "path": "full-stack/docs/WebSite.md",
                     "title": "站点：那些可以经常逛逛的开发工具网站"
                 },
-                "BestTools.md": {
-                    "date": "2020年10月1日",
-                    "path": "full-stack/docs/BestTools.md",
-                    "title": "最好的工具: 理解并使用那些耳目一新的巧工具"
-                },
                 "GitHubAction.md": {
                     "date": "2020年11月19日",
                     "path": "full-stack/docs/GitHubAction.md",
                     "title": "Github Action"
                 },
                 "TechTerms.md": {
-                    "date": "2020年11月13日",
+                    "date": "2021年7月28日",
                     "path": "full-stack/docs/TechTerms.md",
                     "title": "专业名词"
                 },
@@ -208,11 +198,6 @@ module.exports = {
                     "date": "2021年7月27日",
                     "path": "full-stack/docs/MiniProgram.md",
                     "title": "小程序"
-                },
-                "VSCode.md": {
-                    "date": "2021年3月16日",
-                    "path": "full-stack/docs/VSCode.md",
-                    "title": "VS Code：发挥应有的效率"
                 }
             },
             "react": {

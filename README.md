@@ -38,7 +38,6 @@
 个人知识文档
 
 - [Bash: 入门重点](/full-stack/docs/Bash.md): <sub><sup>(2021年1月27日)</sup></sub>
-- [最好的工具: 理解并使用那些耳目一新的巧工具](/full-stack/docs/BestTools.md): <sub><sup>(2020年10月1日)</sup></sub>
 - [CSS 特殊用法](/full-stack/docs/CSS.md): <sub><sup>(2021年5月9日)</sup></sub>
 - [代码教鞭：不值得犯第二次的错](/full-stack/docs/CodeTips.md): <sub><sup>(2020年9月28日)</sup></sub>
 - [Console](/full-stack/docs/Console.md): <sub><sup>(2020年11月2日)</sup></sub>
@@ -48,7 +47,6 @@
 - [GitBook](/full-stack/docs/GitBook.md): <sub><sup>(2020年9月4日)</sup></sub>
 - [Github Action](/full-stack/docs/GitHubAction.md): <sub><sup>(2020年11月19日)</sup></sub>
 - [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md): <sub><sup>(2021年1月6日)</sup></sub>
-- [IntelliJ IDEA](/full-stack/docs/IntelliJ-IDEA.md): <sub><sup>(2020年9月2日)</sup></sub>
 - [Jest learning manual](/full-stack/docs/Jest.md): <sub><sup>(2020年9月4日)</sup></sub>
 - [小程序](/full-stack/docs/MiniProgram.md): <sub><sup>(2021年7月27日)</sup></sub>
 - [NPM and Plugin Guide](/full-stack/docs/NPM.md): <sub><sup>(2021年4月7日)</sup></sub>
@@ -58,11 +56,10 @@
 - [SEO: 搜索优化学习](/full-stack/docs/SEO.md): <sub><sup>(2020年4月17日)</sup></sub>
 - [SQL](/full-stack/docs/SQL.md): <sub><sup>(2020年11月13日)</sup></sub>
 - [Snippet: 那些有趣的代码片段](/full-stack/docs/Snippet.md): <sub><sup>(2020年2月18日)</sup></sub>
-- [专业名词](/full-stack/docs/TechTerms.md): <sub><sup>(2020年11月13日)</sup></sub>
+- [专业名词](/full-stack/docs/TechTerms.md): <sub><sup>(2021年7月28日)</sup></sub>
 - [Testing](/full-stack/docs/Testing.md): <sub><sup>(2021年2月25日)</sup></sub>
 - [Tricks: 技巧黑暗料理](/full-stack/docs/Tricks.md): <sub><sup>(2020年2月18日)</sup></sub>
 - [TypeScript](/full-stack/docs/TypeScript.md): <sub><sup>(2021年6月3日)</sup></sub>
-- [VS Code：发挥应有的效率](/full-stack/docs/VSCode.md): <sub><sup>(2021年3月16日)</sup></sub>
 - [Vue: 点滴都是赞](/full-stack/docs/Vue.md): <sub><sup>(2020年2月18日)</sup></sub>
 - [Web API](/full-stack/docs/WebAPI.md): <sub><sup>(2021年3月8日)</sup></sub>
 - [站点：那些可以经常逛逛的开发工具网站](/full-stack/docs/WebSite.md): <sub><sup>(2020年9月27日)</sup></sub>
@@ -104,4 +101,4 @@ Office 工具技巧
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(2021年2月24日)</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2021年7月27日
+最后更新于2021年7月28日

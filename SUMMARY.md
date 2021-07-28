@@ -29,7 +29,6 @@
 个人知识文档
 
 * [Bash: 入门重点](/full-stack/docs/Bash.md)
-* [最好的工具: 理解并使用那些耳目一新的巧工具](/full-stack/docs/BestTools.md)
 * [CSS 特殊用法](/full-stack/docs/CSS.md)
 * [代码教鞭：不值得犯第二次的错](/full-stack/docs/CodeTips.md)
 * [Console](/full-stack/docs/Console.md)
@@ -39,7 +38,6 @@
 * [GitBook](/full-stack/docs/GitBook.md)
 * [Github Action](/full-stack/docs/GitHubAction.md)
 * [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md)
-* [IntelliJ IDEA](/full-stack/docs/IntelliJ-IDEA.md)
 * [Jest learning manual](/full-stack/docs/Jest.md)
 * [小程序](/full-stack/docs/MiniProgram.md)
 * [NPM and Plugin Guide](/full-stack/docs/NPM.md)
@@ -53,7 +51,6 @@
 * [Testing](/full-stack/docs/Testing.md)
 * [Tricks: 技巧黑暗料理](/full-stack/docs/Tricks.md)
 * [TypeScript](/full-stack/docs/TypeScript.md)
-* [VS Code：发挥应有的效率](/full-stack/docs/VSCode.md)
 * [Vue: 点滴都是赞](/full-stack/docs/Vue.md)
 * [Web API](/full-stack/docs/WebAPI.md)
 * [站点：那些可以经常逛逛的开发工具网站](/full-stack/docs/WebSite.md)
