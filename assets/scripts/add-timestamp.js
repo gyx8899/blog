@@ -132,7 +132,7 @@ function generateMDFile(_mdConfig, _readMeConfig, fileConfig) {
             const _config = _readMeConfig[key],
                 isConfigStr = typeof _config === "string",
                 title = isConfigStr ? _config : _config.title;
-            content += `${Array(level).fill("#").join("")} ${
+            content += `\n${Array(level).fill("#").join("")} ${
                 key.substring(0, 1).toUpperCase() + key.substring(1)
             }\n\n${title || ""}\n\n`;
             if (!isConfigStr) {
