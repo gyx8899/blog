@@ -84,16 +84,6 @@ module.exports = {
                     "path": "full-stack/docs/NPM.md",
                     "title": "NPM and Plugin Guide"
                 },
-                "Snippet.md": {
-                    "date": "2020年2月18日",
-                    "path": "full-stack/docs/Snippet.md",
-                    "title": "Snippet: 那些有趣的代码片段"
-                },
-                "Tricks.md": {
-                    "date": "2020年2月18日",
-                    "path": "full-stack/docs/Tricks.md",
-                    "title": "Tricks: 技巧黑暗料理"
-                },
                 "Vue.md": {
                     "date": "2020年2月18日",
                     "path": "full-stack/docs/Vue.md",
@@ -163,11 +153,6 @@ module.exports = {
                     "date": "2020年9月9日",
                     "path": "full-stack/docs/Emoji.md",
                     "title": "Emoji: 供日常学习、查询及使用"
-                },
-                "CodeTips.md": {
-                    "date": "2020年9月28日",
-                    "path": "full-stack/docs/CodeTips.md",
-                    "title": "代码教鞭：不值得犯第二次的错"
                 },
                 "WebSite.md": {
                     "date": "2020年9月27日",
