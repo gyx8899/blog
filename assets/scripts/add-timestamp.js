@@ -9,11 +9,23 @@ const {
 } = require("@daybyday/yx-node");
 
 const readMeTimestamp = `yyyy年MM月dd日`;
-const readmeFilePath = "./README.md";
-const summaryFilePath = "./SUMMARY.md";
-// const summaryFilePath = './SUMMARY.md';
 const defaultTimestamp = `最后更新于yyyy年MM月dd日`;
 const ignoredMdFilesInTree = ["README.md", "SUMMARY.md", "GLOSSORY.md"];
+const MDFile = {
+    README: {
+        path: "./README.md",
+        initContent: "",
+        contentSuffix: () =>
+            `\n${getFormatDateValue(new Date(), defaultTimestamp)}\n`,
+        leafSuffix: ": <sub><sup>(${value.date})</sup></sub>\n",
+    },
+    SUMMARY: {
+        path: "./SUMMARY.md",
+        initContent: "# Summary\n\n[Blog](README.md)\n",
+        contentSuffix: () => "",
+        leafSuffix: "\n",
+    },
+};
 
 function getFormatDateValue(date, pattern) {
     let year = date.getFullYear(),
@@ -111,8 +123,8 @@ function updateMdConfigTitle(filename, title) {
     mdConfigFile[name].title = title;
 }
 
-function generateReadme(_mdConfig, _readMeConfig) {
-    let content = "";
+function generateMDFile(_mdConfig, _readMeConfig, fileConfig) {
+    let content = fileConfig.initContent;
     const nonLeaf = function (key, level, value) {
         if (value.date) {
             leaf(key, value);
@@ -120,7 +132,7 @@ function generateReadme(_mdConfig, _readMeConfig) {
             const _config = _readMeConfig[key],
                 isConfigStr = typeof _config === "string",
                 title = isConfigStr ? _config : _config.title;
-            content += `\n${Array(level).fill("#").join("")} ${
+            content += `${Array(level).fill("#").join("")} ${
                 key.substring(0, 1).toUpperCase() + key.substring(1)
             }\n\n${title || ""}\n\n`;
             if (!isConfigStr) {
@@ -140,38 +152,12 @@ function generateReadme(_mdConfig, _readMeConfig) {
         if (ignoredMdFilesInTree.indexOf(key) === -1 && value.date) {
             content += `- [${value.title || key.split(".md")[0]}](/${encodeURI(
                 value.path
-            )}): <sub><sup>(${value.date})</sup></sub>\n`;
+            )})${fileConfig.leafSuffix}`;
         }
     };
     iterateObject(_mdConfig, 1, nonLeaf, () => {});
 
-    const currentTimestamp = getFormatDateValue(new Date(), defaultTimestamp);
-    writeDataToFile(readmeFilePath, content + `\n${currentTimestamp}\n`);
-}
-function generateSummary(_mdConfig, _readMeConfig) {
-    let content = "# Summary\n\n[Blog](README.md)\n";
-    const nonLeaf = function (key, level, value) {
-        if (value.date) {
-            leaf(key, value);
-        } else if (_readMeConfig[key]) {
-            const _config = _readMeConfig[key],
-                isConfigStr = typeof _config === "string",
-                title = isConfigStr ? _config : _config.title;
-            content += `\n## ${
-                key.substring(0, 1).toUpperCase() + key.substring(1)
-            }\n${title || ""}\n\n`;
-        }
-    };
-    const leaf = function (key, value) {
-        if (ignoredMdFilesInTree.indexOf(key) === -1 && value.date) {
-            content += `* [${value.title || key.split(".md")[0]}](/${encodeURI(
-                value.path
-            )})\n`;
-        }
-    };
-    iterateObject(_mdConfig, 1, nonLeaf, () => {});
-
-    writeDataToFile(summaryFilePath, content);
+    writeDataToFile(fileConfig.path, content + fileConfig.contentSuffix());
 }
 
 cgf(function (err, results) {
@@ -202,8 +188,8 @@ cgf(function (err, results) {
             "./assets/scripts/md-config.js",
             `module.exports = ${JSON.stringify(mdConfig, null, 4)};\n`
         );
-        // Update README.md
-        generateReadme(mdConfig, readMeConfig);
-        generateSummary(mdConfig, readMeConfig);
+        // Update README.md SUMMARY.md
+        generateMDFile(mdConfig, readMeConfig, MDFile.README);
+        generateMDFile(mdConfig, readMeConfig, MDFile.SUMMARY);
     }
 });
