@@ -1,3 +1,4 @@
+
 # Blog
 
 个人成长博客
@@ -10,6 +11,7 @@
 >
 > 积累，是为了更好的爆发；
 >
+
 ## Daily-life
 
 日常工作中的随感
@@ -25,9 +27,17 @@
 - [自我迭代](/daily-life/SelfReview.md): <sub><sup>(${value.date})</sup></sub>
 - [优秀的自我介绍很重要](/daily-life/TheImportantOfSelfIntroduction.md): <sub><sup>(${value.date})</sup></sub>
 - [工作心得](/daily-life/WorkExperience.md): <sub><sup>(${value.date})</sup></sub>
+
 ## Full-stack
 
 全栈知识总结
+
+
+### Checklist
+
+自检清单
+
+- [开发自检清单](/full-stack/checklist/Checklist.md): <sub><sup>(${value.date})</sup></sub>
 
 ### Docs
 
@@ -58,12 +68,14 @@
 - [站点：那些可以经常逛逛的开发工具网站](/full-stack/docs/WebSite.md): <sub><sup>(${value.date})</sup></sub>
 - [Webpack](/full-stack/docs/Webpack.md): <sub><sup>(${value.date})</sup></sub>
 - [Windows 之路遇精彩](/full-stack/docs/Windows.md): <sub><sup>(${value.date})</sup></sub>
+
 ### Project
 
 通用项目文档
 
 - [README 模板：Project Name](/full-stack/project/ReadMeTemplatePackage.md): <sub><sup>(${value.date})</sup></sub>
 - [借鉴-项目规范](/full-stack/project/Specification.md): <sub><sup>(${value.date})</sup></sub>
+
 ### React
 
 React 相关知识总结
@@ -75,6 +87,7 @@ React 相关知识总结
 - [Redux](/full-stack/react/Redux.md): <sub><sup>(${value.date})</sup></sub>
 - [React router](/full-stack/react/Router.md): <sub><sup>(${value.date})</sup></sub>
 - [useEffect](/full-stack/react/useEffect.md): <sub><sup>(${value.date})</sup></sub>
+
 ### Share
 
 总结分享发布
@@ -83,6 +96,7 @@ React 相关知识总结
 - [3步自动同步你的 Github 仓库到 Gitee 仓库](/full-stack/share/SyncGithubToGitee.md): <sub><sup>(${value.date})</sup></sub>
 - [软考高级“信息系统项目管理师”考试忠告](/full-stack/share/TipsForRuanKaoGaoJi.md): <sub><sup>(${value.date})</sup></sub>
 - [轻松使用WebWorker，解放耗时较大的算法代码](/full-stack/share/UsingWebworker.md): <sub><sup>(${value.date})</sup></sub>
+
 ### Tool
 
 工具篇
@@ -90,6 +104,7 @@ React 相关知识总结
 - [最好的工具: 理解并使用那些耳目一新的巧工具](/full-stack/tool/BestTools.md): <sub><sup>(${value.date})</sup></sub>
 - [IntelliJ IDEA](/full-stack/tool/IntelliJ-IDEA.md): <sub><sup>(${value.date})</sup></sub>
 - [VS Code：发挥应有的效率](/full-stack/tool/VSCode.md): <sub><sup>(${value.date})</sup></sub>
+
 ## Office
 
 Office 工具技巧

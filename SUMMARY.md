@@ -1,6 +1,7 @@
 # Summary
 
 [Blog](README.md)
+
 # Blog
 
 个人成长博客
@@ -13,6 +14,7 @@
 >
 > 积累，是为了更好的爆发；
 >
+
 ## Daily-life
 
 日常工作中的随感
@@ -28,9 +30,17 @@
 - [自我迭代](/daily-life/SelfReview.md)
 - [优秀的自我介绍很重要](/daily-life/TheImportantOfSelfIntroduction.md)
 - [工作心得](/daily-life/WorkExperience.md)
+
 ## Full-stack
 
 全栈知识总结
+
+
+### Checklist
+
+自检清单
+
+- [开发自检清单](/full-stack/checklist/Checklist.md)
 
 ### Docs
 
@@ -61,12 +71,14 @@
 - [站点：那些可以经常逛逛的开发工具网站](/full-stack/docs/WebSite.md)
 - [Webpack](/full-stack/docs/Webpack.md)
 - [Windows 之路遇精彩](/full-stack/docs/Windows.md)
+
 ### Project
 
 通用项目文档
 
 - [README 模板：Project Name](/full-stack/project/ReadMeTemplatePackage.md)
 - [借鉴-项目规范](/full-stack/project/Specification.md)
+
 ### React
 
 React 相关知识总结
@@ -78,6 +90,7 @@ React 相关知识总结
 - [Redux](/full-stack/react/Redux.md)
 - [React router](/full-stack/react/Router.md)
 - [useEffect](/full-stack/react/useEffect.md)
+
 ### Share
 
 总结分享发布
@@ -86,6 +99,7 @@ React 相关知识总结
 - [3步自动同步你的 Github 仓库到 Gitee 仓库](/full-stack/share/SyncGithubToGitee.md)
 - [软考高级“信息系统项目管理师”考试忠告](/full-stack/share/TipsForRuanKaoGaoJi.md)
 - [轻松使用WebWorker，解放耗时较大的算法代码](/full-stack/share/UsingWebworker.md)
+
 ### Tool
 
 工具篇
@@ -93,6 +107,7 @@ React 相关知识总结
 - [最好的工具: 理解并使用那些耳目一新的巧工具](/full-stack/tool/BestTools.md)
 - [IntelliJ IDEA](/full-stack/tool/IntelliJ-IDEA.md)
 - [VS Code：发挥应有的效率](/full-stack/tool/VSCode.md)
+
 ## Office
 
 Office 工具技巧

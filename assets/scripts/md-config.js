@@ -272,6 +272,13 @@ module.exports = {
                     "path": "full-stack/tool/BestTools.md",
                     "title": "最好的工具: 理解并使用那些耳目一新的巧工具"
                 }
+            },
+            "checklist": {
+                "Checklist.md": {
+                    "date": "2021年7月28日",
+                    "path": "full-stack/checklist/Checklist.md",
+                    "title": "开发自检清单"
+                }
             }
         },
         "office": {
