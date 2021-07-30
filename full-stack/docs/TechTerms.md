@@ -7,3 +7,9 @@
 - AJAX
 
 > AJAX全称为“Asynchronous JavaScript And XML”（异步JavaScript和XML），是一种创建交互式网页应用的网页开发技术。
+
+## 其他方面
+
+- CLI
+
+> Command Line Interface 命令行环境
