@@ -53,4 +53,8 @@
 
 > 高阶组件常见有两种实现方式，一种是 Props Proxy，它能够对 WrappedComponent 的 props 进行操作，提取 WrappedComponent state 以及使用其他元素来包裹 WrappedComponent。Props Proxy 作为一层代理，具有隔离的作用，因此传入 WrappedComponent 的 ref 将无法访问到其本身，需要在 Props Proxy 内完成中转
 >
-> 另一种是 Inheritance Inversion，HOC 类继承了 WrappedComponent，意味着可以访问到 WrappedComponent 的 state、props、生命周期和 render 等方法。如果在 HOC 中定义了与 WrappedComponent 同名方法，将会发生覆盖，就必须手动通过 super 进行调用了。通过完全操作 WrappedComponent 的 render 方法返回的元素树，可以真正实现渲染劫持。这种方案依然是继承的思想，对于 WrappedComponent 也有较强的侵入性
+> 另一种是 Inheritance Inversion，HOC 类继承了 WrappedComponent，意味着可以访问到 WrappedComponent 的 state、props、生命周期和 render 等方法。如果在 HOC 中定义了与 WrappedComponent 同名方法，将会发生覆盖，就必须手动通过 super 进行调用了。通过完全操作 WrappedComponent 的 render 方法返回的元素树，可以真正实现渲染劫持。这种方案依然是继承的思想，对于 WrappedComponent 也有较强的侵入性
+
+## 小点
+
+- 空元素，允许将子列表分组，而无需向 DOM 添加额外节点 `<React.Fragment></React.Fragment>` 或短语法 `<></>`

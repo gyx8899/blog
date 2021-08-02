@@ -107,6 +107,7 @@ let strLength: number = (someValue as string).length;
 ## 变量声明
 
 此处对 var, let, const 的介绍及对比省略。
+
 ```typescript jsx
 // 解构
 type C = {a: string, b?: number} // ?: 可选参数
