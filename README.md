@@ -52,6 +52,7 @@
 - [GitBook](/full-stack/docs/GitBook.md): <sub><sup>(2020年9月4日)</sup></sub>
 - [Github Action](/full-stack/docs/GitHubAction.md): <sub><sup>(2020年11月19日)</sup></sub>
 - [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md): <sub><sup>(2021年1月6日)</sup></sub>
+- [JS 精选](/full-stack/docs/JS.md): <sub><sup>(2021年8月5日)</sup></sub>
 - [Jest learning manual](/full-stack/docs/Jest.md): <sub><sup>(2020年9月4日)</sup></sub>
 - [Markdown](/full-stack/docs/Markdown.md): <sub><sup>(2021年8月5日)</sup></sub>
 - [小程序](/full-stack/docs/MiniProgram.md): <sub><sup>(2021年7月27日)</sup></sub>

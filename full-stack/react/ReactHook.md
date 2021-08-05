@@ -225,11 +225,19 @@ function reducer(state, action) {
 
 function Counter() {
   const [state, dispatch] = useReducer(reducer, initialState);
+  // React会保证dispatch在组件的声明周期内保持不变
+  // 可以从依赖中去除dispatch, setState, 和useRef包裹的值因为React会确保它们是静态的。不过你设置了它们作为依赖也没什么问题。
+  const handleDecrement = useCallback(() => {
+    dispatch({type: 'decrement'})
+  }, [])
+  const handleIncrement = useCallback(() => {
+    dispatch({type: 'increment'})
+  }, [])
   return (
     <>
       Count: {state.count}
-      <button onClick={() => dispatch({type: 'decrement'})}>-</button>
-      <button onClick={() => dispatch({type: 'increment'})}>+</button>
+      <button onClick={handleDecrement}>-</button>
+      <button onClick={handleIncrement}>+</button>
     </>
   );
 }
@@ -252,6 +260,8 @@ const memoizedCallback = useCallback(
 > 该回调函数仅在某个依赖项改变时才会更新。
 > 当你把回调函数传递给经过优化的并使用引用相等性去避免非必要渲染（例如 shouldComponentUpdate）的子组件时，它将非常有用。
 > useCallback(fn, deps) 相当于 useMemo(() => fn, deps)。
+>
+> useCallback本质上是添加了一层依赖检查。它以另一种方式解决了问题 - 我们使函数本身只在需要的时候才改变，而不是去掉对函数的依赖。
 
 ### <span id="useMemo">useMemo</span>
 
@@ -419,4 +429,9 @@ function Example({ someProp }) {
     doSomething();
   }, [someProp]); // ✅ 安全（我们的 effect 仅用到了 `someProp`）
 }
-```
+```
+
+## 参考链接
+
+- [React 官方](https://zh-hans.reactjs.org/)
+- [useEffect 完整指南](https://overreacted.io/zh-hans/a-complete-guide-to-useeffect/)

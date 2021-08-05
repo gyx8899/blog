@@ -55,6 +55,7 @@
 - [GitBook](/full-stack/docs/GitBook.md)
 - [Github Action](/full-stack/docs/GitHubAction.md)
 - [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md)
+- [JS 精选](/full-stack/docs/JS.md)
 - [Jest learning manual](/full-stack/docs/Jest.md)
 - [Markdown](/full-stack/docs/Markdown.md)
 - [小程序](/full-stack/docs/MiniProgram.md)

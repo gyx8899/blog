@@ -188,6 +188,11 @@ module.exports = {
                     "date": "2021年8月5日",
                     "path": "full-stack/docs/Markdown.md",
                     "title": "Markdown"
+                },
+                "JS.md": {
+                    "date": "2021年8月5日",
+                    "path": "full-stack/docs/JS.md",
+                    "title": "JS 精选"
                 }
             },
             "react": {
