@@ -17,13 +17,13 @@ const MDFile = {
         initContent: "",
         contentSuffix: () =>
             `\n${getFormatDateValue(new Date(), defaultTimestamp)}\n`,
-        leafSuffix: ": <sub><sup>(${value.date})</sup></sub>\n",
+        leafSuffix: (date) => `: <sub><sup>(${date})</sup></sub>\n`,
     },
     SUMMARY: {
         path: "./SUMMARY.md",
         initContent: "# Summary\n\n[Blog](README.md)\n",
         contentSuffix: () => "",
-        leafSuffix: "\n",
+        leafSuffix: () => "\n",
     },
 };
 
@@ -152,7 +152,7 @@ function generateMDFile(_mdConfig, _readMeConfig, fileConfig) {
         if (ignoredMdFilesInTree.indexOf(key) === -1 && value.date) {
             content += `- [${value.title || key.split(".md")[0]}](/${encodeURI(
                 value.path
-            )})${fileConfig.leafSuffix}`;
+            )})${fileConfig.leafSuffix(value.date)}`;
         }
     };
     iterateObject(_mdConfig, 1, nonLeaf, () => {});
