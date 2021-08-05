@@ -56,6 +56,7 @@
 - [Github Action](/full-stack/docs/GitHubAction.md)
 - [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md)
 - [Jest learning manual](/full-stack/docs/Jest.md)
+- [Markdown](/full-stack/docs/Markdown.md)
 - [小程序](/full-stack/docs/MiniProgram.md)
 - [NPM and Plugin Guide](/full-stack/docs/NPM.md)
 - [渐进式 Web 应用（PWA）](/full-stack/docs/PWA.md)

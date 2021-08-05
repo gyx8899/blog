@@ -53,6 +53,7 @@
 - [Github Action](/full-stack/docs/GitHubAction.md): <sub><sup>(${value.date})</sup></sub>
 - [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md): <sub><sup>(${value.date})</sup></sub>
 - [Jest learning manual](/full-stack/docs/Jest.md): <sub><sup>(${value.date})</sup></sub>
+- [Markdown](/full-stack/docs/Markdown.md): <sub><sup>(${value.date})</sup></sub>
 - [小程序](/full-stack/docs/MiniProgram.md): <sub><sup>(${value.date})</sup></sub>
 - [NPM and Plugin Guide](/full-stack/docs/NPM.md): <sub><sup>(${value.date})</sup></sub>
 - [渐进式 Web 应用（PWA）](/full-stack/docs/PWA.md): <sub><sup>(${value.date})</sup></sub>
@@ -112,4 +113,4 @@ Office 工具技巧
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(${value.date})</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(${value.date})</sup></sub>
 
-最后更新于2021年8月2日
+最后更新于2021年8月5日

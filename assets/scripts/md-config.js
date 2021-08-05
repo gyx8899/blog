@@ -183,6 +183,11 @@ module.exports = {
                     "date": "2021年7月27日",
                     "path": "full-stack/docs/MiniProgram.md",
                     "title": "小程序"
+                },
+                "Markdown.md": {
+                    "date": "2021年8月5日",
+                    "path": "full-stack/docs/Markdown.md",
+                    "title": "Markdown"
                 }
             },
             "react": {
@@ -192,7 +197,7 @@ module.exports = {
                     "title": "React: 总结整理"
                 },
                 "ReactHook.md": {
-                    "date": "2021年1月18日",
+                    "date": "2021年8月5日",
                     "path": "full-stack/react/ReactHook.md",
                     "title": "React Hook - 速览"
                 },
@@ -275,7 +280,7 @@ module.exports = {
             },
             "checklist": {
                 "Checklist.md": {
-                    "date": "2021年7月28日",
+                    "date": "2021年8月5日",
                     "path": "full-stack/checklist/Checklist.md",
                     "title": "开发自检清单"
                 }
