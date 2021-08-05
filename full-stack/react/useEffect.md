@@ -6,7 +6,7 @@
 
 - 不用改写 `fetchData` 为 `useCallback`；
 - 当副作用无法在 `return` 中消除的时候，如下异步请求（回调）中调用声明周期的方法 `setState`，则需要判断 `isMounted` 的值后再进行执行;
-- 是否销毁的状态 `isMounted`，写在 `useEffect` 内部，减少 `useState` 依赖;
+- 是否销毁的状态 `isMounted`，写在 `useEffect` 内部，减少 `useState` 依赖; (注意方案可能有问题，待求证)
 
 ```javascript
 useEffect(() => {
@@ -26,6 +26,19 @@ useEffect(() => {
         isMounted = false;
     };
 }, [id]);
+```
+
+```js
+useEffect(() => {
+  async function fetchData() {
+    // fetch your data
+  }
+  fetchData()
+
+  return () => {
+    // unbind/off event
+  }
+}, [])
 ```
 
 ### 在 `useEffect` 中使用 `setInterval/setTimeout`, `clearInterval/clearTimeout`，无需将 id 转换为 `useState`
