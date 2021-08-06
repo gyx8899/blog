@@ -135,7 +135,7 @@ module.exports = {
                     "title": "HTTP: 小知识巧总结"
                 },
                 "TypeScript.md": {
-                    "date": "2021年8月2日",
+                    "date": "2021年8月6日",
                     "path": "full-stack/docs/TypeScript.md",
                     "title": "TypeScript"
                 },
