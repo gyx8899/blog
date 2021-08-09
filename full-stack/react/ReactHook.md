@@ -262,6 +262,7 @@ const memoizedCallback = useCallback(
 > useCallback(fn, deps) 相当于 useMemo(() => fn, deps)。
 >
 > useCallback本质上是添加了一层依赖检查。它以另一种方式解决了问题 - 我们使函数本身只在需要的时候才改变，而不是去掉对函数的依赖。
+> 当useCallback本身经常改变时。然而，使用一个reducer通常是一个更好的解决方式
 
 ### <span id="useMemo">useMemo</span>
 
@@ -286,6 +287,34 @@ const refContainer = useRef(initialValue);
 #### 想在effect的回调函数里读取最新的值而不是捕获的值。最简单的实现方法是使用refs
 
 ```js
+function MessageThread() {
+  const [message, setMessage] = useState('');
+
+  // Keep track of the latest value.
+  const latestMessage = useRef('');
+  useEffect(() => {
+    latestMessage.current = message;
+  });
+
+  const showMessage = () => {
+    alert('You said: ' + latestMessage.current);
+  };
+
+  const handleSendClick = () => {
+    setTimeout(showMessage, 3000);
+  };
+
+  const handleMessageChange = (e) => {
+    setMessage(e.target.value);
+  };
+
+  return (
+    <>
+      <input value={message} onChange={handleMessageChange} />
+      <button onClick={handleSendClick}>Send</button>
+    </>
+  );
+}
 
 ```
 

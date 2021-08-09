@@ -47,6 +47,10 @@
 
 > 避免 JSX 嵌套地狱；避免 Props 命名冲突；不同组合时机 （HOC 静态组合，Render Porps 动态组合）
 
+- 类组件和函数式组件
+
+> 函数式组件捕获了渲染所用的值
+
 ## 收集
 
 - [React 高阶组件](https://github.com/ascoders/weekly/blob/master/%E5%89%8D%E6%B2%BF%E6%8A%80%E6%9C%AF/12.%E7%B2%BE%E8%AF%BB%E3%80%8AReact%20%E9%AB%98%E9%98%B6%E7%BB%84%E4%BB%B6%E3%80%8B.md)

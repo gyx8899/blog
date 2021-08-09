@@ -42,7 +42,7 @@ module.exports = {
                 "title": "工作心得"
             },
             "Search.md": {
-                "date": "2020年9月27日",
+                "date": "2021年8月9日",
                 "path": "daily-life/Search.md",
                 "title": "Search: 业余的专业搜索技能"
             },
@@ -52,7 +52,7 @@ module.exports = {
                 "title": "探索历程"
             },
             "OutOfWork.md": {
-                "date": "2021年3月8日",
+                "date": "2021年8月9日",
                 "path": "daily-life/OutOfWork.md",
                 "title": "工作之余 - 技能修炼"
             }
@@ -197,12 +197,12 @@ module.exports = {
             },
             "react": {
                 "React.md": {
-                    "date": "2021年8月2日",
+                    "date": "2021年8月9日",
                     "path": "full-stack/react/React.md",
                     "title": "React: 总结整理"
                 },
                 "ReactHook.md": {
-                    "date": "2021年8月5日",
+                    "date": "2021年8月9日",
                     "path": "full-stack/react/ReactHook.md",
                     "title": "React Hook - 速览"
                 },
