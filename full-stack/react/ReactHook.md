@@ -274,6 +274,8 @@ const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
 > 2. 把“创建”函数和依赖项数组作为参数传入 useMemo，它仅会在某个依赖项改变时才重新计算 memoized 值。这种优化有助于避免在每次渲染时都进行高开销的计算。
 > 3. 传入 useMemo 的函数会在渲染期间执行。请不要在这个函数内部执行与渲染无关的操作，诸如副作用这类的操作属于 useEffect 的适用范畴，而不是 useMemo。
 > 4. 你可以把 useMemo 作为性能优化的手段，但不要把它当成语义上的保证。
+>
+> [用 useMemo 优化之前可以考虑的优化方式](https://overreacted.io/before-you-memo/)
 
 ### <span id="useRef">useRef</span>
 

@@ -59,6 +59,11 @@
 >
 > 另一种是 Inheritance Inversion，HOC 类继承了 WrappedComponent，意味着可以访问到 WrappedComponent 的 state、props、生命周期和 render 等方法。如果在 HOC 中定义了与 WrappedComponent 同名方法，将会发生覆盖，就必须手动通过 super 进行调用了。通过完全操作 WrappedComponent 的 render 方法返回的元素树，可以真正实现渲染劫持。这种方案依然是继承的思想，对于 WrappedComponent 也有较强的侵入性
 
+- [optimize-react-re-renders](https://kentcdodds.com/blog/optimize-react-re-renders)
+
+> v [props children](https://codesandbox.io/s/react-codesandbox-o9e9f)
+> x [parallel children](https://codesandbox.io/s/react-codesandbox-g9mt5)
+
 ## 小点
 
 - 空元素，允许将子列表分组，而无需向 DOM 添加额外节点 `<React.Fragment></React.Fragment>` 或短语法 `<></>`

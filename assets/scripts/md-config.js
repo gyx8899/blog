@@ -17,7 +17,7 @@ module.exports = {
                 "title": "如何走出个人舒适圈"
             },
             "InstallSystem-windows.md": {
-                "date": "2020年8月31日",
+                "date": "2021年8月10日",
                 "path": "daily-life/InstallSystem-windows.md",
                 "title": "个人装换机之 Windows 系列"
             },
@@ -197,12 +197,12 @@ module.exports = {
             },
             "react": {
                 "React.md": {
-                    "date": "2021年8月9日",
+                    "date": "2021年8月10日",
                     "path": "full-stack/react/React.md",
                     "title": "React: 总结整理"
                 },
                 "ReactHook.md": {
-                    "date": "2021年8月9日",
+                    "date": "2021年8月10日",
                     "path": "full-stack/react/ReactHook.md",
                     "title": "React Hook - 速览"
                 },
