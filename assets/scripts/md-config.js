@@ -115,7 +115,7 @@ module.exports = {
                     "title": "Bash: 入门重点"
                 },
                 "Regexp.md": {
-                    "date": "2021年2月23日",
+                    "date": "2021年9月13日",
                     "path": "full-stack/docs/Regexp.md",
                     "title": "Regexp"
                 },
