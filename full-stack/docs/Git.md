@@ -1011,6 +1011,13 @@ internal/validators.js:124
 const NRMRC = path.join(process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME'], '.nrmrc');
 ```
 
+- warning: LF will be replaced by CRLF
+
+```shell
+# 关闭自动 crlf
+git config core.autocrlf false
+```
+
 ## 练习
 
 - [Learn Git Branching](https://learngitbranching.js.org/)
@@ -1018,4 +1025,4 @@ const NRMRC = path.join(process.env[(process.platform == 'win32') ? 'USERPROFILE
 ## 参考
 
 - <https://git-scm.com/docs> Git - Reference
-- <https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A> 【第1864期】手撕Git，告别盲目记忆
+- <https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A> 【第1864期】手撕Git，告别盲目记忆
