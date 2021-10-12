@@ -1018,6 +1018,18 @@ const NRMRC = path.join(process.env[(process.platform == 'win32') ? 'USERPROFILE
 git config core.autocrlf false
 ```
 
+- Your branch is based on 'origin/master', but the upstream is gone.
+
+```shell
+git branch --unset-upstream
+```
+
+- fatal: The current branch master has no upstream branch.
+
+```shell
+git push --set-upstream origin master
+```
+
 ## 练习
 
 - [Learn Git Branching](https://learngitbranching.js.org/)
