@@ -15,7 +15,7 @@
 - 周：1-7，其中 1为周日（Quartz）
 - 周值：MON, TUE, WED, THU, FRI, SAT, SUN
 - 月值：1-31
-- 月值：JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV,DEC
+- 月值：JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC
 - 年：非必填
 
 ## 特殊字符
@@ -24,4 +24,4 @@
 - 连字符，指定范围，如 2000-2021，表示2000到2021期间的每一年
 - 星号，所有可能的值，Month 中表示每个月，Hours 中表示每个小时
 - 反斜杠，每N秒/分钟/小时/日/月/周/年，如 Minutes 中，0/15 表示0分钟开始，每15分钟执行一次
-- 问号，没有具体值，避免冲突时设置
+- 问号，没有具体值，避免冲突时设置

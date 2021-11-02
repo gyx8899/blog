@@ -65,7 +65,7 @@ module.exports = {
                     "title": "Console"
                 },
                 "Dos.md": {
-                    "date": "2020年10月30日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/Dos.md",
                     "title": "DOS command"
                 },
@@ -75,7 +75,7 @@ module.exports = {
                     "title": "Git 命令集"
                 },
                 "Jest.md": {
-                    "date": "2020年9月4日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/Jest.md",
                     "title": "Jest learning manual"
                 },
@@ -85,12 +85,12 @@ module.exports = {
                     "title": "NPM and Plugin Guide"
                 },
                 "Vue.md": {
-                    "date": "2020年2月18日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/Vue.md",
-                    "title": "Vue: 点滴都是赞"
+                    "title": "Vue - fragment knowledge"
                 },
                 "Testing.md": {
-                    "date": "2021年2月25日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/Testing.md",
                     "title": "Testing"
                 },
@@ -105,9 +105,9 @@ module.exports = {
                     "title": "Webpack"
                 },
                 "SEO.md": {
-                    "date": "2020年4月17日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/SEO.md",
-                    "title": "SEO: 搜索优化学习"
+                    "title": "SEO"
                 },
                 "Bash.md": {
                     "date": "2021年1月27日",
@@ -120,7 +120,7 @@ module.exports = {
                     "title": "Regexp"
                 },
                 "Windows.md": {
-                    "date": "2021年7月26日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/Windows.md",
                     "title": "Windows 之路遇精彩"
                 },
@@ -140,12 +140,12 @@ module.exports = {
                     "title": "TypeScript"
                 },
                 "SQL.md": {
-                    "date": "2020年11月13日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/SQL.md",
                     "title": "SQL"
                 },
                 "GitBook.md": {
-                    "date": "2020年9月4日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/GitBook.md",
                     "title": "GitBook"
                 },
@@ -155,12 +155,12 @@ module.exports = {
                     "title": "Emoji: 供日常学习、查询及使用"
                 },
                 "WebSite.md": {
-                    "date": "2020年9月27日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/WebSite.md",
                     "title": "站点：那些可以经常逛逛的开发工具网站"
                 },
                 "GitHubAction.md": {
-                    "date": "2020年11月19日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/GitHubAction.md",
                     "title": "Github Action"
                 },
@@ -175,7 +175,7 @@ module.exports = {
                     "title": "Rollup"
                 },
                 "PWA.md": {
-                    "date": "2021年2月25日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/PWA.md",
                     "title": "渐进式 Web 应用（PWA）"
                 },
@@ -193,6 +193,16 @@ module.exports = {
                     "date": "2021年8月5日",
                     "path": "full-stack/docs/JS.md",
                     "title": "JS 精选"
+                },
+                "License.md": {
+                    "date": "2021年11月2日",
+                    "path": "full-stack/docs/License.md",
+                    "title": "License: 解说"
+                },
+                "Corn.md": {
+                    "date": "2021年11月2日",
+                    "path": "full-stack/docs/Corn.md",
+                    "title": "Corn 表达式"
                 }
             },
             "react": {
