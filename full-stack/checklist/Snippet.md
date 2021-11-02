@@ -1,6 +1,11 @@
-### Code snippet
+# 经典代码片段
+
+## 分类
+
+### Javascript
 
 #### Proxy
+
 ```javascript
 $( "button" ).on( "click", function () {
 
@@ -17,16 +22,17 @@ $( "button" ).on( "click", function () {
 
 ```javascript
 Object.defineProperty(newObject, "someKey", {
-	value: "for more control of the property's behavior",
-	writable: true,
-	enumerable: true,
-	configurable: true
+ value: "for more control of the property's behavior",
+ writable: true,
+ enumerable: true,
+ configurable: true
 });
 ```
 
 #### jQuery plugin
 
 写法
+
 ```javascript
 (function( $ ){
   $.fn.myPluginName = function () {
@@ -34,6 +40,7 @@ Object.defineProperty(newObject, "someKey", {
   };
 })( jQuery );
 ```
+
 ```javascript
 (function( $ ){
     $.extend($.fn, {
@@ -43,7 +50,9 @@ Object.defineProperty(newObject, "someKey", {
     });
 })( jQuery );
 ```
+
 jQuery lightweight plugin
+
 ```javascript
 /*!
  * jQuery lightweight plugin boilerplate
@@ -115,6 +124,7 @@ jQuery lightweight plugin
 ```
 
 Clean
+
 ```javascript
 /*!
  * jQuery lightweight plugin boilerplate
@@ -143,7 +153,7 @@ Clean
     }
 
     Plugin.prototype.init = function () {
-    	
+     
     };
 
     $.fn[pluginName] = function ( options ) {
@@ -159,6 +169,7 @@ Clean
 ```
 
 jQuery widget
+
 ```javascript
 /*!
  * jQuery UI Widget-factory plugin boilerplate (for 1.8/9+)
@@ -249,6 +260,7 @@ jQuery widget
 ```
 
 Clean jQuery widget
+
 ```javascript
 /*!
  * jQuery UI Widget-factory plugin boilerplate (for 1.8/9+)
@@ -306,7 +318,9 @@ Clean jQuery widget
 
 })( jQuery, window, document );
 ```
+
 ### lazy load
+
 ```javascript
 // <script>
     // 获取所有的图片标签
@@ -334,17 +348,19 @@ Clean jQuery widget
 ```
 
 ### JS delegate event
+
 ```javascript
 document.getElementById("myDiv").addEventListener("click",function(e) {
-	// e.target was the clicked element
-	// matches: IE9+, https://caniuse.com/#search=matches
+ // e.target was the clicked element
+ // matches: IE9+, https://caniuse.com/#search=matches
   if (e.target && e.target.matches("a.classA")) {
     console.log("Anchor element clicked!");
-	}
+ }
 });
 ```
 
 ### PoW（Proof of Work）
+
 最后更新于2020年2月18日
 
 [^footnote]: timestamp-最后更新于2020年2月18日

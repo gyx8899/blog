@@ -9,10 +9,12 @@ module.exports = {
 		]
 	},
 	'full-stack': '全栈知识总结',
+	checklist: '自检清单',
 	docs: '个人知识文档',
 	project: '通用项目文档',
 	react: 'React 相关知识总结',
 	share: '总结分享发布',
 	"daily-life": '日常工作中的随感',
-	office: 'Office 工具技巧'
+	office: 'Office 工具技巧',
+	tool: '工具篇'
 };
