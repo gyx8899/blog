@@ -37,7 +37,7 @@ module.exports = {
                 "title": "自我迭代"
             },
             "WorkExperience.md": {
-                "date": "2021年1月28日",
+                "date": "2021年11月4日",
                 "path": "daily-life/WorkExperience.md",
                 "title": "工作心得"
             },
@@ -155,7 +155,7 @@ module.exports = {
                     "title": "Emoji: 供日常学习、查询及使用"
                 },
                 "WebSite.md": {
-                    "date": "2021年11月2日",
+                    "date": "2021年11月4日",
                     "path": "full-stack/docs/WebSite.md",
                     "title": "站点：那些可以经常逛逛的开发工具网站"
                 },

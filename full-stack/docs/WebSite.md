@@ -6,4 +6,8 @@
 
 ## HTML 类
 
+## 优化网站速度
+
+- [Best Practices for Speeding Up Your Web Site](https://developer.yahoo.com/performance/rules.html?guccounter=1)
+
 ## 参考链接
