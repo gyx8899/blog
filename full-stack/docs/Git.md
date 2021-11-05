@@ -216,6 +216,8 @@ git push origin -d feature2
 # 用这一次新的commit, 合并上一次 commit。进而达到修复上一次 commit 的 comment 内容
 git add .
 git commit --amend
+git commit --amend --only   # 打开编辑器，编辑新的提交信息，针对已经 commit 但未 push 的提交
+git commit --amend --only -m '新的 comment 内容'  # 针对已经 commit 但未 push 的提交
 
 # rebase --interactive 的缩写，交互式 rebase，
 git rebase -i HEAD^^
@@ -261,7 +263,7 @@ git reset -i "HEAD^"  #For windows
 git rebase -i HEAD^^  #撤销最后2次
 git rebase -i HEAD~5  #撤销最后5次
 # 丢弃上一次提交 --hard
-git reset --hard "HEAD^"   // Add quote for windows
+git reset --hard "HEAD^"   # Add quote for windows
 git push --force origin master
 # 以倒数第二个 commit 为起点（起点不包含在 rebase 序列里哟），branch1 为终点，rebase 到倒数第三个 commit 上。
 git rebase --onto HEAD^^ HEAD^ branch1
@@ -1037,4 +1039,5 @@ git push --set-upstream origin master
 ## 参考
 
 - <https://git-scm.com/docs> Git - Reference
-- <https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A> 【第1864期】手撕Git，告别盲目记忆
+- <https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A> 【第1864期】手撕Git，告别盲目记忆
+- <https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md> Git飞行规则(Flight Rules)
