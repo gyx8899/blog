@@ -37,7 +37,7 @@
 
 自检清单
 
-- [开发自检清单](/full-stack/checklist/Checklist.md): <sub><sup>(2021年8月5日)</sup></sub>
+- [开发自检清单](/full-stack/checklist/Checklist.md): <sub><sup>(2021年11月11日)</sup></sub>
 
 ### Docs
 
@@ -116,4 +116,4 @@ Office 工具技巧
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(2021年2月24日)</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2021年11月5日
+最后更新于2021年11月11日

@@ -295,7 +295,7 @@ module.exports = {
             },
             "checklist": {
                 "Checklist.md": {
-                    "date": "2021年8月5日",
+                    "date": "2021年11月11日",
                     "path": "full-stack/checklist/Checklist.md",
                     "title": "开发自检清单"
                 }
