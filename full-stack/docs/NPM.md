@@ -259,6 +259,8 @@ npm_mirror: https://npm.taobao.org/mirrors/npm/
 
 ### 安装 NVM
 
+#### Windows
+
 > coreybutler/nvm-windows: A node.js version management utility for Windows. Ironically written in Go.
 
 1. Uninstall all node;
@@ -266,6 +268,8 @@ npm_mirror: https://npm.taobao.org/mirrors/npm/
 [nvm-windows](https://github.com/coreybutler/nvm-windows)
 3. Check and find usage;
 
-## 参考
+#### Mac
 
-- [npm-package.json | npm Documentation](https://docs.npmjs.com/files/package.json.html)
+[macOS 上使用 brew 安装 NVM 管理 node.js](https://qizhanming.com/blog/2020/07/29/how-to-install-node-using-nvm-on-macos-with-brew)
+
+## 参考

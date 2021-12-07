@@ -49,7 +49,7 @@
 - [Corn 表达式](/full-stack/docs/Corn.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [DOS command](/full-stack/docs/Dos.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [Emoji: 供日常学习、查询及使用](/full-stack/docs/Emoji.md): <sub><sup>(2020年9月9日)</sup></sub>
-- [Git 命令集](/full-stack/docs/Git.md): <sub><sup>(2021年11月5日)</sup></sub>
+- [Git 命令集](/full-stack/docs/Git.md): <sub><sup>(2021年12月7日)</sup></sub>
 - [GitBook](/full-stack/docs/GitBook.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [Github Action](/full-stack/docs/GitHubAction.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md): <sub><sup>(2021年1月6日)</sup></sub>
@@ -58,7 +58,7 @@
 - [License: 解说](/full-stack/docs/License.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [Markdown](/full-stack/docs/Markdown.md): <sub><sup>(2021年8月5日)</sup></sub>
 - [小程序](/full-stack/docs/MiniProgram.md): <sub><sup>(2021年7月27日)</sup></sub>
-- [NPM and Plugin Guide](/full-stack/docs/NPM.md): <sub><sup>(2021年4月7日)</sup></sub>
+- [NPM and Plugin Guide](/full-stack/docs/NPM.md): <sub><sup>(2021年12月7日)</sup></sub>
 - [渐进式 Web 应用（PWA）](/full-stack/docs/PWA.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [Regexp](/full-stack/docs/Regexp.md): <sub><sup>(2021年9月13日)</sup></sub>
 - [Rollup](/full-stack/docs/Rollup.md): <sub><sup>(2021年1月28日)</sup></sub>
@@ -116,4 +116,4 @@ Office 工具技巧
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(2021年2月24日)</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2021年11月11日
+最后更新于2021年12月7日

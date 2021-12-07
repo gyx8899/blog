@@ -1032,12 +1032,14 @@ git branch --unset-upstream
 git push --set-upstream origin master
 ```
 
+- error /node_modules/node-sass: Command failed  (npm install in New Mac)
+
+情况之一：新电脑安装的 Node version 太高了，node-sass 不匹配，需要安装 nvm 使用低版本的 node
+
 ## 练习
 
 - [Learn Git Branching](https://learngitbranching.js.org/)
 
 ## 参考
 
-- <https://git-scm.com/docs> Git - Reference
-- <https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A> 【第1864期】手撕Git，告别盲目记忆
-- <https://github.com/k88hudson/git-flight-rules/blob/master/README_zh-CN.md> Git飞行规则(Flight Rules)
+- <https://git-scm.com/docs> Git - Reference
