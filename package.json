@@ -4,7 +4,8 @@
   "description": "Personal blog for growing up.",
   "main": "index.js",
   "scripts": {
-    "git-push": "node ./assets/scripts/add-timestamp.js file=. && cd ../yx-env && bash git-push.sh blog",
+    "git-push": "node ./assets/scripts/add-timestamp.js file=. && cd ../yx-env && git-push.sh blog",
+    "git-push-mac": "node ./assets/scripts/add-timestamp.js file=. && cd ../yx-env && bash git-push.sh blog",
     "gh-pages": "npm run gitbook-build && gh-pages -d _book",
     "gitbook-build": "gitbook install && gitbook build",
     "gitbook-serve": "gitbook install && gitbook serve"
