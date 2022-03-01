@@ -1046,6 +1046,9 @@ remote: Please see https://github.blog/2020-12-15-token-authentication-requireme
 ```shell
 # Developer's hack (shortcode):
 git remote set-url origin https://<githubtoken>@github.com/<username>/<repositoryname>.git
+# demo
+git remote set-url origin https://<githubtoken>@github.com/gyx8899/blog.git
+
 ```
 
 ## 练习
