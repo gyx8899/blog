@@ -1036,6 +1036,18 @@ git push --set-upstream origin master
 
 情况之一：新电脑安装的 Node version 太高了，node-sass 不匹配，需要安装 nvm 使用低版本的 node
 
+- fatal: 'https://github.com/gyx8899/blog.git/' 鉴权失败
+
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+
+[stackoverflow 方案](https://stackoverflow.com/questions/68775869/support-for-password-authentication-was-removed-please-use-a-personal-access-to)
+
+```shell
+# Developer's hack (shortcode):
+git remote set-url origin https://<githubtoken>@github.com/<username>/<repositoryname>.git
+```
+
 ## 练习
 
 - [Learn Git Branching](https://learngitbranching.js.org/)

@@ -49,7 +49,7 @@
 - [Corn 表达式](/full-stack/docs/Corn.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [DOS command](/full-stack/docs/Dos.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [Emoji: 供日常学习、查询及使用](/full-stack/docs/Emoji.md): <sub><sup>(2020年9月9日)</sup></sub>
-- [Git 命令集](/full-stack/docs/Git.md): <sub><sup>(2021年12月7日)</sup></sub>
+- [Git 命令集](/full-stack/docs/Git.md): <sub><sup>(2022年3月1日)</sup></sub>
 - [GitBook](/full-stack/docs/GitBook.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [Github Action](/full-stack/docs/GitHubAction.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md): <sub><sup>(2021年1月6日)</sup></sub>
