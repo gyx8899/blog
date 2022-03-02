@@ -165,7 +165,7 @@ module.exports = {
                     "title": "Github Action"
                 },
                 "TechTerms.md": {
-                    "date": "2021年7月30日",
+                    "date": "2022年3月2日",
                     "path": "full-stack/docs/TechTerms.md",
                     "title": "专业名词"
                 },
