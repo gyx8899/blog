@@ -676,6 +676,20 @@ git remote -v
 git remote set-url origin xxx.git
 ```
 
+#### 提交信息类别
+
+`git commit -m "fix: xxxxxxxx"`
+
+```shell
+feat：     新功能（feature）
+fix：      修补bug
+docs：     文档（documentation）
+style：    格式（不影响代码运行的变动）
+refactor： 重构（即不是新增功能，也不是修改bug的代码变动）
+test：     增加测试
+chore：    构建过程或辅助工具的变动
+```
+
 ### Questions: 常见问题
 
 - SSL_read: SSL_ERROR_SYSCALL, errno 10054
