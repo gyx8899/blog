@@ -1,7 +1,9 @@
 # Bash: 入门重点
 
-##### Command List
+## Command List
+
 (Not work in windows dos)
+
 - Enter
 
 ```shell
@@ -106,7 +108,7 @@ if [[ $template != template ]]; then
 fi
 ```
 
-#### Questions
+## Questions
 
 * unary operator expected: 表达式左边有可能为空，则表达式左侧就为空，报错
 
@@ -133,4 +135,15 @@ fi
 if [[ "${filename}" = '' ]]; then
 
 fi
+```
+
+## Error 
+
+- code ELIFECYCLE errno 1
+
+```shell
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! blog@1.0.0 git-push-mac: `node ./assets/scripts/add-timestamp.js file=. && cd ../yx-env && bash git-push.sh blog`
+npm ERR! Exit status 1
 ```

@@ -110,7 +110,7 @@ module.exports = {
                     "title": "SEO"
                 },
                 "Bash.md": {
-                    "date": "2021年1月27日",
+                    "date": "2022年3月8日",
                     "path": "full-stack/docs/Bash.md",
                     "title": "Bash: 入门重点"
                 },
@@ -283,12 +283,12 @@ module.exports = {
             },
             "tool": {
                 "VSCode.md": {
-                    "date": "2021年7月28日",
+                    "date": "2022年3月8日",
                     "path": "full-stack/tool/VSCode.md",
                     "title": "VS Code：发挥应有的效率"
                 },
                 "IntelliJ-IDEA.md": {
-                    "date": "2021年7月28日",
+                    "date": "2022年3月8日",
                     "path": "full-stack/tool/IntelliJ-IDEA.md",
                     "title": "IntelliJ IDEA"
                 },

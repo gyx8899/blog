@@ -43,7 +43,7 @@
 
 个人知识文档
 
-- [Bash: 入门重点](/full-stack/docs/Bash.md): <sub><sup>(2021年1月27日)</sup></sub>
+- [Bash: 入门重点](/full-stack/docs/Bash.md): <sub><sup>(2022年3月8日)</sup></sub>
 - [CSS 特殊用法](/full-stack/docs/CSS.md): <sub><sup>(2021年5月9日)</sup></sub>
 - [Console](/full-stack/docs/Console.md): <sub><sup>(2020年11月2日)</sup></sub>
 - [Corn 表达式](/full-stack/docs/Corn.md): <sub><sup>(2021年11月2日)</sup></sub>
@@ -107,8 +107,8 @@ React 相关知识总结
 工具篇
 
 - [最好的工具: 理解并使用那些耳目一新的巧工具](/full-stack/tool/BestTools.md): <sub><sup>(2021年7月28日)</sup></sub>
-- [IntelliJ IDEA](/full-stack/tool/IntelliJ-IDEA.md): <sub><sup>(2021年7月28日)</sup></sub>
-- [VS Code：发挥应有的效率](/full-stack/tool/VSCode.md): <sub><sup>(2021年7月28日)</sup></sub>
+- [IntelliJ IDEA](/full-stack/tool/IntelliJ-IDEA.md): <sub><sup>(2022年3月8日)</sup></sub>
+- [VS Code：发挥应有的效率](/full-stack/tool/VSCode.md): <sub><sup>(2022年3月8日)</sup></sub>
 
 ## Office
 
@@ -117,4 +117,4 @@ Office 工具技巧
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(2021年2月24日)</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2022年3月4日
+最后更新于2022年3月8日
