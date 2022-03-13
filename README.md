@@ -108,7 +108,7 @@ React 相关知识总结
 
 - [最好的工具: 理解并使用那些耳目一新的巧工具](/full-stack/tool/BestTools.md): <sub><sup>(2021年7月28日)</sup></sub>
 - [IntelliJ IDEA](/full-stack/tool/IntelliJ-IDEA.md): <sub><sup>(2022年3月8日)</sup></sub>
-- [VS Code：发挥应有的效率](/full-stack/tool/VSCode.md): <sub><sup>(2022年3月8日)</sup></sub>
+- [VS Code：发挥应有的效率](/full-stack/tool/VSCode.md): <sub><sup>(2022年3月13日)</sup></sub>
 
 ## Office
 
@@ -117,4 +117,4 @@ Office 工具技巧
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(2021年2月24日)</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2022年3月8日
+最后更新于2022年3月13日

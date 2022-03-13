@@ -30,6 +30,14 @@
 | 设置主题|Ctrl +||
 | 格式化代码      |                            | Shift + Option + F         |
 
+## 使用技巧
+
+- 快速生成 html 页面基础代码
+
+```html
+html:5
+``
+
 ## 参考链接
 
 - <https://zhuanlan.zhihu.com/p/339258835> 推荐 20 个提高开发效率的 VS Code 快捷键！ - 知乎
