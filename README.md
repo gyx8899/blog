@@ -67,7 +67,7 @@
 - [SQL](/full-stack/docs/SQL.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [专业名词](/full-stack/docs/TechTerms.md): <sub><sup>(2022年3月2日)</sup></sub>
 - [Testing](/full-stack/docs/Testing.md): <sub><sup>(2021年11月2日)</sup></sub>
-- [TypeScript](/full-stack/docs/TypeScript.md): <sub><sup>(2021年8月6日)</sup></sub>
+- [TypeScript](/full-stack/docs/TypeScript.md): <sub><sup>(2022年3月14日)</sup></sub>
 - [Vue - fragment knowledge](/full-stack/docs/Vue.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [Web API](/full-stack/docs/WebAPI.md): <sub><sup>(2021年3月8日)</sup></sub>
 - [站点：那些可以经常逛逛的开发工具网站](/full-stack/docs/WebSite.md): <sub><sup>(2021年11月4日)</sup></sub>
@@ -117,4 +117,4 @@ Office 工具技巧
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(2021年2月24日)</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2022年3月13日
+最后更新于2022年3月14日
