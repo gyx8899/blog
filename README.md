@@ -56,7 +56,7 @@
 - [JS 精选](/full-stack/docs/JS.md): <sub><sup>(2021年8月5日)</sup></sub>
 - [Jest learning manual](/full-stack/docs/Jest.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [License: 解说](/full-stack/docs/License.md): <sub><sup>(2021年11月2日)</sup></sub>
-- [Mac](/full-stack/docs/Mac.md): <sub><sup>(2022年3月1日)</sup></sub>
+- [Mac](/full-stack/docs/Mac.md): <sub><sup>(2022年3月16日)</sup></sub>
 - [Markdown](/full-stack/docs/Markdown.md): <sub><sup>(2021年8月5日)</sup></sub>
 - [小程序](/full-stack/docs/MiniProgram.md): <sub><sup>(2021年7月27日)</sup></sub>
 - [NPM and Plugin Guide](/full-stack/docs/NPM.md): <sub><sup>(2021年12月7日)</sup></sub>
@@ -117,4 +117,4 @@ Office 工具技巧
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(2021年2月24日)</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2022年3月14日
+最后更新于2022年3月16日
