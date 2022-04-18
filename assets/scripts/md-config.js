@@ -303,6 +303,11 @@ module.exports = {
                     "date": "2021年11月11日",
                     "path": "full-stack/checklist/Checklist.md",
                     "title": "开发自检清单"
+                },
+                "CodeTips.md": {
+                    "date": "2022年4月18日",
+                    "path": "full-stack/checklist/CodeTips.md",
+                    "title": "代码教鞭：不值得犯第二次的错"
                 }
             }
         },

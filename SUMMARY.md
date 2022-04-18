@@ -41,6 +41,7 @@
 自检清单
 
 - [开发自检清单](/full-stack/checklist/Checklist.md)
+- [代码教鞭：不值得犯第二次的错](/full-stack/checklist/CodeTips.md)
 
 ### Docs
 

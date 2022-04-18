@@ -38,6 +38,7 @@
 自检清单
 
 - [开发自检清单](/full-stack/checklist/Checklist.md): <sub><sup>(2021年11月11日)</sup></sub>
+- [代码教鞭：不值得犯第二次的错](/full-stack/checklist/CodeTips.md): <sub><sup>(2022年4月18日)</sup></sub>
 
 ### Docs
 
@@ -117,4 +118,4 @@ Office 工具技巧
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(2021年2月24日)</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2022年3月20日
+最后更新于2022年4月18日
