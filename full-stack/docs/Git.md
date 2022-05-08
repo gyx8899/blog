@@ -269,6 +269,9 @@ git push --force origin master
 git rebase --onto HEAD^^ HEAD^ branch1
 # 撤销本地分支上的所有提交
 git reset --hard origin/<branch-name>
+
+# 强制推送到 remote
+git push -f
 ```
 
 #### 撤销已在中央仓库的 branch 的 commit
