@@ -1068,6 +1068,27 @@ git remote set-url origin https://<githubtoken>@github.com/gyx8899/blog.git
 
 ```
 
+- Git: hint: You have divergent branches and need to specify how to reconcile them. 提交了本地代码未推送，同时 remote 有新改动未拉到本地，push 本地代码时报错提示
+
+    warning: 不建议在没有为偏离分支指定合并策略时执行pull操作。您可以在执行下一次pull操作之前执行下面一条命令来抑制本消息：
+
+    git config pull.rebase false  # 合并（默认缺省策略）
+
+    git config pull.rebase true   # 变基
+
+    git config pull.ff only       # 仅快进
+
+    您可以将 "git config" 替换为 "git config --global" 以便为所有仓库设置缺省的配置项。您也可以在每次执行 pull 命令时添加 --rebase --no-rebase，或者 --ff-only 参数覆盖缺省设置。
+
+```shell
+# 方法 1
+git config pull.rebase false
+# 方法 2: 查看本地提交记录，reset 到本地提交记录的前一条后，重新拉取代码，重新提交本地记录
+git log -3
+git reset --hard <HASH>
+git pull
+```
+
 ## 练习
 
 - [Learn Git Branching](https://learngitbranching.js.org/)
