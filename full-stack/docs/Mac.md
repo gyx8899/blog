@@ -16,6 +16,7 @@
 - find *.txt
 - pwd
 - open [dir]
+- clear
 
 ## Vim
 

@@ -205,7 +205,7 @@ module.exports = {
                     "title": "Corn 表达式"
                 },
                 "Mac.md": {
-                    "date": "2022年3月16日",
+                    "date": "2022年5月15日",
                     "path": "full-stack/docs/Mac.md",
                     "title": "Mac"
                 }
