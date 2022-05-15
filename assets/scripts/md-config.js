@@ -130,7 +130,7 @@ module.exports = {
                     "title": "CSS 特殊用法"
                 },
                 "HTTP.md": {
-                    "date": "2021年1月6日",
+                    "date": "2022年5月15日",
                     "path": "full-stack/docs/HTTP.md",
                     "title": "HTTP: 小知识巧总结"
                 },
