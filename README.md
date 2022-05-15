@@ -54,7 +54,7 @@
 - [GitBook](/full-stack/docs/GitBook.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [Github Action](/full-stack/docs/GitHubAction.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md): <sub><sup>(2022年5月15日)</sup></sub>
-- [JS 精选](/full-stack/docs/JS.md): <sub><sup>(2021年8月5日)</sup></sub>
+- [JS 精选](/full-stack/docs/JS.md): <sub><sup>(2022年5月15日)</sup></sub>
 - [Jest learning manual](/full-stack/docs/Jest.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [License: 解说](/full-stack/docs/License.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [Mac](/full-stack/docs/Mac.md): <sub><sup>(2022年5月15日)</sup></sub>
