@@ -165,7 +165,7 @@ git merge master
   # 2. 冲突时，放弃合并
   git merge --abort
 
-# 先把 branch 的基准更新到 master 的最新，再把 branch 上的提交记录，再在最新位置上重新提交
+# 3. 先把 branch 的基准更新到 master 的最新，再把 branch 上的提交记录，再在最新位置上重新提交
 git checkout branch1
 git rebase master
 # 再把 branch1 合并到 master
@@ -176,13 +176,23 @@ git merge branch1
 git push --set-upstream origin branch1
 
 # 合并 remote template/master
-# 1. 添加 remote template
-git remote add template https://github.com/gyx8899/npm-template.git
-# 2. 拉取 master, template, branches 所有远端的最新文件到本地
-git fetch --all
-# 3. 合并 template 的 master 到本地仓库
-git merge template/master --allow-unrelated-histories
-# 4. 处理冲突
+    # 1. 添加 remote template
+    git remote add template https://github.com/gyx8899/npm-template.git
+    # 2. 拉取 master, template, branches 所有远端的最新文件到本地
+    git fetch --all
+    # 3. 合并 template 的 master 到本地仓库
+    git merge template/master --allow-unrelated-histories
+    # 4. 处理冲突
+
+# 分支 A 重设指向远程分支 B
+    # 1. 查看分支 B 上的日志，找到最新的 log commit hash
+    git checkout B
+    git log
+    # 2. 回到分支本地 A，更改头部指向
+    git checkout A
+    git reset --hard [B hash]
+    git reset --hard origin/B
+    git push --force
 ...
 ```
 
@@ -1095,4 +1105,4 @@ git pull
 
 ## 参考
 
-- <https://git-scm.com/docs> Git - Reference
+- <https://git-scm.com/docs> Git - Reference
