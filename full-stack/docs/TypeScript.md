@@ -208,6 +208,12 @@ class Student {
 }
 ```
 
+- TypeScript 项目中引入一个纯 JavaScript 包，可能会报如下错误，需要添加 `declare module '@daybyday/yx-js'` 到项目的 [xxx].d.ts 文件中。 
+
+``` bash
+# semantic error TS7016: Could not find a declaration file for module '@daybyday/yx-js'
+```
+
 ## 实践记录
 
 ```typescript tsx
