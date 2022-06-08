@@ -441,6 +441,24 @@ git cherry-pick <start-commit-id>^..<end-commit-id>
 # 也可以用在同一个分支上，场景为某次提交删除了，需要重新提交，可以使用 cherry-pick
 ```
 
+
+
+#### patch: 对已有的 commit 记录生成补丁，并应用补丁
+
+```bash
+# 1. 生成
+git format-patch [hash]
+git format-patch [hash-A]...[hash-B] -o [~/../path]
+
+# 2. 检查patch
+git apply --state [~/../xxxx.patch]
+# 3. 能否应用成功
+git apply --check [~/../xxxx.patch]
+
+# 4. 应用patch
+git am [~/../xxxx.patch]
+```
+
 #### Pull changes from a template repository
 
 ```shell
@@ -1093,7 +1111,7 @@ git remote set-url origin https://<githubtoken>@github.com/gyx8899/blog.git
 ```shell
 # 方法 1
 git config pull.rebase false
-# 方法 2: 查看本地提交记录，reset 到本地提交记录的前一条后，重新拉取代码，重新提交本地记录
+# 方法 2: 查看本地提交记录，reset 到本地提交记录的前一条后，重新拉取代码，重新提交本地记录
 git log -3
 git reset --hard <HASH>
 git pull
