@@ -132,6 +132,16 @@ git diff
     git diff HEAD
     # 对比暂存区和上一条版本库提交
     git diff --staged
+
+# commit [type]
+# 1. feat: 新功能
+# 2. fix: 修复 bug
+# 3. chore: 构建过程或辅助工具的变动
+# 4. style: 根式（不影响代码于行的变动）
+# 5. refactor: 重构
+# 6. test: 增加测试
+# 7. docs: 文档
+git commit -m "[type]: xxxxx"
 ```
 
 #### 分支操作
@@ -1123,4 +1133,4 @@ git pull
 
 ## 参考
 
-- <https://git-scm.com/docs> Git - Reference
+- <https://git-scm.com/docs> Git - Reference
