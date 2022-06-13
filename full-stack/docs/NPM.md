@@ -141,6 +141,12 @@ npm link
 npm link @daybyday/yx-node
 
 # You can test it now.
+
+# Error: React Hooks Error: Hooks can only be called inside the body of a function component
+# Solve: 让组件库依赖测试项目的 react，这样就不会存在版本冲突的问题，如下
+cd demo/react-components
+npm link ../test-component-project/node-modules/react
+# 重新build组件，在测试项目中 npm link 'react-components' （packageName）
 ```
 
 - Config
@@ -272,4 +278,4 @@ npm_mirror: https://npm.taobao.org/mirrors/npm/
 
 [macOS 上使用 brew 安装 NVM 管理 node.js](https://qizhanming.com/blog/2020/07/29/how-to-install-node-using-nvm-on-macos-with-brew)
 
-## 参考
+## 参考
