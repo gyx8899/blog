@@ -20,6 +20,11 @@
   - 粘贴到 `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp` (电脑的路径可能显示中文，如【开始】菜单)
   - `Ctrl + Alt + Del` 打开任务管理器 - 启动 - 查看对应软件的启动状态
 
+- Chrome CROS 跨域问题（本机其他浏览器/其他电脑没有此问题）
+
+    1. 地址栏输入：chrome://flags/#block-insecure-private-network-requests
+    1. 搜索 `Block insecure private network requests` 并设置为 disabled，点击页面右下角按钮重启浏览器
+
 ## 惊艳的小操作
 
 - 在 window 某个文件夹的路径中，输入 cmd/powershell 即可快速打开“命令行”/powershell 窗口。
