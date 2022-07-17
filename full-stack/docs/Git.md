@@ -1125,6 +1125,9 @@ git config pull.rebase false
 git log -3
 git reset --hard <HASH>
 git pull
+# 方法 3: 简单直接
+git pull --rebase
+git push
 ```
 
 ## 练习
