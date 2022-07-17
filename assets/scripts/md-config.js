@@ -283,7 +283,7 @@ module.exports = {
             },
             "tool": {
                 "VSCode.md": {
-                    "date": "2022年3月13日",
+                    "date": "2022年7月17日",
                     "path": "full-stack/tool/VSCode.md",
                     "title": "VS Code：发挥应有的效率"
                 },
