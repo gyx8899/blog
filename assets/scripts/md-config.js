@@ -110,7 +110,7 @@ module.exports = {
                     "title": "SEO"
                 },
                 "Bash.md": {
-                    "date": "2022年3月8日",
+                    "date": "2022年7月17日",
                     "path": "full-stack/docs/Bash.md",
                     "title": "Bash: 入门重点"
                 },
