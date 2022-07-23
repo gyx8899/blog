@@ -52,7 +52,7 @@ module.exports = {
                 "title": "探索历程"
             },
             "OutOfWork.md": {
-                "date": "2021年8月9日",
+                "date": "2022年7月23日",
                 "path": "daily-life/OutOfWork.md",
                 "title": "工作之余 - 技能修炼"
             }

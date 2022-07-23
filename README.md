@@ -22,7 +22,7 @@
 - [如何走出个人舒适圈](/daily-life/GetOutOfYourComfortZone.md): <sub><sup>(2020年8月31日)</sup></sub>
 - [怎样提升领导能力](/daily-life/HowToHaveLeadership.md): <sub><sup>(2020年9月7日)</sup></sub>
 - [个人装换机之 Windows 系列](/daily-life/InstallSystem-windows.md): <sub><sup>(2021年8月10日)</sup></sub>
-- [工作之余 - 技能修炼](/daily-life/OutOfWork.md): <sub><sup>(2021年8月9日)</sup></sub>
+- [工作之余 - 技能修炼](/daily-life/OutOfWork.md): <sub><sup>(2022年7月23日)</sup></sub>
 - [Search: 业余的专业搜索技能](/daily-life/Search.md): <sub><sup>(2021年8月9日)</sup></sub>
 - [自我迭代](/daily-life/SelfReview.md): <sub><sup>(2020年7月2日)</sup></sub>
 - [优秀的自我介绍很重要](/daily-life/TheImportantOfSelfIntroduction.md): <sub><sup>(2020年3月9日)</sup></sub>
@@ -118,4 +118,4 @@ Office 工具技巧
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(2021年2月24日)</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2022年7月17日
+最后更新于2022年7月23日
