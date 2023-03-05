@@ -1,5 +1,64 @@
 # Regexp
 
+## 基础
+
+### 元字符
+
+- 特殊单字符：
+
+  - .(任意非换行字符) 
+  - \d（任意数字） 
+  - \D（任意非数字） 
+  - \w（任意字母数字下划线） 
+  - \W（任意非字母数字下划线） 
+  - \s（任意空格）
+  - \S （任意非空格）
+
+- 空白符
+
+> 不同的系统在每行文本结束位置默认的“换行”会有区别。比如在 Windows 里是 \r\n，在 Linux 和 MacOS 中是 \n
+
+  - \r 回车符
+  - \n 换行符
+  - \f 换页符
+  - \t 制表符
+  - \v 垂直制表符
+  - \s 任意空白符
+
+
+- 范围
+
+  - ｜ 或
+  - [...] 多选一，括号中任意单个字符
+  - [a-z] 匹配 a 到 z 任意字符，包含 a，z 
+  - [^...] 取反 不能是括号内的任意字符
+
+- 量词
+
+  - * 任意次，0次或多次
+  - + 1次或多次
+  - ？0次或1次
+  - {m} m 次
+  - {m+} 至少 m 次
+  - {m, n} m 到 n次
+
+- 断言
+
+### 分组与引用
+
+  - 分组与编号：一对括号是一个分组；从左至右数左括号，第一个左括号对应等分组编号默认是1，向右依次类推 2，3，4...
+  - 不保存子组：在分组括号内最左加 ?:
+  - 括号嵌套：分组编号依然按照左括号对应的索引1，2，3；
+  - 命名分组：在分组括号内最左加 ?P<分组名>
+  - 分组引用：表达式中一般 \1 \2 \3，替换表达式时，Java/JavaScript 中是使用 $1 $2，其他语言仍为：\1 \2
+
+### 匹配模式
+
+  - 不区分大小写：(?i)
+  - 点号通配模式：(?s)  javascript 不支持，可以使用[\d\D] [\w\W] [\s\S] 代替
+  - 多行模式：(?m) , ^ 匹配任意行开始，$ 匹配任意行结尾
+  - 注释模式：(?#comment), (\w+) \1(?#word repeat again)
+
 ## Special point
 
 - 点（.）是匹配“任何字符”, 
@@ -41,7 +100,14 @@
 
 ## Online regex tester and debugger
 
-[regex101](https://regex101.com/) : PHP, PCRE, Python, Golang and JavaScript
+- [regex101](https://regex101.com/) : PHP, PCRE, Python, Golang and JavaScript
+- [oschina](https://tool.oschina.net/regex/)
+- [chinaz](http://tool.chinaz.com/regex/)
+- [w3cschool](https://www.w3cschool.cn/tools/index?name=re)
+- [runoob](https://c.runoob.com/front-end/854)
+- [haokh](http://tools.haokh.net/Regex)
+- Windows 上推荐：RegexBuddy
+- Mac上推荐：Expressions
 
 ### Collection of expression: 日常表达式
 

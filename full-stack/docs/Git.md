@@ -132,6 +132,16 @@ git diff
     git diff HEAD
     # 对比暂存区和上一条版本库提交
     git diff --staged
+
+# commit [type]
+# 1. feat: 新功能
+# 2. fix: 修复 bug
+# 3. chore: 构建过程或辅助工具的变动
+# 4. style: 根式（不影响代码于行的变动）
+# 5. refactor: 重构
+# 6. test: 增加测试
+# 7. docs: 文档
+git commit -m "[type]: xxxxx"
 ```
 
 #### 分支操作
@@ -165,7 +175,7 @@ git merge master
   # 2. 冲突时，放弃合并
   git merge --abort
 
-# 先把 branch 的基准更新到 master 的最新，再把 branch 上的提交记录，再在最新位置上重新提交
+# 3. 先把 branch 的基准更新到 master 的最新，再把 branch 上的提交记录，再在最新位置上重新提交
 git checkout branch1
 git rebase master
 # 再把 branch1 合并到 master
@@ -176,13 +186,23 @@ git merge branch1
 git push --set-upstream origin branch1
 
 # 合并 remote template/master
-# 1. 添加 remote template
-git remote add template https://github.com/gyx8899/npm-template.git
-# 2. 拉取 master, template, branches 所有远端的最新文件到本地
-git fetch --all
-# 3. 合并 template 的 master 到本地仓库
-git merge template/master --allow-unrelated-histories
-# 4. 处理冲突
+    # 1. 添加 remote template
+    git remote add template https://github.com/gyx8899/npm-template.git
+    # 2. 拉取 master, template, branches 所有远端的最新文件到本地
+    git fetch --all
+    # 3. 合并 template 的 master 到本地仓库
+    git merge template/master --allow-unrelated-histories
+    # 4. 处理冲突
+
+# 分支 A 重设指向远程分支 B
+    # 1. 查看分支 B 上的日志，找到最新的 log commit hash
+    git checkout B
+    git log
+    # 2. 回到分支本地 A，更改头部指向
+    git checkout A
+    git reset --hard [B hash]
+    git reset --hard origin/B
+    git push --force
 ...
 ```
 
@@ -216,6 +236,8 @@ git push origin -d feature2
 # 用这一次新的commit, 合并上一次 commit。进而达到修复上一次 commit 的 comment 内容
 git add .
 git commit --amend
+git commit --amend --only   # 打开编辑器，编辑新的提交信息，针对已经 commit 但未 push 的提交
+git commit --amend --only -m '新的 comment 内容'  # 针对已经 commit 但未 push 的提交
 
 # rebase --interactive 的缩写，交互式 rebase，
 git rebase -i HEAD^^
@@ -261,12 +283,15 @@ git reset -i "HEAD^"  #For windows
 git rebase -i HEAD^^  #撤销最后2次
 git rebase -i HEAD~5  #撤销最后5次
 # 丢弃上一次提交 --hard
-git reset --hard "HEAD^"   // Add quote for windows
+git reset --hard "HEAD^"   # Add quote for windows
 git push --force origin master
 # 以倒数第二个 commit 为起点（起点不包含在 rebase 序列里哟），branch1 为终点，rebase 到倒数第三个 commit 上。
 git rebase --onto HEAD^^ HEAD^ branch1
 # 撤销本地分支上的所有提交
 git reset --hard origin/<branch-name>
+
+# 强制推送到 remote
+git push -f
 ```
 
 #### 撤销已在中央仓库的 branch 的 commit
@@ -424,6 +449,24 @@ git cherry-pick <start-commit-id>..<end-commit-id>
 # 取另一个分支的一段区间(左闭右闭[])提交记录，在本分支上重新提交
 git cherry-pick <start-commit-id>^..<end-commit-id>
 # 也可以用在同一个分支上，场景为某次提交删除了，需要重新提交，可以使用 cherry-pick
+```
+
+
+
+#### patch: 对已有的 commit 记录生成补丁，并应用补丁
+
+```bash
+# 1. 生成
+git format-patch [hash]
+git format-patch [hash-A]...[hash-B] -o [~/../path]
+
+# 2. 检查patch
+git apply --state [~/../xxxx.patch]
+# 3. 能否应用成功
+git apply --check [~/../xxxx.patch]
+
+# 4. 应用patch
+git am [~/../xxxx.patch]
 ```
 
 #### Pull changes from a template repository
@@ -672,6 +715,20 @@ git push --mirror xxx.git
 git branch -r
 git remote -v
 git remote set-url origin xxx.git
+```
+
+#### 提交信息类别
+
+`git commit -m "fix: xxxxxxxx"`
+
+```shell
+feat：     新功能（feature）
+fix：      修补bug
+docs：     文档（documentation）
+style：    格式（不影响代码运行的变动）
+refactor： 重构（即不是新增功能，也不是修改bug的代码变动）
+test：     增加测试
+chore：    构建过程或辅助工具的变动
 ```
 
 ### Questions: 常见问题
@@ -1030,11 +1087,53 @@ git branch --unset-upstream
 git push --set-upstream origin master
 ```
 
+- error /node_modules/node-sass: Command failed  (npm install in New Mac)
+
+情况之一：新电脑安装的 Node version 太高了，node-sass 不匹配，需要安装 nvm 使用低版本的 node
+
+- fatal: 'https://github.com/gyx8899/blog.git/' 鉴权失败
+
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+
+[stackoverflow 方案](https://stackoverflow.com/questions/68775869/support-for-password-authentication-was-removed-please-use-a-personal-access-to)
+
+```shell
+# Developer's hack (shortcode):
+git remote set-url origin https://<githubtoken>@github.com/<username>/<repositoryname>.git
+# demo
+git remote set-url origin https://<githubtoken>@github.com/gyx8899/blog.git
+
+```
+
+- Git: hint: You have divergent branches and need to specify how to reconcile them. 提交了本地代码未推送，同时 remote 有新改动未拉到本地，push 本地代码时报错提示
+
+    warning: 不建议在没有为偏离分支指定合并策略时执行pull操作。您可以在执行下一次pull操作之前执行下面一条命令来抑制本消息：
+
+    git config pull.rebase false  # 合并（默认缺省策略）
+
+    git config pull.rebase true   # 变基
+
+    git config pull.ff only       # 仅快进
+
+    您可以将 "git config" 替换为 "git config --global" 以便为所有仓库设置缺省的配置项。您也可以在每次执行 pull 命令时添加 --rebase --no-rebase，或者 --ff-only 参数覆盖缺省设置。
+
+```shell
+# 方法 1
+git config pull.rebase false
+# 方法 2: 查看本地提交记录，reset 到本地提交记录的前一条后，重新拉取代码，重新提交本地记录
+git log -3
+git reset --hard <HASH>
+git pull
+# 方法 3: 简单直接
+git pull --rebase
+git push
+```
+
 ## 练习
 
 - [Learn Git Branching](https://learngitbranching.js.org/)
 
 ## 参考
 
-- <https://git-scm.com/docs> Git - Reference
-- <https://mp.weixin.qq.com/s/BC2UFcQiviqtq_ybfeq50A> 【第1864期】手撕Git，告别盲目记忆
+- <https://git-scm.com/docs> Git - Reference

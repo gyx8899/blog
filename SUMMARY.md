@@ -41,6 +41,7 @@
 自检清单
 
 - [开发自检清单](/full-stack/checklist/Checklist.md)
+- [代码教鞭：不值得犯第二次的错](/full-stack/checklist/CodeTips.md)
 
 ### Docs
 
@@ -49,6 +50,7 @@
 - [Bash: 入门重点](/full-stack/docs/Bash.md)
 - [CSS 特殊用法](/full-stack/docs/CSS.md)
 - [Console](/full-stack/docs/Console.md)
+- [Corn 表达式](/full-stack/docs/Corn.md)
 - [DOS command](/full-stack/docs/Dos.md)
 - [Emoji: 供日常学习、查询及使用](/full-stack/docs/Emoji.md)
 - [Git 命令集](/full-stack/docs/Git.md)
@@ -57,18 +59,20 @@
 - [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md)
 - [JS 精选](/full-stack/docs/JS.md)
 - [Jest learning manual](/full-stack/docs/Jest.md)
+- [License: 解说](/full-stack/docs/License.md)
+- [Mac](/full-stack/docs/Mac.md)
 - [Markdown](/full-stack/docs/Markdown.md)
 - [小程序](/full-stack/docs/MiniProgram.md)
 - [NPM and Plugin Guide](/full-stack/docs/NPM.md)
 - [渐进式 Web 应用（PWA）](/full-stack/docs/PWA.md)
 - [Regexp](/full-stack/docs/Regexp.md)
 - [Rollup](/full-stack/docs/Rollup.md)
-- [SEO: 搜索优化学习](/full-stack/docs/SEO.md)
+- [SEO](/full-stack/docs/SEO.md)
 - [SQL](/full-stack/docs/SQL.md)
 - [专业名词](/full-stack/docs/TechTerms.md)
 - [Testing](/full-stack/docs/Testing.md)
 - [TypeScript](/full-stack/docs/TypeScript.md)
-- [Vue: 点滴都是赞](/full-stack/docs/Vue.md)
+- [Vue - fragment knowledge](/full-stack/docs/Vue.md)
 - [Web API](/full-stack/docs/WebAPI.md)
 - [站点：那些可以经常逛逛的开发工具网站](/full-stack/docs/WebSite.md)
 - [Webpack](/full-stack/docs/Webpack.md)

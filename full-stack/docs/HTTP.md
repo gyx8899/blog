@@ -93,5 +93,15 @@
 |510|Not Extended||
 |511|Network Authentication Required|...|
 
+## 鉴权方式
+
+- HTTP Basic Authentication
+
+- session-cookie
+
+- token
+
+- OAuth
+
 ## 参考
 [HTTP 响应代码 - HTTP | MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status)

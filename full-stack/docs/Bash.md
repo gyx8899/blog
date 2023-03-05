@@ -1,7 +1,9 @@
 # Bash: 入门重点
 
-##### Command List
+## Command List
+
 (Not work in windows dos)
+
 - Enter
 
 ```shell
@@ -106,7 +108,7 @@ if [[ $template != template ]]; then
 fi
 ```
 
-#### Questions
+## Questions
 
 * unary operator expected: 表达式左边有可能为空，则表达式左侧就为空，报错
 
@@ -133,4 +135,30 @@ fi
 if [[ "${filename}" = '' ]]; then
 
 fi
-```
+```
+
+## Error: TODO: 待解决
+
+- code ELIFECYCLE errno 1 (Mac 上直接执行 `git-push.sh` 时出现)
+
+```shell
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! blog@1.0.0 git-push-mac: `node ./assets/scripts/add-timestamp.js file=. && cd ../yx-env && bash git-push.sh blog`
+npm ERR! Exit status 1
+```
+
+- ChildProcess.exithandler  (Mac 上通过`child_process exec` 执行 `git-push.sh` 时出现)
+
+```shell
+at ChildProcess.exithandler (child_process.js:308:12)
+    at ChildProcess.emit (events.js:315:20)
+    at maybeClose (internal/child_process.js:1048:16)
+    at Socket.<anonymous> (internal/child_process.js:439:11)
+    at Socket.emit (events.js:315:20)
+    at Pipe.<anonymous> (net.js:673:12) {
+  killed: false,
+  code: 1,
+  signal: null,
+  cmd: 'bash git-push.sh blog clean'
+}

@@ -1,19 +1,20 @@
-##Vue - fragment knowledge
+# Vue - fragment knowledge
 
----
+## Basic
 
-### Basic
 * Lib import:
+
 ```html
 <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 ```
 
 * Directives:
+
 ```html
 <span v-bind:title="message">
 <p v-if="seen">现在你看到我了</p>
 <li v-for="todo in todos">
-	{{ todo.text }}
+{{ todo.text }}
 </li>
 <button v-on:click="reverseMessage">逆转消息</button>
 <input v-model="message">
@@ -23,6 +24,7 @@
 ### Attentions
 
 * Data using:
+
 ```javascript
 // 1.1 dot VS $
 var vm = new Vue({
@@ -85,6 +87,7 @@ vm.$watch('a', function (newValue, oldValue) {
 <div :style="{ display: ['-webkit-box', '-ms-flexbox', 'flex'] }"></div>
 <div v-bind:style="styleObject"></div>
 ```
+
 ```javascript
 data: {
   styleObject: {
@@ -94,11 +97,6 @@ data: {
 }
 ```
 
-```
+```markdown
 Mustache 语法不能作用在 HTML 特性上，遇到这种情况应该使用 v-bind 指令：
-```
-
-
-最后更新于2020年2月18日
-
-[^footnote]: timestamp-最后更新于2020年2月18日
+```

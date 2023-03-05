@@ -12,4 +12,8 @@
 
 - CLI
 
-> Command Line Interface 命令行环境
+> Command Line Interface 命令行环境
+
+- rc: Run command
+
+> npmrc.js, eslintrc.js 配置的数据和信息

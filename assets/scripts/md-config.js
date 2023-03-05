@@ -37,7 +37,7 @@ module.exports = {
                 "title": "自我迭代"
             },
             "WorkExperience.md": {
-                "date": "2021年1月28日",
+                "date": "2021年11月4日",
                 "path": "daily-life/WorkExperience.md",
                 "title": "工作心得"
             },
@@ -52,7 +52,7 @@ module.exports = {
                 "title": "探索历程"
             },
             "OutOfWork.md": {
-                "date": "2021年8月9日",
+                "date": "2022年7月23日",
                 "path": "daily-life/OutOfWork.md",
                 "title": "工作之余 - 技能修炼"
             }
@@ -65,32 +65,32 @@ module.exports = {
                     "title": "Console"
                 },
                 "Dos.md": {
-                    "date": "2020年10月30日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/Dos.md",
                     "title": "DOS command"
                 },
                 "Git.md": {
-                    "date": "2021年10月12日",
+                    "date": "2022年7月17日",
                     "path": "full-stack/docs/Git.md",
                     "title": "Git 命令集"
                 },
                 "Jest.md": {
-                    "date": "2020年9月4日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/Jest.md",
                     "title": "Jest learning manual"
                 },
                 "NPM.md": {
-                    "date": "2021年4月7日",
+                    "date": "2022年8月1日",
                     "path": "full-stack/docs/NPM.md",
                     "title": "NPM and Plugin Guide"
                 },
                 "Vue.md": {
-                    "date": "2020年2月18日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/Vue.md",
-                    "title": "Vue: 点滴都是赞"
+                    "title": "Vue - fragment knowledge"
                 },
                 "Testing.md": {
-                    "date": "2021年2月25日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/Testing.md",
                     "title": "Testing"
                 },
@@ -105,47 +105,47 @@ module.exports = {
                     "title": "Webpack"
                 },
                 "SEO.md": {
-                    "date": "2020年4月17日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/SEO.md",
-                    "title": "SEO: 搜索优化学习"
+                    "title": "SEO"
                 },
                 "Bash.md": {
-                    "date": "2021年1月27日",
+                    "date": "2022年7月17日",
                     "path": "full-stack/docs/Bash.md",
                     "title": "Bash: 入门重点"
                 },
                 "Regexp.md": {
-                    "date": "2021年9月13日",
+                    "date": "2022年3月20日",
                     "path": "full-stack/docs/Regexp.md",
                     "title": "Regexp"
                 },
                 "Windows.md": {
-                    "date": "2021年7月26日",
+                    "date": "2022年7月6日",
                     "path": "full-stack/docs/Windows.md",
                     "title": "Windows 之路遇精彩"
                 },
                 "CSS.md": {
-                    "date": "2021年5月9日",
+                    "date": "2023年2月1日",
                     "path": "full-stack/docs/CSS.md",
                     "title": "CSS 特殊用法"
                 },
                 "HTTP.md": {
-                    "date": "2021年1月6日",
+                    "date": "2022年5月15日",
                     "path": "full-stack/docs/HTTP.md",
                     "title": "HTTP: 小知识巧总结"
                 },
                 "TypeScript.md": {
-                    "date": "2021年8月6日",
+                    "date": "2022年6月8日",
                     "path": "full-stack/docs/TypeScript.md",
                     "title": "TypeScript"
                 },
                 "SQL.md": {
-                    "date": "2020年11月13日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/SQL.md",
                     "title": "SQL"
                 },
                 "GitBook.md": {
-                    "date": "2020年9月4日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/GitBook.md",
                     "title": "GitBook"
                 },
@@ -155,17 +155,17 @@ module.exports = {
                     "title": "Emoji: 供日常学习、查询及使用"
                 },
                 "WebSite.md": {
-                    "date": "2020年9月27日",
+                    "date": "2021年11月4日",
                     "path": "full-stack/docs/WebSite.md",
                     "title": "站点：那些可以经常逛逛的开发工具网站"
                 },
                 "GitHubAction.md": {
-                    "date": "2020年11月19日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/GitHubAction.md",
                     "title": "Github Action"
                 },
                 "TechTerms.md": {
-                    "date": "2021年7月30日",
+                    "date": "2022年3月2日",
                     "path": "full-stack/docs/TechTerms.md",
                     "title": "专业名词"
                 },
@@ -175,7 +175,7 @@ module.exports = {
                     "title": "Rollup"
                 },
                 "PWA.md": {
-                    "date": "2021年2月25日",
+                    "date": "2021年11月2日",
                     "path": "full-stack/docs/PWA.md",
                     "title": "渐进式 Web 应用（PWA）"
                 },
@@ -190,9 +190,24 @@ module.exports = {
                     "title": "Markdown"
                 },
                 "JS.md": {
-                    "date": "2021年8月5日",
+                    "date": "2022年5月15日",
                     "path": "full-stack/docs/JS.md",
                     "title": "JS 精选"
+                },
+                "License.md": {
+                    "date": "2021年11月2日",
+                    "path": "full-stack/docs/License.md",
+                    "title": "License: 解说"
+                },
+                "Corn.md": {
+                    "date": "2021年11月2日",
+                    "path": "full-stack/docs/Corn.md",
+                    "title": "Corn 表达式"
+                },
+                "Mac.md": {
+                    "date": "2022年5月15日",
+                    "path": "full-stack/docs/Mac.md",
+                    "title": "Mac"
                 }
             },
             "react": {
@@ -268,12 +283,12 @@ module.exports = {
             },
             "tool": {
                 "VSCode.md": {
-                    "date": "2021年7月28日",
+                    "date": "2022年7月17日",
                     "path": "full-stack/tool/VSCode.md",
                     "title": "VS Code：发挥应有的效率"
                 },
                 "IntelliJ-IDEA.md": {
-                    "date": "2021年7月28日",
+                    "date": "2022年3月8日",
                     "path": "full-stack/tool/IntelliJ-IDEA.md",
                     "title": "IntelliJ IDEA"
                 },
@@ -285,9 +300,14 @@ module.exports = {
             },
             "checklist": {
                 "Checklist.md": {
-                    "date": "2021年8月5日",
+                    "date": "2021年11月11日",
                     "path": "full-stack/checklist/Checklist.md",
                     "title": "开发自检清单"
+                },
+                "CodeTips.md": {
+                    "date": "2022年4月18日",
+                    "path": "full-stack/checklist/CodeTips.md",
+                    "title": "代码教鞭：不值得犯第二次的错"
                 }
             }
         },

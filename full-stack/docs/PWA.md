@@ -2,15 +2,17 @@
   
 PWA（Progressive web apps，渐进式 Web 应用）运用现代的 Web API 以及传统的渐进式增强策略来创建跨平台 Web 应用程序。这些应用无处不在、功能丰富，使其具有与原生应用相同的用户体验优势。
   
-## PWA应用：
+## PWA应用
+
 指那些使用指定技术和标准模式来开发的web应用，这将同时赋予它们web应用和原生应用的特性。
   
-### 对比 App：
+### 对比 App
 
 - web应用更加易于发现——相比于安装应用，访问一个网站显然更加容易和迅速，并且你可以通过一个链接来分享web应用。
 - 原生应用与操作系统可以更加完美的整合，也因此为用户提供了无缝的用户体验。你可以通过安装应用使得它在离线的状态下也可以运行，并且相较于使用浏览器访问，用户也更喜欢通过点击主页上的图标来访问它们喜爱的应用。
   
-### 优势：
+### 优势
+
 可被发现、易安装、可链接、独立于网络、渐进式、可重用、响应性和安全的。
   
 - 减少应用安装后的加载时间, 多亏了 Service Workers来进行缓存, 以此来节省带宽和时间。
@@ -19,15 +21,16 @@ PWA（Progressive web apps，渐进式 Web 应用）运用现代的 Web API 以�
 - 凭借系统通知和推送消息与用户保持连接，对用户产生更多的吸引力，并且提高转换效率。
   
 ### Service Worker 手册：(实例)
+
 https://serviceworke.rs/
-  
-  
-### 支持率：
+
+### 支持率
 
 - https://jakearchibald.github.io/isserviceworkerready/
 - https://caniuse.com/#search=serviceworker
   
 ### 在线生成 PWA
+
   可以使用 PWABuilder 网站在线生成 PWA。
 
 - [App Structure](https://developer.mozilla.org/zh-CN/docs/Web/Progressive_web_apps/App_structure) 
@@ -62,5 +65,4 @@ https://serviceworke.rs/
 - [DuckDuckGo](https://duckduckgo.com/)
 - [Vice](https://www.vice.com/en_us)
 - [Omni Calculator](https://www.omnicalculator.com/)
-- [ET](https://m.economictimes.com/)
-  
+- [ET](https://m.economictimes.com/)

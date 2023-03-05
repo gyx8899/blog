@@ -227,4 +227,28 @@ input:out-of-range {
     background-color: red;
     border: 1px solid red;
 }
+```
+
+- [clamp(MIN, VAL, MAX) 函数](https://developer.mozilla.org/zh-CN/docs/Web/CSS/clamp) 通过中间 Val 窗口 vw 值，动态改变 css 样式，达到比媒体查询更动态的功效
+
+```css
+/* 设置随窗口大小改变的字体大小, 10vw = 10% window width */
+font-size: clamp(1rem, 10vw, 2rem);
+```
+
+- 使用 `:empty` 隐藏空 HTML 元素
+
+```css
+:empty {
+  display: none;
+}
+```
+
+- 使用带有空链接的属性选择器
+
+> 如果 `<a>` 标签里面没有内容，将 href 的值作为内容展示
+```css
+a[href^="http"]:empty::before {
+  content: attr(href);
+}
 ```

@@ -1,6 +1,6 @@
 # GitBook
 
-#### 安装
+## 安装
 
 - 安装 gitbook-cli，执行后续 gitbook 命令会自动安装最新版本的 gitbook
 

@@ -1,18 +1,18 @@
 # Jest learning manual
 
-<!-- toc -->
-
 ## Docs
+
 [Jestjs](https://jestjs.io/zh-Hans/)
 
 ## Samples
+
 [![Edit Jest-Samples](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/weathered-cdn-sjxck?fontsize=14&hidenavigation=1&theme=dark)
 
 ## 采坑系列
 
 - 异步 `await expect(fetchData()).rejects` does not work
 
-```
+```js
 function fetchData() {
   return new Promise(function(resolve, reject) {
     if (true) {
@@ -38,7 +38,7 @@ test("the fetch fails with an error", async () => {
 
 ```javascript
 beforeEach(() => {
-	global.fetch = jest.fn().mockImplementation(() => mockFetchPromise);
+  global.fetch = jest.fn().mockImplementation(() => mockFetchPromise);
 });
 
 afterEach(() => {
@@ -49,6 +49,7 @@ afterEach(() => {
 ```
 
 - No tests found, exiting with code 1
+
 > The test file need to be xxx.test.js, not xxx.js when the Jest config contains testRegex ".test.js"
 
 - Jest encountered an unexpected token
@@ -59,11 +60,14 @@ afterEach(() => {
   
     > https://www.cnblogs.com/xueyoucd/p/10495922.html 解决jest处理es模块 - 学友2000 - 博客园
 
-    - 安装依赖包，特别是 `babel-plugin-transform-es2015-modules-commonjs`
+  - 安装依赖包，特别是 `babel-plugin-transform-es2015-modules-commonjs`
+
     ```shell
     yarn add --dev babel-jest @babel/core @babel/preset-env babel-plugin-transform-es2015-modules-commonjs
     ```
-    - 配置 `babel.config.js`
+
+  - 配置 `babel.config.js`
+
     ```javascript
     module.exports = {
         presets: [
@@ -79,12 +83,13 @@ afterEach(() => {
         plugins: ["transform-es2015-modules-commonjs"]
     };
     ```
+
     - 配置 `jest.config.js` 或在 `package.json` 中添加 `jest` 配置
+
     ```javascript
     module.exports = {
         // 查看报错的 import 方法来源的包，比如是 lodash-es, 如果还有其他的，添加到 other-es-lib 的位置
         // 重点：将不忽略 lodash-es, other-es-lib 这些es库, 从而使 babel-jest 去处理它们
         transformIgnorePatterns: ["<rootDir>/node_modules/(?!(lodash-es|other-es-lib))"]
     };
-    ```
-
+    ```
