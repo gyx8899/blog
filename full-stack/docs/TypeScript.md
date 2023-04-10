@@ -117,17 +117,18 @@ create(undefined); // Error, ? not error
 //类型断言
 //有时候你会遇到这样的情况，你会比TypeScript更了解某个值的详细信息。 通常这会发生在你清楚地知道一个实体具有比它现有类型更确切的类型。
 //通过类型断言这种方式可以告诉编译器，“相信我，我知道自己在干什么”。 类型断言好比其它语言里的类型转换，但是不进行特殊的数据检查和解构。 它没有运行时的影响，只是在编译阶段起作用。 TypeScript会假设你，程序员，已经进行了必须的检查。
-//类型断言有两种形式。 其一是“尖括号”语法：
-// let someValue: any = "this is a string";
-// let strLength: number = (<string>someValue).length;
+//类型断言有两种形式。 其一是“尖括号”语法：(尖括号格式会与 JSX 产生语法冲突，更推荐使用 as)
+let someValue1: any = "this is a string";
+let strLength1: number = (<string>someValue1).length;
 // 另一个为as语法：
-let someValue: any = "this is a string";
-let strLength: number = (someValue as string).length;
+let someValue2: any = "this is a string";
+let strLength2: number = (someValue2 as string).length;
 ```
 
 ## 变量声明
 
 此处对 var, let, const 的介绍及对比省略。
+
 
 ```typescript jsx
 // 解构
@@ -208,18 +209,6 @@ class Student {
 }
 ```
 
-- TypeScript 项目中引入一个纯 JavaScript 包，可能会报如下错误，需要添加 `declare module '@daybyday/yx-js'` 到项目的 [xxx].d.ts 文件中。 
-
-``` bash
-# semantic error TS7016: Could not find a declaration file for module '@daybyday/yx-js'
-```
-
-## 实践记录
-
-```typescript tsx
-const launchBtn = useRef<HTMLInputElement>(null)
-```
-
 ## 精巧示例
 
-- <https://www.metachris.com/2021/04/starting-a-typescript-project-in-2021/> Starting a TypeScript Project in 2021 · Chris Hager
+- <https://www.metachris.com/2021/04/starting-a-typescript-project-in-2021/> Starting a TypeScript Project in 2021 · Chris Hager
