@@ -209,6 +209,48 @@ class Student {
 }
 ```
 
+- 非空断言:来排除值可能为 null 或 undefined 的情况，因为这样很不安全。
+
+```ts
+userInfo.id!.toFixed(); // ok，但不建议
+userInfo.name!.toLowerCase() // ok，但不建议
+```
+
+- 比非空断言更安全、类型守卫更方便的做法是使用单问号（Optional Chain）、双问号（空值合并），我们可以使用它们来保障代码的安全性
+
+```ts
+userInfo.id?.toFixed(); // Optional Chain
+const myName = userInfo.name?? `my name is ${info.name}`; // 空值合并
+```
+
+- 针对 `interface` 接口类型无法覆盖的场景，比如组合类型、交叉类型（详见 08 讲），我们只能使用`type`类型别名来接收
+
+```ts
+/** 联合 */
+type MixedType = string | number;
+/** 交叉 */
+type IntersectionType = { id: number; name: string; } 
+  & { age: number; name: string };
+/** 提取接口属性类型 */
+type AgeType = ProgramLanguage['age'];  
+```
+
+- 在大多数的情况下使用接口类型和类型别名的效果等价，但是在某些特定的场景下这两者还是存在很大区别。比如，重复定义的接口类型，它的属性会叠加，这个特性使得我们可以极其方便地对全局变量、第三方库的类型做扩展
+
+```ts
+interface Language {
+  id: number;
+}
+
+interface Language {
+  name: string;
+}
+let lang: Language = {
+  id: 1, // ok
+  name: 'name' // ok
+}
+```
+
 ## 精巧示例
 
 - <https://www.metachris.com/2021/04/starting-a-typescript-project-in-2021/> Starting a TypeScript Project in 2021 · Chris Hager
