@@ -253,6 +253,34 @@ let lang: Language = {
 }
 ```
 
+- 只能在类型别名定义中使用 in，如果在接口中使用，则会提示一个 ts(1169) 的错误
+
+```TS
+  type SpecifiedKeys = 'id' | 'name';
+  type TargetType = {
+    [key in SpecifiedKeys]: any;
+  }; // { id: any; name: any; }
+  interface ITargetInterface {
+    [key in SpecifiedKeys]: any; // ts(1169)
+  }
+```
+
+- in 和 keyof 也只能在类型别名定义中组合使用。
+
+```TS
+interface SourceInterface {
+    readonly id: number;
+    name?: string;
+  }
+  type TargetType = {
+    [key in keyof SourceInterface]: SourceInterface[key];
+  }; // { readonly id: number; name?: string | undefined }
+  type TargetGenericType<S> = {
+    [key in keyof S]: S[key];
+  };
+  type TargetInstance = TargetGenericType<SourceInterface>; // { readonly id: number; name?: string | undefined 
+```
+
 ## 精巧示例
 
 - <https://www.metachris.com/2021/04/starting-a-typescript-project-in-2021/> Starting a TypeScript Project in 2021 · Chris Hager
