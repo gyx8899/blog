@@ -258,6 +258,25 @@ const NRMRC = path.join(process.env[(process.platform == 'win32') ? 'USERPROFILE
 # 为了避免这种情况，要么按照 npm 的规矩来，专门建一个用于运行 npm 的高权限用户；要么加 --unsafe-perm 参数，这样就不会切换到 nobody 上，运行时是哪个用户就是哪个用户，即使是 root。
 npm install --unsafe-perm
 ```
+
+- could not resolve dependency: npm err! peer react@"^16.8.0 || ^17.0.0" from @xxxx
+
+```shell
+# 1
+npm config set legacy-peer-deps true
+npm i
+
+# 2
+npm install --legacy-peer-deps
+```
+
+- requires a peer of react@^16.8.0 but none is installed. You must install peer dependencies yourself.
+
+```shell
+# 手动安装其开发依赖
+npm install --save-dev react@^16.8.0
+```
+
 ## NVM: Node version manager
 
 ### 镜像设置
