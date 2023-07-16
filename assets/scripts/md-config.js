@@ -59,6 +59,16 @@ module.exports = {
         },
         "full-stack": {
             "docs": {
+                "Bash.md": {
+                    "date": "2022年7月17日",
+                    "path": "full-stack/docs/Bash.md",
+                    "title": "Bash: 入门重点"
+                },
+                "ChatGPT.md": {
+                    "date": "2023年7月16日",
+                    "path": "full-stack/docs/ChatGPT.md",
+                    "title": "ChatGPT 使用总结"
+                },
                 "Console.md": {
                     "date": "2020年11月2日",
                     "path": "full-stack/docs/Console.md",
@@ -108,11 +118,6 @@ module.exports = {
                     "date": "2021年11月2日",
                     "path": "full-stack/docs/SEO.md",
                     "title": "SEO"
-                },
-                "Bash.md": {
-                    "date": "2022年7月17日",
-                    "path": "full-stack/docs/Bash.md",
-                    "title": "Bash: 入门重点"
                 },
                 "Regexp.md": {
                     "date": "2022年3月20日",
@@ -213,6 +218,11 @@ module.exports = {
                     "date": "2023年7月16日",
                     "path": "full-stack/docs/Github.md",
                     "title": "Github"
+                },
+                "TestNew.md": {
+                    "date": "2023年7月16日",
+                    "path": "full-stack/docs/TestNew.md",
+                    "title": "Test New Md file"
                 }
             },
             "react": {

@@ -49,6 +49,7 @@
 
 - [Bash: 入门重点](/full-stack/docs/Bash.md)
 - [CSS 特殊用法](/full-stack/docs/CSS.md)
+- [ChatGPT 使用总结](/full-stack/docs/ChatGPT.md)
 - [Console](/full-stack/docs/Console.md)
 - [Corn 表达式](/full-stack/docs/Corn.md)
 - [DOS command](/full-stack/docs/Dos.md)
@@ -71,6 +72,7 @@
 - [SEO](/full-stack/docs/SEO.md)
 - [SQL](/full-stack/docs/SQL.md)
 - [专业名词](/full-stack/docs/TechTerms.md)
+- [Test New Md file](/full-stack/docs/TestNew.md)
 - [Testing](/full-stack/docs/Testing.md)
 - [TypeScript](/full-stack/docs/TypeScript.md)
 - [Vue - fragment knowledge](/full-stack/docs/Vue.md)

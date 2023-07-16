@@ -46,6 +46,7 @@
 
 - [Bash: 入门重点](/full-stack/docs/Bash.md): <sub><sup>(2022年7月17日)</sup></sub>
 - [CSS 特殊用法](/full-stack/docs/CSS.md): <sub><sup>(2023年2月1日)</sup></sub>
+- [ChatGPT 使用总结](/full-stack/docs/ChatGPT.md): <sub><sup>(2023年7月16日)</sup></sub>
 - [Console](/full-stack/docs/Console.md): <sub><sup>(2020年11月2日)</sup></sub>
 - [Corn 表达式](/full-stack/docs/Corn.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [DOS command](/full-stack/docs/Dos.md): <sub><sup>(2021年11月2日)</sup></sub>
@@ -68,6 +69,7 @@
 - [SEO](/full-stack/docs/SEO.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [SQL](/full-stack/docs/SQL.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [专业名词](/full-stack/docs/TechTerms.md): <sub><sup>(2022年3月2日)</sup></sub>
+- [Test New Md file](/full-stack/docs/TestNew.md): <sub><sup>(2023年7月16日)</sup></sub>
 - [Testing](/full-stack/docs/Testing.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [TypeScript](/full-stack/docs/TypeScript.md): <sub><sup>(2023年4月20日)</sup></sub>
 - [Vue - fragment knowledge](/full-stack/docs/Vue.md): <sub><sup>(2021年11月2日)</sup></sub>
