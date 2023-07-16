@@ -69,7 +69,6 @@
 - [SEO](/full-stack/docs/SEO.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [SQL](/full-stack/docs/SQL.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [专业名词](/full-stack/docs/TechTerms.md): <sub><sup>(2022年3月2日)</sup></sub>
-- [Test New Md file](/full-stack/docs/TestNew.md): <sub><sup>(2023年7月16日)</sup></sub>
 - [Testing](/full-stack/docs/Testing.md): <sub><sup>(2021年11月2日)</sup></sub>
 - [TypeScript](/full-stack/docs/TypeScript.md): <sub><sup>(2023年4月20日)</sup></sub>
 - [Vue - fragment knowledge](/full-stack/docs/Vue.md): <sub><sup>(2021年11月2日)</sup></sub>

@@ -218,11 +218,6 @@ module.exports = {
                     "date": "2023年7月16日",
                     "path": "full-stack/docs/Github.md",
                     "title": "Github"
-                },
-                "TestNew.md": {
-                    "date": "2023年7月16日",
-                    "path": "full-stack/docs/TestNew.md",
-                    "title": "Test New Md file"
                 }
             },
             "react": {

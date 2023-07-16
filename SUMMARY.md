@@ -72,7 +72,6 @@
 - [SEO](/full-stack/docs/SEO.md)
 - [SQL](/full-stack/docs/SQL.md)
 - [专业名词](/full-stack/docs/TechTerms.md)
-- [Test New Md file](/full-stack/docs/TestNew.md)
 - [Testing](/full-stack/docs/Testing.md)
 - [TypeScript](/full-stack/docs/TypeScript.md)
 - [Vue - fragment knowledge](/full-stack/docs/Vue.md)
