@@ -208,6 +208,11 @@ module.exports = {
                     "date": "2022年5月15日",
                     "path": "full-stack/docs/Mac.md",
                     "title": "Mac"
+                },
+                "Github.md": {
+                    "date": "2023年7月16日",
+                    "path": "full-stack/docs/Github.md",
+                    "title": "Github"
                 }
             },
             "react": {
