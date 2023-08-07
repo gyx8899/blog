@@ -66,4 +66,13 @@
 
 ## 小点
 
-- 空元素，允许将子列表分组，而无需向 DOM 添加额外节点 `<React.Fragment></React.Fragment>` 或短语法 `<></>`
+- 空元素，允许将子列表分组，而无需向 DOM 添加额外节点 `<React.Fragment></React.Fragment>` 或短语法 `<></>`
+
+
+## 问题记录
+
+- Minified React error #306;
+
+> 由于代码书写的错误，导致react组件在render的时候，有一个孩子组件没有正确的返回react支持的数据结构
+
+## 参考文档

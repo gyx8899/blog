@@ -222,7 +222,7 @@ module.exports = {
             },
             "react": {
                 "React.md": {
-                    "date": "2021年8月10日",
+                    "date": "2023年8月7日",
                     "path": "full-stack/react/React.md",
                     "title": "React: 总结整理"
                 },

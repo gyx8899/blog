@@ -88,7 +88,7 @@
 
 React 相关知识总结
 
-- [React: 总结整理](/full-stack/react/React.md): <sub><sup>(2021年8月10日)</sup></sub>
+- [React: 总结整理](/full-stack/react/React.md): <sub><sup>(2023年8月7日)</sup></sub>
 - [React Hook - 速览](/full-stack/react/ReactHook.md): <sub><sup>(2021年8月10日)</sup></sub>
 - [React-生命周期方法转 Hooks-1](/full-stack/react/ReactLifeCycleToHooks1.md): <sub><sup>(2021年3月29日)</sup></sub>
 - [React: 生命周期方法转 Hooks-2](/full-stack/react/ReactLifeCycleToHooks2.md): <sub><sup>(2021年3月29日)</sup></sub>
@@ -120,4 +120,4 @@ Office 工具技巧
 - [Excel 常用操作](/office/Excel.md): <sub><sup>(2021年2月24日)</sup></sub>
 - [Word: 文档操作精选技巧](/office/Word.md): <sub><sup>(2020年8月31日)</sup></sub>
 
-最后更新于2023年7月16日
+最后更新于2023年8月7日
