@@ -91,6 +91,7 @@
 
 React 相关知识总结
 
+- [Antd typescript](/full-stack/react/AntdTypescript.md)
 - [React: 总结整理](/full-stack/react/React.md)
 - [React Hook - 速览](/full-stack/react/ReactHook.md)
 - [React-生命周期方法转 Hooks-1](/full-stack/react/ReactLifeCycleToHooks1.md)

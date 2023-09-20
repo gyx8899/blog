@@ -255,6 +255,11 @@ module.exports = {
                     "date": "2021年8月5日",
                     "path": "full-stack/react/useEffect.md",
                     "title": "useEffect"
+                },
+                "AntdTypescript.md": {
+                    "date": "2023年9月20日",
+                    "path": "full-stack/react/AntdTypescript.md",
+                    "title": "Antd typescript"
                 }
             },
             "project": {
