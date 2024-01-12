@@ -148,6 +148,8 @@ cd demo/react-components
 npm link ../test-component-project/node-modules/react
 # 重新build组件，在测试项目中 npm link 'react-components' （packageName）
 ```
+# unlink
+npm unlink @daybyday/yx-node
 
 - Config
 
@@ -305,4 +307,4 @@ npm_mirror: https://npm.taobao.org/mirrors/npm/
 
 [macOS 上使用 brew 安装 NVM 管理 node.js](https://qizhanming.com/blog/2020/07/29/how-to-install-node-using-nvm-on-macos-with-brew)
 
-## 参考
+## 参考
