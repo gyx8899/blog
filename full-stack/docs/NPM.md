@@ -147,9 +147,10 @@ npm link @daybyday/yx-node
 cd demo/react-components
 npm link ../test-component-project/node-modules/react
 # 重新build组件，在测试项目中 npm link 'react-components' （packageName）
-```
+
 # unlink
 npm unlink @daybyday/yx-node
+```
 
 - Config
 
