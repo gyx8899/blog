@@ -1130,10 +1130,19 @@ git pull --rebase
 git push
 ```
 
+- Git 全局忽略文件
+
+```shell
+# Mac下配置Git 的全局忽略文件
+$ git config --global core.excludesfile ~/.gitignore_global
+ 
+$ vim ~/.gitignore_global
+```
+
 ## 练习
 
 - [Learn Git Branching](https://learngitbranching.js.org/)
 
 ## 参考
 
-- <https://git-scm.com/docs> Git - Reference
+- <https://git-scm.com/docs> Git - Reference
