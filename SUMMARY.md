@@ -49,6 +49,7 @@
 
 - [Bash: 入门重点](/full-stack/docs/Bash.md)
 - [CSS 特殊用法](/full-stack/docs/CSS.md)
+- [ChatGPT 使用总结](/full-stack/docs/ChatGPT.md)
 - [Console](/full-stack/docs/Console.md)
 - [Corn 表达式](/full-stack/docs/Corn.md)
 - [DOS command](/full-stack/docs/Dos.md)
@@ -56,6 +57,7 @@
 - [Git 命令集](/full-stack/docs/Git.md)
 - [GitBook](/full-stack/docs/GitBook.md)
 - [Github Action](/full-stack/docs/GitHubAction.md)
+- [Github](/full-stack/docs/Github.md)
 - [HTTP: 小知识巧总结](/full-stack/docs/HTTP.md)
 - [JS 精选](/full-stack/docs/JS.md)
 - [Jest learning manual](/full-stack/docs/Jest.md)
@@ -89,6 +91,7 @@
 
 React 相关知识总结
 
+- [Antd typescript](/full-stack/react/AntdTypescript.md)
 - [React: 总结整理](/full-stack/react/React.md)
 - [React Hook - 速览](/full-stack/react/ReactHook.md)
 - [React-生命周期方法转 Hooks-1](/full-stack/react/ReactLifeCycleToHooks1.md)

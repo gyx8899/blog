@@ -117,17 +117,18 @@ create(undefined); // Error, ? not error
 //类型断言
 //有时候你会遇到这样的情况，你会比TypeScript更了解某个值的详细信息。 通常这会发生在你清楚地知道一个实体具有比它现有类型更确切的类型。
 //通过类型断言这种方式可以告诉编译器，“相信我，我知道自己在干什么”。 类型断言好比其它语言里的类型转换，但是不进行特殊的数据检查和解构。 它没有运行时的影响，只是在编译阶段起作用。 TypeScript会假设你，程序员，已经进行了必须的检查。
-//类型断言有两种形式。 其一是“尖括号”语法：
-// let someValue: any = "this is a string";
-// let strLength: number = (<string>someValue).length;
+//类型断言有两种形式。 其一是“尖括号”语法：(尖括号格式会与 JSX 产生语法冲突，更推荐使用 as)
+let someValue1: any = "this is a string";
+let strLength1: number = (<string>someValue1).length;
 // 另一个为as语法：
-let someValue: any = "this is a string";
-let strLength: number = (someValue as string).length;
+let someValue2: any = "this is a string";
+let strLength2: number = (someValue2 as string).length;
 ```
 
 ## 变量声明
 
 此处对 var, let, const 的介绍及对比省略。
+
 
 ```typescript jsx
 // 解构
@@ -179,6 +180,8 @@ interface Person {
 
 ## 泛型
 
+泛型指的是类型参数化，即将原来某种具体的类型进行参数化。和定义函数参数一样，我们可以给泛型定义若干个类型参数，并在调用时给泛型传入明确的类型参数。设计泛型的目的在于有效约束类型成员之间的关系，比如函数参数和返回值、类或者接口成员和方法之间的关系。
+
 ```typescript jsx
 function fn<T> (a: T): T {
   return a;
@@ -208,18 +211,76 @@ class Student {
 }
 ```
 
-- TypeScript 项目中引入一个纯 JavaScript 包，可能会报如下错误，需要添加 `declare module '@daybyday/yx-js'` 到项目的 [xxx].d.ts 文件中。 
+- 非空断言:来排除值可能为 null 或 undefined 的情况，因为这样很不安全。
 
-``` bash
-# semantic error TS7016: Could not find a declaration file for module '@daybyday/yx-js'
+```ts
+userInfo.id!.toFixed(); // ok，但不建议
+userInfo.name!.toLowerCase() // ok，但不建议
 ```
 
-## 实践记录
+- 比非空断言更安全、类型守卫更方便的做法是使用单问号（Optional Chain）、双问号（空值合并），我们可以使用它们来保障代码的安全性
 
-```typescript tsx
-const launchBtn = useRef<HTMLInputElement>(null)
+```ts
+userInfo.id?.toFixed(); // Optional Chain
+const myName = userInfo.name?? `my name is ${info.name}`; // 空值合并
+```
+
+- 针对 `interface` 接口类型无法覆盖的场景，比如组合类型、交叉类型（详见 08 讲），我们只能使用`type`类型别名来接收
+
+```ts
+/** 联合 */
+type MixedType = string | number;
+/** 交叉 */
+type IntersectionType = { id: number; name: string; } 
+  & { age: number; name: string };
+/** 提取接口属性类型 */
+type AgeType = ProgramLanguage['age'];  
+```
+
+- 在大多数的情况下使用接口类型和类型别名的效果等价，但是在某些特定的场景下这两者还是存在很大区别。比如，重复定义的接口类型，它的属性会叠加，这个特性使得我们可以极其方便地对全局变量、第三方库的类型做扩展
+
+```ts
+interface Language {
+  id: number;
+}
+
+interface Language {
+  name: string;
+}
+let lang: Language = {
+  id: 1, // ok
+  name: 'name' // ok
+}
+```
+
+- 只能在类型别名定义中使用 in，如果在接口中使用，则会提示一个 ts(1169) 的错误
+
+```TS
+  type SpecifiedKeys = 'id' | 'name';
+  type TargetType = {
+    [key in SpecifiedKeys]: any;
+  }; // { id: any; name: any; }
+  interface ITargetInterface {
+    [key in SpecifiedKeys]: any; // ts(1169)
+  }
+```
+
+- in 和 keyof 也只能在类型别名定义中组合使用。
+
+```TS
+interface SourceInterface {
+    readonly id: number;
+    name?: string;
+  }
+  type TargetType = {
+    [key in keyof SourceInterface]: SourceInterface[key];
+  }; // { readonly id: number; name?: string | undefined }
+  type TargetGenericType<S> = {
+    [key in keyof S]: S[key];
+  };
+  type TargetInstance = TargetGenericType<SourceInterface>; // { readonly id: number; name?: string | undefined 
 ```
 
 ## 精巧示例
 
-- <https://www.metachris.com/2021/04/starting-a-typescript-project-in-2021/> Starting a TypeScript Project in 2021 · Chris Hager
+- <https://www.metachris.com/2021/04/starting-a-typescript-project-in-2021/> Starting a TypeScript Project in 2021 · Chris Hager

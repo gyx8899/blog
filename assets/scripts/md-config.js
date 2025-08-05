@@ -59,6 +59,16 @@ module.exports = {
         },
         "full-stack": {
             "docs": {
+                "Bash.md": {
+                    "date": "2022年7月17日",
+                    "path": "full-stack/docs/Bash.md",
+                    "title": "Bash: 入门重点"
+                },
+                "ChatGPT.md": {
+                    "date": "2023年7月16日",
+                    "path": "full-stack/docs/ChatGPT.md",
+                    "title": "ChatGPT 使用总结"
+                },
                 "Console.md": {
                     "date": "2020年11月2日",
                     "path": "full-stack/docs/Console.md",
@@ -80,7 +90,7 @@ module.exports = {
                     "title": "Jest learning manual"
                 },
                 "NPM.md": {
-                    "date": "2022年8月1日",
+                    "date": "2023年5月16日",
                     "path": "full-stack/docs/NPM.md",
                     "title": "NPM and Plugin Guide"
                 },
@@ -109,11 +119,6 @@ module.exports = {
                     "path": "full-stack/docs/SEO.md",
                     "title": "SEO"
                 },
-                "Bash.md": {
-                    "date": "2022年7月17日",
-                    "path": "full-stack/docs/Bash.md",
-                    "title": "Bash: 入门重点"
-                },
                 "Regexp.md": {
                     "date": "2022年3月20日",
                     "path": "full-stack/docs/Regexp.md",
@@ -135,7 +140,7 @@ module.exports = {
                     "title": "HTTP: 小知识巧总结"
                 },
                 "TypeScript.md": {
-                    "date": "2022年6月8日",
+                    "date": "2023年4月20日",
                     "path": "full-stack/docs/TypeScript.md",
                     "title": "TypeScript"
                 },
@@ -155,7 +160,7 @@ module.exports = {
                     "title": "Emoji: 供日常学习、查询及使用"
                 },
                 "WebSite.md": {
-                    "date": "2021年11月4日",
+                    "date": "2023年7月16日",
                     "path": "full-stack/docs/WebSite.md",
                     "title": "站点：那些可以经常逛逛的开发工具网站"
                 },
@@ -190,7 +195,7 @@ module.exports = {
                     "title": "Markdown"
                 },
                 "JS.md": {
-                    "date": "2022年5月15日",
+                    "date": "2023年9月20日",
                     "path": "full-stack/docs/JS.md",
                     "title": "JS 精选"
                 },
@@ -208,11 +213,16 @@ module.exports = {
                     "date": "2022年5月15日",
                     "path": "full-stack/docs/Mac.md",
                     "title": "Mac"
+                },
+                "Github.md": {
+                    "date": "2023年7月16日",
+                    "path": "full-stack/docs/Github.md",
+                    "title": "Github"
                 }
             },
             "react": {
                 "React.md": {
-                    "date": "2021年8月10日",
+                    "date": "2023年8月7日",
                     "path": "full-stack/react/React.md",
                     "title": "React: 总结整理"
                 },
@@ -245,6 +255,11 @@ module.exports = {
                     "date": "2021年8月5日",
                     "path": "full-stack/react/useEffect.md",
                     "title": "useEffect"
+                },
+                "AntdTypescript.md": {
+                    "date": "2023年9月20日",
+                    "path": "full-stack/react/AntdTypescript.md",
+                    "title": "Antd typescript"
                 }
             },
             "project": {

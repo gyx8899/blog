@@ -100,6 +100,7 @@ function updateMdConfig(fileName, status) {
                 date: getFormatDateValue(new Date(), readMeTimestamp),
                 path: fileName,
             };
+            // console.log('updateMdConfig: ', status, name, fileInfo);
             currentFile[name] = fileInfo;
 
             break;
@@ -114,6 +115,7 @@ function updateMdConfig(fileName, status) {
             break;
         default:
         // Nothing
+        // console.log('updateMdConfig: default', status, name, fileInfo);
     }
 }
 
@@ -162,8 +164,7 @@ function generateMDFile(_mdConfig, _readMeConfig, fileConfig) {
 
 cgf(function (err, results) {
     let mdFilesChanged = false;
-    // console.log(err);
-    // console.log(JSON.stringify(results, null, 4));
+    // console.log('cgf callback', JSON.stringify(results, null, 4));
     results &&
         results.forEach((file) => {
             const { filename, status } = file;
@@ -182,7 +183,7 @@ cgf(function (err, results) {
         });
 
     if (mdFilesChanged) {
-        // console.log(JSON.stringify(mdConfig, null, 4));
+        // console.log('cgf: mdFilesChanged', JSON.stringify(mdConfig, null, 4));
         // Update md-config
         writeDataToFile(
             "./assets/scripts/md-config.js",
