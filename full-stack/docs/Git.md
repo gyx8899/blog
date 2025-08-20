@@ -1139,6 +1139,13 @@ $ git config --global core.excludesfile ~/.gitignore_global
 $ vim ~/.gitignore_global
 ```
 
+- Git 重置分支为 master
+
+```shell
+git reset --hard origin/master
+git push --force
+```
+
 ## 练习
 
 - [Learn Git Branching](https://learngitbranching.js.org/)
@@ -1146,3 +1153,4 @@ $ vim ~/.gitignore_global
 ## 参考
 
 - <https://git-scm.com/docs> Git - Reference
+
