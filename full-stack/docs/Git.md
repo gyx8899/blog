@@ -1146,6 +1146,12 @@ git reset --hard origin/master
 git push --force
 ```
 
+- Git 撤销 rebase 引起的变基
+
+```shell
+git rebase --abort
+```
+
 ## 练习
 
 - [Learn Git Branching](https://learngitbranching.js.org/)
@@ -1153,4 +1159,5 @@ git push --force
 ## 参考
 
 - <https://git-scm.com/docs> Git - Reference
+
 
