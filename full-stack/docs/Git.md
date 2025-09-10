@@ -1152,6 +1152,16 @@ git push --force
 git rebase --abort
 ```
 
+- Git merge 后 push 阶段提示校验不通过
+
+```shell
+# 撤销变基
+git reset --hard HEAD^
+# git rebase --abort
+# push 忽略校验
+git push --no-verify
+```
+
 ## 练习
 
 - [Learn Git Branching](https://learngitbranching.js.org/)
@@ -1159,5 +1169,6 @@ git rebase --abort
 ## 参考
 
 - <https://git-scm.com/docs> Git - Reference
+
 
 
