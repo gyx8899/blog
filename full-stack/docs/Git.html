@@ -2055,6 +2055,26 @@ $ git config --global core.excludesfile ~/.gitignore_global
 
 $ vim ~/.gitignore_global
 </code></pre>
+<ul>
+<li>Git &#x91CD;&#x7F6E;&#x5206;&#x652F;&#x4E3A; master</li>
+</ul>
+<pre><code class="lang-shell">git reset --hard origin/master
+git push --force
+</code></pre>
+<ul>
+<li>Git &#x64A4;&#x9500; rebase &#x5F15;&#x8D77;&#x7684;&#x53D8;&#x57FA;</li>
+</ul>
+<pre><code class="lang-shell">git rebase --abort
+</code></pre>
+<ul>
+<li>Git merge &#x540E; push &#x9636;&#x6BB5;&#x63D0;&#x793A;&#x6821;&#x9A8C;&#x4E0D;&#x901A;&#x8FC7;</li>
+</ul>
+<pre><code class="lang-shell"># &#x64A4;&#x9500;&#x53D8;&#x57FA;
+git reset --hard HEAD^
+# git rebase --abort
+# push &#x5FFD;&#x7565;&#x6821;&#x9A8C;
+git push --no-verify
+</code></pre>
 <h2 id="&#x7EC3;&#x4E60;">&#x7EC3;&#x4E60;</h2>
 <ul>
 <li><a href="https://learngitbranching.js.org/" target="_blank">Learn Git Branching</a></li>
@@ -2106,7 +2126,7 @@ $ vim ~/.gitignore_global
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Git 命令集","level":"4.8","depth":1,"next":{"title":"GitBook","level":"4.9","depth":1,"path":"full-stack/docs/GitBook.md","ref":"full-stack/docs/GitBook.md","articles":[]},"previous":{"title":"Emoji: 供日常学习、查询及使用","level":"4.7","depth":1,"path":"full-stack/docs/Emoji.md","ref":"full-stack/docs/Emoji.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"theme":"default","author":"Kate Kuo <gyx8899@126.com>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kate's Blog","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Kate's Blog":"https://github.com/gyx8899/blog"}},"gitbook":">=2.0.0","description":"This is a blog book created by Kate Kuo","extension":null},"file":{"path":"full-stack/docs/Git.md","mtime":"2025-08-05T10:33:00.826Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-08-05T10:33:28.955Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Git 命令集","level":"4.8","depth":1,"next":{"title":"GitBook","level":"4.9","depth":1,"path":"full-stack/docs/GitBook.md","ref":"full-stack/docs/GitBook.md","articles":[]},"previous":{"title":"Emoji: 供日常学习、查询及使用","level":"4.7","depth":1,"path":"full-stack/docs/Emoji.md","ref":"full-stack/docs/Emoji.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"theme":"default","author":"Kate Kuo <gyx8899@126.com>","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kate's Blog","language":"zh-hans","links":{"sharing":{"all":null,"facebook":null,"google":null,"twitter":null,"weibo":null},"sidebar":{"Kate's Blog":"https://github.com/gyx8899/blog"}},"gitbook":">=2.0.0","description":"This is a blog book created by Kate Kuo","extension":null},"file":{"path":"full-stack/docs/Git.md","mtime":"2025-12-31T18:36:03.826Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-12-31T18:36:32.842Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
